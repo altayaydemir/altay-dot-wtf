@@ -1,0 +1,68 @@
+import { join } from 'path'
+import fs from 'fs'
+import matter from 'gray-matter'
+import { GetStaticProps, GetStaticPaths } from 'next'
+import { BasicMeta } from './types'
+
+type ContentDirectory = 'home' | 'about' | 'now' | 'articles' | 'books'
+
+const getContentDirectoryPath = (contentDirectory: ContentDirectory) =>
+  join(process.cwd(), 'data', contentDirectory)
+
+export const getSlugs = (contentDirectory: ContentDirectory) => {
+  const directory = getContentDirectoryPath(contentDirectory)
+  return fs.readdirSync(directory, 'utf-8').map((f) => f.split('.md')[0])
+}
+
+export const getMarkdownContent = (contentDirectory: ContentDirectory, fileName: string) => {
+  const directory = getContentDirectoryPath(contentDirectory)
+  return fs.readFileSync(`${directory}/${fileName}.md`, 'utf-8')
+}
+
+export const getMeta = <Meta extends { slug: string }>(
+  contentDirectory: ContentDirectory,
+  fileName: string,
+) => {
+  const markdown = getMarkdownContent(contentDirectory, fileName)
+  const { data } = matter(markdown)
+  return { ...data, slug: fileName } as Meta
+}
+
+export const getMarkdownContentWithMeta = <Meta extends { slug: string }>(
+  contentDirectory: ContentDirectory,
+  fileName: string,
+) => {
+  const markdown = getMarkdownContent(contentDirectory, fileName)
+  const { data, content } = matter(markdown)
+  return { content, meta: { ...data, slug: fileName } as Meta }
+}
+
+export const getStaticPathsFromSlugs = (
+  contentDirectory: ContentDirectory,
+): GetStaticPaths => async () => ({
+  paths: getSlugs(contentDirectory).map((slug) => ({ params: { slug } })),
+  fallback: false,
+})
+
+type StaticPropsWithMarkdownContent<Meta> =
+  | { meta: undefined; content: undefined }
+  | { meta: Meta; content: string }
+
+export const getStaticPropsWithMarkdownContent = <Meta extends BasicMeta>(
+  contentDirectory: ContentDirectory,
+): GetStaticProps<StaticPropsWithMarkdownContent<Meta>, { slug: string }> => async ({ params }) => {
+  const slug = getSlugs(contentDirectory).find((s) => s === params?.slug)
+
+  if (!slug) {
+    return { props: { meta: undefined, content: undefined } }
+  }
+
+  const { meta, content } = getMarkdownContentWithMeta<Meta>(contentDirectory, slug)
+
+  return {
+    props: {
+      meta,
+      content,
+    },
+  }
+}
