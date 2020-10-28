@@ -10,6 +10,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "@rebass/preset": "^4.0.5",
     "emotion-theming": "^10.0.27",
     "gray-matter": "^4.0.2",

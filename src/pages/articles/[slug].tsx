@@ -12,14 +12,14 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   meta,
   content,
 }) => {
-  if (!content) return <ErrorPage statusCode={404} />
+  if (!content || !meta) return <ErrorPage statusCode={404} />
 
   return (
     <>
-      <Heading>{meta?.title}</Heading>
+      <Heading>{meta.title}</Heading>
 
       <Text marginY={2} fontSize={14}>
-        {meta?.date}
+        {meta.date}
       </Text>
 
       <Markdown>{content}</Markdown>

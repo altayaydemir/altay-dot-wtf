@@ -1,5 +1,6 @@
-import { Box, Link, Text } from 'rebass'
+import { Box, Text } from 'rebass'
 import { FOOTER_TITLE, FOOTER_LINKS } from '../config'
+import Link from './Link'
 
 const Footer = () => (
   <Box>
@@ -9,17 +10,16 @@ const Footer = () => (
       {FOOTER_LINKS.map((link, index) => (
         <Box key={link.href} display="inline-block">
           <Link
+            target="_blank"
             href={link.href}
             paddingRight={1}
             paddingLeft={index === 0 ? 0 : 1}
-            style={{ cursor: 'pointer' }}
             fontSize={14}
-            target="_blank"
           >
             {link.label}
           </Link>
 
-          {index !== FOOTER_LINKS.length - 1 ? '·' : null}
+          {index === FOOTER_LINKS.length - 1 ? null : '·'}
         </Box>
       ))}
     </Box>

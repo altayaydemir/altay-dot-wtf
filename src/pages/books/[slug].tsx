@@ -10,7 +10,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   meta,
   content,
 }) => {
-  if (!content) return <ErrorPage statusCode={404} />
+  if (!content || !meta) return <ErrorPage statusCode={404} />
 
   return (
     <>

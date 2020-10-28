@@ -1,6 +1,7 @@
 import { InferGetStaticPropsType } from 'next'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { Heading } from 'rebass'
+import Link from '../../ui/Link'
 import { getMeta, getSlugs } from '../../core/api'
 import { ArticleMeta } from '../../core/types'
 
@@ -17,9 +18,9 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
     <ul>
       {articles.map((i) => (
         <li key={i.slug}>
-          <Link href={`/articles/${i.slug}`}>
-            <a>{i.title}</a>
-          </Link>
+          <NextLink href={`/articles/${i.slug}`}>
+            <Link style={{ cursor: 'pointer' }}>{i.title}</Link>
+          </NextLink>
         </li>
       ))}
     </ul>

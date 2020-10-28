@@ -22,7 +22,7 @@ const Header = () => (
               </NavLink>
             </Link>
 
-            {index !== HEADER_LINKS.length - 1 ? '·' : null}
+            {index === HEADER_LINKS.length - 1 ? null : '·'}
           </Box>
         ))}
       </Box>
