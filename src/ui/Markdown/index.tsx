@@ -30,7 +30,7 @@ const MDLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, c
   }
 
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref>
       <Link>{children}</Link>
     </NextLink>
   )

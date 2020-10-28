@@ -22,16 +22,16 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
       {books.map((book) => (
         <Box key={book.slug} marginY={4}>
           <Flex>
-            <NextLink href={`/books/${book.slug}`}>
+            <NextLink href={`/books/${book.slug}`} passHref>
               <a>
-                <BookCover title={book.title} src={book.coverImage} height={132} />
+                <BookCover title={book.title} src={book.coverImage} width={96} />
               </a>
             </NextLink>
 
             <Box margin={2} />
 
             <Box>
-              <NextLink href={`/books/${book.slug}`}>
+              <NextLink href={`/books/${book.slug}`} passHref>
                 <Link>
                   <Heading fontSize={3}>{book.title}</Heading>
                 </Link>

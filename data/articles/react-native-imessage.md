@@ -7,7 +7,7 @@ Originially published in [Medium](https://medium.com/lisk-blog/we-built-an-imess
 
 ---
 
-![](https://thepracticaldev.s3.amazonaws.com/i/l2zyppbwngorslj2oasq.png)
+![](/images/react-native-imessage.png)
 
 _I will show you how we built an iMessage extension by writing a bridge for our React Native-based mobile app. This approach took our team around two weeks to explore and might save you significant time if you have a similar intention._
 

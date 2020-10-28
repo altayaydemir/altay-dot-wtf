@@ -1,19 +1,29 @@
 import Image from 'next/image'
 import { Box } from 'rebass'
+import { useCallback, useState } from 'react'
 
 type Props = {
   title: string
   src: string
-  height?: number
+  width?: number
 }
 
-export const MAX_HEIGHT = 193
+const MAX_WIDTH = 144
 const RATIO = 0.66
 
-const BookCover: React.FC<Props> = ({ title, src, height = MAX_HEIGHT }) => {
+const BookCover: React.FC<Props> = ({ title, src, width = MAX_WIDTH }) => {
+  const [ratio, setRatio] = useState(RATIO)
+
+  const onLoad = useCallback(
+    (e) => {
+      setRatio(e.target.naturalWidth / e.target.naturalHeight)
+    },
+    [setRatio],
+  )
+
   return (
     <Box sx={{ borderWidth: 1, borderStyle: 'solid', borderColor: 'border' }}>
-      <Image alt={title} src={src} height={height} width={height * RATIO} />
+      <Image alt={title} src={src} height={width / ratio} width={width} onLoad={onLoad} />
     </Box>
   )
 }

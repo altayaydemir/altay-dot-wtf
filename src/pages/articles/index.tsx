@@ -21,7 +21,7 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
     <ul>
       {articles.map((i) => (
         <li key={i.slug}>
-          <NextLink href={`/articles/${i.slug}`}>
+          <NextLink href={`/articles/${i.slug}`} passHref>
             <Link>{i.title}</Link>
           </NextLink>
         </li>
