@@ -38,9 +38,9 @@ const Header: React.FC = () => {
       <Flex alignItems="flex-end" justifyContent="space-between">
         <Box>
           <NextLink href="/">
-            <Flex alignItems="center" style={{ cursor: 'pointer' }}>
+            <a style={{ textDecoration: 'none', color: 'initial' }}>
               <Heading fontSize={[2, 3, 5]}>{HEADER_TITLE}</Heading>
-            </Flex>
+            </a>
           </NextLink>
         </Box>
 
