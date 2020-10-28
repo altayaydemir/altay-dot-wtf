@@ -1,8 +1,9 @@
 import { NextSeoProps } from 'next-seo'
 
+export const HOSTNAME = `altay.wtf`
 const title = `altay aydemir`
 const description = `hi, my name is altay. I try to learn things and build stuff to improve people's lives. they are mostly digital and ephemeral, like all of us.`
-const url = `https://altay.wtf`
+const url = `https://${HOSTNAME}`
 
 export const SEO: NextSeoProps = {
   title,
