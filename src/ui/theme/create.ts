@@ -12,6 +12,7 @@ const colors = {
   muted: '#f6f6f9',
   primary: '#07c',
   secondary: '#30c',
+  textInlineCode: '#EB5757',
   text: '#000',
   textGray: '#333',
   border: '#ccc',

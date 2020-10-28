@@ -16,10 +16,7 @@ export const getStaticProps = async () => ({
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
   <>
-    <PageHeader
-      title="books"
-      description="list of the books I read recently, with my notes and thoughts"
-    />
+    <PageHeader title="books" description="my notes from some of the books I read recently." />
 
     <Box>
       {books.map((book) => (

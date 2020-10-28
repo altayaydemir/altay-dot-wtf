@@ -13,6 +13,12 @@ const MDImage: React.FC<Record<string, unknown>> = (props) => (
   </Box>
 )
 
+const MDInlineCode: React.FC = ({ children }) => (
+  <Text display="inline" fontFamily="monospace" fontSize={1} sx={{ color: 'textInlineCode' }}>
+    {children}
+  </Text>
+)
+
 const MDCodeBlock: React.FC<{ language: string; value: string }> = ({ language, value }) => (
   <Prism style={dark} showLineNumbers={true} language={language}>
     {value}
@@ -84,6 +90,7 @@ const Markdown: React.FC<{ children: string }> = ({ children }) => (
     plugins={[gfm]}
     escapeHtml={true}
     renderers={{
+      inlineCode: MDInlineCode,
       code: MDCodeBlock,
       link: MDLink,
       image: MDImage,
