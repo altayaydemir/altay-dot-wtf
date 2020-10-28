@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
 import { ThemeProvider } from 'emotion-theming'
+import { SEO } from '../config'
 import { createTheme } from '../ui/theme/create'
 import Layout from '../ui/Layout'
 import '../ui/styles/globals.css'
@@ -9,9 +11,17 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={createTheme()}>
       <Head>
-        <title>altay aydemir</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000000" />
       </Head>
+
+      <DefaultSeo {...SEO} />
 
       <Layout>
         <Component {...pageProps} />

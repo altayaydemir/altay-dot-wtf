@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 const CV: React.FC = () => {
   useEffect(() => {
-    window.location.href = '/cv.pdf'
+    window.location.href = '/documents/cv.pdf'
   }, [])
 
   return null

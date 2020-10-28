@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { forwardRef } from 'react'
 import { Flex, Box, Link, LinkProps, Heading } from 'rebass'
 import { useTheme } from 'emotion-theming'
-import { HEADER_TITLE, HEADER_LINKS } from '../config'
+import { HEADER } from '../config'
 import { Theme } from './theme/create'
 
 type NavLinkProps = LinkProps & { active: boolean }
@@ -30,6 +30,8 @@ const NavLink: React.FC<NavLinkProps> = forwardRef(({ active, ...rest }, ref) =>
 
 NavLink.displayName = 'NavLink'
 
+const { title, links } = HEADER
+
 const Header: React.FC = () => {
   const router = useRouter()
 
@@ -39,19 +41,19 @@ const Header: React.FC = () => {
         <Box>
           <NextLink href="/">
             <a style={{ textDecoration: 'none', color: 'initial' }}>
-              <Heading fontSize={[2, 3, 5]}>{HEADER_TITLE}</Heading>
+              <Heading fontSize={[2, 3, 5]}>{title}</Heading>
             </a>
           </NextLink>
         </Box>
 
         <Box>
-          {HEADER_LINKS.map((link, index) => (
+          {links.map((link, index) => (
             <Box key={link.href} display="inline-block">
               <NextLink href={link.href}>
                 <NavLink active={router.pathname.includes(link.href)}>{link.label}</NavLink>
               </NextLink>
 
-              {index === HEADER_LINKS.length - 1 ? null : '·'}
+              {index === links.length - 1 ? null : '·'}
             </Box>
           ))}
         </Box>

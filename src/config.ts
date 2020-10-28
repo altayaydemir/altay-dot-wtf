@@ -1,37 +1,67 @@
-export const HEADER_TITLE = `altay aydemir`
+import { NextSeoProps } from 'next-seo'
 
-export const HEADER_LINKS = [
-  {
-    label: 'about',
-    href: '/about',
-  },
-  {
-    label: 'now',
-    href: '/now',
-  },
-  {
-    label: 'articles',
-    href: '/articles',
-  },
-  {
-    label: 'books',
-    href: '/books',
-  },
-] as const
+const title = `altay aydemir`
+const description = `hi, my name is altay. I try to learn things and build stuff to improve people's lives. they are mostly digital and ephemeral, like all of us`
+const url = `https://altay.wtf`
 
-export const FOOTER_TITLE = `me on the internets`
+export const SEO: NextSeoProps = {
+  title,
+  description,
+  twitter: {
+    handle: '@altayaydemir',
+    cardType: 'summary_large_image',
+  },
+  openGraph: {
+    title,
+    description,
+    url,
+    images: [
+      {
+        url: `${url}/og-image.jpg`,
+        width: 1200,
+        height: 628,
+        alt: title,
+      },
+    ],
+  },
+} as const
 
-export const FOOTER_LINKS = [
-  {
-    label: 'email',
-    href: 'mailto:altay.aydemir@icloud.com',
-  },
-  {
-    label: 'twitter',
-    href: 'https://twitter.com/altayaydemir',
-  },
-  {
-    label: 'github',
-    href: 'https://github.com/altayaydemir',
-  },
-] as const
+export const HEADER = {
+  title,
+  links: [
+    {
+      label: 'about',
+      href: '/about',
+    },
+    {
+      label: 'now',
+      href: '/now',
+    },
+    {
+      label: 'articles',
+      href: '/articles',
+    },
+    {
+      label: 'books',
+      href: '/books',
+    },
+  ],
+} as const
+
+export const FOOTER = {
+  title: `me on the internets`,
+  links: [
+    {
+      label: 'email',
+      href: 'mailto:altay.aydemir@icloud.com',
+    },
+    {
+      label: 'twitter',
+      href: 'https://twitter.com/altayaydemir',
+    },
+    {
+      label: 'github',
+      href: 'https://github.com/altayaydemir',
+    },
+  ],
+} as const
