@@ -11,7 +11,11 @@ const getContentDirectoryPath = (contentDirectory: ContentDirectory) =>
 
 export const getSlugs = (contentDirectory: ContentDirectory) => {
   const directory = getContentDirectoryPath(contentDirectory)
-  return fs.readdirSync(directory, 'utf-8').map((f) => f.split('.md')[0])
+  return fs
+    .readdirSync(directory, 'utf-8')
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => f.split('.md'))
+    .map(([fileName]) => fileName)
 }
 
 export const getMarkdownContent = (contentDirectory: ContentDirectory, fileName: string) => {
@@ -57,12 +61,7 @@ export const getStaticPropsWithMarkdownContent = <Meta extends BasicMeta>(
     return { props: { meta: undefined, content: undefined } }
   }
 
-  const { meta, content } = getMarkdownContentWithMeta<Meta>(contentDirectory, slug)
-
   return {
-    props: {
-      meta,
-      content,
-    },
+    props: getMarkdownContentWithMeta<Meta>(contentDirectory, slug),
   }
 }
