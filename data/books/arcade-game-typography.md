@@ -18,8 +18,6 @@ In screenplay writing, a general typography rule is to use 12pt Courier on Lette
 
 ## 01. Sans Regular
 
----
-
 ### Quiz Show
 
 ![](/images/arcade-game-typography-1.jpg)
@@ -44,8 +42,6 @@ Putio 🤠
 
 ## 02. Sans Bold
 
----
-
 ### Raiders5
 
 Rude middle-finger Q.
@@ -59,8 +55,6 @@ Klarna 💅
 ![](/images/arcade-game-typography-5.jpg)
 
 ## 03. Sans Light
-
----
 
 ### Space Invaders
 
@@ -82,8 +76,6 @@ Symmetrical 6 and 9.
 
 ## 04. Serif
 
----
-
 ### Quizmaster
 
 German discipline.
@@ -91,8 +83,6 @@ German discipline.
 ![](/images/arcade-game-typography-9.jpg)
 
 ## 05. MICR
-
----
 
 Magnetic Ink Character Recognition (MICR) is a printing technology invented in the United States in 50s. It uses ink containing magnetic iron oxide and a very mechanical numeric typeface that allows the characters to be read by both the human eye and magnetic scanners.
 
@@ -102,15 +92,11 @@ Magnetic Ink Character Recognition (MICR) is a printing technology invented in t
 
 ## 06. Slanted
 
----
-
 ### Super Monaco GP
 
 ![](/images/arcade-game-typography-11.jpg)
 
 ## 07. Calligraphy & Lettering
-
----
 
 ### Quake Tournament Arcade
 

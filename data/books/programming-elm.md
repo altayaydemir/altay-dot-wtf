@@ -33,8 +33,6 @@ Lists (also records) doesn't have notion of indices. Lists work by letting each 
 
 Lists can also include same type of elements.
 
----
-
 ## Chapter 2: Create Stateful Elm Applications
 
 Introduction to _Elm Architecture:_ View-Model-Update pattern.
@@ -63,8 +61,6 @@ update msg model =
 		Like -> { model | liked = True }
 	  _ => { model | liked = False }
 ```
-
----
 
 ## Chapter 3: Refactor and Enhance Elm Applications
 
@@ -96,8 +92,6 @@ case list of
 	_ ->
 		ul [] [(List.map ... list])
 ```
-
----
 
 ## Chapter 4: Communicate with Servers
 
@@ -137,8 +131,6 @@ case model.photo of
 	Nothing -> "ney!"
 ```
 
----
-
 ## Chapter 5: Go Real-Time with WebSockets
 
 - Started with handling `loading` and `error` states for the HTTP request in the UI.
@@ -167,8 +159,6 @@ oldList = ["b", "c"]
 
 newList = "a" :: oldList -- -> ["a", "b", "c"]
 ```
-
----
 
 ## Chapter 6: Build Larger Applications
 
@@ -262,15 +252,11 @@ type alias Model =
 	}
 ```
 
----
-
 ## Chapter 7: Develop, Debug, and Deploy with Powerful Tooling
 
 - Usage of `Debug.log` and `Debug.todo` with `Json.Decode` examples.
 - `elm reactor` and `create-elm-app`
 - Ported `picshare` to `create-elm-app`
-
----
 
 ## Chapter 8: Integrate with JavaScript
 
@@ -279,8 +265,6 @@ Added an Elm powered file uploader to a React application that has three inputs 
 Sent input events from Elm to JS with ports, also received the image list from the source of truth, `App` component from the JS context, again through ports.
 
 Used `Flags` for passing data during the initialization step of the Elm app.
-
----
 
 ## Chapter 9: Test Elm Applications
 
@@ -295,8 +279,6 @@ Tested an Elm app called `awesome-date-app` which uses the `awesome-date` module
 
 - Tests for `model`, `view`, `update` functions based on the changes in the app.
 - Used `Test.Html` to interact with the virtual DOM for selecting elements and simulating events.
-
----
 
 ## Chapter 10: Build Single-Page Applications
 

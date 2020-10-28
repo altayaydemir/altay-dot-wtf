@@ -43,8 +43,6 @@ There are some realizations we need to face...
 
 **Process is the king!** Documenting repeatable process for anything you will do more than once is essential to your sanity. It also makes it easier to sell the product if you ever consider to exit.
 
----
-
 ## Why Niches are the Name of the Game
 
 > If you can find a small group of people and make them amazingly happy, you will make money.
@@ -74,8 +72,6 @@ The niche market approach
 - Collect user contact instead of actual product when people press sign-up
 - Create AdWords campaign and send targeted traffic to the site
 - Track the CTA impressions, assume the actual conversion rate will be %2-5
-
----
 
 ## Your Product
 

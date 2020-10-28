@@ -91,8 +91,6 @@ Our knowledge is one of the expiring assets. It becomes out of date as new techn
 - Get back to people
 - Keep code and documentation together
 
----
-
 ## Chapter 2: A Pragmatic Approach
 
 Fundamental tips and tricks to follow while approaching problems in the software projects. They are generic concepts that could be applied to any kind of project or company.
@@ -139,8 +137,6 @@ Similar to the ETC, estimating is also a skill that develops over time. To becom
 - **Give each parameter a value:** a multiplying factor to be used for each component
 - **Calculate the answers:** don't be surprised if your calculations are a bit weird, they may indicate a missing point or a misunderstood model
 - **Keep track of your estimating prowess:** the only way to get better, ha?
-
----
 
 ## Chapter 3: The Basic Tools
 
@@ -204,8 +200,6 @@ Learn a text manipulation language (or tool) to make fancy stuff like auto-gener
 ### 22. Engineering Daybooks
 
 Handwritten notebooks to keep track of what I am working on, take notes on meetings, the things I learnt today and the ideas come up to my mind while dealing with the tasks. Pen and paper helps in a sense since it makes it easier to sketch and scribble.
-
----
 
 ## Chapter 4: Pragmatic Paranoia
 
@@ -291,8 +285,6 @@ We can also write wrappers for resources for allocation, deallocation and check 
 The phrase _outrunning the headlights_ comes from taking turns or going fast with a vehicle the projector of headlines are not able to illuminate the path since it's made for a straight line. The main idea is to take small steps and adjust your next moves based on the feedbacks.
 
 > Consider that the rate of the feedback is your speed limit.
-
----
 
 ## Chapter 5: Bend, or Break
 
@@ -459,8 +451,6 @@ class UserRecord extends BasicRecord with CommonFinders
 
 In addition to the static configuration that we are mostly familiar with (JSON, YAML, etc), the book also suggest to consider using **Configuration-As-A-Service approach** in order to make it shareable across multiple applications, editable via a GUI tool and dynamic. This dynamism would help us to register the respective parts of our application to the configuration updates and react to the changes without having to restart the whole application.
 
----
-
 ## Chapter 6: Concurrency
 
 #### Concurrency, parallelism and temporal coupling
@@ -619,8 +609,6 @@ The book describes the blackboard as a real blackboard that we write the details
 
 Blackboard can be used for collective knowledge gathering systems, such as natural language processing, mortgage application lookup and finding an appropriate time for a set of friends to meet in their favorite pizza spot.
 
----
-
 ## Chapter 7: While You Are Coding
 
 Things to keep in mind while we are on it... Instincts, awareness, performance, refactoring and more!
@@ -752,8 +740,6 @@ The first and foremost rule when it comes to crypto is _never do it yourself_. I
 - Keep it consistent with the rest of the project.
 - Name well, rename when needed. If you can't change the now-wrong name easily, it indicates we got a bigger problem, an _Easy-to-Change_ violation.
 
----
-
 ## Chapter 8: Before the Project
 
 ### 45. The Requirements Pit
@@ -811,8 +797,6 @@ The real agility is not following of some rules set on the stone. The true meani
 
 Keeping the feedback loop efficient, and iterating with small steps gives us the freedom of throwing away our work and starting over in order to reach the desired outcome.
 
----
-
 ## Chapter 9: Pragmatic Projects
 
 ### 49. Pragmatic Teams
@@ -863,8 +847,6 @@ Ask them how will they know what we've all been successful a month (or a year, o
 - Don't shirk from responsibility, rejoice in accepting challenges.
 - Minimize your ego, don't judge other people's work before you are into it.
 - Decrease anonymity to prevent sloppiness, mistakes, sloth and bad code.
-
----
 
 ## Postface
 
