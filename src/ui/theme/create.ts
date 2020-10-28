@@ -22,5 +22,6 @@ export type Theme = BaseTheme & { dark: boolean; colors: typeof colors }
 export const createTheme = (options: ThemeOptions = { dark: false }): Theme => ({
   ...preset,
   ...options,
+  breakpoints: ['360px', '640px', '960px'],
   colors,
 })

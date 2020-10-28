@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { forwardRef } from 'react'
-import { Flex, Box, Link, LinkProps } from 'rebass'
+import { Flex, Box, Link, LinkProps, Heading } from 'rebass'
 import { useTheme } from 'emotion-theming'
 import { HEADER_TITLE, HEADER_LINKS } from '../config'
 import { Theme } from './theme/create'
@@ -15,7 +15,17 @@ const NavLink: React.FC<NavLinkProps> = forwardRef(({ active, ...rest }, ref) =>
     color: active ? theme.colors.primary : 'initial',
   }
 
-  return <Link variant="nav" marginY={1} style={style} ref={ref} {...rest} />
+  return (
+    <Link
+      variant="nav"
+      paddingX={[1, 1, 2]}
+      paddingY={0}
+      style={style}
+      ref={ref}
+      {...rest}
+      fontSize={[0, 1, 2]}
+    />
+  )
 })
 
 NavLink.displayName = 'NavLink'
@@ -29,7 +39,7 @@ const Header: React.FC = () => {
         <Box>
           <NextLink href="/">
             <Flex alignItems="center" style={{ cursor: 'pointer' }}>
-              <h1 style={{ margin: 0, padding: 0 }}>{HEADER_TITLE}</h1>
+              <Heading fontSize={[2, 3, 5]}>{HEADER_TITLE}</Heading>
             </Flex>
           </NextLink>
         </Box>
