@@ -19,8 +19,6 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
   <>
     <Markdown>{description}</Markdown>
 
-    <hr />
-
     <Box>
       {books.map((book) => (
         <Box key={book.slug} marginY={4}>

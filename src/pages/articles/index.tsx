@@ -19,8 +19,6 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
   <>
     <Markdown>{description}</Markdown>
 
-    <hr />
-
     <ul>
       {articles.map((i) => (
         <li key={i.slug}>

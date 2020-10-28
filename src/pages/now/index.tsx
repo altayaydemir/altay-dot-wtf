@@ -28,8 +28,6 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <>
       <Markdown>{description}</Markdown>
 
-      <hr />
-
       <Box margin={4} />
 
       <Markdown>{content}</Markdown>
