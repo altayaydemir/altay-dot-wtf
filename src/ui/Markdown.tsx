@@ -4,6 +4,13 @@ import gfm from 'remark-gfm'
 import { Prism } from 'react-syntax-highlighter'
 import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 import Link from './Link'
+import { Box, Image } from 'rebass'
+
+const MDImage: React.FC<Record<string, unknown>> = (props) => (
+  <Box>
+    <Image {...props} />
+  </Box>
+)
 
 const MDCodeBlock: React.FC<{ language: string; value: string }> = ({ language, value }) => (
   <Prism style={dark} showLineNumbers={true} language={language}>
@@ -28,7 +35,11 @@ const MDLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, c
 }
 
 const Markdown: React.FC<{ children: string }> = ({ children }) => (
-  <ReactMarkdown plugins={[gfm]} escapeHtml={true} renderers={{ code: MDCodeBlock, link: MDLink }}>
+  <ReactMarkdown
+    plugins={[gfm]}
+    escapeHtml={true}
+    renderers={{ code: MDCodeBlock, link: MDLink, image: MDImage }}
+  >
     {children}
   </ReactMarkdown>
 )

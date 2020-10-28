@@ -7,7 +7,9 @@ import { ArticleMeta } from '../../core/types'
 
 export const getStaticProps = async () => ({
   props: {
-    articles: getSlugs('articles').map((article) => getMeta<ArticleMeta>('articles', article)),
+    articles: getSlugs('articles')
+      .map((article) => getMeta<ArticleMeta>('articles', article))
+      .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1)),
   },
 })
 
