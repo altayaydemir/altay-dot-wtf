@@ -11,6 +11,7 @@ const Footer = () => (
         <Box key={link.href} display="inline-block">
           <Link
             target="_blank"
+            rel="noreferrer"
             href={link.href}
             paddingRight={1}
             paddingLeft={index === 0 ? 0 : 1}

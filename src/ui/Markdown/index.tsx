@@ -1,11 +1,12 @@
+import dynamic from 'next/dynamic'
 import NextLink from 'next/link'
 import ReactMarkdown, { renderers } from 'react-markdown'
 import gfm from 'remark-gfm'
-import { Prism } from 'react-syntax-highlighter'
-import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 import { Box, Image, Text } from 'rebass'
-import Link from './Link'
-import Paragraph from './Paragraph'
+import Link from '../Link'
+import Paragraph from '../Paragraph'
+
+const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 
 const MDImage: React.FC<Record<string, unknown>> = (props) => (
   <Box>
@@ -17,12 +18,6 @@ const MDInlineCode: React.FC = ({ children }) => (
   <Text display="inline" fontFamily="monospace" fontSize={1} sx={{ color: 'textInlineCode' }}>
     {children}
   </Text>
-)
-
-const MDCodeBlock: React.FC<{ language: string; value: string }> = ({ language, value }) => (
-  <Prism style={dark} showLineNumbers={true} language={language}>
-    {value}
-  </Prism>
 )
 
 const MDLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => {
