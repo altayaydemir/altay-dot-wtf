@@ -3,7 +3,7 @@ import { Box, Text } from 'rebass'
 import { getSlugs, getMarkdownContentWithMeta } from '../../common/api'
 import { NowMeta } from '../../types'
 import Markdown from '../../ui/Markdown'
-import description from './description.md'
+import PageHeader from '../../ui/PageHeader'
 
 export const getStaticProps = async () => {
   const [latest, ...archiveItems] = getSlugs('now').reverse()
@@ -26,7 +26,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 }) => {
   return (
     <>
-      <Markdown>{description}</Markdown>
+      <PageHeader
+        title="what am I doing now"
+        description={`this is a [now page](https://nownownow.com). the inspiration came from [Derek Sivers](https://sive.rs) as most of the stuff around here. I'm trying to update this page monthly and keep the history.`}
+      />
 
       <Box margin={4} />
 

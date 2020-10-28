@@ -4,8 +4,7 @@ import Link from '../../ui/Link'
 import { getMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
 import { ArticleMeta } from '../../types'
-import description from './description.md'
-import Markdown from '../../ui/Markdown'
+import PageHeader from '../../ui/PageHeader'
 
 export const getStaticProps = async () => ({
   props: {
@@ -17,7 +16,7 @@ export const getStaticProps = async () => ({
 
 const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ articles }) => (
   <>
-    <Markdown>{description}</Markdown>
+    <PageHeader title="articles" />
 
     <ul>
       {articles.map((i) => (

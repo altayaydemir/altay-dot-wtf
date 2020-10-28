@@ -1,11 +1,10 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading, Box, Flex, Text } from 'rebass'
+import { Heading, Box, Flex } from 'rebass'
 import Link from '../../ui/Link'
 import { fetchBookMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
-import description from './description.md'
-import Markdown from '../../ui/Markdown'
+import PageHeader from '../../ui/PageHeader'
 import BookCover from '../../ui/BookCover'
 import BookInfoText from '../../ui/BookInfoText'
 
@@ -17,7 +16,10 @@ export const getStaticProps = async () => ({
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
   <>
-    <Markdown>{description}</Markdown>
+    <PageHeader
+      title="books"
+      description="list of the books I read recently, with my notes and thoughts"
+    />
 
     <Box>
       {books.map((book) => (
