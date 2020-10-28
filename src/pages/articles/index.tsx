@@ -1,27 +1,31 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading } from 'rebass'
 import Link from '../../ui/Link'
-import { getMeta, getSlugs } from '../../core/api'
-import { ArticleMeta } from '../../core/types'
+import { getMeta, getSlugs } from '../../common/api'
+import { sortByDate } from '../../common/utils'
+import { ArticleMeta } from '../../types'
+import description from './description.md'
+import Markdown from '../../ui/Markdown'
 
 export const getStaticProps = async () => ({
   props: {
-    articles: getSlugs('articles')
-      .map((article) => getMeta<ArticleMeta>('articles', article))
-      .sort((a, b) => (Date.parse(a.date) > Date.parse(b.date) ? -1 : 1)),
+    articles: sortByDate(
+      getSlugs('articles').map((article) => getMeta<ArticleMeta>('articles', article)),
+    ),
   },
 })
 
 const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ articles }) => (
   <>
-    <Heading>articles</Heading>
+    <Markdown>{description}</Markdown>
+
+    <hr />
 
     <ul>
       {articles.map((i) => (
         <li key={i.slug}>
           <NextLink href={`/articles/${i.slug}`}>
-            <Link style={{ cursor: 'pointer' }}>{i.title}</Link>
+            <Link>{i.title}</Link>
           </NextLink>
         </li>
       ))}

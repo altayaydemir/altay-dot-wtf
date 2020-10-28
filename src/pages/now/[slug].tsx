@@ -1,8 +1,8 @@
 import { InferGetStaticPropsType } from 'next'
 import ErrorPage from 'next/error'
-import { getStaticPathsFromSlugs, getStaticPropsWithMarkdownContent } from '../../core/api'
+import { getStaticPathsFromSlugs, getStaticPropsWithMarkdownContent } from '../../common/api'
 import { Heading, Box } from 'rebass'
-import { NowMeta } from '../../core/types'
+import { NowMeta } from '../../types'
 import Markdown from '../../ui/Markdown'
 
 export const getStaticPaths = getStaticPathsFromSlugs('now')

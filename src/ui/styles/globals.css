@@ -27,15 +27,10 @@ h6 {
   padding: 0;
 }
 
-ul {
-  padding-top: 0;
-  margin-top: 4px;
-}
-
 li {
-  margin-bottom: 4px;
+  margin: 8px 0;
 }
 
 hr {
-  opacity: 0.25;
+  opacity: 0.1;
 }

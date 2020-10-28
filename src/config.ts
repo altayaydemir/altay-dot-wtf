@@ -13,6 +13,10 @@ export const HEADER_LINKS = [
     label: 'articles',
     href: '/articles',
   },
+  {
+    label: 'books',
+    href: '/books',
+  },
 ] as const
 
 export const FOOTER_TITLE = `me on the internets`

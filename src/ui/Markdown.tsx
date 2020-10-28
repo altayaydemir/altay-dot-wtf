@@ -4,7 +4,8 @@ import gfm from 'remark-gfm'
 import { Prism } from 'react-syntax-highlighter'
 import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 import Link from './Link'
-import { Box, Image } from 'rebass'
+import Paragraph from './Paragraph'
+import { Box, Image, Text } from 'rebass'
 
 const MDImage: React.FC<Record<string, unknown>> = (props) => (
   <Box>
@@ -38,7 +39,12 @@ const Markdown: React.FC<{ children: string }> = ({ children }) => (
   <ReactMarkdown
     plugins={[gfm]}
     escapeHtml={true}
-    renderers={{ code: MDCodeBlock, link: MDLink, image: MDImage }}
+    renderers={{
+      code: MDCodeBlock,
+      link: MDLink,
+      image: MDImage,
+      paragraph: Paragraph,
+    }}
   >
     {children}
   </ReactMarkdown>

@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next'
-import { getMarkdownContent } from '../core/api'
+import { getMarkdownContent } from '../common/api'
 import Markdown from '../ui/Markdown'
 
 export const getStaticProps = async () => ({

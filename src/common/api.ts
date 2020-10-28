@@ -2,7 +2,7 @@ import { join } from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { BasicMeta } from './types'
+import { BasicMeta, BookMeta, MDBookMeta } from '../types'
 
 type ContentDirectory = 'home' | 'about' | 'now' | 'articles' | 'books'
 
@@ -48,7 +48,7 @@ export const getStaticPathsFromSlugs = (
   fallback: false,
 })
 
-type StaticPropsWithMarkdownContent<Meta> =
+export type StaticPropsWithMarkdownContent<Meta> =
   | { meta: undefined; content: undefined }
   | { meta: Meta; content: string }
 
@@ -63,5 +63,19 @@ export const getStaticPropsWithMarkdownContent = <Meta extends BasicMeta>(
 
   return {
     props: getMarkdownContentWithMeta<Meta>(contentDirectory, slug),
+  }
+}
+
+export const fetchBookMeta = async (fileName: string): Promise<BookMeta> => {
+  const meta = getMeta<MDBookMeta>('books', fileName)
+  const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`)
+  const json = await response.json()
+  const [book] = json.items
+
+  return {
+    ...meta,
+    title: book.volumeInfo.title,
+    authors: book.volumeInfo.authors,
+    coverImage: book.volumeInfo.imageLinks.thumbnail,
   }
 }

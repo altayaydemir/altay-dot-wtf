@@ -15,13 +15,13 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => (
     </Head>
 
     <Header />
-    <hr />
+    <hr style={{ opacity: 0.25 }} />
     <Box height={20} />
 
     <Component {...pageProps} />
 
     <Box height={20} />
-    <hr />
+    <hr style={{ opacity: 0.25 }} />
     <Footer />
   </ThemeProvider>
 )
