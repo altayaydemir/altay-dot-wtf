@@ -1,11 +1,13 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading, Box, Flex, Image, Text } from 'rebass'
+import { Heading, Box, Flex, Text } from 'rebass'
 import Link from '../../ui/Link'
 import { fetchBookMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
 import description from './description.md'
 import Markdown from '../../ui/Markdown'
+import BookCover from '../../ui/BookCover'
+import BookInfoText from '../../ui/BookInfoText'
 
 export const getStaticProps = async () => ({
   props: {
@@ -24,11 +26,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
         <Box key={book.slug} marginY={4}>
           <Flex>
             <NextLink href={`/books/${book.slug}`}>
-              <Image
-                src={book.coverImage}
-                style={{ border: '1px solid #ddd', cursor: 'pointer' }}
-                height={132}
-              />
+              <BookCover title={book.title} src={book.coverImage} height={132} />
             </NextLink>
 
             <Box margin={2} />
@@ -43,17 +41,13 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
               <Box margin={2} />
 
               <Box>
-                <Text fontSize={14}>
-                  {book.authors.length > 1 ? 'authors' : 'author'}: <b>{book.authors.join(', ')}</b>
-                </Text>
-
-                <Text fontSize={14}>
-                  date read: <b>{book.date}</b>
-                </Text>
-
-                <Text fontSize={14}>
-                  my rating: <b>{book.rating}</b>
-                </Text>
+                <BookInfoText
+                  name={book.authors.length > 1 ? 'authors' : 'author'}
+                  value={book.authors.join(', ')}
+                  fontSize={1}
+                />
+                <BookInfoText name="date read" value={book.date} fontSize={1} />
+                <BookInfoText name="my rating" value={book.rating} fontSize={1} />
               </Box>
             </Box>
           </Flex>

@@ -13,6 +13,8 @@ const colors = {
   primary: '#07c',
   secondary: '#30c',
   text: '#000',
+  textGray: '#333',
+  border: '#ccc',
 } as const
 
 export type Theme = BaseTheme & { dark: boolean; colors: typeof colors }

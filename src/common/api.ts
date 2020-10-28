@@ -76,6 +76,6 @@ export const fetchBookMeta = async (fileName: string): Promise<BookMeta> => {
     ...meta,
     title: book.volumeInfo.title,
     authors: book.volumeInfo.authors,
-    coverImage: book.volumeInfo.imageLinks.thumbnail,
+    coverImage: book.volumeInfo.imageLinks.thumbnail.replace('http://', 'https://'),
   }
 }

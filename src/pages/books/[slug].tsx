@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import ErrorPage from 'next/error'
-import { Flex, Box, Image, Heading, Text } from 'rebass'
+import { Flex, Box, Heading, Text } from 'rebass'
 import {
   StaticPropsWithMarkdownContent,
   getStaticPathsFromSlugs,
@@ -8,6 +8,8 @@ import {
   fetchBookMeta,
 } from '../../common/api'
 import { BookMeta } from '../../types'
+import BookCover from '../../ui/BookCover'
+import BookInfoText from '../../ui/BookInfoText'
 import Markdown from '../../ui/Markdown'
 import Link from '../../ui/Link'
 
@@ -34,9 +36,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ me
   return (
     <>
       <Flex>
-        <Box>
-          <Image src={meta.coverImage} style={{ border: '1px solid #ddd' }} />
-        </Box>
+        <BookCover title={meta.title} src={meta.coverImage} />
 
         <Box margin={2} />
 
@@ -45,34 +45,33 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ me
 
           <Box my={2} />
 
-          <Text>
-            {meta.authors.length > 1 ? 'authors' : 'author'}: <b>{meta.authors.join(', ')}</b>
-          </Text>
+          <BookInfoText
+            name={meta.authors.length > 1 ? 'authors' : 'author'}
+            value={meta.authors.join(', ')}
+          />
 
           <Box my={1} />
 
-          <Text>
-            date read: <b>{meta.date}</b>
-          </Text>
+          <BookInfoText name="date read" value={meta.date} />
 
           <Box my={1} />
 
-          <Text>
-            my rating: <b>{meta.rating}</b>
-          </Text>
+          <BookInfoText name="my rating" value={meta.rating} />
 
           <Box my={1} />
 
-          <Text>
-            ISBN:{' '}
-            <Link
-              href={`https://amazon.com/dp/${meta.isbn}`}
-              target="_blank"
-              title="Open Amazon Page"
-            >
-              <b>{meta.isbn}</b>
-            </Link>
-          </Text>
+          <BookInfoText
+            name="ISBN"
+            value={
+              <Link
+                href={`https://amazon.com/dp/${meta.isbn}`}
+                target="_blank"
+                title="Open Amazon Page"
+              >
+                {meta.isbn}
+              </Link>
+            }
+          />
         </Box>
       </Flex>
 
