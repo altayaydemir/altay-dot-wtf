@@ -7,6 +7,7 @@ export type NowMeta = BasicMeta
 
 export type ArticleMeta = BasicMeta & {
   title: string
+  oneliner: string
 }
 
 export type MDBookMeta = BasicMeta & {

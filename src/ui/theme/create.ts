@@ -10,11 +10,10 @@ const colors = {
   gray: '#dddddf',
   highlight: 'hsla(205, 100%, 40%, 0.125)',
   muted: '#f6f6f9',
-  primary: '#07c',
-  secondary: '#30c',
+  primary: '#06c',
   textInlineCode: '#EB5757',
   text: '#000',
-  textGray: '#333',
+  textCaption: '#4f4f4f',
   border: '#ededed',
 } as const
 

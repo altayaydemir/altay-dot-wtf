@@ -1,5 +1,7 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box, Text } from 'rebass'
+import { format } from 'date-fns'
+
 import { getSlugs, getMarkdownContentWithMeta } from '../../common/api'
 import { NowMeta } from '../../types'
 import Markdown from '../../ui/Markdown'
@@ -28,7 +30,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <>
       <PageHeader
         title="what am I doing now"
-        description={`this is a [now page](https://nownownow.com). the inspiration came from [Derek Sivers](https://sive.rs) as most of the stuff around here. I'm trying to update this page monthly and keep the history.`}
+        description={`this is a [now page](https://nownownow.com) inspired from [Derek Sivers](https://sive.rs) as most of the things around here. I'm trying to update this page every month and keep the history.`}
       />
 
       <Box margin={4} />
@@ -37,7 +39,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Box margin={4} />
 
-      <Text fontSize={12}>Last update: {meta.date}</Text>
+      <Text fontSize={0}>Last updated at {format(new Date(meta.date), 'PPP')}</Text>
 
       {archiveItems.length > 1 ? (
         <>

@@ -6,7 +6,7 @@ import { fetchBookMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
 import PageHeader from '../../ui/PageHeader'
 import BookCover from '../../ui/BookCover'
-import BookInfoText from '../../ui/BookInfoText'
+import BookInfo from '../../ui/BookInfo'
 
 export const getStaticProps = async () => ({
   props: {
@@ -16,7 +16,7 @@ export const getStaticProps = async () => ({
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
   <>
-    <PageHeader title="books" description="my notes from some of the books I read recently." />
+    <PageHeader title="books" description="notes from the books I read recently." />
 
     <Box>
       {books.map((book) => (
@@ -39,15 +39,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
 
               <Box margin={2} />
 
-              <Box>
-                <BookInfoText
-                  name={book.authors.length > 1 ? 'authors' : 'author'}
-                  value={book.authors.join(', ')}
-                  fontSize={1}
-                />
-                <BookInfoText name="date read" value={book.date} fontSize={1} />
-                <BookInfoText name="my rating" value={book.rating} fontSize={1} />
-              </Box>
+              <BookInfo short book={book} fontSize={1} spacing={0} />
             </Box>
           </Flex>
         </Box>

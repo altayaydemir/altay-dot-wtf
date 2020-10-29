@@ -9,9 +9,8 @@ import {
 } from '../../common/api'
 import { BookMeta } from '../../types'
 import BookCover from '../../ui/BookCover'
-import BookInfoText from '../../ui/BookInfoText'
+import BookInfo from '../../ui/BookInfo'
 import Markdown from '../../ui/Markdown'
-import Link from '../../ui/Link'
 
 export const getStaticPaths = getStaticPathsFromSlugs('books')
 export const getStaticProps: GetStaticProps<
@@ -42,36 +41,8 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ me
 
         <Box>
           <Heading>{meta.title}</Heading>
-
           <Box my={2} />
-
-          <BookInfoText
-            name={meta.authors.length > 1 ? 'authors' : 'author'}
-            value={meta.authors.join(', ')}
-          />
-
-          <Box my={1} />
-
-          <BookInfoText name="date read" value={meta.date} />
-
-          <Box my={1} />
-
-          <BookInfoText name="my rating" value={meta.rating} />
-
-          <Box my={1} />
-
-          <BookInfoText
-            name="ISBN"
-            value={
-              <Link
-                href={`https://amazon.com/dp/${meta.isbn}`}
-                target="_blank"
-                title="Open Amazon Page"
-              >
-                {meta.isbn}
-              </Link>
-            }
-          />
+          <BookInfo book={meta} spacing={1} />
         </Box>
       </Flex>
 

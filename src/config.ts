@@ -28,7 +28,7 @@ export const SEO: NextSeoProps = {
 } as const
 
 export const HEADER = {
-  title,
+  title: 'altay-dot-wtf',
   links: [
     {
       label: 'about',

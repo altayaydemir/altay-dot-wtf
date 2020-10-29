@@ -5,7 +5,7 @@ const MDQuote: React.FC = ({ children }) => (
     sx={{
       backgroundColor: 'muted',
       borderLeftWidth: 2,
-      borderLeftColor: 'textGray',
+      borderLeftColor: 'textCaption',
       borderLeftStyle: 'solid',
     }}
     padding={[1, 3]}
