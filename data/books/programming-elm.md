@@ -4,6 +4,8 @@ date: '2020-09-21'
 rating: '7/10'
 ---
 
+There is [a Github repository](https://github.com/altayaydemir/programming-elm) for the stuff I built while following this book.
+
 ## Chapter 1: Get Started with Elm
 
 Introduction to the language, and initialization of the example app: _Picshare_

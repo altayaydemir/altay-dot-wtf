@@ -4,11 +4,9 @@ oneliner: nvm just copy paste.
 date: '2020-02-22'
 ---
 
-_Managing UI state is hard._
+Is managing UI state is hard, or we make it hard for ourselves by not paying attention?
 
-Or we make it hard for ourselves by not paying attention.
-
-_How?_ 🤔
+How do we do that? 🤔
 
 We have this React component fetches the list of something and renders accordingly.
 

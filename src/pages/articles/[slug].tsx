@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import ErrorPage from 'next/error'
-import { Heading, Text } from 'rebass'
+import { Heading, Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 
 import { getStaticPathsFromSlugs, getStaticPropsWithMarkdownContent } from '../../common/api'
@@ -20,10 +20,14 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <>
       <Heading>{meta.title}</Heading>
 
-      <Text marginY={2} fontSize={1} color="textCaption">
+      <Box my={1} />
+
+      <Text fontSize={1} color="textCaption">
         {format(new Date(meta.date), 'PPP')} (
         {formatDistanceToNow(new Date(meta.date), { addSuffix: true })})
       </Text>
+
+      <Box my={3} />
 
       <Markdown>{content}</Markdown>
     </>
