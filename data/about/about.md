@@ -9,8 +9,8 @@
 ## what I enjoy
 
 - **using things** that are solving my problems.
-- **building things** that are solving the problems I empathize with.
-- **creating systems** based on iteration, supported by the literature and first-hand experience.
+- **building things** that are solving problems I empathize with.
+- **creating systems** based on iteration, supported by literature and first-hand experience.
 - **consistently changing** jobs, teams, projects, whatever. getting better at knowing when to quit and find somewhere else where I can be *more* useful.
 - **connecting the people I know** and blissfully watching them help out each other.
 
