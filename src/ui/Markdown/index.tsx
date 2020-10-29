@@ -2,12 +2,12 @@ import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import Paragraph from '../Paragraph'
+import MDHeading from './MDHeading'
 
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
 const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 const MDImage = dynamic(() => import('./MDImage'))
 const MDLink = dynamic(() => import('./MDLink'))
-const MDHeading = dynamic(() => import('./MDHeading'))
 const MDQuote = dynamic(() => import('./MDQuote'))
 
 const Markdown: React.FC<{ children: string }> = ({ children }) => (
