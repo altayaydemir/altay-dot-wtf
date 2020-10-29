@@ -123,8 +123,6 @@ If you’re focusing on growth, growth is what will happen . But if you focus in
 
 All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.
 
----
-
-**Extras**
+## Extras
 
 - Podcast: [https://ofone.co/company-of-one-podcast/](https://ofone.co/company-of-one-podcast/)
