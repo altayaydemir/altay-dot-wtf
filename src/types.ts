@@ -1,23 +1,54 @@
-export type BasicMeta = {
-  slug: string
+export type BaseMeta = {
   date: string
+  tags: string[] | undefined
 }
 
-export type NowMeta = BasicMeta
-
-export type ArticleMeta = BasicMeta & {
-  title: string
-  oneliner: string
+export type BaseContent = {
+  slug: string
+  markdown: string
 }
 
-export type MDBookMeta = BasicMeta & {
-  isbn: string
-  rating: string
+export type Home = BaseContent & {
+  type: 'home'
+  meta: undefined
 }
 
-export type BookMeta = MDBookMeta & {
-  title: string
-  coverImageURL: string
-  coverImageAspectRatio: number
-  authors: string[]
+export type About = BaseContent & {
+  type: 'about'
+  meta: undefined
 }
+
+export type Now = BaseContent & {
+  type: 'now'
+  meta: BaseMeta
+}
+
+export type Note = BaseContent & {
+  type: 'note'
+  meta: BaseMeta & {
+    title: string
+  }
+}
+
+export type Article = BaseContent & {
+  type: 'article'
+  meta: BaseMeta & {
+    title: string
+    oneliner: string
+  }
+}
+
+export type Book = BaseContent & {
+  type: 'book'
+  meta: BaseMeta & {
+    title: string
+    authors: string[]
+    coverImageURL: string
+    coverImageAspectRatio: number
+    isbn: string
+    rating: string
+  }
+}
+
+export type Content = Now | Note | Article | Book | Home | About
+export type ContentType = Content['type']

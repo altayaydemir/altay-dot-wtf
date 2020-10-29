@@ -1,24 +1,24 @@
 import { Box, Text } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-import { BookMeta } from '../types'
+import { Book } from '../types'
 
 type Props = {
-  book: BookMeta
+  bookMeta: Book['meta']
   short?: boolean
   spacing?: number | number[]
   fontSize?: number | number[]
 }
 
-const BookInfo: React.FC<Props> = ({ book, spacing, fontSize, short }) => {
+const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
   const info = [
-    { key: 'written by', value: <b>{book.authors.join(', ')}</b> },
+    { key: 'written by', value: <b>{bookMeta.authors.join(', ')}</b> },
     {
       key: 'read',
-      title: format(new Date(book.date), 'PPP'),
-      value: formatDistanceToNow(new Date(book.date), { addSuffix: true }),
+      title: format(new Date(bookMeta.date), 'PPP'),
+      value: formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true }),
     },
-    { key: 'how strongly I recommend it: ', value: <b>{book.rating}</b> },
-    { key: 'ISBN: ', value: <code>{book.isbn}</code> },
+    { key: 'how strongly I recommend it: ', value: <b>{bookMeta.rating}</b> },
+    { key: 'ISBN: ', value: <code>{bookMeta.isbn}</code> },
   ]
 
   return (

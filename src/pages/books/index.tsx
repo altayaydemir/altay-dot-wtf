@@ -8,11 +8,17 @@ import PageHeader from '../../ui/PageHeader'
 import BookCover from '../../ui/BookCover'
 import BookInfo from '../../ui/BookInfo'
 
-export const getStaticProps = async () => ({
-  props: {
-    books: sortByDate(await Promise.all(getSlugs('books').map(fetchBookMeta))),
-  },
-})
+export const getStaticProps = async () => {
+  const slugs = getSlugs('book')
+  const metas = await Promise.all(slugs.map(fetchBookMeta))
+  const books = slugs.map((slug, i) => ({ slug, ...metas[i] }))
+
+  return {
+    props: {
+      books: sortByDate(books),
+    },
+  }
+}
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ books }) => (
   <>
@@ -24,14 +30,14 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
           <Flex>
             <NextLink href={`/books/${book.slug}`} passHref>
               <a>
-                <BookCover book={book} width={96} />
+                <BookCover bookMeta={book} width={96} />
               </a>
             </NextLink>
 
             <Box margin={2} />
 
             <Box>
-              <NextLink href={`/books/${book.slug}`} passHref>
+              <NextLink href={`/books/${book}`} passHref>
                 <Link>
                   <Heading fontSize={3}>{book.title}</Heading>
                 </Link>
@@ -39,7 +45,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
 
               <Box margin={2} />
 
-              <BookInfo short book={book} fontSize={1} spacing={0} />
+              <BookInfo short bookMeta={book} fontSize={1} spacing={0} />
             </Box>
           </Flex>
         </Box>

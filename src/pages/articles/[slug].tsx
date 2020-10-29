@@ -1,35 +1,30 @@
 import { InferGetStaticPropsType } from 'next'
-import ErrorPage from 'next/error'
 import { Heading, Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-
-import { getStaticPathsFromSlugs, getStaticPropsWithMarkdownContent } from '../../common/api'
-import { ArticleMeta } from '../../types'
+import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
+import { Article } from '../../types'
 import Markdown from '../../ui/Markdown'
 
-export const getStaticPaths = getStaticPathsFromSlugs('articles')
-export const getStaticProps = getStaticPropsWithMarkdownContent<ArticleMeta>('articles')
+export const getStaticPaths = getStaticPathsFromSlugs('article')
+export const getStaticProps = getStaticPropsWithContent<Article>('article')
 
-const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  meta,
-  content,
-}) => {
-  if (!content || !meta) return <ErrorPage statusCode={404} />
+const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  if (!data) return null
 
   return (
     <>
-      <Heading>{meta.title}</Heading>
+      <Heading>{data.meta.title}</Heading>
 
       <Box my={1} />
 
       <Text fontSize={1} color="textCaption">
-        {format(new Date(meta.date), 'PPP')} (
-        {formatDistanceToNow(new Date(meta.date), { addSuffix: true })})
+        {format(new Date(data.meta.date), 'PPP')} (
+        {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })})
       </Text>
 
       <Box my={3} />
 
-      <Markdown>{content}</Markdown>
+      <Markdown>{data.markdown}</Markdown>
     </>
   )
 }

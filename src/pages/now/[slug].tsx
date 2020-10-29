@@ -1,28 +1,25 @@
 import { InferGetStaticPropsType } from 'next'
-import ErrorPage from 'next/error'
-import { getStaticPathsFromSlugs, getStaticPropsWithMarkdownContent } from '../../common/api'
-import { Heading, Box } from 'rebass'
-import { NowMeta } from '../../types'
+import { Box } from 'rebass'
+import { format, formatDistanceToNow } from 'date-fns'
+import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
+import { Now } from '../../types'
 import Markdown from '../../ui/Markdown'
+import PageHeader from '../../ui/PageHeader'
 
 export const getStaticPaths = getStaticPathsFromSlugs('now')
-export const getStaticProps = getStaticPropsWithMarkdownContent<NowMeta>('now')
+export const getStaticProps = getStaticPropsWithContent<Now>('now')
 
-const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  meta,
-  content,
-}) => {
-  if (!content || !meta) return <ErrorPage statusCode={404} />
+const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  if (!data) return null
+
+  const date = format(new Date(data.meta.date), 'MMMM yyyy')
+  const relativeDate = formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })
 
   return (
     <>
-      <Heading>
-        what I was doing around <code>{meta.slug}</code>
-      </Heading>
-
-      <Box width={1} margin={4} />
-
-      <Markdown>{content}</Markdown>
+      <PageHeader title="what I was doing around" description={`${date} (${relativeDate})`} />
+      <Box margin={4} />
+      <Markdown>{data.markdown}</Markdown>
     </>
   )
 }

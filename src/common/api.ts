@@ -1,18 +1,32 @@
+import { GetStaticProps, GetStaticPaths } from 'next'
 import { join } from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
-import imageSize from 'image-size'
-import fetch from 'node-fetch'
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { BasicMeta, BookMeta, MDBookMeta } from '../types'
+import { calculateImageAspectRatio } from './image'
+import { Book, Content, ContentType } from '../types'
 
-type ContentDirectory = 'home' | 'about' | 'now' | 'articles' | 'books'
+const getContentDirectoryForType = (type: ContentType) => {
+  switch (type) {
+    case 'article':
+      return 'articles'
+    case 'book':
+      return 'books'
+    case 'note':
+      return 'notes'
+    case 'now':
+      return 'now'
+    case 'about':
+      return 'about'
+    case 'home':
+      return 'home'
+  }
+}
 
-const getContentDirectoryPath = (contentDirectory: ContentDirectory) =>
-  join(process.cwd(), 'data', contentDirectory)
+const getContentDirectoryPath = (contentType: ContentType) =>
+  join(process.cwd(), 'data', getContentDirectoryForType(contentType))
 
-export const getSlugs = (contentDirectory: ContentDirectory) => {
-  const directory = getContentDirectoryPath(contentDirectory)
+export const getSlugs = (contentType: ContentType) => {
+  const directory = getContentDirectoryPath(contentType)
   return fs
     .readdirSync(directory, 'utf-8')
     .filter((f) => f.endsWith('.md'))
@@ -20,67 +34,44 @@ export const getSlugs = (contentDirectory: ContentDirectory) => {
     .map(([fileName]) => fileName)
 }
 
-export const getMarkdownContent = (contentDirectory: ContentDirectory, fileName: string) => {
-  const directory = getContentDirectoryPath(contentDirectory)
+const getMarkdownFile = (contentType: ContentType, fileName: string) => {
+  const directory = getContentDirectoryPath(contentType)
   return fs.readFileSync(`${directory}/${fileName}.md`, 'utf-8')
 }
 
-export const getMeta = <Meta extends { slug: string }>(
-  contentDirectory: ContentDirectory,
-  fileName: string,
-) => {
-  const markdown = getMarkdownContent(contentDirectory, fileName)
-  const { data } = matter(markdown)
-  return { ...data, slug: fileName } as Meta
+export const getMeta = <T extends Content>(contentType: ContentType, fileName: string) => {
+  const md = getMarkdownFile(contentType, fileName)
+  const { data } = matter(md)
+  return data as T['meta']
 }
 
-export const getMarkdownContentWithMeta = <Meta extends { slug: string }>(
-  contentDirectory: ContentDirectory,
-  fileName: string,
-) => {
-  const markdown = getMarkdownContent(contentDirectory, fileName)
-  const { data, content } = matter(markdown)
-  return { content, meta: { ...data, slug: fileName } as Meta }
+export const getContent = <T extends Content>(contentType: ContentType, fileName: string) => {
+  const md = getMarkdownFile(contentType, fileName)
+  const { content, data } = matter(md)
+  return { type: contentType, markdown: content, meta: data, slug: fileName } as T
 }
 
-export const getStaticPathsFromSlugs = (
-  contentDirectory: ContentDirectory,
-): GetStaticPaths => async () => ({
-  paths: getSlugs(contentDirectory).map((slug) => ({ params: { slug } })),
+export const getStaticPathsFromSlugs = (contentType: ContentType): GetStaticPaths => async () => ({
+  paths: getSlugs(contentType).map((slug) => ({ params: { slug } })),
   fallback: false,
 })
 
-export type StaticPropsWithMarkdownContent<Meta> =
-  | { meta: undefined; content: undefined }
-  | { meta: Meta; content: string }
-
-export const getStaticPropsWithMarkdownContent = <Meta extends BasicMeta>(
-  contentDirectory: ContentDirectory,
-): GetStaticProps<StaticPropsWithMarkdownContent<Meta>, { slug: string }> => async ({ params }) => {
-  const slug = getSlugs(contentDirectory).find((s) => s === params?.slug)
+export const getStaticPropsWithContent = <T extends Content>(
+  contentType: ContentType,
+): GetStaticProps<{ data: T } | { data: undefined }> => async ({ params }) => {
+  const slug = getSlugs(contentType).find((s) => s === params?.slug)
 
   if (!slug) {
-    return { props: { meta: undefined, content: undefined } }
+    return { props: { data: undefined } }
   }
 
   return {
-    props: getMarkdownContentWithMeta<Meta>(contentDirectory, slug),
+    props: { data: getContent<T>(contentType, slug) },
   }
 }
 
-const calculateImageAspectRatio = async (url: string): Promise<number | undefined> => {
-  try {
-    const response = await fetch(url)
-    const buffer = await response.buffer()
-    const { width, height } = imageSize(buffer)
-    if (width && height) return width / height
-  } catch (e) {
-    return
-  }
-}
-
-export const fetchBookMeta = async (fileName: string): Promise<BookMeta> => {
-  const meta = getMeta<MDBookMeta>('books', fileName)
+export const fetchBookMeta = async (fileName: string): Promise<Book['meta']> => {
+  const meta = getMeta<Book>('book', fileName)
   const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`)
   const json = await response.json()
   const [book] = json.items

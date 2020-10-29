@@ -1,54 +1,49 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import ErrorPage from 'next/error'
 import { Flex, Box, Heading } from 'rebass'
-import {
-  StaticPropsWithMarkdownContent,
-  getStaticPathsFromSlugs,
-  getMarkdownContentWithMeta,
-  fetchBookMeta,
-} from '../../common/api'
-import { BookMeta } from '../../types'
+import { getStaticPathsFromSlugs, getContent, fetchBookMeta } from '../../common/api'
+import { Book } from '../../types'
 import BookCover from '../../ui/BookCover'
 import BookInfo from '../../ui/BookInfo'
 import Markdown from '../../ui/Markdown'
 
-export const getStaticPaths = getStaticPathsFromSlugs('books')
+export const getStaticPaths = getStaticPathsFromSlugs('book')
+
 export const getStaticProps: GetStaticProps<
-  StaticPropsWithMarkdownContent<BookMeta>,
+  { data: undefined } | { data: Book },
   { slug: string }
 > = async ({ params }) => {
   if (!params?.slug) {
-    return { props: { meta: undefined, content: undefined } }
+    return { props: { data: undefined } }
   }
 
-  return {
-    props: {
-      meta: await fetchBookMeta(params.slug),
-      content: getMarkdownContentWithMeta('books', params.slug).content,
-    },
-  }
+  const data = getContent<Book>('book', params.slug)
+  const meta = await fetchBookMeta(params.slug)
+
+  return { props: { data: { ...data, meta } } }
 }
 
-const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ meta, content }) => {
-  if (!content || !meta) return <ErrorPage statusCode={404} />
+const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  if (!data) return null
 
   return (
     <>
       <Flex>
-        <BookCover book={meta} />
+        <BookCover bookMeta={data.meta} />
 
         <Box margin={2} />
 
         <Box>
-          <Heading>{meta.title}</Heading>
+          <Heading>{data.meta.title}</Heading>
+
           <Box my={2} />
-          <BookInfo book={meta} spacing={1} />
+
+          <BookInfo bookMeta={data.meta} spacing={1} />
         </Box>
       </Flex>
 
       <Box margin={3} />
 
-      <Markdown>{content}</Markdown>
+      <Markdown>{data.markdown}</Markdown>
     </>
   )
 }

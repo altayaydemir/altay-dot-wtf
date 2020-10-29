@@ -5,16 +5,20 @@ import { Box, Text } from 'rebass'
 import Link from '../../ui/Link'
 import { getMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
-import { ArticleMeta } from '../../types'
+import { Article } from '../../types'
 import PageHeader from '../../ui/PageHeader'
 
-export const getStaticProps = async () => ({
-  props: {
-    articles: sortByDate(
-      getSlugs('articles').map((article) => getMeta<ArticleMeta>('articles', article)),
-    ),
-  },
-})
+export const getStaticProps = async () => {
+  const slugs = getSlugs('article')
+  const metas = slugs.map((slug) => getMeta<Article>('article', slug))
+  const articles = slugs.map((slug, i) => ({ slug, ...metas[i] }))
+
+  return {
+    props: {
+      articles: sortByDate(articles),
+    },
+  }
+}
 
 const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ articles }) => (
   <>
