@@ -17,13 +17,18 @@ const NavLink: React.FC<NavLinkProps> = forwardRef(({ active, ...rest }, ref) =>
 
   return (
     <Link
+      ref={ref}
       variant="nav"
       paddingX={[1, 1, 2]}
       paddingY={0}
-      style={style}
-      ref={ref}
-      {...rest}
       fontSize={[0, 1, 2]}
+      style={style}
+      css={`
+        &:hover {
+          text-decoration: underline;
+        }
+      `}
+      {...rest}
     />
   )
 })
