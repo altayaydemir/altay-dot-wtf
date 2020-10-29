@@ -56,9 +56,8 @@ The niche market approach
 
 ### Brainstorming Niches
 
-**Look at all areas in your life:** hobbies, interests and work experience.
-
-**Look at list of occupations.**
+- **Look at all areas in your life:** hobbies, interests and work experience.
+- **Look at list of occupations.**
 
 ### Evaluating Niches
 
@@ -89,7 +88,7 @@ The extremely surprising product success triangle:
 - Add 10-20 hours for DB design depending on complexity
 - Estimate back-end functionality such as payment, scheduled tasks etc. Add 10-40 hours each.
 
-If the path to 1.0 is between 200 and 400 hours, it good. If under 200, take a step back and check if it's a tool or a full blown application, which provides real value and easier to charge.
+If the path to 1.0 is between 200 and 400 hours, it's good. If under 200, take a step back and check if it's a tool or a full blown application, which provides real value and easier to charge.
 
 If over 400, eliminate the functionality.
 

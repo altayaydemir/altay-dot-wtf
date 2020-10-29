@@ -10,7 +10,9 @@ In general, it gives bits of advice around professionalism and indicates that we
 
 ### 1. It's your life
 
-We have agency! \*\*The industry gives us opportunity to choose our work environment, field and technologies. As Martin Fowler says:
+We have agency! The industry gives us opportunity to choose our work environment, field and technologies.
+
+As Martin Fowler says:
 
 > You can change your organization or change your organization.
 

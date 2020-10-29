@@ -7,7 +7,7 @@ _Managing UI state is hard._
 
 Or we make it hard for ourselves by not paying attention.
 
-How?
+_How?_ 🤔
 
 We have this React component fetches the list of something and renders accordingly.
 
@@ -19,10 +19,10 @@ class List extends React.Component {
     this.setState({ loading: true })
 
     try {
-      const response = await api.getData()
-      this.setState({ loading: false, data: response.data })
-    } catch (e) {
-      this.setState({ loading: false, error: e.message })
+      const { data } = await api.getData()
+      this.setState({ loading: false, data })
+    } catch (error) {
+      this.setState({ loading: false, error })
     }
   }
 
@@ -32,7 +32,12 @@ class List extends React.Component {
     }
 
     if (this.state.error) {
-      return <p>Error: {this.state.error}</p>
+      return (
+        <p>
+          Sorry, you broke the app. <br />
+          Here's what our server says: {this.state.error.message}
+        </p>
+      )
     }
 
     return (
@@ -78,22 +83,26 @@ class List extends React.Component {
     this.setState({ loading: true, error: null })
 
     try {
-      const response = await api.getData()
-      this.setState({ loading: false, data: response.data })
-    } catch (e) {
-      this.setState({ loading: false, error: e.message })
+      const { data } = await api.getData()
+      this.setState({ loading: false, data })
+    } catch (error) {
+      this.setState({ loading: false, error })
     }
   }
 
   render() {
     if (this.state.loading) {
-      <p>Loading...</p>
+      return <p>Loading...</p>
     }
 
     if (this.state.error) {
       return (
         <div>
-          <p>Error: {this.state.error}</p>
+          <p>
+            Sorry, you broke the app. <br />
+            Here's what our server says: {this.state.error.message}
+          </p>
+
           <button type="button" onClick={this.fetchData}>
             Try again
           </button>
@@ -102,7 +111,11 @@ class List extends React.Component {
     }
 
     return (
-      // render list
+      <ul>
+        {this.state.data.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
     )
   }
 }
@@ -120,11 +133,12 @@ class List extends React.Component {
 
   fetchData = async () => {
     // this.setState({ loading: true, error: null }) Gone 👋
+
     try {
-      const response = await api.getData()
-      this.setState({ loading: false, data: response.data })
-    } catch (e) {
-      this.setState({ loading: false, error: e.message })
+      const { data } = await api.getData()
+      this.setState({ loading: false, data })
+    } catch (error) {
+      this.setState({ loading: false, error })
     }
   }
 
@@ -152,9 +166,9 @@ class List extends React.Component {
 - Why does our state have `data: []` while loading is `true`?
 - Why is that possible to have `data` and `error` at the same time?
 
-> 👨🏻‍💻 : "_Dear state, pls stop lying._"
+> 👨🏻‍💻 : "Dear state, pls stop lying."
 
-> 🤖 : "_Dear programmer, pls help._"
+> 🤖 : "Dear programmer, pls help?"
 
 ## How types can help us to make better choices
 
@@ -195,10 +209,10 @@ class List extends React.Component {
 
   async fetchData() {
     try {
-      const response = await api.getData()
-      this.setState({ type: 'success', data: response.data })
-    } catch (e) {
-      this.setState({ type: 'failure', error: e.message })
+      const { data } = await api.getData()
+      this.setState({ type: 'success', data })
+    } catch (error) {
+      this.setState({ type: 'failure', error })
     }
   }
 
@@ -214,7 +228,11 @@ class List extends React.Component {
       case 'failure':
         return (
           <div>
-            <p>Error: {this.state.error}</p>
+            <p>
+              Sorry, you broke the app. <br />
+              Here's what our server says: {this.state.error.message}
+            </p>
+
             <button type="button" onClick={this.onRetry}>
               Try again
             </button>
@@ -248,7 +266,7 @@ switch (this.state.type) {
     return <p>Loading: {this.state.data[0].id}</p> // NOPE!
 ```
 
-> 🤖 : "_Dear programmer, good luck with the migration._"
+> 🤖 : "Dear programmer, good luck with the migration."
 
 ---
 

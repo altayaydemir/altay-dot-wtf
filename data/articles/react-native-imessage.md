@@ -3,7 +3,7 @@ title: We built an iMessage Extension for our React Native app  —  now you
 date: '2019-04-14'
 ---
 
-Originially published in [Medium](https://medium.com/lisk-blog/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-495beb8e6047), [dev.to](https://dev.to/altay/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-2387) and [dzone](https://dzone.com/articles/imessenger).
+Originially published in [medium](https://medium.com/lisk-blog/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-495beb8e6047), [dev.to](https://dev.to/altay/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-2387) and [dzone](https://dzone.com/articles/imessenger).
 
 ---
 

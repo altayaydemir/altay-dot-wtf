@@ -18,7 +18,7 @@ A company of one isn’t simply a practicing freelancer either. While freelancin
 
 Just as Michael Pollan’s food ideology is summarized in three simple rules—“eat food, not too much, mostly plants”—the “company of one” model can be laid out in a similar fashion: “start small, define growth, and keep learning.”
 
-## Ch1: Defining Company of One
+## Chapter 1: Defining Company of One
 
 A company of one is simply a business that questions growth.
 
@@ -49,7 +49,7 @@ Four typical traits of all companies of one
 
 - Start without automation or infrastructure or overhead. Start by helping one customer. Then another. This puts your focus on helping people immediately with what you’ve got available to you right now. Work on things like sales funnels and automation when it no longer makes sense to personalize your interactions with your customers in surprising and delightful ways.
 
-## Ch2: Staying Small as an End Goal
+## Chapter 2: Staying Small as an End Goal
 
 Whether your audience is ten people, a hundred people, or even a thousand people, if you’re not doing right by them, right now, nothing you do regarding growth or marketing will make a lick of difference. Make sure you’re listening to, communicating with, and helping the people who are already paying attention to you.
 
@@ -57,7 +57,7 @@ Part of Sean’s customer retention strategy involves sending his customers a bo
 
 When you hire employees, you’re responsible for them. You’re their source of income that goes toward paying their mortgages, feeding their families, and even sending their children to college. That’s a heavy responsibility.
 
-## Ch3: What’s Required to Lead
+## Chapter 3: What’s Required to Lead
 
 Introverted Leaders: a quieter, calmer leader is more likely to listen carefully, stay very focused, and not be afraid to work for long stretches of time without interruption. And they are able to lead a team of people who can do the same.
 
@@ -65,23 +65,23 @@ Introverted Leaders: a quieter, calmer leader is more likely to listen carefully
 
 Historian Henry Adams stated that power is a tumor that ends up killing its victims’ sympathies.
 
-## Ch4: Growing a Company That Doesn’t Grow
+## Chapter 4: Growing a Company That Doesn’t Grow
 
 Churn is what happens when existing customers decide they don’t want to be customers anymore. So the revenue they generated needs to be replaced with revenue from new customers. If your churn is higher than your user acquisition rate, then you’re in a downward spiral.
 
 We often think that we need to have everything in place—all the systems, all the automations, all the processes—to be ready to launch a digital product. We want everything all polished and perfect before we hit “publish.” But most of the time this doesn’t happen. Most of the time, in fact, waiting until everything is totally perfect can only hurt or delay your launch.
 
-## Ch5: Determining the Right Mind-Set
+## Chapter 5: Determining the Right Mind-Set
 
 When you focus on solving problems or on making a difference, passion may follow, because you’re actually involved in the work you’re doing instead of just dreaming that you might be passionate about something.
 
-## Ch6: Personality Matters
+## Chapter 6: Personality Matters
 
 The best marketing is never just about selling a product or service, but about taking a stand—showing an audience why they should believe in what you’re marketing enough to want it at any cost, simply because they agree with what you’re doing.
 
 **Guy Kawasaki believes, we should create products that make specifically identified groups of people very happy and ignore everyone else.**
 
-## Ch7: The One Customer
+## Chapter 7: The One Customer
 
 You don’t get referrals by just meeting the standard expectations of customer service—people rarely find it worth mentioning to others that a company did just enough to help them but nothing more. You have to do much more than that to evangelize customers if you want them to talk about your company favorably. A great example is a now-infamous story from the tech world about a customer service call to RackSpace, an enterprise-level cloud hosting provider. The call center rep heard someone in the background of a support call mention that he was hungry and wonder about ordering something. She quietly put the customer on hold, ordered a pizza to be delivered to the address she had on file, and went back to assisting the customer with his problem. Twenty minutes later, still on the phone with the customer, she heard a knock in the background and told him to go answer the door, saying, “It’s your pizza.” The pleasant unexpected experience led to not only a very happy (and full) customer but also a story that would be shared thousands of times online. This is the kind of customer service that builds reciprocity: your customer gets something unexpected and then feels the need to help your business, not only by remaining loyal but also by telling others.
 
@@ -91,11 +91,11 @@ You have to own your mistakes—even those caused by someone else—by taking pe
 
 Acknowledgment of fault is powerful. It shows empathy, a willingness to own the problem, and a desire to then fix it. And as the studies cited here all found, apologizing effectively can cost dramatically less than a lawsuit or a refund.
 
-## Ch8: Scalable Systems
+## Chapter 8: Scalable Systems
 
 Real-time collaboration can be very useful when a whole team is required to brainstorm or solve a problem together, but it can also be completely distracting if it’s expected most of the time.
 
-## Ch9: Teach Everything You Know
+## Chapter 9: Teach Everything You Know
 
 Lawyer Brian: freely sharing information with them on a weekly basis proved fruitful: because he was writing educational content, people trusted his expertise and then wanted to hire, not just any lawyer, but the person who was sharing the information they needed.
 
@@ -103,25 +103,27 @@ Ideas alone are worthless, execution is the only valid currency in business.
 
 It’s not enough to just tell people you’re an authority—you’ve got to demonstrate your actual expertise by sharing what you know and teaching others. Creating a relationship with an audience that sees you as a teacher sets you up to be perceived as the domain expert on the subject matter.
 
-## Ch10: Properly Utilizing Trust and Scale
+## Chapter 10: Properly Utilizing Trust and Scale
 
 **Trust by Proxy:** According to Nielsen, 92 percent of consumers trust recommendations from family or friends over any other form of advertising.
 
 If you ask for a testimonial as soon as a project is finished, the client has rarely had enough time to collect any results-based data. By creating a schedule for following up with contented clients, you can turn referrals into a real strategy instead of simply refreshing your inbox and hoping each day that one will come in.
 
-## Ch11: Launching and Iterating in Tiny Steps
+## Chapter 11: Launching and Iterating in Tiny Steps
 
 Minimum Viable Profit
 
 If you’re overvaluing your plan because it’s your plan (known as the “endowment effect”), then you should probably quit.
 
-## Ch12: The Hidden Value of Relationships
+## Chapter 12: The Hidden Value of Relationships
 
 If you’re focusing on growth, growth is what will happen . But if you focus instead on relationships that turn into long - term customers and sales , that’s what will happen instead .
 
-## Ch13: Starting a Company of One—My Story
+## Chapter 13: Starting a Company of One—My Story
 
 All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.
+
+---
 
 **Extras**
 
