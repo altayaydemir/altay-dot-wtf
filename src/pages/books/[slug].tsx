@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Flex, Box, Heading } from 'rebass'
-import { getStaticPathsFromSlugs, getContent, fetchBookMeta } from '../../common/api'
+import { getStaticPathsFromSlugs, getContent, getBookMeta } from '../../common/api'
 import { Book } from '../../types'
 import BookCover from '../../ui/BookCover'
 import BookInfo from '../../ui/BookInfo'
@@ -17,7 +17,7 @@ export const getStaticProps: GetStaticProps<
   }
 
   const data = getContent<Book>('book', params.slug)
-  const meta = await fetchBookMeta(params.slug)
+  const meta = await getBookMeta(params.slug)
 
   return { props: { data: { ...data, meta } } }
 }

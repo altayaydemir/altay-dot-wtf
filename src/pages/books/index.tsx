@@ -2,7 +2,7 @@ import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { Heading, Box, Flex } from 'rebass'
 import Link from '../../ui/Link'
-import { fetchBookMeta, getSlugs } from '../../common/api'
+import { getBookMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
 import PageHeader from '../../ui/PageHeader'
 import BookCover from '../../ui/BookCover'
@@ -10,7 +10,7 @@ import BookInfo from '../../ui/BookInfo'
 
 export const getStaticProps = async () => {
   const slugs = getSlugs('book')
-  const metas = await Promise.all(slugs.map(fetchBookMeta))
+  const metas = await Promise.all(slugs.map(getBookMeta))
   const books = slugs.map((slug, i) => ({ slug, ...metas[i] }))
 
   return {
