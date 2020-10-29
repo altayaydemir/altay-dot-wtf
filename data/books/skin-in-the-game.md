@@ -1,7 +1,7 @@
 ---
 isbn: '042528462X'
 date: '2019-01-15'
-rating: '7/10'
+rating: '6/10'
 ---
 
 ## Book 1: Introduction
