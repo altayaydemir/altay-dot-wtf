@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import ErrorPage from 'next/error'
-import { Flex, Box, Heading, Text } from 'rebass'
+import { Flex, Box, Heading } from 'rebass'
 import {
   StaticPropsWithMarkdownContent,
   getStaticPathsFromSlugs,
@@ -36,7 +36,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ me
   return (
     <>
       <Flex>
-        <BookCover title={meta.title} src={meta.coverImage} />
+        <BookCover book={meta} />
 
         <Box margin={2} />
 

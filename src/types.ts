@@ -16,6 +16,7 @@ export type MDBookMeta = BasicMeta & {
 
 export type BookMeta = MDBookMeta & {
   title: string
-  coverImage: string
+  coverImageURL: string
+  coverImageAspectRatio: number
   authors: string[]
 }

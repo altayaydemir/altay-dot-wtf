@@ -24,7 +24,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
           <Flex>
             <NextLink href={`/books/${book.slug}`} passHref>
               <a>
-                <BookCover title={book.title} src={book.coverImage} width={96} />
+                <BookCover book={book} width={96} />
               </a>
             </NextLink>
 

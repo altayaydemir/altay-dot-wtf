@@ -15,7 +15,7 @@ const colors = {
   textInlineCode: '#EB5757',
   text: '#000',
   textGray: '#333',
-  border: '#ccc',
+  border: '#ededed',
 } as const
 
 export type Theme = BaseTheme & { dark: boolean; colors: typeof colors }
