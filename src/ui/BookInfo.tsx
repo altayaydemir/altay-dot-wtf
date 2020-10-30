@@ -1,5 +1,6 @@
 import { Box, Text } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
+import Link from './Link'
 import { Book } from '../types'
 
 type Props = {
@@ -18,7 +19,21 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
       value: formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true }),
     },
     { key: 'how strongly I recommend it: ', value: <b>{bookMeta.rating}</b> },
-    { key: 'ISBN: ', value: <code>{bookMeta.isbn}</code> },
+    {
+      key: 'ISBN: ',
+      value: (
+        <Link
+          title="Open Amazon page"
+          href={`https://amazon.com/dp/${bookMeta.isbn}`}
+          target="_blank"
+          rel="noopener"
+          color="textCaption"
+          fontSize={1}
+        >
+          <code>{bookMeta.isbn}</code>
+        </Link>
+      ),
+    },
   ]
 
   return (
