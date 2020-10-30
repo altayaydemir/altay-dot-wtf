@@ -11,7 +11,7 @@ type Props = {
 const PageHeader: React.FC<Props> = ({ title, description, metaDescription }) => (
   <>
     {metaDescription || description ? (
-      <NextSeo description={metaDescription || description} />
+      <NextSeo title={title} description={metaDescription || description} />
     ) : null}
 
     <Heading>{title}</Heading>
