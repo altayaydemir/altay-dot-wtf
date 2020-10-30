@@ -31,7 +31,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <>
       <PageHeader
         title="what am I doing now"
-        description={`this is a [now page](https://nownownow.com) inspired from [Derek Sivers](https://sive.rs) as most of the things around here. I'm trying to update this page every month and keep the history.`}
+        description={`this is a [now page](https://nownownow.com) inspired from [Derek Sivers](https://sive.rs) as most of the things around here. I'm trying to structure this page as monthly entries and keep the history.`}
         metaDescription={`what am I doing as of ${formattedDate}`}
       />
 
