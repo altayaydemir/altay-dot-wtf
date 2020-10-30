@@ -2,6 +2,9 @@
 isbn: '1680502859'
 date: '2020-09-08'
 rating: '7/10'
+tags:
+  - software
+  - elm
 ---
 
 There is [a Github repository](https://github.com/altayaydemir/programming-elm) for the stuff I built while following this book.

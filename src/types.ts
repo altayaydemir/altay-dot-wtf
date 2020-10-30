@@ -52,3 +52,4 @@ export type Book = BaseContent & {
 
 export type Content = Now | Note | Article | Book | Home | About
 export type ContentType = Content['type']
+export type TaggedContent = Note | Article | Book

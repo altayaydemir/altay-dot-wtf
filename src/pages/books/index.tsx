@@ -37,7 +37,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
             <Box margin={2} />
 
             <Box>
-              <NextLink href={`/books/${book}`} passHref>
+              <NextLink href={`/books/${book.slug}`} passHref>
                 <Link>
                   <Heading fontSize={3}>{book.title}</Heading>
                 </Link>

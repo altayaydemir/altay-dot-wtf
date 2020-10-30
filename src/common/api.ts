@@ -3,7 +3,7 @@ import { join } from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
 import { calculateImageAspectRatio } from './image'
-import { Book, Content, ContentType } from '../types'
+import { Book, Content, ContentType, TaggedContent } from '../types'
 
 const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
@@ -92,3 +92,31 @@ export const getStaticPropsWithContent = <T extends Content>(
     props: { data: getContent<T>(contentType, slug) },
   }
 }
+
+const TAGGED_CONTENT_TYPES: ContentType[] = ['article', 'book']
+
+const getSlugsAndMetaByContentType = (contentType: ContentType) =>
+  getSlugs(contentType).map((slug) => ({
+    type: contentType,
+    slug,
+    meta: getMeta(contentType, slug),
+  }))
+
+export const getAllTags = () => {
+  const tags = TAGGED_CONTENT_TYPES.map(getSlugsAndMetaByContentType)
+    .flat()
+    .map(({ meta }) => meta?.tags || [])
+    .filter((tags) => tags.length)
+    .flat()
+    .reduce<Set<string>>((tags, tag) => {
+      if (!tags.has(tag)) tags.add(tag)
+      return tags
+    }, new Set())
+
+  return Array.from(tags)
+}
+
+export const getContentsByTag = (tag: string) =>
+  TAGGED_CONTENT_TYPES.map(getSlugsAndMetaByContentType)
+    .flat()
+    .filter(({ meta }) => meta?.tags?.includes(tag)) as TaggedContent[]
