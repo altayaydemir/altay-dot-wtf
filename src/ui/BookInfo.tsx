@@ -1,5 +1,6 @@
 import { Box, Text } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
+import { GoLinkExternal } from 'react-icons/go'
 import Link from './Link'
 import { Book } from '../types'
 
@@ -31,6 +32,10 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
           fontSize={1}
         >
           <code>{bookMeta.isbn}</code>
+
+          <Text display="inline" fontSize={0}>
+            <GoLinkExternal />
+          </Text>
         </Link>
       ),
     },

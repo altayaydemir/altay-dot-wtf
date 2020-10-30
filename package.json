@@ -24,6 +24,7 @@
     "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^3.11.0",
     "react-markdown": "^5.0.2",
     "react-medium-image-zoom": "^4.3.1",
     "react-syntax-highlighter": "^15.2.1",

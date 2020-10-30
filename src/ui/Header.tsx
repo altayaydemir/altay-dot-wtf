@@ -37,7 +37,7 @@ const Header: React.FC = () => {
     <Box>
       <Flex alignItems="flex-end" justifyContent="space-between">
         <Box>
-          <NextLink href="/">
+          <NextLink href="/" passHref>
             <a style={{ textDecoration: 'none', color: 'initial' }}>
               <Heading fontSize={[2, 3, 4]}>{title}</Heading>
             </a>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         <Box>
           {links.map((link, index) => (
             <Box key={link.href} display="inline">
-              <NextLink href={link.href}>
+              <NextLink href={link.href} passHref>
                 <NavLink active={router.pathname.includes(link.href)}>{link.label}</NavLink>
               </NextLink>
 
