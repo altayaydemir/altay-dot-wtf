@@ -3,7 +3,7 @@ isbn: '1416572295'
 date: '2019-01-06'
 rating: '8/10'
 tags:
-  - quantum-physics
+  - physics
 ---
 
 ## The Copenhagen Interpretation

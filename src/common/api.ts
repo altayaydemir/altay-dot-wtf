@@ -52,14 +52,16 @@ export const getMeta = <T extends Content>(contentType: ContentType, fileName: s
 
 export const getBookMeta = async (fileName: string): Promise<Book['meta']> => {
   const meta = getMeta<Book>('book', fileName)
-  const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`)
-  const json = await response.json()
-  const [book] = json.items
+  const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`
 
-  if (!book) {
-    throw new Error(`Could not fetch meta for book: ${fileName}`)
+  const response = await fetch(url)
+  const json = await response.json()
+
+  if (!json || !json.totalItems) {
+    throw new Error(`Could not fetch meta for book: ${fileName} - ${url}`)
   }
 
+  const [book] = json.items
   const FALLBACK_ASPECT_RATIO = 0.66
   const coverImageURL = book.volumeInfo.imageLinks.thumbnail.replace('http://', 'https://')
   const aspectRatio = (await calculateImageAspectRatio(coverImageURL)) || FALLBACK_ASPECT_RATIO
