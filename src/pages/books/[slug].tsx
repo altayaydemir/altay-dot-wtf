@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsFromSlugs, getContent, getBookMeta } from '../../common/api'
 import { Book } from '../../types'
@@ -29,6 +30,13 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
   return (
     <>
       <Flex>
+        <NextSeo
+          title={data.meta.title}
+          description={`my notes from "${data.meta.title}", written by ${data.meta.authors.join(
+            ', ',
+          )}`}
+        />
+
         <BookCover bookMeta={data.meta} />
 
         <Box margin={2} />

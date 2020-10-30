@@ -12,12 +12,16 @@ export const getStaticProps = getStaticPropsWithContent<Now>('now')
 const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null
 
-  const date = format(new Date(data.meta.date), 'MMMM yyyy')
+  const formattedDate = format(new Date(data.meta.date), 'MMMM yyyy')
   const relativeDate = formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })
 
   return (
     <>
-      <PageHeader title="what I was doing around" description={`${date} (${relativeDate})`} />
+      <PageHeader
+        title="what I was doing around"
+        description={`${formattedDate} (${relativeDate})`}
+        metaDescription={`what I was doing around ${formattedDate}`}
+      />
       <Box margin={4} />
       <Markdown>{data.markdown}</Markdown>
     </>

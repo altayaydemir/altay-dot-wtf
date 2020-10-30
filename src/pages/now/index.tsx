@@ -24,35 +24,40 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   archiveItems,
   markdown,
   meta,
-}) => (
-  <>
-    <PageHeader
-      title="what am I doing now"
-      description={`this is a [now page](https://nownownow.com) inspired from [Derek Sivers](https://sive.rs) as most of the things around here. I'm trying to update this page every month and keep the history.`}
-    />
+}) => {
+  const formattedDate = format(new Date(meta.date), 'PPP')
 
-    <Box margin={4} />
+  return (
+    <>
+      <PageHeader
+        title="what am I doing now"
+        description={`this is a [now page](https://nownownow.com) inspired from [Derek Sivers](https://sive.rs) as most of the things around here. I'm trying to update this page every month and keep the history.`}
+        metaDescription={`what am I doing as of ${formattedDate}`}
+      />
 
-    <Markdown>{markdown}</Markdown>
+      <Box margin={4} />
 
-    <Box margin={4} />
+      <Markdown>{markdown}</Markdown>
 
-    <Text fontSize={0}>Last updated at {format(new Date(meta.date), 'PPP')}</Text>
+      <Box margin={4} />
 
-    {archiveItems.length > 1 ? (
-      <>
-        <h4>archive:</h4>
+      <Text fontSize={0}>Last updated at {formattedDate}</Text>
 
-        <ul>
-          {archiveItems.map((i) => (
-            <li key={i}>
-              <a href={`/now/${i}`}>{i}</a>
-            </li>
-          ))}
-        </ul>
-      </>
-    ) : null}
-  </>
-)
+      {archiveItems.length > 1 ? (
+        <>
+          <h4>archive:</h4>
+
+          <ul>
+            {archiveItems.map((i) => (
+              <li key={i}>
+                <a href={`/now/${i}`}>{i}</a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+    </>
+  )
+}
 
 export default NowPage

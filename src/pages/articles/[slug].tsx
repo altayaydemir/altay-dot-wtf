@@ -1,4 +1,5 @@
 import { InferGetStaticPropsType } from 'next'
+import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
@@ -14,6 +15,8 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
   return (
     <>
+      <NextSeo title={data.meta.title} description={data.meta.oneliner} />
+
       <Heading fontSize={[3, 4]}>{data.meta.title}</Heading>
 
       <Box my={1} />
