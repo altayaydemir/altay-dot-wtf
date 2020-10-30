@@ -13,15 +13,17 @@ const Tags: React.FC<Props> = ({ tags, fontSize = 0, spacing = 1 }) => {
 
   return (
     <Box display="inline-block">
-      {tags.map((tag) => (
-        <NextLink key={tag} href={`/tags/${tag}`} passHref>
-          <Link color="tag">
-            <Text fontSize={fontSize} display="inline-block" marginRight={spacing}>
-              #{tag}
-            </Text>
-          </Link>
-        </NextLink>
-      ))}
+      {tags
+        .sort((a, b) => a.localeCompare(b))
+        .map((tag) => (
+          <NextLink key={tag} href={`/tags/${tag}`} passHref>
+            <Link color="tag">
+              <Text fontSize={fontSize} display="inline-block" marginRight={spacing}>
+                #{tag}
+              </Text>
+            </Link>
+          </NextLink>
+        ))}
     </Box>
   )
 }

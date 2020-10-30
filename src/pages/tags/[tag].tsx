@@ -44,10 +44,10 @@ const getDescription = (count: number) => {
   }
 
   if (count === 1) {
-    return `hmm, there is only one thing related to this.`
+    return `there is only one thing related to this.`
   }
 
-  return `nice, there are ${count} things related to this.`
+  return `there are ${count} things related to this.`
 }
 
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
