@@ -20,8 +20,6 @@ A self-funded entrepreneur is a
 - Merges existing technical knowledge with online marketing knowledge
 - Cross between a developer, a webmaster, and a marketer
 
-### Goals, purposes, etc.
-
 > If you have a product idea, but you didn't do your homework for the market, that means it's a project, not a product.
 
 Some random research findings from some random Dominican University reveal the significant contribution of the three factors for achieving goals:
