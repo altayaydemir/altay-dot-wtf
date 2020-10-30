@@ -2,6 +2,7 @@
 isbn: '0500021740'
 date: '2020-08-22'
 rating: '10/10'
+oneliner: 'A typeface is an abstract idea, a design that does not take any physical form, while a font is the physical manifestation of a typeface.'
 tags:
   - graphic-design
   - typography

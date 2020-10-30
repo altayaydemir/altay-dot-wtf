@@ -2,6 +2,7 @@
 isbn: '0241184835'
 date: '2018-12-23'
 rating: '8/10'
+oneliner: 'Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning.'
 tags:
   - product-design
   - habits

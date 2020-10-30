@@ -2,6 +2,7 @@
 isbn: '0735211299'
 date: '2019-01-16'
 rating: '10/10'
+oneliner: "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done."
 tags:
   - productivity
   - habits

@@ -2,6 +2,7 @@
 isbn: '1328972356'
 date: '2019-01-20'
 rating: '9/10'
+oneliner: 'All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.'
 tags:
   - business
   - stay-small

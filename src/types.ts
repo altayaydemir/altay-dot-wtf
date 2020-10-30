@@ -42,6 +42,7 @@ export type Book = BaseContent & {
   type: 'book'
   meta: BaseMeta & {
     title: string
+    oneliner: string
     authors: string[]
     coverImageURL: string
     coverImageAspectRatio: number

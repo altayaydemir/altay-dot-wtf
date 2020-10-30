@@ -2,6 +2,7 @@
 isbn: '0201409550'
 date: '2018-12-22'
 rating: '8/10'
+oneliner: 'Observation, reason, and experiment make up what we call the scientific method.'
 tags:
   - physics
 ---

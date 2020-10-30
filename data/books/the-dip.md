@@ -2,6 +2,7 @@
 isbn: '0749928301'
 date: '2020-08-29'
 rating: '8/10'
+oneliner: "'Quitters never win and winners never quit' is a bad advice. Winners quit all the time. They just quit the right stuff at the right time."
 tags:
   - seth-godin
   - quitting
@@ -124,7 +125,7 @@ It's easy to be seduced by the new money and the rush to the fresh. The problem 
 
 ### Quitting in the Dip Is Usually a Short-term Decision—and a Bad One
 
-Short-terim pain has more impact on most people than long-term benefits do, which is why it's so important for us to amplify the long-term benefits of not quitting. Think about the gains you'd get along the way. It's easier to stick out a lousy class if you can picture the graduation day.
+Short-term pain has more impact on most people than long-term benefits do, which is why it's so important for us to amplify the long-term benefits of not quitting. Think about the gains you'd get along the way. It's easier to stick out a lousy class if you can picture the graduation day.
 
 ### No one Quit the Boston Marathon at Mile 25
 

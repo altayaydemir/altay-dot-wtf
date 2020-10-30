@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading, Box, Flex } from 'rebass'
+import { Heading, Box, Flex, Text } from 'rebass'
 import Link from '../../ui/Link'
 import { getBookMeta, getSlugs } from '../../common/api'
 import { sortByDate } from '../../common/utils'
@@ -30,7 +30,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
           <Flex>
             <NextLink href={`/books/${book.slug}`} passHref>
               <a>
-                <BookCover bookMeta={book} width={96} />
+                <BookCover bookMeta={book} width={120} />
               </a>
             </NextLink>
 
@@ -46,6 +46,14 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
               <Box margin={1} />
 
               <BookInfo short bookMeta={book} fontSize={1} spacing={0} />
+
+              <Box margin={2} />
+
+              {book.oneliner ? (
+                <Text fontSize={1} fontStyle="italic" sx={{ color: 'textCaption' }}>
+                  {book.oneliner}
+                </Text>
+              ) : null}
             </Box>
           </Flex>
         </Box>

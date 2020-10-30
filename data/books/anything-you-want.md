@@ -2,6 +2,7 @@
 isbn: '0241209048'
 date: '2020-10-07'
 rating: '10/10'
+oneliner: 'If you want to be useful, you can start now. Just put one percent of your vision, and you are in the game.'
 tags:
   - derek-sivers
   - business

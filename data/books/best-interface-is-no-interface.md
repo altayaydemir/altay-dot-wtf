@@ -2,6 +2,7 @@
 isbn: '9780133890334'
 date: '2020-10-19'
 rating: '8/10'
+oneliner: 'Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.'
 tags:
   - product-design
   - humane-design
@@ -11,8 +12,6 @@ tags:
 I am fond of the doze and accuracy of sarcasm in Krishna's tone, and I'm glad that he joined Google to work on the pain-points he addressed in this book.
 
 It's not a surprise many companies are already implementing some of the things he proposed, and hopefully more to come...
-
-> Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.
 
 ## Let's Make an App!
 
@@ -124,3 +123,7 @@ The information access should be limited, ephemeral, preferably within a time in
 ### Automatic
 
 It's not easy to make the whole system in a perfect automation. It's obvious there are notorious examples like `Clippy`, but look what `Siri` can achieve now. The progress is bitterly real but should not scare you.
+
+### Conclusion
+
+> Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.

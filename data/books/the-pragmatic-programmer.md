@@ -2,8 +2,10 @@
 isbn: '0135957052'
 date: '2020-08-27'
 rating: '10/10'
+oneliner: 'A dead program normally does a lot less damage than a crippled one.'
 tags:
   - software
+  - saying-no
 ---
 
 ## Chapter 1: A Pragmatic Philosophy

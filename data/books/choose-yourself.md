@@ -2,6 +2,7 @@
 isbn: '1490313370'
 date: '2018-11-05'
 rating: '7/10'
+oneliner: 'You and I have the same twenty-four hours each day. Is that how you will spend yours?'
 tags:
   - productivity
   - habits

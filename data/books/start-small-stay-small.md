@@ -2,6 +2,7 @@
 isbn: '0615373968'
 date: '2020-09-05'
 rating: '7/10'
+oneliner: 'Market comes first, marketing second, aesthetic third, and functionality a distant fourth.'
 tags:
   - business
   - stay-small
