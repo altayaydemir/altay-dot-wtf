@@ -3,8 +3,9 @@ isbn: '149205531X'
 date: '2020-08-29'
 rating: '10/10'
 tags:
-  - product-design
   - psychology
+  - product-design
+  - humane-design
 ---
 
 This book is a great reference for the complex psychological concepts behind the fundamentals of designing intuitive products and experiences.
