@@ -12,6 +12,8 @@ I am fond of the doze and accuracy of sarcasm in Krishna's tone, and I'm glad th
 
 It's not a surprise many companies are already implementing some of the things he proposed, and hopefully more to come...
 
+> Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.
+
 ## Let's Make an App!
 
 During the past decade, no matter what the topic is, we reached to a situation to wisely say:
@@ -27,11 +29,6 @@ The book has an eye-opening case-study to concretize that thought: **The BMW app
 And the most prominent outcome of this book, **questioning if we desperately need an interface to solve any problem**, shines with a predictably ingenious counter-argument:
 
 > Why can't we just use proximity sensors to automatically open the door when the driver approaches?
-
-1. A driver approaches her car
-2. She opens her car door.
-
-> Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.
 
 ## Slap an interface on it!
 
@@ -49,7 +46,7 @@ Following the "there is an app for that" mentality, we see this tactic's applica
 
 ## Addiction UX
 
-> more screens --> more ads --> more revenue
+> more screens -> more ads -> more revenue
 
 The best minds of our generation are thinking about how to make people click ads.
 
@@ -95,4 +92,35 @@ the roof when it's unbearably hot inside.
 🙆‍♂️: THX! Here's a bag of money 💰
 ```
 
-## ...
+## Principle 2: Leverage Computers Instead of Serving Them
+
+IBM Blue beat Kasparov in 97' by making a glitchy random choice. IBM stock has raised 3.6% the next day. So, supercomputers were cool back then. They should be even better now, no?
+
+Today, we have much more powerful machines in front of us, but what do they say?
+
+> Your password must be at least 18,770 characters long, and cannot repeat any of your previous 30,689 passwords.
+
+Instead of computers serving us, we try our best to satisfy the weird constraints that are non-intuitive. Okay, I want my account to be secure and safe, but can't you help me a little bit?
+
+Machines would understand each other better than any input a human being could produce. Let them communicate and resolve our issues automagically via signals and sensors:
+
+- OAuth over complicated login flows with cognitive overload.
+- Easy-to-understand washing machine modes instead of airplane cockpits.
+
+## Principle 3: Adapt to Individuals
+
+We should strive for smart systems that learn from your behaviors and adapt themselves to provide the most effortless experience—dynamically adjusted experiences over constraints.
+
+## Challanges
+
+### Privacy
+
+The information access should be limited, ephemeral, preferably within a time interval. Should be forgotten after utilisation
+
+> Be transparent on what you find from there (⬆️) and present options to forget or turn it off.
+
+![](/images/best-interface-is-no-interface/02.png)
+
+### Automatic
+
+It's not easy to make the whole system in a perfect automation. It's obvious there are notorious examples like `Clippy`, but look what `Siri` can achieve now. The progress is bitterly real but should not scare you.
