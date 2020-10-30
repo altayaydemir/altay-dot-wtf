@@ -11,6 +11,7 @@ const MAX_WIDTH = 144
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
   <Box
+    height="100%"
     sx={{ borderWidth: 1, borderStyle: 'solid', borderColor: 'border', backgroundColor: 'muted' }}
   >
     <Image

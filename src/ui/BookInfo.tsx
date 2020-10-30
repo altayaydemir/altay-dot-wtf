@@ -18,7 +18,7 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
       title: format(new Date(bookMeta.date), 'PPP'),
       value: formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true }),
     },
-    { key: 'how strongly I recommend it: ', value: <b>{bookMeta.rating}</b> },
+    { key: 'my rating: ', value: <b>{bookMeta.rating}</b> },
     {
       key: 'ISBN: ',
       value: (
@@ -41,8 +41,8 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
       {info
         .filter((i) => (short ? !i.key.includes('ISBN') : true))
         .map((i) => (
-          <Box key={i.key} marginY={spacing}>
-            <Text title={i.title} sx={{ color: 'textCaption' }} fontSize={fontSize}>
+          <Box key={i.key} sx={{ marginY: spacing }}>
+            <Text title={i.title} sx={{ color: 'textCaption', fontSize }}>
               {i.key} {i.value}
             </Text>
           </Box>

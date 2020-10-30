@@ -34,12 +34,9 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box margin={2} />
 
         <Box>
-          <Heading>{data.meta.title}</Heading>
-
+          <Heading fontSize={[1, 2, 4]}>{data.meta.title}</Heading>
           <Box my={2} />
-
-          <BookInfo bookMeta={data.meta} spacing={1} />
-
+          <BookInfo bookMeta={data.meta} spacing={[0, 0, 1]} fontSize={[0, 1, 2]} />
           <Tags tags={data.meta.tags} />
         </Box>
       </Flex>

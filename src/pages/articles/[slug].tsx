@@ -14,7 +14,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
   return (
     <>
-      <Heading>{data.meta.title}</Heading>
+      <Heading fontSize={[3, 4]}>{data.meta.title}</Heading>
 
       <Box my={1} />
 

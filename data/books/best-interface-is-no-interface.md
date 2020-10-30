@@ -117,7 +117,7 @@ We should strive for smart systems that learn from your behaviors and adapt them
 
 The information access should be limited, ephemeral, preferably within a time interval. Should be forgotten after utilisation
 
-> Be transparent on what you find from there (⬆️) and present options to forget or turn it off.
+> Be transparent on what you find from there ⬆️ and present options ⬇️ to forget or turn it off.
 
 ![](/images/best-interface-is-no-interface/02.png)
 
