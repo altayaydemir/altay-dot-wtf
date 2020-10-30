@@ -2,6 +2,8 @@
 isbn: '0135957052'
 date: '2020-08-27'
 rating: '10/10'
+tags:
+  - software
 ---
 
 ## Chapter 1: A Pragmatic Philosophy

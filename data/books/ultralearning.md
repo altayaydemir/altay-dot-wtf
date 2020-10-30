@@ -2,6 +2,9 @@
 isbn: '006285268X'
 date: '2019-11-27'
 rating: '8/10'
+tags:
+  - productivity
+  - learning
 ---
 
 ## Principle 1: Metalearning

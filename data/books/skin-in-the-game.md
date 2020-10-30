@@ -2,6 +2,8 @@
 isbn: '042528462X'
 date: '2019-01-15'
 rating: '6/10'
+tags:
+  - philosophy
 ---
 
 ## Book 1: Introduction

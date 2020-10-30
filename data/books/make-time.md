@@ -2,6 +2,9 @@
 isbn: '0593079582'
 date: '2020-09-19'
 rating: '9/10'
+tags:
+  - productivity
+  - time-management
 ---
 
 You can click-and-enlarge images, kudos to [image-zoom](https://github.com/rpearce/image-zoom) 🔍✅

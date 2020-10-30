@@ -14,6 +14,7 @@ const colors = {
   textInlineCode: '#EB5757',
   text: '#000',
   textCaption: '#4f4f4f',
+  tag: '#949494',
   border: '#ededed',
 } as const
 

@@ -2,6 +2,8 @@
 isbn: '0140135375'
 date: '2019-01-26'
 rating: '7/10'
+tags:
+  - psychology
 ---
 
 ## The Existential-Phenomenological Foundations for A Science of Persons

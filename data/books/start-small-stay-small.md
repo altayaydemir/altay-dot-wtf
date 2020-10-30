@@ -2,6 +2,9 @@
 isbn: '0615373968'
 date: '2020-09-05'
 rating: '7/10'
+tags:
+  - business
+  - stay-small
 ---
 
 ## The Chasm Between Developer and Entrepreneur

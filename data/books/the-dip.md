@@ -2,6 +2,10 @@
 isbn: '0749928301'
 date: '2020-08-29'
 rating: '8/10'
+tags:
+  - seth-godin
+  - quitting
+  - cul-de-sac
 ---
 
 ## Being the Best in the World is Seriously Underrated

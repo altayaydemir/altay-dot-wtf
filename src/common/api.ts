@@ -113,7 +113,7 @@ export const getAllTags = () => {
       return tags
     }, new Set())
 
-  return Array.from(tags)
+  return Array.from(tags).sort((a, b) => a.localeCompare(b))
 }
 
 export const getContentsByTag = (tag: string) =>

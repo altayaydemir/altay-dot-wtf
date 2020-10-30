@@ -4,6 +4,7 @@ import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
 import { Article } from '../../types'
 import Markdown from '../../ui/Markdown'
+import Tags from '../../ui/Tags'
 
 export const getStaticPaths = getStaticPathsFromSlugs('article')
 export const getStaticProps = getStaticPropsWithContent<Article>('article')
@@ -21,6 +22,8 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         {format(new Date(data.meta.date), 'PPP')} (
         {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })})
       </Text>
+
+      <Tags tags={data.meta.tags} />
 
       <Box my={3} />
 

@@ -15,11 +15,11 @@ export const getStaticPaths: GetStaticPaths = async () => ({
 })
 
 export const getStaticProps: GetStaticProps<
-  { data: undefined; tag: unknown } | { data: TaggedContentWithoutMarkdown[]; tag: string },
+  { data: undefined; tag: string } | { data: TaggedContentWithoutMarkdown[]; tag: string },
   { tag: string }
 > = async ({ params }) => {
   if (!params?.tag) {
-    return { props: { data: undefined, tag: params?.tag } }
+    return { props: { data: undefined, tag: '' } }
   }
 
   return { props: { data: getContentsByTag(params.tag), tag: params.tag } }
@@ -38,15 +38,24 @@ const getURLForContentPage = (content: TaggedContentWithoutMarkdown) => {
   }
 }
 
+const getDescription = (count: number) => {
+  if (count === 0) {
+    return `sorry, I couldn't find anything tagged with this.`
+  }
+
+  if (count === 1) {
+    return `hmm, there is only one thing related to this.`
+  }
+
+  return `nice, there are ${count} things related to this.`
+}
+
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
-  if (!data) return null
+  if (!data || !tag) return null
 
   return (
     <>
-      <PageHeader
-        title={`#${tag}`}
-        description={`I found ${data.length} things related to ${tag}.`}
-      />
+      <PageHeader title={`#${tag}`} description={getDescription(data.length)} />
 
       <Box>
         {data.map((content) => (

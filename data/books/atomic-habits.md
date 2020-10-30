@@ -2,6 +2,9 @@
 isbn: '0735211299'
 date: '2019-01-16'
 rating: '10/10'
+tags:
+  - productivity
+  - habits
 ---
 
 **Introduction: Story of James**

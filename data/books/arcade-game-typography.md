@@ -2,6 +2,9 @@
 isbn: '0500021740'
 date: '2020-08-22'
 rating: '10/10'
+tags:
+  - graphic-design
+  - typography
 ---
 
 ## Notes

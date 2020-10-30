@@ -5,6 +5,7 @@ import { Book } from '../../types'
 import BookCover from '../../ui/BookCover'
 import BookInfo from '../../ui/BookInfo'
 import Markdown from '../../ui/Markdown'
+import Tags from '../../ui/Tags'
 
 export const getStaticPaths = getStaticPathsFromSlugs('book')
 
@@ -38,6 +39,8 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
           <Box my={2} />
 
           <BookInfo bookMeta={data.meta} spacing={1} />
+
+          <Tags tags={data.meta.tags} />
         </Box>
       </Flex>
 

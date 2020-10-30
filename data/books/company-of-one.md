@@ -2,6 +2,9 @@
 isbn: '1328972356'
 date: '2019-01-20'
 rating: '9/10'
+tags:
+  - business
+  - stay-small
 ---
 
 **Prologue**
