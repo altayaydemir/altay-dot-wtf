@@ -7,7 +7,7 @@ tags:
   - time-management
 ---
 
-You can click-and-enlarge images, kudos to [image-zoom](https://github.com/rpearce/image-zoom) 🔍✅
+(You can click-and-enlarge images, kudos to [image-zoom 🔍](https://github.com/rpearce/image-zoom))
 
 ![](/images/make-time/make-time-02.jpg)
 ![](/images/make-time/make-time-03.jpg)
