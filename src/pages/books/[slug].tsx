@@ -32,7 +32,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       <Flex>
         <NextSeo
           title={`${data.meta.title} by ${data.meta.authors.join(', ')}`}
-          description={data.meta.oneliner || `my notes from "${data.meta.title}"`}
+          description={`"${data.meta.oneliner}"`}
         />
 
         <BookCover bookMeta={data.meta} />
