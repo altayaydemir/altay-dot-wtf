@@ -36,7 +36,7 @@ A great way to get started on the "sharing your work path" is to choose a topic 
 
 ### Read Obituaries
 
-Hearing the near-death experiences of people might motivate you to start doing stuff instead of wasting time.
+Reading the near-death experiences of people might motivate you to start doing stuff instead of wasting time.
 
 ## Think Process, Not Product
 
@@ -64,19 +64,19 @@ Is it useful or interesting?
 
 #### What to Share
 
-- Early stage -> Inspirations
-- Middle stage -> Methods and progress
-- Final stage -> The product
+**Early stage** -> Inspirations \
+**Middle stage** -> Methods and progress \
+**Final stage** -> The product
 
-### What to Show
+#### What to Show
 
-- ~~Selfies~~
-- Babies
-- Sunsets
-- Lunches
-- Cats, dogs, turtles, guinea pigs
-- Lattes
-- Your work
+❌ ~~Selfies~~ \
+❌ ~~Babies~~ \
+❌ ~~Sunsets~~ \
+❌ ~~Lunches~~ \
+❌ ~~Cats, dogs, turtles, guinea pigs~~\
+❌ ~~Lattes~~\
+✅ Your work
 
 ### Turn Your Flow Into Stock
 
