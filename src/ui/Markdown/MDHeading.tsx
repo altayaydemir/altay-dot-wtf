@@ -10,19 +10,14 @@ const MDHeading: React.FC<Props> = (props) => {
 
   if (props.level === 2) {
     return (
-      <>
+      <Box mt={4}>
         {heading(props)}
         <hr />
-      </>
+      </Box>
     )
   }
 
-  return (
-    <>
-      {heading(props)}
-      <Box my={1} />
-    </>
-  )
+  return <Box>{heading(props)}</Box>
 }
 
 export default MDHeading

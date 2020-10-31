@@ -30,9 +30,10 @@ Teams should have an environment based on trust where the members can safely spe
 
 Before you tell why something can't be done, listen to yourself and ask if the excuse sounds reasonable. Try to predict the questions coming from the opposite side. Instead of excuses, provide options. Don't say it why it can't be done; explain what can be done to salvage the situation.
 
-- **Challenges**
-  - How do you react when someone comes to you with a lame excuse?
-  - When you find yourself saying "I don't know", be sure to follow up with "—but I'll find out".
+**Challenges**
+
+- How do you react when someone comes to you with a lame excuse?
+- When you find yourself saying "I don't know", be sure to follow up with "—but I'll find out".
 
 ### 3. Software Entropy
 
@@ -64,26 +65,31 @@ A software is good enough when it satisfies the expectations of its users. Thus,
 
 Our knowledge is one of the expiring assets. It becomes out of date as new techniques, languages or technologies aspire. We should focus on forming habits to keep ourselves up to date.
 
-- **Building the portfolio**
-  - **Invest regularly:** set sample goals, doesn't matter how big they are!
-  - **Diversify:** try to become comfortable with different kind of technologies.
-  - **Manage risk:** don't go all-in in new tech.
-  - **Buy low, sell high:** a bit contra-dictionary to the previous item but remember what happened with React and React Native.
-  - **Review and rebalance**
-- **Goals**
-  - Learn at least one language per year
-  - Read a technical book each month
-  - Read non-technical books, too
-  - Take classes
-  - Participate in local user groups and meetups
-  - Experiment with different environments
-  - Stay current
-- **Critical Thinking**
-  - Ask the "Five Whys"
-  - Who does this benefit?
-  - What's the context?
-  - When or where would this work?
-  - Why is this a problem?
+**Building the portfolio**
+
+- **Invest regularly:** set sample goals, doesn't matter how big they are!
+- **Diversify:** try to become comfortable with different kind of technologies.
+- **Manage risk:** don't go all-in in new tech.
+- **Buy low, sell high:** a bit contra-dictionary to the previous item but remember what happened with React and React Native.
+- **Review and rebalance**
+
+**Goals**
+
+- Learn at least one language per year
+- Read a technical book each month
+- Read non-technical books, too
+- Take classes
+- Participate in local user groups and meetups
+- Experiment with different environments
+- Stay current
+
+**Critical Thinking**
+
+- Ask the "Five Whys"
+- Who does this benefit?
+- What's the context?
+- When or where would this work?
+- Why is this a problem?
 
 ### 7. Communiciate
 
@@ -646,11 +652,11 @@ _My code doesn't work, no idea why. My code works, no idea why._
 
 Big-O notation, common sense for some algorithms:
 
-- Simple loops: O(n)
-- Nested loops: O(n\*n)
-- Binary chop: O(logn)
-- Divide and conquer: O(nlogn)
-- Combinatoric: O(c^n)
+- Simple loops: `O(n)`
+- Nested loops: `O(n*n)`
+- Binary chop: `O(logn)`
+- Divide and conquer: `O(nlogn)`
+- Combinatoric: `O(c^n)`
 
 ### 40. Refactoring
 

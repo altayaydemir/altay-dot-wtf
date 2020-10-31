@@ -1,5 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
+import { Box } from 'rebass'
 import Markdown from '../ui/Markdown'
 import { getContent } from '../common/api'
 
@@ -10,7 +11,9 @@ export const getStaticProps = async () => ({
 const About: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
     <NextSeo title="about" />
-    <Markdown>{markdown}</Markdown>
+    <Box mt={-4}>
+      <Markdown>{markdown}</Markdown>
+    </Box>
   </>
 )
 
