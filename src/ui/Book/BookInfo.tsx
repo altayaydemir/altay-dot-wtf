@@ -1,8 +1,7 @@
-import { Box, Text } from 'rebass'
+import { Box, Text, Link } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-import { GoLinkExternal } from 'react-icons/go'
-import Link from './Link'
-import { Book } from '../types'
+import { VscLinkExternal } from 'react-icons/vsc'
+import { Book } from '../../types'
 
 type Props = {
   bookMeta: Book['meta']
@@ -28,13 +27,13 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
           href={`https://amazon.com/dp/${bookMeta.isbn}`}
           target="_blank"
           rel="noopener"
-          color="textCaption"
+          color="textTertiary"
           fontSize={1}
         >
           <code>{bookMeta.isbn}</code>
 
-          <Text display="inline" fontSize={0}>
-            <GoLinkExternal />
+          <Text display="inline" ml={1} fontSize={0}>
+            <VscLinkExternal />
           </Text>
         </Link>
       ),
@@ -47,7 +46,7 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
         .filter((i) => (short ? !i.key.includes('ISBN') : true))
         .map((i) => (
           <Box key={i.key} sx={{ marginY: spacing }}>
-            <Text title={i.title} sx={{ color: 'textCaption', fontSize }}>
+            <Text title={i.title} color="textTertiary" fontSize={fontSize}>
               {i.key} {i.value}
             </Text>
           </Box>

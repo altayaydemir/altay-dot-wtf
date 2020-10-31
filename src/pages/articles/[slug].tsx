@@ -21,7 +21,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Box my={1} />
 
-      <Text fontSize={1} color="textCaption">
+      <Text fontSize={1} color="textTertiary">
         {format(new Date(data.meta.date), 'PPP')} (
         {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })})
       </Text>

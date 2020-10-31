@@ -41,7 +41,9 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Box margin={4} />
 
-      <Text fontSize={0}>Last updated at {formattedDate}</Text>
+      <Text fontSize={0} color="textTertiary">
+        Last updated at {formattedDate}
+      </Text>
 
       {archiveItems.length > 1 ? (
         <>

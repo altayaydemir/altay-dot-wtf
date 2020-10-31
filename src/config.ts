@@ -1,34 +1,34 @@
 import { NextSeoProps } from 'next-seo'
 
 export const HOSTNAME = `altay.wtf`
-const title = `altay-dot-wtf`
-const description = `hi, my name is altay and this is my website.`
-const url = `https://${HOSTNAME}`
+export const SITE_TITLE = `altay-dot-wtf`
+export const SITE_DESCRIPTION = `hi, my name is altay and this is my website.`
+export const SITE_URL = `https://${HOSTNAME}`
 
 export const SEO: NextSeoProps = {
-  title,
-  description,
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   twitter: {
     handle: '@altayaydemir',
     cardType: 'summary_large_image',
   },
   openGraph: {
-    title,
-    description,
-    url,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     images: [
       {
-        url: `${url}/og-image.jpg`,
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 628,
-        alt: title,
+        alt: SITE_TITLE,
       },
     ],
   },
 } as const
 
 export const HEADER = {
-  title,
+  title: SITE_TITLE,
   links: [
     {
       label: 'about',
@@ -63,6 +63,25 @@ export const FOOTER = {
     {
       label: 'github',
       href: 'https://github.com/altayaydemir',
+    },
+  ],
+} as const
+
+export const HOME = {
+  title: 'hi, my name is altay.',
+  description: [
+    `thanks for visiting my website.`,
+    `I am a software engineer currently living in berlin.`,
+    `I like building things that are solving problems I empathize with.`,
+  ],
+  links: [
+    {
+      label: 'more about me',
+      href: '/about',
+    },
+    {
+      label: 'what am I doing now',
+      href: '/now',
     },
   ],
 } as const

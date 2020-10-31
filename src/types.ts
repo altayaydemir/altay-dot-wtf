@@ -8,11 +8,6 @@ export type BaseContent = {
   markdown: string
 }
 
-export type Home = BaseContent & {
-  type: 'home'
-  meta: undefined
-}
-
 export type About = BaseContent & {
   type: 'about'
   meta: undefined
@@ -51,6 +46,6 @@ export type Book = BaseContent & {
   }
 }
 
-export type Content = Now | Note | Article | Book | Home | About
+export type Content = Now | Note | Article | Book | About
 export type ContentType = Content['type']
 export type TaggedContent = Note | Article | Book

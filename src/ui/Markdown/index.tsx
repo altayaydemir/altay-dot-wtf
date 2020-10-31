@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
-import Paragraph from '../Paragraph'
+import MDParagraph from './MDParagraph'
 import MDHeading from './MDHeading'
 
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
@@ -19,7 +19,7 @@ const Markdown: React.FC<{ children: string }> = ({ children }) => (
       code: MDCodeBlock,
       link: MDLink,
       image: MDImage,
-      paragraph: Paragraph,
+      paragraph: MDParagraph,
       heading: MDHeading,
       blockquote: MDQuote,
     }}

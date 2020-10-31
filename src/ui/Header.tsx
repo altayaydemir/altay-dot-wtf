@@ -1,62 +1,58 @@
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
-import { forwardRef } from 'react'
-import { Flex, Box, LinkProps, Heading } from 'rebass'
+import { Flex, Box, Heading, Link, Text } from 'rebass'
 import { HEADER } from '../config'
-import Link from './Link'
+import styled from './theme/styled'
 
 const { title, links } = HEADER
 
-const NavLink: React.FC<LinkProps & { active: boolean }> = forwardRef(
-  ({ active, ...rest }, ref) => {
-    const style = {
-      color: 'initial',
-      fontWeight: active ? 'bold' : 'initial',
-      textDecoration: 'none',
-    } as const
-
-    return (
-      <Link
-        ref={ref}
-        margin={0}
-        paddingX={['2px', 1, 2]}
-        fontSize={[0, 1, 2]}
-        style={style}
-        {...rest}
-      />
-    )
-  },
-)
-
-NavLink.displayName = 'NavLink'
+const HeaderLink = styled(Link)`
+  &:hover {
+    text-decoration: none;
+  }
+`
 
 const Header: React.FC = () => {
   const router = useRouter()
 
   return (
-    <Box>
-      <Flex alignItems="flex-end" justifyContent="space-between">
-        <Box>
-          <NextLink href="/" passHref>
-            <a style={{ textDecoration: 'none', color: 'initial' }}>
-              <Heading fontSize={[2, 3, 4]}>{title}</Heading>
-            </a>
-          </NextLink>
-        </Box>
+    <Flex alignItems="flex-end" justifyContent="space-between">
+      <Box>
+        <NextLink href="/">
+          <HeaderLink>
+            <Heading fontSize={[1, 2]} color="text">
+              {title}
+            </Heading>
+          </HeaderLink>
+        </NextLink>
+      </Box>
 
-        <Box>
-          {links.map((link, index) => (
-            <Box key={link.href} display="inline">
-              <NextLink href={link.href} passHref>
-                <NavLink active={router.pathname.includes(link.href)}>{link.label}</NavLink>
-              </NextLink>
-
-              {index === links.length - 1 ? null : '·'}
-            </Box>
-          ))}
-        </Box>
-      </Flex>
-    </Box>
+      <Box>
+        {links.map(({ label, href }) => (
+          <Box key={href} display="inline">
+            <NextLink href={href} passHref>
+              <HeaderLink display="inline-block" color="text">
+                <Text
+                  sx={{
+                    fontWeight: 'bold',
+                    fontSize: [0, 0, 1],
+                    paddingX: [0, 1, 2],
+                    paddingY: [0, 1, 1],
+                    marginLeft: 1,
+                    lineHeight: 1,
+                    borderRadius: 3,
+                    color: router.route.includes(href) ? 'linkPrimary' : 'inherit',
+                    backgroundColor: router.route.includes(href) ? 'linkBackground' : 'background',
+                  }}
+                >
+                  {label}
+                </Text>
+              </HeaderLink>
+            </NextLink>
+          </Box>
+        ))}
+      </Box>
+    </Flex>
   )
 }
 

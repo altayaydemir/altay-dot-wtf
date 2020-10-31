@@ -1,12 +1,11 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading, Box, Flex, Text } from 'rebass'
-import Link from '../../ui/Link'
+import { Heading, Box, Flex, Text, Link } from 'rebass'
 import { getBookMeta, getSlugs } from '../../common/api'
-import { sortByDate } from '../../common/utils'
+import { sortMetaByDate } from '../../common/utils'
 import PageHeader from '../../ui/PageHeader'
-import BookCover from '../../ui/BookCover'
-import BookInfo from '../../ui/BookInfo'
+import BookCover from '../../ui/Book/BookCover'
+import BookInfo from '../../ui/Book/BookInfo'
 
 export const getStaticProps = async () => {
   const slugs = getSlugs('book')
@@ -15,7 +14,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      books: sortByDate(books),
+      books: sortMetaByDate(books),
     },
   }
 }
@@ -29,7 +28,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
         <Box key={book.slug} marginY={4}>
           <Flex>
             <NextLink href={`/books/${book.slug}`} passHref>
-              <a>
+              <a title={book.title}>
                 <BookCover bookMeta={book} width={120} />
               </a>
             </NextLink>
@@ -38,21 +37,25 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ b
 
             <Box>
               <NextLink href={`/books/${book.slug}`} passHref>
-                <Link>
-                  <Heading fontSize={[2, 2, 3]}>{book.title}</Heading>
+                <Link title={book.title}>
+                  <Heading fontSize={[1, 2]}>{book.title}</Heading>
                 </Link>
               </NextLink>
 
               <Box margin={1} />
 
-              <BookInfo short bookMeta={book} fontSize={1} spacing={0} />
+              <BookInfo short bookMeta={book} fontSize={[0, 1]} spacing={0} />
 
-              <Box margin={2} />
+              <Box margin={1} />
 
               {book.oneliner ? (
-                <Text fontSize={1} fontStyle="italic" sx={{ color: 'textCaption' }}>
-                  {book.oneliner}
-                </Text>
+                <Box display="inline-block">
+                  <hr style={{ width: '10%', marginLeft: 0, opacity: 0.5 }} />
+
+                  <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
+                    {book.oneliner}
+                  </Text>
+                </Box>
               ) : null}
             </Box>
           </Flex>

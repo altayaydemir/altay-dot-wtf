@@ -15,41 +15,13 @@ There is [a Github repository](https://github.com/altayaydemir/react-native-imes
 
 ![](/images/react-native-imessage.png)
 
-_I will show you how we built an iMessage extension by writing a bridge for our React Native-based mobile app. This approach took our team around two weeks to explore and might save you significant time if you have a similar intention._
-
 When we set out to build an iMessage extension for [Lisk Mobile](https://lisk.io/hub) using React Native, we immediately hit an exciting challenge. As it turns out, when it comes to third-party applications, Apple likes developers to play by its own rules. If a company wants to benefit Apple’ new features of the tech giant’s operational systems and rich user base, it needs to be built using Apple’s own tools and programming language. iPhone’s iMessage is definitely worth this hassle. It has proven to be a big hit since its release in 2016. Within the first six months, iMessage has generated [thousands of innovative](https://sensortower.com/blog/imessage-app-store-six-months-later) in-messenger extensions including those created by [Airbnb](https://medium.com/airbnb-engineering/introducing-the-airbnb-imessage-app-806f48d303a8#.jkydkawtx) and [Dropbox](https://www.cnet.com/how-to/share-dropbox-files-via-imessage-and-sign-pdfs-on-your-iphone/). Late in 2018, Mark Zuckerberg admitted this feature is one of Facebook’s ['biggest competitor by far'](https://www.macrumors.com/2018/10/31/mark-zuckerberg-says-imessage/). Since the release of Lisk Mobile during Lisk’s Berlin meetup in October 2018, our team has been busy implementing features such as Face ID Authentication, as well as developing blockchain-specific solutions. Identifying the opportunity to extend the iMessage option for our users, we got to work on our own integration.
 
 The iMessage extension was included in Lisk Mobile 0.10.0, which was released in February 2019. Our users can now request and send LSK tokens straight from the iOS-based messenger without opening our app. However, the journey to implement this feature wasn’t straightforward — **Lisk Mobile is written in JavaScript using React Native**, while iMessage requires development in native iOS. During our research, we have found there is just a handful of resources available to help with using React Native to build iOS extensions available out there. There was no clear way to proceed. After thorough deliberation, we have decided to try a different approach by building our own bridge implementation. We found it a very educational and motivational journey for our team to develop the feature in this way. We will show you how by breaking the solution down into native and React Native parts and describing how to bind these separated parts together.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*5_Z4ytBGfx16tChcsEhptA.gif)
 
-_Here’s the end product! Want to implement this for your app? Then read on._
-
-Table of contents:
-
-1. The Problem
-
-2. The Solution
-
-3. Creating a React Native Project
-
-4. Adding an iMessage Extension Target
-
-5. Creating an iMessage Root on the React Native Side
-
-6. Connecting the iMessage Component with the Native Side
-
-7. Creating Bridge Modules
-
-8. Consuming Native Modules on React Native
-
-9. Extras
-
-10. Final Thoughts
-
-**If you want to know more about Lisk first, check out this short [explainer clip](https://www.youtube.com/watch?v=BnMrIgSoiJQ), our [product page](https://lisk.io/products), or our [documentation](https://lisk.io/documentation)!**
-
-## The problem: there was no up-to-date documentation to create an iMessage extension using React Native.
+### The problem: there was no up-to-date documentation to create an iMessage extension using React Native.
 
 Before we dive deep into the solution, let’s first set out the actual challenge. We used React Native in order to stay aligned with the programming language of the entire Lisk platform. We have been developing our mobile blockchain wallet since April 2018. This means we already have visual components and business logic enhanced by utility functions for cryptographic operations and communicating with the API of [Lisk Core](https://lisk.io/documentation/lisk-core), which is a platform containing all information necessary to interact with our blockchain, including security, consensus algorithm and much more. The communication is provided by [Lisk Elements](https://lisk.io/documentation/lisk-elements), _our modular JavaScript library_.
 
@@ -57,7 +29,7 @@ The first option was to look for existing React Native component and educational
 
 The second option was to try native iOS development within the Lisk Mobile codebase. The benefit of this approach was [example projects](https://developer.apple.com/documentation/messages/icecreambuilder_building_an_imessage_extension) and [conference talks](https://developer.apple.com/videos/play/wwdc2016/224) provided by Apple. However, introducing a considerable amount of Swift or Objective-C into the codebase was not desirable. Such a move would cause too much code duplication due to us having to rewrite most of our existing business logic and UI components.
 
-## The solution: we wrote our own bridge implementation and documented the process.
+### The solution: we wrote our own bridge implementation and documented the process.
 
 After careful evaluation, we decided to take an alternative route: writing our own bridge implementation. In the rest of this article, we will explain how we did it. If you want to jump straight into code, we’ve also created this handy [demo project on GitHub](https://github.com/LightcurveHQ/react-native-imessage-extension)
 
@@ -85,13 +57,13 @@ The next step is to add a target for our Xcode project that covers the iMessage 
 _Open the iOS project with Xcode_
 
 ![](https://cdn-images-1.medium.com/max/1600/1*tXmPShkdzqfD9lRuckdXdw.png)
-\*Add new target to the project by navigating through **_File -> New -> Target _**menu\*
+_Add new target to the project by navigating through \*\*\_File -> New -> Target _\*\*menu\_
 
 ![](https://cdn-images-1.medium.com/max/1600/1*R9nxobNLAuCgBsFcMtV6Ww.png)
 _Choose iMessage Extension_
 
 ![](https://cdn-images-1.medium.com/max/1600/1*UwgRGzsbRag2O9sbc2huvQ.png)
-_Give it a creative name :)_
+_Give it a creative name_
 
 ## Create an iMessage Root on the React Native Side
 

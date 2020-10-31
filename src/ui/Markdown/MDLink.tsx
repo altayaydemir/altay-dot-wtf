@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import Link from '../Link'
+import { Link } from 'rebass'
 
 type Props = {
   href: string

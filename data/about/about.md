@@ -1,18 +1,24 @@
 ## what I do
 
-- living in prenzlauerberg, berlin
-- working at klarna as software engineer in the day-time
-- reading, listening, walking, or building stuff in the leisure-time
+living in prenzlauerberg, berlin
+
+working at [klarna](https://klarna.com) as software engineer in the day-time
+
+reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time
 
 &nbsp;
 
 ## what I enjoy
 
-- **using things** that are solving my problems.
-- **building things** that are solving problems I empathize with.
-- **creating systems** based on iteration, supported by literature and first-hand experience.
-- **consistently changing** jobs, teams, projects, whatever. getting better at knowing when to quit and find somewhere else where I can be *more* useful.
-- **connecting the people I know** and blissfully watching them help out each other.
+**using things** that are solving my problems.
+
+**building things** that are solving problems I empathize with.
+
+**creating systems** based on iteration and supported by literature.
+
+**consistently changing** jobs, teams, projects, whatever. getting better at knowing when to quit and find somewhere else where I can be *more* useful.
+
+**connecting the people I know** and blissfully watching them help out each other.
 
 &nbsp;
 
@@ -20,13 +26,26 @@
 
 people who contributed enormously to my life during the past several years.
 
-- **the big three:** naval ravikant, derek sivers, seth godin
-- **productive three:** cal newport, james clear, the make time duo
-- **designer three:** austin kleon, andy j. pizza, the design details duo
-- **hacker three:** guillermo rauch, scott wlatschin, dan abramov
-- **on-screen three:** phoebe waller-bridge, ricky gervais, louis ck
-- **in-ear three:** christian löffler, hælos, jakuzi
-- **close-circle-mentor three:** [hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), matthias carigiet
+**the big three**\
+naval ravikant, derek sivers, seth godin
+
+**productive three**\
+cal newport, james clear, the make time duo
+
+**designer three**\
+austin kleon, andy j. pizza, the design details duo
+
+**hacker three**\
+guillermo rauch, scott wlatschin, dan abramov
+
+**on-screen three**\
+phoebe waller-bridge, ricky gervais, louis ck
+
+**in-ear three**\
+christian löffler, hælos, jakuzi
+
+**close-circle-mentor three**\
+[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), matthias carigiet
 
 &nbsp;
 

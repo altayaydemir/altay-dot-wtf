@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "check-types": "tsc --noEmit"
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
@@ -29,7 +29,8 @@
     "react-medium-image-zoom": "^4.3.1",
     "react-syntax-highlighter": "^15.2.1",
     "rebass": "^4.0.7",
-    "remark-gfm": "^1.0.0"
+    "remark-gfm": "^1.0.0",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.5",

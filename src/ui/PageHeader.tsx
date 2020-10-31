@@ -1,22 +1,25 @@
-import { Box, Heading } from 'rebass'
+import { Heading, Text } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Markdown from './Markdown'
 
 type Props = {
   title: string
   description?: string
+  metaTitle?: string
   metaDescription?: string
 }
 
-const PageHeader: React.FC<Props> = ({ title, description, metaDescription }) => (
+const PageHeader: React.FC<Props> = ({ title, metaTitle, description, metaDescription }) => (
   <>
-    {metaDescription || description ? (
-      <NextSeo title={title} description={metaDescription || description} />
-    ) : null}
+    <NextSeo title={metaTitle || title} description={metaDescription || description} />
 
-    <Heading>{title}</Heading>
-    <Box m={2} />
-    {description ? <Markdown>{description}</Markdown> : null}
+    <Heading fontSize={3}>{title}</Heading>
+
+    {description ? (
+      <Text color="textSecondary">
+        <Markdown>{description}</Markdown>
+      </Text>
+    ) : null}
   </>
 )
 

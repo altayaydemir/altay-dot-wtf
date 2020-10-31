@@ -1,10 +1,9 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { format } from 'date-fns'
-import { Box, Text } from 'rebass'
-import Link from '../../ui/Link'
+import { formatDistanceToNow } from 'date-fns'
+import { Box, Text, Link, Heading } from 'rebass'
 import { getMeta, getSlugs } from '../../common/api'
-import { sortByDate } from '../../common/utils'
+import { sortMetaByDate } from '../../common/utils'
 import { Article } from '../../types'
 import PageHeader from '../../ui/PageHeader'
 
@@ -15,33 +14,36 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      articles: sortByDate(articles),
+      articles: sortMetaByDate(articles),
     },
   }
 }
 
 const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ articles }) => (
   <>
-    <PageHeader title="articles" description="learnings worth sharing." />
+    <PageHeader title="articles" description="learnings worth sharing, mostly about software." />
 
     <Box>
       {articles.map((article) => (
         <Box key={article.slug} my={4}>
           <NextLink href={`/articles/${article.slug}`} passHref>
             <Link>
-              <Text fontSize={3} fontWeight="bold">
-                {article.title}
-              </Text>
+              <Heading fontSize={3}>{article.title}</Heading>
             </Link>
           </NextLink>
 
           <Box m={1} />
 
-          <Text fontSize={0} color="textCaption">
-            {format(new Date(article.date), 'PPP')}
+          <Text fontSize={1} color="textSecondary">
+            {article.oneliner}
           </Text>
 
-          <Text fontSize={1}>{article.oneliner}</Text>
+          <Box m={1} />
+
+          <Text fontSize={0} color="textTertiary">
+            {'Updated '}
+            {formatDistanceToNow(new Date(article.date), { addSuffix: true })}
+          </Text>
         </Box>
       ))}
     </Box>

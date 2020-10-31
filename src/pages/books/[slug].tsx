@@ -3,8 +3,8 @@ import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsFromSlugs, getContent, getBookMeta } from '../../common/api'
 import { Book } from '../../types'
-import BookCover from '../../ui/BookCover'
-import BookInfo from '../../ui/BookInfo'
+import BookCover from '../../ui/Book/BookCover'
+import BookInfo from '../../ui/Book/BookInfo'
 import Markdown from '../../ui/Markdown'
 import Tags from '../../ui/Tags'
 
@@ -40,9 +40,9 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box margin={2} />
 
         <Box>
-          <Heading fontSize={[1, 2, 4]}>{data.meta.title}</Heading>
+          <Heading fontSize={[1, 2, 3]}>{data.meta.title}</Heading>
           <Box my={2} />
-          <BookInfo bookMeta={data.meta} spacing={[0, 0, 1]} fontSize={[0, 1, 2]} />
+          <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={[0, 1]} />
           <Tags tags={data.meta.tags} />
         </Box>
       </Flex>

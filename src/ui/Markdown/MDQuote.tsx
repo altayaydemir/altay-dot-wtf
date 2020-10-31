@@ -3,9 +3,9 @@ import { Box, Text } from 'rebass'
 const MDQuote: React.FC = ({ children }) => (
   <Box
     sx={{
-      backgroundColor: 'muted',
+      backgroundColor: 'backgroundSecondary',
       borderLeftWidth: 2,
-      borderLeftColor: 'textCaption',
+      borderLeftColor: 'textTertiary',
       borderLeftStyle: 'solid',
     }}
     padding={[1, 3]}

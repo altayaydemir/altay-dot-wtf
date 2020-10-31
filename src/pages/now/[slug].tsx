@@ -18,9 +18,8 @@ const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> =
   return (
     <>
       <PageHeader
-        title="what I was doing around"
-        description={`${formattedDate} (${relativeDate})`}
-        metaDescription={`what I was doing around ${formattedDate}`}
+        title={`now archive from ${formattedDate}`}
+        description={`what I was doing ${relativeDate}`}
       />
       <Box margin={4} />
       <Markdown>{data.markdown}</Markdown>

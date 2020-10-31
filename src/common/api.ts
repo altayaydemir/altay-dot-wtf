@@ -13,8 +13,6 @@ const getContentDirectoryForType = (type: ContentType) => {
       return 'articles'
     case 'book':
       return 'books'
-    case 'home':
-      return 'home'
     case 'note':
       return 'notes'
     case 'now':

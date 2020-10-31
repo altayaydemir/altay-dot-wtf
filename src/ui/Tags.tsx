@@ -1,6 +1,5 @@
-import { Box, Text } from 'rebass'
+import { Box, Text, Link } from 'rebass'
 import NextLink from 'next/link'
-import Link from './Link'
 
 type Props = {
   tags: undefined | string[]
@@ -17,7 +16,7 @@ const Tags: React.FC<Props> = ({ tags, fontSize = 0, spacing = 1 }) => {
         .sort((a, b) => a.localeCompare(b))
         .map((tag) => (
           <NextLink key={tag} href={`/tags/${tag}`} passHref>
-            <Link color="tag">
+            <Link color="linkTag">
               <Text fontSize={fontSize} display="inline-block" marginRight={spacing}>
                 #{tag}
               </Text>

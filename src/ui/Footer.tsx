@@ -1,12 +1,11 @@
-import { Box, Text } from 'rebass'
+import { Box, Heading, Link } from 'rebass'
 import { FOOTER } from '../config'
-import Link from './Link'
 
 const { title, links } = FOOTER
 
 const Footer = () => (
   <Box>
-    <Text fontWeight="bold">{title}</Text>
+    <Heading fontSize={2}>{title}</Heading>
 
     <Box>
       {links.map((link, index) => (
@@ -17,7 +16,7 @@ const Footer = () => (
             href={link.href}
             paddingRight={1}
             paddingLeft={index === 0 ? 0 : 1}
-            fontSize={14}
+            fontSize={1}
           >
             {link.label}
           </Link>
@@ -26,6 +25,8 @@ const Footer = () => (
         </Box>
       ))}
     </Box>
+
+    <Box m={4} />
   </Box>
 )
 

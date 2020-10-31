@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Box } from 'rebass'
-import { Book } from '../types'
+import { Book } from '../../types'
 
 type Props = {
   bookMeta: Book['meta']
@@ -8,12 +8,18 @@ type Props = {
 }
 
 const MAX_WIDTH = 144
+const BORDER_WIDTH = 1
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
   <Box
-    display="inline-block"
-    height={width / bookMeta.coverImageAspectRatio + 2}
-    sx={{ borderWidth: 1, borderStyle: 'solid', borderColor: 'border', backgroundColor: 'muted' }}
+    height={width / bookMeta.coverImageAspectRatio + BORDER_WIDTH * 2}
+    sx={{
+      display: 'inline-block',
+      borderWidth: BORDER_WIDTH,
+      borderStyle: 'solid',
+      borderColor: 'borderPrimary',
+      backgroundColor: 'backgroundSecondary',
+    }}
   >
     <Image
       alt={bookMeta.title}
