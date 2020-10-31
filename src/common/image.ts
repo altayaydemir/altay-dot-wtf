@@ -44,9 +44,10 @@ export const generateMetaImage = async ({
   data: ImageData
   scale?: number
 }): Promise<MetaImage> => {
-  const filePath = `/images/meta/${directory}/${fileName}.png`
+  const relativePath = `/images/meta/${directory}/${fileName}.png`
+  const absolutePath = `${PUBLIC_FOLDER}/${relativePath}`
 
-  if (!fs.existsSync(`${PUBLIC_FOLDER}/${filePath}`)) {
+  if (!fs.existsSync(absolutePath)) {
     const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
     const context = canvas.getContext('2d')
     context.fillStyle = '#050505'
@@ -71,8 +72,8 @@ export const generateMetaImage = async ({
     }
     context.drawImage(image, coordinates.x, coordinates.y)
 
-    fs.writeFileSync(filePath, canvas.toBuffer('image/png'))
+    fs.writeFileSync(absolutePath, canvas.toBuffer('image/png'))
   }
 
-  return { url: SITE_URL + filePath, width: META_IMAGE_WIDTH, height: META_IMAGE_HEIGHT }
+  return { url: SITE_URL + relativePath, width: META_IMAGE_WIDTH, height: META_IMAGE_HEIGHT }
 }

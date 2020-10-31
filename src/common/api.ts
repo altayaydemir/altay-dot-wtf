@@ -66,7 +66,7 @@ export const getBookMeta = async (fileName: string): Promise<Book['meta']> => {
     directory: 'books',
     fileName,
     data: coverImageData,
-    scale: 1.5,
+    scale: 2,
   })
 
   return {
