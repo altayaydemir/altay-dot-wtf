@@ -1,12 +1,11 @@
-import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
-import MDParagraph from './MDParagraph'
-import MDHeading from './MDHeading'
-import MDCodeBlock from './MDCodeBlock'
+import dynamic from 'next/dynamic'
 
+const MDParagraph = dynamic(() => import('./MDParagraph'))
+const MDHeading = dynamic(() => import('./MDHeading'))
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
-// const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
+const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 const MDImage = dynamic(() => import('./MDImage'))
 const MDLink = dynamic(() => import('./MDLink'))
 const MDQuote = dynamic(() => import('./MDQuote'))
