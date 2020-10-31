@@ -5,6 +5,9 @@ export const SITE_TITLE = `altay-dot-wtf`
 export const SITE_DESCRIPTION = `hi, my name is altay and this is my website.`
 export const SITE_URL = `https://${HOSTNAME}`
 
+export const META_IMAGE_WIDTH = 1200
+export const META_IMAGE_HEIGHT = 628
+
 export const SEO: NextSeoProps = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
@@ -18,9 +21,9 @@ export const SEO: NextSeoProps = {
     url: SITE_URL,
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
-        width: 1200,
-        height: 628,
+        url: `${SITE_URL}/images/meta/main.jpg`,
+        width: META_IMAGE_WIDTH,
+        height: META_IMAGE_HEIGHT,
         alt: SITE_TITLE,
       },
     ],

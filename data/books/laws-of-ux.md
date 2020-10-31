@@ -11,7 +11,7 @@ tags:
 
 This book is a great reference for the complex psychological concepts behind the fundamentals of designing intuitive products and experiences.
 
-![](/images/laws-of-ux-10.jpg)
+![](/images/laws-of-ux/laws-of-ux-10.jpg)
 
 ## Jakob's Law
 
@@ -49,7 +49,7 @@ This law might sound like it's enforcing all the websites look the same, which i
 
 Always being with common patterns and conventions, and only depart from them when it makes sense to. If you can make a compelling argument for making something different to improve the core user experience, that's a good sign that it's worth exploring.
 
-![](/images/laws-of-ux-01.jpg)
+![](/images/laws-of-ux/laws-of-ux-01.jpg)
 
 ## Fitts's Law
 
@@ -61,7 +61,7 @@ _The time to acquire a target is a function of the distance to and size of the t
 - Touch targets should have ample spacing between them.
 - Touch targets should be placed in areas of an interface that allow them to be easily acquired.
 
-![](/images/laws-of-ux-02.jpg)
+![](/images/laws-of-ux/laws-of-ux-02.jpg)
 
 ## Hick's Law
 
@@ -94,7 +94,7 @@ Can be used to determine which elements are vital for the interface to achieve t
 
 Removing text labels and just leaving icons in order to simplify the interface (iOS bottom tab bar, Facebook example) may lead to confusion for some users.
 
-![](/images/laws-of-ux-03.jpg)
+![](/images/laws-of-ux/laws-of-ux-03.jpg)
 
 ## Miller's Law
 
@@ -122,7 +122,7 @@ Phone number input formatting: 4408675309 —> (440) 867-5309
 
 Do not try to apply Miller's Law to components that don't need to be memorized by the user, such as navigation menus.
 
-![](/images/laws-of-ux-04.jpg)
+![](/images/laws-of-ux/laws-of-ux-04.jpg)
 
 ## Postel's Law
 
@@ -148,7 +148,7 @@ Also known as the robustness principle, based on the idea of a significant contr
 
 Postel's law comes with an opportunity to improve the accessibility, but it may also have some downsides like adjustable font sizes breaking the UI, translations in other languages breaks the positioning and etc.
 
-![](/images/laws-of-ux-05.jpg)
+![](/images/laws-of-ux/laws-of-ux-05.jpg)
 
 ## Peak-End Rule
 
@@ -182,7 +182,7 @@ Can be used to map out the user journey and pinpoint the peak and end steps.
 
 It is inevitable that something go wrong at some point in the lifespan of the journey. However, handling those errors gracefully and communicating them with the user in a sympathetic way (cute 404 messages) may decrease the negative impact.
 
-![](/images/laws-of-ux-06.jpg)
+![](/images/laws-of-ux/laws-of-ux-06.jpg)
 
 ## Aesthetic-Usability Effect
 
@@ -198,7 +198,7 @@ _Users often perceive aesthetically pleasing design as more usable._
 
 Goes back to the user testing sessions done for the ATM interfaces in Japan.
 
-![](/images/laws-of-ux-11.jpg)
+![](/images/laws-of-ux/laws-of-ux-11.jpg)
 
 #### Psychology Concept: Automatic Cognitive Processing
 
@@ -212,15 +212,15 @@ System 2 is used for more advanced tasks which require computation. It operates 
 
 Products that are both aesthetic and usable.
 
-![](/images/laws-of-ux-12.jpg)
+![](/images/laws-of-ux/laws-of-ux-12.jpg)
 
 _Braun SK4, designed by Hans Gugelot and Dieter Rams._
 
-![](/images/laws-of-ux-13.jpg)
+![](/images/laws-of-ux/laws-of-ux-13.jpg)
 
 _Apple's inspiration of the Braun products._
 
-![](/images/laws-of-ux-07.jpg)
+![](/images/laws-of-ux/laws-of-ux-07.jpg)
 
 ## Von Restorff Effect
 
@@ -256,7 +256,7 @@ Change blindness: users don't realize the changes.
 
 While designing for attention, we need to make sure the approaches taken won't create a noise in the interface, and they are accessible for people with disabilities.
 
-![](/images/laws-of-ux-08.jpg)
+![](/images/laws-of-ux/laws-of-ux-08.jpg)
 
 ## Tesler's Law
 
@@ -284,7 +284,7 @@ When an interface has been simplified to the point of abstraction, there is no l
 
 Again, ambiguous icons without text labels. We still don't have a standardized mapping for the icons and actions. Presenting them without labels may lead to an abstraction.
 
-![](/images/laws-of-ux-09.jpg)
+![](/images/laws-of-ux/laws-of-ux-09.jpg)
 
 ## Doherty Threshold
 
@@ -324,7 +324,7 @@ Fast response times can also cause several issues such as
 
 Purposefully adding a delay to process can actually increase its perceived value and instill a sense of trust, even when the process actually takes much less time.
 
-![](/images/laws-of-ux-14.jpg)
+![](/images/laws-of-ux/laws-of-ux-14.jpg)
 
 Facebook's Security Checkup process takes actually less time, but they prolong it to educate user.
 

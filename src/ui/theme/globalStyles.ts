@@ -42,7 +42,7 @@ export const createGlobalStyles = (theme: Theme) => `
 
   ul, ol {
     padding: 0;
-    margin: 16px 0 0 24px;
+    margin: 16px 0 16px 24px;
     color: ${theme.colors.textSecondary};
   }
 

@@ -473,9 +473,9 @@ Temporal coupling is about time, which is usually ignored while designing the ar
 
 #### Using Activity Diagrams
 
-![](/images/the-pragmatic-programmer-01.jpg)
+![](/images/the-pragmatic-programmer/the-pragmatic-programmer-01.jpg)
 
-![](/images/the-pragmatic-programmer-02.jpg)
+![](/images/the-pragmatic-programmer/the-pragmatic-programmer-02.jpg)
 
 Identify the opportunities for concurrency and parallelism, then get back to your application. Keep in mind that the activity diagram would only show the opportunities, and exploiting them is up to you. For example, a bartender would need five hands to be able to run the all tasks at once.
 
@@ -485,7 +485,7 @@ The customer-waiter-pie example starts here. You are in a restaurant (customer A
 
 #### Nonatomic updates
 
-![](/images/the-pragmatic-programmer-03.jpg)
+![](/images/the-pragmatic-programmer/the-pragmatic-programmer-03.jpg)
 
 **Problem:** to processes can access and write to the same memory at the same time. Since fetching and updating the pie count is not an atomic operation, the underlying value can change in the middle. So, we can't guarantee who gets the pie.
 

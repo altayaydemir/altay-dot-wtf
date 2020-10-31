@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { join } from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
-import { calculateImageAspectRatio } from './image'
+import { getImageData, generateMetaImage } from './image'
 import { Book, Content, ContentType, TaggedContent } from '../types'
 
 const getContentDirectoryForType = (type: ContentType) => {
@@ -59,17 +59,25 @@ export const getBookMeta = async (fileName: string): Promise<Book['meta']> => {
     throw new Error(`Could not fetch meta for book: ${fileName} - ${url}`)
   }
 
-  const [book] = json.items
-  const FALLBACK_ASPECT_RATIO = 0.66
-  const coverImageURL = book.volumeInfo.imageLinks.thumbnail.replace('http://', 'https://')
-  const aspectRatio = (await calculateImageAspectRatio(coverImageURL)) || FALLBACK_ASPECT_RATIO
+  const [fetchedBook] = json.items
+  const coverImageURL = fetchedBook.volumeInfo.imageLinks.thumbnail.replace('http://', 'https://')
+  const coverImageData = await getImageData(coverImageURL)
+  const metaImage = await generateMetaImage({
+    directory: 'books',
+    fileName,
+    data: coverImageData,
+    scale: 1.5,
+  })
 
   return {
     ...meta,
-    title: book.volumeInfo.title,
-    authors: book.volumeInfo.authors,
-    coverImageURL,
-    coverImageAspectRatio: aspectRatio,
+    title: fetchedBook.volumeInfo.title,
+    authors: fetchedBook.volumeInfo.authors,
+    coverImage: {
+      url: coverImageURL,
+      aspectRatio: coverImageData.ratio,
+    },
+    metaImage,
   }
 }
 

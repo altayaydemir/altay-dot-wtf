@@ -39,8 +39,15 @@ export type Book = BaseContent & {
     title: string
     oneliner: string
     authors: string[]
-    coverImageURL: string
-    coverImageAspectRatio: number
+    coverImage: {
+      url: string
+      aspectRatio: number
+    }
+    metaImage: {
+      url: string
+      width: number
+      height: number
+    }
     isbn: string
     rating: string
   }

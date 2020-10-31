@@ -27,12 +27,16 @@ export const getStaticProps: GetStaticProps<
 const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null
 
+  const metaTitle = `${data.meta.title} by ${data.meta.authors.join(', ')}`
+  const metaDescription = `"${data.meta.oneliner}"`
+
   return (
     <>
       <Flex>
         <NextSeo
-          title={`${data.meta.title} by ${data.meta.authors.join(', ')}`}
-          description={`"${data.meta.oneliner}"`}
+          title={metaTitle}
+          description={metaDescription}
+          openGraph={{ images: [{ alt: metaTitle, ...data.meta.metaImage }] }}
         />
 
         <BookCover bookMeta={data.meta} />

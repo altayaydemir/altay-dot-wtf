@@ -13,7 +13,7 @@ There is [a Github repository](https://github.com/altayaydemir/react-native-imes
 
 ---
 
-![](/images/react-native-imessage.png)
+![](/images/react-native-imessage/react-native-imessage.png)
 
 When we set out to build an iMessage extension for [Lisk Mobile](https://lisk.io/hub) using React Native, we immediately hit an exciting challenge. As it turns out, when it comes to third-party applications, Apple likes developers to play by its own rules. If a company wants to benefit Apple’ new features of the tech giant’s operational systems and rich user base, it needs to be built using Apple’s own tools and programming language. iPhone’s iMessage is definitely worth this hassle. It has proven to be a big hit since its release in 2016. Within the first six months, iMessage has generated [thousands of innovative](https://sensortower.com/blog/imessage-app-store-six-months-later) in-messenger extensions including those created by [Airbnb](https://medium.com/airbnb-engineering/introducing-the-airbnb-imessage-app-806f48d303a8#.jkydkawtx) and [Dropbox](https://www.cnet.com/how-to/share-dropbox-files-via-imessage-and-sign-pdfs-on-your-iphone/). Late in 2018, Mark Zuckerberg admitted this feature is one of Facebook’s ['biggest competitor by far'](https://www.macrumors.com/2018/10/31/mark-zuckerberg-says-imessage/). Since the release of Lisk Mobile during Lisk’s Berlin meetup in October 2018, our team has been busy implementing features such as Face ID Authentication, as well as developing blockchain-specific solutions. Identifying the opportunity to extend the iMessage option for our users, we got to work on our own integration.
 

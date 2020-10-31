@@ -14,6 +14,7 @@
     "@emotion/styled": "^10.0.27",
     "@next/bundle-analyzer": "^10.0.0",
     "@rebass/preset": "^4.0.5",
+    "canvas": "^2.6.1",
     "date-fns": "^2.16.1",
     "emotion-theming": "^10.0.27",
     "gray-matter": "^4.0.2",
@@ -30,6 +31,7 @@
     "react-syntax-highlighter": "^15.2.1",
     "rebass": "^4.0.7",
     "remark-gfm": "^1.0.0",
+    "sharp": "^0.26.2",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
@@ -38,6 +40,7 @@
     "@types/react": "^16.9.54",
     "@types/react-syntax-highlighter": "^13.5.0",
     "@types/rebass": "^4.0.7",
+    "@types/sharp": "^0.26.0",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "eslint": "^7.12.1",
