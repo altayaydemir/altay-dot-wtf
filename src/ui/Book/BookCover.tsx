@@ -12,7 +12,7 @@ const BORDER_WIDTH = 1
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
   <Box
-    height={width / bookMeta.coverImage.aspectRatio + BORDER_WIDTH * 2}
+    height={(width / (bookMeta.coverImage.aspectRatio + BORDER_WIDTH)) * 2}
     sx={{
       display: 'inline-block',
       borderWidth: BORDER_WIDTH,
