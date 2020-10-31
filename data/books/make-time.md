@@ -6,6 +6,7 @@ oneliner: 'Change comes from resetting defaults, installing barriers and designi
 tags:
   - productivity
   - time-management
+  - building-systems
 ---
 
 (You can click-and-enlarge images, kudos to [image-zoom 🔍](https://github.com/rpearce/image-zoom))

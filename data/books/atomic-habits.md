@@ -6,6 +6,7 @@ oneliner: "If you can get 1 percent better each day for one year, you'll end up 
 tags:
   - productivity
   - habits
+  - building-systems
 ---
 
 **Introduction: Story of James**
