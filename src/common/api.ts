@@ -101,7 +101,7 @@ export const getStaticPropsWithContent = <T extends Content>(
   }
 }
 
-const TAGGED_CONTENT_TYPES: ContentType[] = ['article', 'book']
+const TAGGED_CONTENT_TYPES: ContentType[] = ['article', 'book', 'note']
 
 const getAllContentByType = (contentType: ContentType) =>
   getSlugs(contentType).map((slug) => getContent(contentType, slug))

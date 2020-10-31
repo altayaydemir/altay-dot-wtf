@@ -138,12 +138,14 @@ If you want followers, be someone worth following. Do your thing and talk about 
 
 A [Derek Sivers](/tags/derek-sivers) quote:
 
-> Whatever excites you, do it.
+> Whatever excites you, do it.\
 > Whatever drains you, stop doing it.
 
-After doing something, take a moment and think about how it felt. Did you get energized and motivated or exhausted and drained?
+After doing something, take a moment and think about how it felt.
 
-Apply [the vampire test](/tags/the-vampire-test) to people, projects, and hobbies.
+Did you get energized and motivated or exhausted and drained?
+
+That is [the vampire test](/tags/the-vampire-test). Apply it to people, jobs, projects, hobbies, whatever.
 
 ### Find Your fellow <X>'ers
 
