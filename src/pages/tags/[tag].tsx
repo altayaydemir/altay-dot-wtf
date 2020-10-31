@@ -78,7 +78,8 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
               </Text>
 
               <Text color="textTertiary" display="inline" fontSize={1}>
-                written {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
+                {'added '}
+                {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
               </Text>
             </Box>
           </Box>

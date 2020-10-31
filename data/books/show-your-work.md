@@ -64,19 +64,19 @@ Is it useful or interesting?
 
 #### What to Share
 
-**Early stage** -> Inspirations \
-**Middle stage** -> Methods and progress \
-**Final stage** -> The product
+- **Early stage** --> Inspirations
+- **Middle stage** --> Methods and progress
+- **Final stage** --> The product
 
 #### What to Show
 
-❌ ~~Selfies~~ \
-❌ ~~Babies~~ \
-❌ ~~Sunsets~~ \
-❌ ~~Lunches~~ \
-❌ ~~Cats, dogs, turtles, guinea pigs~~\
-❌ ~~Lattes~~\
-✅ Your work
+- ❌ ~~Selfies~~
+- ❌ ~~Babies~~
+- ❌ ~~Sunsets~~
+- ❌ ~~Lunches~~
+- ❌ ~~Cats, dogs, turtles, guinea pigs~~
+- ❌ ~~Lattes~~
+- ✅ Your work
 
 ### Turn Your Flow Into Stock
 
@@ -87,3 +87,38 @@ ideas -> tweets -> videos, blog posts, talks, podcasts -> books
 ### Your Real Estate
 
 Build a good website, fill it with ideas and stuff you care about. Don't leave it for the sake of the newest, brightest social medium.
+
+## Open Up Your Cabinet Of Curiosities
+
+Collecting is as effective as creating.
+
+Share your influences.
+
+## Tell Good Stories
+
+The stories you tell about your work influences how people perceive it.
+
+**Structure is everything.** Study the structures of your favorite stories so you can steal.
+
+### A Good Pitch
+
+- **Act I - History:** Where have you been, what do you want, and what did you do to get it.
+- **Act II: Present:** Where are you now?
+- **Act III: Future:** How the audience can help you to get there.
+
+### Talking About Yourself
+
+- Be honest, kind, and patient
+- Be humble - adjective free: **~~Amazing~~ Engineer**
+- Biography: two-sentence explanation.
+- Unless you are a real ninja, rockstar, or guru, stay away from those words.
+
+## Teach What You Know
+
+Gathering feedback on what you teach is also keeps the learning going.
+
+- Make people better at something they want to be better at
+- Share your reading list
+- Share your techniques
+
+![](/images/show-your-work/learn-teach-repeat.png)

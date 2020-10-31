@@ -27,13 +27,13 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 people who contributed enormously to my life during the past several years.
 
 **the big three**\
-naval ravikant, derek sivers, seth godin
+naval ravikant, [derek sivers](/tags/derek-sivers), [seth godin](/tags/seth-godin)
 
 **productive three**\
 cal newport, james clear, the make time duo
 
 **designer three**\
-austin kleon, andy j. pizza, the design details duo
+[austin kleon](/tags/austin-kleon), andy j. pizza, the design details duo
 
 **hacker three**\
 guillermo rauch, scott wlatschin, dan abramov
@@ -71,8 +71,8 @@ christian löffler, hælos, jakuzi
 ---
 
 - **2017:** joined [**put.io**](https://put.io/), a cloud-storage service that downloads publicly available files at high speeds and saves you both time and money. took over the web app and built clients for iOS, tvOS, roku, tizen tv, and android tv.
-- **2018, june:** had a month-long london trip with colleagues from put.io,was my first time abroad. turkey had another non-promising national election that gave a hint of what will keep happening in the country for the next decade.
+- **2018, june:** had a month-long london trip with colleagues from put.io, was my first time abroad. turkey had another non-promising national election that gave a hint of what will keep happening in the country for the next decade.
 - **2018, oct:** relocated to berlin and joined [**lisk**](https://lisk.io), a cryptocurrency startup. worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile), built some cool stuff such as the [react-native imessage bridge](/articles/react-native-imessage) which we had a chance a [talk about in the react berlin meetup](https://www.youtube.com/watch?v=MEM6OBOBIhY).
-- **2019, may:** got a promising offer from the swedish fintech unicorn [**klarna**](https://www.klarna.com/de/) and joined to _consumer growth and loyalty_ domain. worked on 3rd-party integrations to provide marketeers meticulous ways to communicate with the users.
-- **2020, jan:** switched to the _app client core_ team, which is responsible for architecture, performance and many other things related to [klarna consumer app.](https://www.klarna.com/us/klarna-app/)
+- **2019, may:** got a promising offer from the swedish fintech unicorn [**klarna**](https://klarna.com/) and joined to _consumer growth and loyalty_ domain. worked on 3rd-party integrations to provide marketeers meticulous ways to communicate with the users.
+- **2020, jan:** switched to the _app client core_ team, which is responsible for architecture, performance and many other things related to [klarna consumer app.](https://klarna.com/us/klarna-app/)
 - **2020, oct:** built this website.
