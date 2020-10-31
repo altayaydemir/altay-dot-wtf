@@ -3,9 +3,10 @@ import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import MDParagraph from './MDParagraph'
 import MDHeading from './MDHeading'
+import MDCodeBlock from './MDCodeBlock'
 
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
-const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
+// const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 const MDImage = dynamic(() => import('./MDImage'))
 const MDLink = dynamic(() => import('./MDLink'))
 const MDQuote = dynamic(() => import('./MDQuote'))
