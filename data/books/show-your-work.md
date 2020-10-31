@@ -7,14 +7,13 @@ tags:
   - austin-kleon
   - creativity
   - building-systems
-  - daily-dispatch
 ---
 
-## You Don't Have to Be a Genius
+## 1. You Don't Have to Be a Genius
 
 ### Find a Scenius
 
-Scenius is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
+[Scenius](/tags/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
 
 Start asking what you can do for the others instead of the opposing one-way question.
 
@@ -38,13 +37,13 @@ A great way to get started on the "sharing your work path" is to choose a topic 
 
 Reading the near-death experiences of people might motivate you to start doing stuff instead of wasting time.
 
-## Think Process, Not Product
+## 2. Think Process, Not Product
 
 While producing your work, let go of your ego and share your process to connect with the audience.
 
 Be a documentarian of what you do. Keep a work log, so you will already have some raw material if you want to share things. Keeping records is not about making art; it's about keeping track of what's going on around you.
 
-## Share Something Small Every Day
+## 3. Share Something Small Every Day
 
 Once a day, after you're done with your day's work, go back to your documentation and find one little thing to share.
 
@@ -88,13 +87,13 @@ ideas -> tweets -> videos, blog posts, talks, podcasts -> books
 
 Build a good website, fill it with ideas and stuff you care about. Don't leave it for the sake of the newest, brightest social medium.
 
-## Open Up Your Cabinet Of Curiosities
+## 4. Open Up Your Cabinet Of Curiosities
 
 Collecting is as effective as creating.
 
 Share your influences.
 
-## Tell Good Stories
+## 5. Tell Good Stories
 
 The stories you tell about your work influences how people perceive it.
 
@@ -113,7 +112,7 @@ The stories you tell about your work influences how people perceive it.
 - Biography: two-sentence explanation.
 - Unless you are a real ninja, rockstar, or guru, stay away from those words.
 
-## Teach What You Know
+## 6. Teach What You Know
 
 Gathering feedback on what you teach is also keeps the learning going.
 
@@ -122,3 +121,38 @@ Gathering feedback on what you teach is also keeps the learning going.
 - Share your techniques
 
 ![](/images/show-your-work/learn-teach-repeat.png)
+
+## 7. Don't Turn into a Human Spam
+
+### Shut up and listen
+
+Being a good-storyteller comes from being even a better listener. "I like to write stories, but I can't read" is a weirdly egoistic excuse.
+
+### Hearts > Eyeballs
+
+The quality of your followers is more important than quantity; there is no need to waste time on hacks about how to get more followers.
+
+If you want followers, be someone worth following. Do your thing and talk about the stuff you love, and you'll eventually attract people who also love them.
+
+### The Vampire Test
+
+A [Derek Sivers](/tags/derek-sivers) quote:
+
+> Whatever excites you, do it.
+> Whatever drains you, stop doing it.
+
+After doing something, take a moment and think about how it felt. Did you get energized and motivated or exhausted and drained?
+
+Apply [the vampire test](/tags/the-vampire-test) to people, projects, and hobbies.
+
+### Find Your fellow <X>'ers
+
+Find people who share the same values as you in a topic, and show the work to them before anyone else.
+
+They are your [scenius](/tags/scenius). Do what you can to nurture your relationship.
+
+### Meet Up in Meatspace
+
+Prefer IRL events: coffee, lunch, meetups.
+
+A great activity to do with [scenius](/tags/scenius): go to museums or bookstores, so you can browse around if you get bored.

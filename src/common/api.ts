@@ -3,7 +3,7 @@ import { join } from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
 import { getImageData, generateMetaImage } from './image'
-import { Book, Content, ContentType, TaggedContent } from '../types'
+import { Book, Content, ContentType, TaggedContent, BaseMeta } from '../types'
 
 const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
@@ -103,28 +103,50 @@ export const getStaticPropsWithContent = <T extends Content>(
 
 const TAGGED_CONTENT_TYPES: ContentType[] = ['article', 'book']
 
-const getSlugsAndMetaByContentType = (contentType: ContentType) =>
-  getSlugs(contentType).map((slug) => ({
-    type: contentType,
-    slug,
-    meta: getMeta(contentType, slug),
-  }))
+const getAllContentByType = (contentType: ContentType) =>
+  getSlugs(contentType).map((slug) => getContent(contentType, slug))
+
+const getTagsFromMarkdown = (markdown: string) => {
+  const tagLinks = markdown.match(/\(\/tags\/.+\)/g)
+
+  if (!tagLinks) {
+    return []
+  }
+
+  return tagLinks.map((tagLink) => tagLink.replace('(/tags/', '').replace(')', ''))
+}
+
+const getTagsFromMeta = (meta?: BaseMeta) => meta?.tags || []
 
 export const getAllTags = () => {
-  const tags = TAGGED_CONTENT_TYPES.map(getSlugsAndMetaByContentType)
-    .flat()
-    .map(({ meta }) => meta?.tags || [])
+  const contentsByType = TAGGED_CONTENT_TYPES.map(getAllContentByType).flat()
+  const tags = new Set<string>()
+
+  // get tags from meta
+  contentsByType
+    .map((c) => c.meta)
+    .map(getTagsFromMeta)
     .filter((tags) => tags.length)
     .flat()
-    .reduce<Set<string>>((tags, tag) => {
-      if (!tags.has(tag)) tags.add(tag)
-      return tags
-    }, new Set())
+    .forEach((tag) => (tags.has(tag) ? null : tags.add(tag)))
+
+  // get tags from markdown
+  contentsByType
+    .map((c) => c.markdown)
+    .map(getTagsFromMarkdown)
+    .filter((tags) => tags.length)
+    .flat()
+    .forEach((tag) => (tags.has(tag) ? null : tags.add(tag)))
 
   return Array.from(tags).sort((a, b) => a.localeCompare(b))
 }
 
-export const getContentsByTag = (tag: string) =>
-  TAGGED_CONTENT_TYPES.map(getSlugsAndMetaByContentType)
-    .flat()
-    .filter(({ meta }) => meta?.tags?.includes(tag)) as TaggedContent[]
+export const getContentsByTag = (tag: string) => {
+  const contentsByType = TAGGED_CONTENT_TYPES.map(getAllContentByType).flat()
+
+  return contentsByType.filter((content) => {
+    const tagsByMeta = getTagsFromMeta(content.meta)
+    const tagsByContent = getTagsFromMarkdown(content.markdown)
+    return [...tagsByMeta, ...tagsByContent].includes(tag)
+  }) as TaggedContent[]
+}
