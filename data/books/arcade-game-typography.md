@@ -8,15 +8,13 @@ tags:
   - typography
 ---
 
-## Notes
-
 Most of arcade the fonts were designed for 8x8, 16x16 or 24x24 due to limitations of resources. This book is mostly restricted to 8x8 variations since they were the pioneers.
 
-#### Difference between T**ypeface and Font**
+### Difference between Typeface and Font
 
 A typeface is an abstract idea, a design that does not take any physical form, while a font is the physical manifestation of a typeface. Traditionally, different sizes were separate fonts; metal type could not be scaled, and you had to have each size in your printing inventory. If you have Times New Roman in 6pt metal, 12pt metal, and digital OpenType.
 
-#### Screenplay writing and typography
+### Screenplay writing and typography
 
 In screenplay writing, a general typography rule is to use 12pt Courier on Letter or A4 format. The idea is that a page should equal a minute of screen time if written in this format. This varies wildly in practice. For example, Tarantino's screenplays easily span several pages in a minute of screen time.
 
@@ -92,13 +90,13 @@ Magnetic Ink Character Recognition (MICR) is a printing technology invented in t
 
 ### Zed Blade
 
-![](/images/arcade-game-typography/arcade-game-typography/arcade-game-typography0.jpg)
+![](/images/arcade-game-typography/arcade-game-typography-10.jpg)
 
 ## 06. Slanted
 
 ### Super Monaco GP
 
-![](/images/arcade-game-typography/arcade-game-typography/arcade-game-typography1.jpg)
+![](/images/arcade-game-typography/arcade-game-typography-11.jpg)
 
 ## 07. Calligraphy & Lettering
 
@@ -106,4 +104,4 @@ Magnetic Ink Character Recognition (MICR) is a printing technology invented in t
 
 There were not many greyscale specimens, this looks nice with all the antialiasing and shadows.
 
-![](/images/arcade-game-typography/arcade-game-typography/arcade-game-typography2.jpg)
+![](/images/arcade-game-typography/arcade-game-typography-12.jpg)

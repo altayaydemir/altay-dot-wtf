@@ -265,7 +265,7 @@ _For any system, there is a certain amount of complexity that cannot be reduced.
 **Key Takeaways**
 
 - All processes have a core of complexity that cannot be designed away and therefore must be assumed by either the system or the user.
-- Ensure as much as possible of the burden is lifted from users by dealing with [inherent](https://www.notion.so/ywx0yxk/Vocabulary-bf8a9440f97d4e59a78e3af19df3f535#14df6d9cd7654880b07e0effe5787521) complexity during design and development.
+- Ensure as much as possible of the burden is lifted from users by dealing with inherent complexity during design and development.
 - Take care not to simplify interfaces to the point of abstraction.
 
 ### Origins
@@ -332,7 +332,7 @@ Facebook's Security Checkup process takes actually less time, but they prolong i
 
 Our responsibilities as designers, humane design, Skinner's Box...
 
-The concepts we have seen in [Hooked](https://www.notion.so/Hooked-679b81a1f5584049bbece536f55f6238) and [Indistractable](https://www.notion.so/Indistractable-1d0cf0b0e0f4429297a8044f6d75f9e5).
+The concepts we have seen in [Hooked](/books/hooked) and [Indistractable](/books/indistractable).
 
 - Intermittent variable rewards.
 - Infinite loops.
