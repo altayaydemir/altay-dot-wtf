@@ -30,7 +30,7 @@ CD Baby just followed the idea of charging 4\$ per copy for albums, which was th
 
 ## Hell Yeah Or No
 
-Persistence is undoubtedly essential, but don't persistently do the wrong thing. Success comes from persistently improving and innovating.
+[Persistence](/tags/persistence) is undoubtedly essential, but don't persistently do the wrong thing. Success comes from persistently improving and innovating.
 
 We are all busy. Saying **"hell yeah, or no"** helps choose what to do with enjoyment.
 

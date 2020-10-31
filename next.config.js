@@ -6,7 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   images: {
-    domains: ['books.google.com'],
+    domains: ['books.google.com', 'cdn-images-1.medium.com'],
   },
   async redirects() {
     return [

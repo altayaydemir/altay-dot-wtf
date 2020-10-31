@@ -21,7 +21,9 @@ const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> =
         title={`now archive from ${formattedDate}`}
         description={`what I was doing ${relativeDate}`}
       />
+
       <Box margin={4} />
+
       <Markdown>{data.markdown}</Markdown>
     </>
   )

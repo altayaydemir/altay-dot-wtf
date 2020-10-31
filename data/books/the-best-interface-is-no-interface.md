@@ -23,7 +23,7 @@ However, shipping an app for a problem is might not be the most intuitive way to
 
 The book has an eye-opening case-study to concretize that thought: **The BMW app and its 13 step process to open the door of a car!**
 
-![](/images/best-interface-is-no-interface/01.jpg)
+![](/images/the-best-interface-is-no-interface/01.jpg)
 
 And the most prominent outcome of this book, **questioning if we desperately need an interface to solve any problem**, shines with a predictably ingenious counter-argument:
 
@@ -73,23 +73,17 @@ Don't kickstart the solution by just drawing wireframes. Focus on the overall ex
 
 #### An app to open the trunk of my car
 
-```text
-📱: Click this button to open the trunk
-🙍‍♂️: but, my hands are full?
-🚗: OK! Kick my bumper, and it opens automatically.
-🙆‍♂️: Shut up and take my money!
-```
+> 📱: Click this button to open the trunk \
+> 🙍‍♂️: but, my hands are full? \
+> 🚗: OK! Kick my bumper, and it opens automatically.\
+> 🙆‍♂️: Shut up and take my money!
 
 #### An app to cool down the interior of a car
 
-```text
-📱: Click this button to start cooling down your car
-parked in the middle of a desert.
-🙍‍♂️: but, I AM AT THE MOVIES WITH MY GF?
-🚗: OK! I do it automatically by slightly opening
-the roof when it's unbearably hot inside.
-🙆‍♂️: THX! Here's a bag of money 💰
-```
+> 📱: Click this button to start cooling down your car parked in the middle of a desert. \
+> 🙍‍♂️: but, I AM AT THE MOVIES WITH MY GF? \
+> 🚗: OK! I do it automatically by slightly opening the roof when it's unbearably hot inside. \
+> 🙆‍♂️: THX! Here's a bag of money 💰
 
 ## Principle 2: Leverage Computers Instead of Serving Them
 
@@ -118,7 +112,7 @@ The information access should be limited, ephemeral, preferably within a time in
 
 > Be transparent on what you find from there ⬆️ and present options ⬇️ to forget or turn it off.
 
-![](/images/best-interface-is-no-interface/02.png)
+![](/images/the-best-interface-is-no-interface/02.png)
 
 ### Automatic
 

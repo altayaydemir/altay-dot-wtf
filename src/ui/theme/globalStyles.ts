@@ -50,4 +50,13 @@ export const createGlobalStyles = (theme: Theme) => `
     line-height: 1.4;
     margin-top: 16px;
   }
+
+  .image-lazy {
+    background-color: ${theme.colors.backgroundSecondary};
+  }
+
+  .image-markdown {
+    max-width: 100%;
+    height: auto;
+  }
 `

@@ -27,7 +27,7 @@ const COLORS_DARK: Colors = {
   text: '#fbfbfc',
   textSecondary: '#DEDFE5',
   textTertiary: '#9094A6',
-  textInlineCode: '#EB5757',
+  textInlineCode: '#007AFF',
   linkPrimary: '#fdce45',
   linkBackground: '#222222',
   linkTag: 'rgba(255, 255, 255, 0.3)',

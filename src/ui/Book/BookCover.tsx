@@ -20,6 +20,7 @@ const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
     }}
   >
     <Image
+      className="image-lazy"
       alt={bookMeta.title}
       src={bookMeta.coverImage.url}
       width={width}

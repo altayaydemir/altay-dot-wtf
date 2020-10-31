@@ -1,11 +1,13 @@
 import { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
 import NextLink from 'next/link'
+import { NextSeo } from 'next-seo'
 import { Box, Text, Link, Heading } from 'rebass'
 import { formatDistanceToNow } from 'date-fns'
 import { getAllTags, getContent, getContentsByTag } from '../../common/api'
 import { sortContentByDate } from '../../common/utils'
 import { TaggedContent, Note } from '../../types'
-import PageHeader from '../../ui/PageHeader'
+import Tags from '../../ui/Tags'
+import Markdown from '../../ui/Markdown'
 
 export const getStaticPaths: GetStaticPaths = async () => ({
   paths: getAllTags().map((tag) => ({ params: { tag } })),
@@ -48,7 +50,7 @@ const getURLForContentPage = (content: TaggedContent) => {
       return `/books/${content.slug}`
 
     default:
-      return '/'
+      return `/tags/${content.slug}`
   }
 }
 
@@ -67,14 +69,20 @@ const getDescription = (count: number) => {
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
   if (!data || !tag) return null
 
+  const heading = `#${tag}`
+  const description = getDescription(data.items.length)
+
   return (
     <>
-      <PageHeader
-        title={`#${tag}`}
-        description={data.note ? data.note.markdown : getDescription(data.items.length)}
-      />
+      <NextSeo title={heading} description={description} />
 
-      <Box my={2} />
+      <Heading fontSize={3}>{heading}</Heading>
+
+      {data.note ? <Tags tags={data.note.meta.tags} /> : null}
+
+      <Box my={2}>
+        <Markdown>{data.note ? data.note.markdown : description}</Markdown>
+      </Box>
 
       <Box>
         {data.note ? (

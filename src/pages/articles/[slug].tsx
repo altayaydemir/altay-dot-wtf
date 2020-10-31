@@ -13,11 +13,14 @@ export const getStaticProps = getStaticPropsWithContent<Article>('article')
 const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null
 
+  const title = data.meta.title
+  const description = data.meta.oneliner
+
   return (
     <>
-      <NextSeo title={data.meta.title} description={data.meta.oneliner} />
+      <NextSeo title={title} description={description} openGraph={{ title, description }} />
 
-      <Heading fontSize={[3, 4]}>{data.meta.title}</Heading>
+      <Heading fontSize={[3, 4]}>{title}</Heading>
 
       <Box my={1} />
 

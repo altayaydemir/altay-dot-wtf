@@ -9,18 +9,27 @@ type Props = {
   metaDescription?: string
 }
 
-const PageHeader: React.FC<Props> = ({ title, metaTitle, description, metaDescription }) => (
-  <>
-    <NextSeo title={metaTitle || title} description={metaDescription || description} />
+const PageHeader: React.FC<Props> = ({ title, metaTitle, description, metaDescription }) => {
+  const seoTitle = metaTitle || title
+  const seoDescription = metaDescription || description
 
-    <Heading fontSize={3}>{title}</Heading>
+  return (
+    <>
+      <NextSeo
+        title={seoTitle}
+        description={seoDescription}
+        openGraph={{ title: seoTitle, description: seoDescription }}
+      />
 
-    {description ? (
-      <Text color="textSecondary">
-        <Markdown>{description}</Markdown>
-      </Text>
-    ) : null}
-  </>
-)
+      <Heading fontSize={3}>{title}</Heading>
+
+      {description ? (
+        <Text color="textSecondary">
+          <Markdown>{description}</Markdown>
+        </Text>
+      ) : null}
+    </>
+  )
+}
 
 export default PageHeader
