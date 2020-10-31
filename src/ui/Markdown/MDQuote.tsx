@@ -9,7 +9,7 @@ const MDQuote: React.FC = ({ children }) => (
       borderLeftStyle: 'solid',
     }}
     padding={[1, 3]}
-    paddingLeft={[2, 4]}
+    paddingLeft={2}
     marginY={[1, 3]}
   >
     <Text
