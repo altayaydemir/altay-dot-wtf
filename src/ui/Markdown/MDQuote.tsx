@@ -10,7 +10,7 @@ const MDQuote: React.FC = ({ children }) => (
     }}
     padding={[1, 3]}
     paddingLeft={[2, 4]}
-    marginBottom={[1, 3]}
+    marginY={[1, 3]}
   >
     <Text
       css={`

@@ -1,6 +1,6 @@
 ---
 title: Dear state, please stop lying
-oneliner: nvm just copy paste.
+oneliner: a tiny revisit of how we represent possible states while building user-interfaces.
 date: '2020-02-22'
 tags:
   - software
@@ -57,11 +57,11 @@ Pretty straightforward, huh?
 
 Probably not 😬
 
-Our state initializes with `loading: false` and `fetchData` is called on `componentDidMount` which means, right after the initial render.
+Our state initializes with `loading=false` and `fetchData` is called on `componentDidMount` which means, right after the initial render.
 
-This will cause a flash in the `Loading` text since it's displayed after we render the empty list in our initial state (`data: []`)
+This will cause a flash in the `Loading` text since it's displayed after we render the empty list in our initial state (`data=[]`)
 
-But programmers are pragmatic and smart people; maybe we can quickly fix this by initializing the state with `loading: true`?
+But programmers are pragmatic and smart people; maybe we can quickly fix this by initializing the state with `loading=true`?
 
 ✅ - No more flashing UI.
 
@@ -82,7 +82,7 @@ class List extends React.Component {
   }
 
   fetchData = async () => {
-    this.setState({ loading: true, error: null })
+    this.setState({ loading: true, error: null }) // WHY 🤡
 
     try {
       const { data } = await api.getData()
@@ -125,7 +125,7 @@ class List extends React.Component {
 
 OK, this would work for our beloved users.
 
-However, readability is not optimal because we're doing some nasty things on `line 9`. We need to perform a clean-up since `error` might be a leftover from the first call 😟
+However, readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call 😟
 
 Again, we may come up with an ingenious solution to make that bearable, maybe by introducing a custom `onRetry` method.
 
@@ -165,12 +165,12 @@ class List extends React.Component {
 ## Time to question our choices
 
 - Why can our state have an error while loading is `true`?
-- Why does our state have `data: []` while loading is `true`?
+- Why does our state have `data=[]` while loading is `true`?
 - Why is that possible to have `data` and `error` at the same time?
 
-> 👨🏻‍💻 : "Dear state, pls stop lying."
+> 👨🏻‍💻: Dear state, pls stop lying.
 
-> 🤖 : "Dear programmer, pls help?"
+> 🤖: 01001000011001010110110001110000
 
 ## How types can help us to make better choices
 
@@ -195,7 +195,7 @@ type State<T> = LoadingState | SuccessState<T> | FailureState
 By revisiting our state design, we made all of these questions irrelevant.
 
 - ~~Why can our state have an error while loading is `true`?~~
-- ~~Why does our state have `data: []` while loading is `true`?~~
+- ~~Why does our state have `data=[]` while loading is `true`?~~
 - ~~Why is that possible to have `data` and `error` at the same time?~~
 
 How would that affect our component?
@@ -265,10 +265,10 @@ There are more benefits than making the state a trustworthy citizen.
 ```tsx
 switch (this.state.type) {
   case 'loading':
-    return <p>Loading: {this.state.data[0].id}</p> // NOPE!
+    return <p>Loading: {this.state.data[0].id}</p> // TSC SAYS NO!
 ```
 
-> 🤖 : "Dear programmer, good luck with the migration."
+> 🤖: 01001110011010010110001101100101
 
 ---
 

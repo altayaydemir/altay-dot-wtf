@@ -9,7 +9,7 @@ type Props = {
 
 const MDCodeBlock: React.FC<Props> = ({ language, value }) => (
   <Box my={3}>
-    <Prism style={dark} showLineNumbers={language !== 'text'} language={language}>
+    <Prism style={dark} language={language}>
       {value}
     </Prism>
   </Box>
