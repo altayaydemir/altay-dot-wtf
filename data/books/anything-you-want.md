@@ -7,7 +7,7 @@ tags:
   - derek-sivers
   - business
   - stay-small
-  - why-you-are-doing-what-you-are-doing
+  - why-are-you-doing-what-you-are-doing
 ---
 
 ## Your Company is Your Utopia
