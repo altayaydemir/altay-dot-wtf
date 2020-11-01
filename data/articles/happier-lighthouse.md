@@ -1,6 +1,6 @@
 ---
 title: Leveraging dynamic imports to make Lighthouse happier
-oneliner: using a 450KB library to render a heading and three paragraphs is not probably my brightest decision.
+oneliner: using a 450KB library to render a heading and three paragraphs is probably not my brightest decision.
 date: '2020-10-31'
 tags:
   - software
