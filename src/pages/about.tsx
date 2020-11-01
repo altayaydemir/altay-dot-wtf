@@ -12,9 +12,10 @@ const sx = {
   '& > div:first-of-type > h3': {
     marginTop: '0!important',
   },
-  '& > * > h3': {
+  '& > div > h3': {
     fontSize: 3,
     marginTop: 5,
+    marginBottom: -2,
   },
 }
 

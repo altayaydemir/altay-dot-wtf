@@ -4,16 +4,14 @@ import { ContentType } from '../types'
 
 const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
-    case 'about':
-      return 'about'
     case 'article':
       return 'articles'
     case 'book':
       return 'books'
     case 'note':
       return 'notes'
-    case 'now':
-      return 'now'
+    default:
+      return type
   }
 }
 

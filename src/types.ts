@@ -55,7 +55,11 @@ export type Book = BaseContent & {
   }
 }
 
-export type Content = Now | Note | Article | Book | About
+export type Vocabulary = BaseContent & {
+  type: 'vocabulary'
+}
+
+export type Content = Now | Note | Article | Book | About | Vocabulary
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book
