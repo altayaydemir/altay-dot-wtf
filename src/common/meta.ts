@@ -17,7 +17,7 @@ const getArticleMeta = async (slug: string, meta: Article['meta']) => {
 }
 
 const getBookMeta = async (slug: string, meta: Book['meta']) => {
-  const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}&key=${process.env.GOOGLE_BOOKS_API_KEY}`
+  const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`
   const json = await api.get(url)
 
   if (!json || !json.totalItems) {
