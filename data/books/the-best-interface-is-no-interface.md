@@ -22,7 +22,7 @@ However, shipping an app for a problem is might not be the most intuitive way to
 
 The book has an eye-opening case-study to concretize that thought: **The BMW app and its 13 step process to open the door of a car!**
 
-![](/images/the-best-interface-is-no-interface/01.jpg)
+![](/images/books/the-best-interface-is-no-interface/01.jpg)
 
 And the most prominent outcome of this book, **questioning if we desperately need an interface to solve any problem**, shines with a predictably ingenious counter-argument:
 
@@ -111,7 +111,7 @@ The information access should be limited, ephemeral, preferably within a time in
 
 > Be transparent on what you find from there ⬆️ and present options ⬇️ to forget or turn it off.
 
-![](/images/the-best-interface-is-no-interface/02.png)
+![](/images/books/the-best-interface-is-no-interface/02.png)
 
 ### Automatic
 

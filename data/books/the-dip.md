@@ -25,7 +25,7 @@ The rewards are heavily skewed, #1 get ten times benefit of #10, and a hundred t
 
 Ice cream flavor popularity graph:
 
-![the-dip-01](/images/the-dip/the-dip-01.png)
+![the-dip-01](/images/books/the-dip/the-dip-01.png)
 
 It's called **the Zipf's law**, and it applies to resumes and college application rates and best-selling records and everything in between. Winners win big because the marketplace loves a winner.
 
@@ -49,7 +49,7 @@ Start from the easier questions, skip the ones you don't know. But the winners a
 
 At the beginning, it's interesting and you enjoy while getting the results. Then the Dip happens, which is the long slog between starting and mastery.
 
-![the-dip-02](/images/the-dip/the-dip-02.png)
+![the-dip-02](/images/books/the-dip/the-dip-02.png)
 
 #### **CURVE 2: THE CUL-DE-SAC — DEAD END**
 
@@ -59,7 +59,7 @@ It is so simple and doesn't even need a chart. It's the situation where we work 
 
 The situation where you can't quit until you fall off, and the whole thing falls apart.
 
-![the-dip-03](/images/the-dip/the-dip-03.png)
+![the-dip-03](/images/books/the-dip/the-dip-03.png)
 
 ### Seven Reasons You Might Fail to Become the Best in the World
 

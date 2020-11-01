@@ -116,7 +116,7 @@ Gathering feedback on what you teach is also keeps the learning going.
 - Share your reading list
 - Share your techniques
 
-![](/images/show-your-work/learn-teach-repeat.png)
+![](/images/books/show-your-work/learn-teach-repeat.png)
 
 ## 7. Don't Turn into a Human Spam
 
