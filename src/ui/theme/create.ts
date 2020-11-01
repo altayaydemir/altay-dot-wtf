@@ -30,7 +30,7 @@ const COLORS_DARK: Colors = {
   textInlineCode: '#DEDFE5',
   linkPrimary: '#fdce45',
   linkBackground: '#222222',
-  borderHR: '#828282',
+  borderHR: '#565656',
   borderPrimary: 'rgba(130, 130, 130, 0.2)',
   imageBackground: 'rgba(0, 0, 0, 0.75)',
 }
