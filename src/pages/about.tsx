@@ -2,10 +2,10 @@ import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import { Box } from 'rebass'
 import Markdown from '../ui/Markdown'
-import { getContent } from '../common/api'
+import { getContentDetails } from '../common/content'
 
 export const getStaticProps = async () => ({
-  props: getContent('about', 'about'),
+  props: await getContentDetails('about', 'about'),
 })
 
 const About: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (

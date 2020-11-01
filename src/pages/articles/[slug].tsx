@@ -2,13 +2,13 @@ import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import { Heading, Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
 import { Article } from '../../types'
 import Markdown from '../../ui/Markdown'
 import Tags from '../../ui/Tags'
 
-export const getStaticPaths = getStaticPathsFromSlugs('article')
-export const getStaticProps = getStaticPropsWithContent<Article>('article')
+export const getStaticPaths = getStaticPathsForContent('article')
+export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
 
 const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null

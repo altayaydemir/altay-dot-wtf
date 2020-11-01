@@ -1,13 +1,13 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box } from 'rebass'
 import { format } from 'date-fns'
-import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
 import { Now } from '../../types'
 import Markdown from '../../ui/Markdown'
 import PageHeader from '../../ui/PageHeader'
 
-export const getStaticPaths = getStaticPathsFromSlugs('now')
-export const getStaticProps = getStaticPropsWithContent<Now>('now')
+export const getStaticPaths = getStaticPathsForContent('now')
+export const getStaticProps = getStaticPropsForContentDetails<Now>('now')
 
 const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null

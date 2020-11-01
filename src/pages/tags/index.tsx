@@ -1,9 +1,9 @@
 import { InferGetStaticPropsType } from 'next'
-import { getAllTags } from '../../common/api'
+import { getAllTags } from '../../common/tags'
 import Tags from '../../ui/Tags'
 
 export const getStaticProps = async () => ({
-  props: { tags: getAllTags() },
+  props: { tags: await getAllTags() },
 })
 
 const TagsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ tags }) => (

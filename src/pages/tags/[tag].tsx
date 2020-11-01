@@ -1,16 +1,16 @@
-import { InferGetStaticPropsType, GetStaticPaths, GetStaticProps } from 'next'
+import { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next'
 import NextLink from 'next/link'
 import { NextSeo } from 'next-seo'
 import { Box, Text, Link, Heading } from 'rebass'
 import { formatDistanceToNow } from 'date-fns'
-import { getAllTags, getContent, getContentsByTag } from '../../common/api'
-import { sortContentByDate } from '../../common/utils'
+import { getContentDetails } from '../../common/content'
+import { getAllTags, getContentsByTag } from '../../common/tags'
 import { TaggedContent, Note } from '../../types'
 import Tags from '../../ui/Tags'
 import Markdown from '../../ui/Markdown'
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: getAllTags().map((tag) => ({ params: { tag } })),
+  paths: (await getAllTags()).map((tag) => ({ params: { tag } })),
   fallback: false,
 })
 
@@ -25,7 +25,7 @@ export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async
 
   let note: Note | null = null
   try {
-    note = getContent<Note>('note', params.tag)
+    note = await getContentDetails<Note>('note', params.tag)
   } catch (e) {
     /* no note for markdown, np 👍 */
   }
@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async
       tag: params.tag,
       data: {
         note,
-        items: sortContentByDate(getContentsByTag(params.tag)),
+        items: await getContentsByTag(params.tag),
       },
     },
   }
@@ -99,7 +99,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
             <NextLink href={getURLForContentPage(content)} passHref>
               <Link>
                 <Text fontSize={2} fontWeight="bold">
-                  {content.slug}
+                  {content.meta.title}
                 </Text>
               </Link>
             </NextLink>

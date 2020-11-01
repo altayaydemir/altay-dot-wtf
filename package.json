@@ -31,7 +31,6 @@
     "react-syntax-highlighter": "^15.2.1",
     "rebass": "^4.0.7",
     "remark-gfm": "^1.0.0",
-    "sharp": "^0.26.2",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {

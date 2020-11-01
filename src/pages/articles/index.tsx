@@ -2,47 +2,36 @@ import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 import { Box, Text, Link, Heading } from 'rebass'
-import { getMeta, getSlugs } from '../../common/api'
-import { sortMetaByDate } from '../../common/utils'
+import { getStaticPropsForContentList } from '../../common/page'
 import { Article } from '../../types'
 import PageHeader from '../../ui/PageHeader'
 
-export const getStaticProps = async () => {
-  const slugs = getSlugs('article')
-  const metas = slugs.map((slug) => getMeta<Article>('article', slug))
-  const articles = slugs.map((slug, i) => ({ slug, ...metas[i] }))
+export const getStaticProps = getStaticPropsForContentList<Article>('article')
 
-  return {
-    props: {
-      articles: sortMetaByDate(articles),
-    },
-  }
-}
-
-const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ articles }) => (
+const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader title="articles" description="learnings worth sharing, mostly about software." />
 
     <Box>
-      {articles.map((article) => (
+      {data.map((article) => (
         <Box key={article.slug} my={4}>
           <NextLink href={`/articles/${article.slug}`} passHref>
             <Link>
-              <Heading fontSize={3}>{article.title}</Heading>
+              <Heading fontSize={3}>{article.meta.title}</Heading>
             </Link>
           </NextLink>
 
           <Box m={1} />
 
           <Text fontSize={1} color="textSecondary">
-            {article.oneliner}
+            {article.meta.oneliner}
           </Text>
 
           <Box m={1} />
 
           <Text fontSize={0} color="textTertiary">
             {'written '}
-            {formatDistanceToNow(new Date(article.date), { addSuffix: true })}
+            {formatDistanceToNow(new Date(article.meta.date), { addSuffix: true })}
           </Text>
         </Box>
       ))}

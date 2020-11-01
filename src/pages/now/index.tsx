@@ -1,26 +1,24 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box, Text } from 'rebass'
 import { format } from 'date-fns'
-import { getSlugs, getContent } from '../../common/api'
+import { getMarkdownFileNames } from '../../common/fs'
+import { getContentDetails } from '../../common/content'
 import { Now } from '../../types'
 import Markdown from '../../ui/Markdown'
 import PageHeader from '../../ui/PageHeader'
 
 export const getStaticProps = async () => {
-  const [latest] = getSlugs('now').reverse()
-  const { markdown, meta } = getContent<Now>('now', latest)
+  const [latest] = getMarkdownFileNames('now').reverse()
 
   return {
     props: {
-      latest,
-      meta,
-      markdown,
+      data: await getContentDetails<Now>('now', latest),
     },
   }
 }
 
-const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown, meta }) => {
-  const formattedDate = format(new Date(meta.date), 'PPP')
+const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  const formattedDate = format(new Date(data.meta.date), 'PPP')
 
   return (
     <>
@@ -32,7 +30,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ mar
 
       <Box margin={4} />
 
-      <Markdown>{markdown}</Markdown>
+      <Markdown>{data.markdown}</Markdown>
 
       <Box margin={4} />
 

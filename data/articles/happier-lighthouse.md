@@ -15,13 +15,13 @@ In addition to eliminating the friction, Vercel also provides [analytics](https:
 
 And that's precisely what I did right after deploying a minimum bearable version, but the results were not satisfying at all.
 
-![](/images/happier-lighthouse/lighthouse-score-before.png)
+![](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
 My beloved minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
 The report is quite clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
 
-![](/images/happier-lighthouse/lighthouse-score-before-detail.png)
+![](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
 > I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/happier-lighthouse/medium-110-requests.gif) 👹👹👹
 
@@ -37,11 +37,11 @@ So I basically have two choices:
 
 Proceeding with the latter, I know one thing which doesn't get minified: **error messages**, or any other string.
 
-![](/images/happier-lighthouse/excessively-loaded-code.png)
+![](/images/articles/happier-lighthouse/excessively-loaded-code.png)
 
 And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be defined` in the `node_modules` is a good next step for approaching to the crux.
 
-![](/images/happier-lighthouse/search-results-for-error-message.png)
+![](/images/articles/happier-lighthouse/search-results-for-error-message.png)
 
 Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it is time to discover what I am doing wrong.
 
@@ -113,7 +113,7 @@ export default Markdown
 
 In the end, performance score of [my home page](/) increased dramatically.
 
-![](/images/happier-lighthouse/lighthouse-score-after.png)
+![](/images/articles/happier-lighthouse/lighthouse-score-after.png)
 
 This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I actually need to render a code editor, such as this post.
 

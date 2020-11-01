@@ -1,28 +1,15 @@
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import { Flex, Box, Heading } from 'rebass'
-import { getStaticPathsFromSlugs, getContent, getBookMeta } from '../../common/api'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
 import { Book } from '../../types'
 import BookCover from '../../ui/Book/BookCover'
 import BookInfo from '../../ui/Book/BookInfo'
 import Markdown from '../../ui/Markdown'
 import Tags from '../../ui/Tags'
 
-export const getStaticPaths = getStaticPathsFromSlugs('book')
-
-export const getStaticProps: GetStaticProps<
-  { data: undefined } | { data: Book },
-  { slug: string }
-> = async ({ params }) => {
-  if (!params?.slug) {
-    return { props: { data: undefined } }
-  }
-
-  const data = getContent<Book>('book', params.slug)
-  const meta = await getBookMeta(params.slug)
-
-  return { props: { data: { ...data, meta } } }
-}
+export const getStaticPaths = getStaticPathsForContent('book')
+export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
 
 const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null

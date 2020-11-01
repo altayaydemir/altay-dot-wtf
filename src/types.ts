@@ -6,16 +6,15 @@ export type BaseMeta = {
 export type BaseContent = {
   slug: string
   markdown: string
+  meta: BaseMeta
 }
 
 export type About = BaseContent & {
   type: 'about'
-  meta: undefined
 }
 
 export type Now = BaseContent & {
   type: 'now'
-  meta: BaseMeta
 }
 
 export type Note = BaseContent & {

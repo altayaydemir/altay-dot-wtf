@@ -2,8 +2,7 @@ import { join } from 'path'
 import fs from 'fs'
 import fetch from 'node-fetch'
 import imageSize from 'image-size'
-import sharp from 'sharp'
-import { createCanvas, loadImage, Image } from 'canvas'
+import { createCanvas, loadImage } from 'canvas'
 import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from '../config'
 
 type ImageData = {
@@ -53,25 +52,16 @@ export const generateMetaImage = async ({
     context.fillStyle = '#050505'
     context.fillRect(0, 0, META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
 
-    let image: Image
-
-    if (scale !== 1) {
-      const scaledWidth = Math.floor(data.width * scale)
-      const scaledHeight = Math.floor(data.height * scale)
-      const scaledImage = sharp(data.buffer).resize(scaledWidth, scaledHeight)
-      data.width = scaledWidth
-      data.height = scaledHeight
-      image = await loadImage(await scaledImage.toBuffer())
-    } else {
-      image = await loadImage(data.buffer)
-    }
+    const image = await loadImage(data.buffer)
+    const imageWidth = data.width * scale
+    const imageHeight = data.height * scale
 
     const coordinates = {
-      x: (META_IMAGE_WIDTH - data.width) / 2,
-      y: (META_IMAGE_HEIGHT - data.height) / 2,
+      x: (META_IMAGE_WIDTH - imageWidth) / 2,
+      y: (META_IMAGE_HEIGHT - imageHeight) / 2,
     }
-    context.drawImage(image, coordinates.x, coordinates.y)
 
+    context.drawImage(image, coordinates.x, coordinates.y, imageWidth, imageHeight)
     fs.writeFileSync(absolutePath, canvas.toBuffer('image/png'))
   }
 

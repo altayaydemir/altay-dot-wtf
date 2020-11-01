@@ -7,6 +7,7 @@ export const SITE_URL = `https://${HOSTNAME}`
 
 export const META_IMAGE_WIDTH = 1200
 export const META_IMAGE_HEIGHT = 628
+export const DEFAULT_IMETA_IMAGE_PATH = '/images/meta/main.jpg'
 
 export const SEO: NextSeoProps = {
   title: SITE_TITLE,
@@ -21,7 +22,7 @@ export const SEO: NextSeoProps = {
     url: SITE_URL,
     images: [
       {
-        url: `${SITE_URL}/images/meta/main.jpg`,
+        url: SITE_URL + DEFAULT_IMETA_IMAGE_PATH,
         width: META_IMAGE_WIDTH,
         height: META_IMAGE_HEIGHT,
         alt: SITE_TITLE,
