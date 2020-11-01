@@ -95,8 +95,6 @@ Never promise a customer doing something beyond your control. The CD Baby and iT
 
 ## Delegating
 
-### Delegate or die
-
 Aim to make yourself verbose by teaching, documenting, and training people along the philosophy.
 
 Let them take care of the daily problems and onboard new employees.

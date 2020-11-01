@@ -13,17 +13,17 @@ tags:
 
 Tells about baseball bat accident that happened to him in high school and had to taken to a hospital with a helicopter and stayed in coma for a few days and serious injuries including one of his eyeball popping up because of the stuffed nose thing. However, he bounced back from this and made great success at university.
 
-**British cycling team’s success after Dave Brailsford**
+### British cycling team’s success after Dave Brailsford
 
 The performance of British riders had been so underwhelming that one of the top bike manufacturers in Europe refused to sell bikes to the team because they were afraid that it would hurt sales if other professionals saw the Brits using their gear.
 
-**Why small habits make big differences**
+### Why small habits make big differences
 
 If you can get 1 percent better each day for one year, you’ll end up thirty-seven times better by the time you’re done.
 
 The impact created by a change in your habits is similar to the effect of shifting the route of an airplane by just a few degrees. Imagine you are flying from Los Angeles to New York City. If a pilot leaving from LAX adjusts the heading just 3.5 degrees south, you will land in Washington, D.C., instead of New York.
 
-**What progress is really like**
+### What progress is really like
 
 Complaining about not achieving success despite working hard is like complaining about an ice cube not melting when you heated it from twenty-five to thirty-one degrees.
 

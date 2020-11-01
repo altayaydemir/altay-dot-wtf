@@ -69,7 +69,7 @@ But programmers are pragmatic and smart people; maybe we can quickly fix this by
 
 _Our state is lying_, but we can live with that.
 
-## Request failed? Oh, snap.
+### Request failed? Oh, snap.
 
 Let's take one more step forward for a better UX and add a _retry_ button to the error component.
 
@@ -125,7 +125,7 @@ class List extends React.Component {
 
 OK, this would work for our beloved users.
 
-However, readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call 😟
+However, readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call.
 
 Again, we may come up with an ingenious solution to make that bearable, maybe by introducing a custom `onRetry` method.
 
@@ -162,7 +162,7 @@ class List extends React.Component {
 
 😰 - We are skipping a very fundamental point, and our state is still lying.
 
-## Time to question our choices
+### Time to question our choices
 
 - Why can our state have an error while loading is `true`?
 - Why does our state have `data=[]` while loading is `true`?
@@ -172,7 +172,7 @@ class List extends React.Component {
 
 > 🤖: 01001000011001010110110001110000
 
-## How types can help us to make better choices
+### How types can help us to make better choices
 
 It's time to enter the safe and shiny world of types, where we can stop [_making impossible state possible_](https://www.youtube.com/watch?v=IcgmSRJHu_8).
 

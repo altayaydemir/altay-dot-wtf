@@ -22,7 +22,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Heading fontSize={[3, 4]}>{title}</Heading>
 
-      <Box my={1} />
+      <Box my={2} />
 
       <Text fontSize={1} color="textTertiary">
         {format(new Date(data.meta.date), 'PPP')} (
@@ -31,7 +31,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Tags tags={data.meta.tags} />
 
-      <Box my={3} />
+      <Box my={2} />
 
       <Markdown>{data.markdown}</Markdown>
     </>

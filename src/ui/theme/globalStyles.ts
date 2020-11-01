@@ -48,15 +48,20 @@ export const createGlobalStyles = (theme: Theme) => `
 
   li {
     line-height: 1.4;
-    margin-top: 16px;
+    margin: 12px 0 0 0;
   }
 
   .image-lazy {
     background-color: ${theme.colors.backgroundSecondary};
   }
 
+  .image-book-cover {
+    border-radius: 4px;
+  }
+
   .image-markdown {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 `

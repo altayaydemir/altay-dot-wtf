@@ -9,7 +9,7 @@ type Props = {
 
 const MDCodeBlock: React.FC<Props> = ({ language, value }) => (
   <Box my={3}>
-    <Prism style={dark} language={language}>
+    <Prism style={dark} language={language} customStyle={{ borderRadius: 8 }}>
       {value}
     </Prism>
   </Box>

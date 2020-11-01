@@ -59,13 +59,8 @@ It was looking like before the refactor:
 
 import ReactMarkdown from 'react-markdown'
 import { Prism } from 'react-syntax-highlighter'
-import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 
-const MDCode = ({ language, dark }) => (
-  <Prism style={dark} language={language}>
-    {value}
-  </Prism>
-)
+const MDCode = ({ language }) => <Prism language={language}>{value}</Prism>
 
 const Markdown = ({ children }) => (
   <ReactMarkdown escapeHtml={true} renderers={{ code: MDCode }}>
@@ -93,13 +88,8 @@ I changed strategy of using the syntax-higlighter to be on demand and follow the
 // dynamically imported within Markdown component
 
 import { Prism } from 'react-syntax-highlighter'
-import dark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus'
 
-const MDCodeBlock = ({ language, value }) => (
-  <Prism style={dark} language={language}>
-    {value}
-  </Prism>
-)
+const MDCodeBlock = ({ language, value }) => <Prism language={language}>{value}</Prism>
 
 export default MDCodeBlock
 ```

@@ -40,7 +40,7 @@ export type Theme = BaseTheme & {
   colors: Colors
 }
 
-export const createTheme = (options: ThemeOptions): Theme => ({
+export const createTheme = (options: ThemeOptions) => ({
   ...preset,
   ...options,
   variants: {},

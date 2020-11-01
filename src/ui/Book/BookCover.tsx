@@ -8,19 +8,11 @@ type Props = {
 }
 
 const MAX_WIDTH = 144
-const BORDER_WIDTH = 1
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
-  <Box
-    sx={{
-      display: 'inline-block',
-      borderWidth: BORDER_WIDTH,
-      borderStyle: 'solid',
-      borderColor: 'borderPrimary',
-    }}
-  >
+  <Box display="inline-block">
     <Image
-      className="image-lazy"
+      className="image-lazy image-book-cover "
       alt={bookMeta.title}
       src={bookMeta.coverImage.url}
       width={width}
