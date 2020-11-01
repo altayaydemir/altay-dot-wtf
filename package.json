@@ -39,7 +39,6 @@
     "@types/react": "^16.9.55",
     "@types/react-syntax-highlighter": "^13.5.0",
     "@types/rebass": "^4.0.7",
-    "@types/sharp": "^0.26.0",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "eslint": "^7.12.1",
