@@ -1,4 +1,4 @@
-import { api } from './api'
+import { fetchBookData } from './api'
 import { getRemoteImageData, getLocalImageData, generateMetaImage } from './image'
 import { Article, Book, Content, ContentType } from '../types'
 
@@ -17,15 +17,7 @@ const getArticleMeta = async (slug: string, meta: Article['meta']) => {
 }
 
 const getBookMeta = async (slug: string, meta: Book['meta']) => {
-  const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${meta.isbn}`
-  const json = await api.get(url)
-
-  if (!json || !json.totalItems) {
-    throw new Error(`Could not fetch meta for book: ${slug} - ${url}`)
-  }
-
-  const [fetchedBook] = json.items
-  const coverImageURL = fetchedBook.volumeInfo.imageLinks.thumbnail.replace('http://', 'https://')
+  const { coverImageURL, title, authors } = await fetchBookData(meta.isbn)
   const coverImageData = await getRemoteImageData(coverImageURL)
   const metaImage = await generateMetaImage({
     directory: 'books',
@@ -36,8 +28,8 @@ const getBookMeta = async (slug: string, meta: Book['meta']) => {
 
   return {
     ...meta,
-    title: fetchedBook.volumeInfo.title,
-    authors: fetchedBook.volumeInfo.authors,
+    title,
+    authors,
     coverImage: {
       url: coverImageURL,
       aspectRatio: coverImageData.ratio,
