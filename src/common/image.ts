@@ -4,6 +4,9 @@ import fetch from 'node-fetch'
 import imageSize from 'image-size'
 import { createCanvas, loadImage } from 'canvas'
 import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from '../config'
+import { MetaImage } from '../types'
+
+const PUBLIC_FOLDER = join(process.cwd(), 'public')
 
 type ImageData = {
   buffer: Buffer
@@ -12,24 +15,25 @@ type ImageData = {
   height: number
 }
 
-export const getImageData = async (url: string): Promise<ImageData> => {
-  const response = await fetch(url)
-  const buffer = await response.buffer()
+const getImageDataFromBuffer = (buffer: Buffer) => {
   const { width, height } = imageSize(buffer)
 
   if (!width || !height) {
-    throw new Error('')
+    throw new Error('Could not read image data')
   }
 
   return { buffer, ratio: width / height, width, height }
 }
 
-const PUBLIC_FOLDER = join(process.cwd(), 'public')
+export const getLocalImageData = async (url: string): Promise<ImageData> => {
+  const buffer = fs.readFileSync(PUBLIC_FOLDER + url)
+  return getImageDataFromBuffer(buffer)
+}
 
-type MetaImage = {
-  url: string
-  width: number
-  height: number
+export const getRemoteImageData = async (url: string): Promise<ImageData> => {
+  const response = await fetch(url)
+  const buffer = await response.buffer()
+  return getImageDataFromBuffer(buffer)
 }
 
 export const generateMetaImage = async ({

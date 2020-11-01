@@ -1,6 +1,6 @@
 ---
 title: Leveraging dynamic imports to make Lighthouse happier
-oneliner: using a 450KB library to render a heading with three paragraphs of text is not probably my brightest moment.
+oneliner: using a 450KB library to render a heading and three paragraphs is not probably my brightest decision.
 date: '2020-10-31'
 tags:
   - software
@@ -31,11 +31,11 @@ The report shows which chunk is not utilized, unfortunately the code is minified
 
 So I basically have two choices:
 
-- Be a responsible, clean coder and de-obfuscate the source maps to find out what's wrong.
+- Be a responsible, clean coder and inspect the source maps by using [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) to find out what's wrong.
 
-- Remember that's a fun project, and double the amount of fun with puzzles and quizzes by guesstimating what it could be.
+- Remember that's a fun project, and double the amount of fun with puzzles by guesstimating what it could be.
 
-Proceeding with the latter, I know one thing which doesn't get minified: **error messages**, or any other string.
+Proceeding with the latter, I know one thing which doesn't get minified: **error messages!**
 
 ![](/images/articles/happier-lighthouse/excessively-loaded-code.png)
 

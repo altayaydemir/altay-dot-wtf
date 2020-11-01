@@ -1,3 +1,9 @@
+export type MetaImage = {
+  url: string
+  width: number
+  height: number
+}
+
 export type BaseMeta = {
   date: string
   tags: string[] | undefined
@@ -29,6 +35,7 @@ export type Article = BaseContent & {
   meta: BaseMeta & {
     title: string
     oneliner: string
+    metaImage: MetaImage | null
   }
 }
 
@@ -42,11 +49,7 @@ export type Book = BaseContent & {
       url: string
       aspectRatio: number
     }
-    metaImage: {
-      url: string
-      width: number
-      height: number
-    }
+    metaImage: MetaImage
     isbn: string
     rating: string
   }
@@ -54,4 +57,6 @@ export type Book = BaseContent & {
 
 export type Content = Now | Note | Article | Book | About
 export type ContentType = Content['type']
+
 export type TaggedContent = Note | Article | Book
+export type TaggedContentType = TaggedContent['type']
