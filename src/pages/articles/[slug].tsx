@@ -36,6 +36,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <Box mb={3}>
           <Image
             className="image-markdown"
+            alt={data.meta.title}
             src={data.meta.metaImage.url}
             width={data.meta.metaImage.width}
             height={data.meta.metaImage.height}
