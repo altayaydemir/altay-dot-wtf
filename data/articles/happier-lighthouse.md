@@ -53,16 +53,18 @@ I literally copy/pasted [the snippet in docs](https://github.com/remarkjs/react-
 It was looking like before the refactor:
 
 ```jsx
-// Markdown component
-// used in everywhere I need to render markdown
-
+// Markdown.jsx
 import ReactMarkdown from 'react-markdown'
 import { Prism } from 'react-syntax-highlighter'
 
-const MDCode = ({ language }) => <Prism language={language}>{value}</Prism>
+const Code = (props) => <Prism language={props.language}>{props.value}</Prism>
 
 const Markdown = ({ children }) => (
-  <ReactMarkdown escapeHtml={true} renderers={{ code: MDCode }}>
+  <ReactMarkdown
+    renderers={{
+      code: Code,
+    }}
+  >
     {children}
   </ReactMarkdown>
 )
@@ -80,27 +82,39 @@ Although `React` allows lazy loading with the [suspense API](https://reactjs.org
 
 However, our thoughtful friend `Next.js` offers an alternative API for dynamic imports. It's called [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) and pretty straightforward for such a use-case like this.
 
-I changed strategy of using the syntax-higlighter to be on demand and follow the lazy approach by splitting the components.
+First, I changed my usage of `react-syntax-higlighter` to load and register parsers for the languages I use.
 
 ```jsx
-// MDCodeBlock
-// dynamically imported within Markdown component
+// MarkdownCodeBlock.jsx
+import { PrismLight } from 'react-syntax-highlighter'
+import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx'
+import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx'
 
-import { Prism } from 'react-syntax-highlighter'
+PrismLight.registerLanguage('jsx', jsx)
+PrismLight.registerLanguage('tsx', tsx)
 
-const MDCodeBlock = ({ language, value }) => <Prism language={language}>{value}</Prism>
+const MarkdownCodeBlock = ({ language, value }) => (
+  <PrismLight language={language}>{value}</PrismLight>
+)
 
-export default MDCodeBlock
+export default MarkdownCodeBlock
 ```
 
+Then, I changed strategy of using the syntax higlighter to be on demand and follow the lazy approach by splitting the components.
+
 ```jsx
+// Markdown.jsx
 import ReactMarkdown from 'react-markdown'
 import dynamic from 'next/dynamic'
 
-const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
+const MarkdownCodeBlock = dynamic(() => import('./MarkdownCodeBlock'))
 
 const Markdown = ({ children }) => (
-  <ReactMarkdown escapeHtml={true} renderers={{ code: MDCodeBlock }}>
+  <ReactMarkdown
+    renderers={{
+      code: MarkdownCodeBlock,
+    }}
+  >
     {children}
   </ReactMarkdown>
 )
