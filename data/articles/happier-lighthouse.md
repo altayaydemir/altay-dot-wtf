@@ -15,15 +15,15 @@ In addition to eliminating the friction, Vercel also provides [analytics](https:
 
 And that's precisely what I did right after deploying a minimum bearable version, but the results were not satisfying at all.
 
-![](/images/articles/happier-lighthouse/lighthouse-score-before.png)
+![Lighthouse score before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
 My beloved minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
 The report is quite clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
 
-![](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
+![Lighthouse score details, before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
-> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/happier-lighthouse/medium-110-requests.gif) 👹👹👹
+> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif) 👹👹👹
 
 ### Finding out what I am excessively loading
 
@@ -37,7 +37,7 @@ So I basically have two choices:
 
 Proceeding with the latter, I know one thing which doesn't get minified: **error messages!**
 
-![](/images/articles/happier-lighthouse/excessively-loaded-code.png)
+![Digging up the excessively loaded code](/images/articles/happier-lighthouse/excessively-loaded-code.png)
 
 And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be defined` in the `node_modules` is a good next step for approaching to the crux.
 
@@ -113,7 +113,7 @@ export default Markdown
 
 In the end, performance score of [my home page](/) increased dramatically.
 
-![](/images/articles/happier-lighthouse/lighthouse-score-after.png)
+![Lighthouse score, after the optimisation](/images/articles/happier-lighthouse/lighthouse-score-after.png)
 
 This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I actually need to render a code editor, such as this post.
 
