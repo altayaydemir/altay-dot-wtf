@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box } from 'rebass'
-import { format, formatDistanceToNow } from 'date-fns'
+import { format } from 'date-fns'
 import { getStaticPathsFromSlugs, getStaticPropsWithContent } from '../../common/api'
 import { Now } from '../../types'
 import Markdown from '../../ui/Markdown'
@@ -12,14 +12,11 @@ export const getStaticProps = getStaticPropsWithContent<Now>('now')
 const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
   if (!data) return null
 
-  const formattedDate = format(new Date(data.meta.date), 'MMMM yyyy')
-  const relativeDate = formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })
-
   return (
     <>
       <PageHeader
-        title={`now archive from ${formattedDate}`}
-        description={`what I was doing ${relativeDate}`}
+        title={`history`}
+        description={`what I was doing around ${format(new Date(data.meta.date), 'MMMM yyyy')}`}
       />
 
       <Box margin={4} />
