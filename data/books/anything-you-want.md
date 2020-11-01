@@ -6,7 +6,7 @@ oneliner: 'If you want to be useful, you can start now. Just put one percent of 
 tags:
   - derek-sivers
   - business
-  - stay-small
+  - staying-small
   - saying-no
   - why-are-you-doing-what-you-are-doing
 ---

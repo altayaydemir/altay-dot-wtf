@@ -6,7 +6,6 @@ oneliner: 'Our love for the digital interface is out of control, and our obsessi
 tags:
   - product-design
   - humane-design
-  - bright-minds
 ---
 
 I am fond of the doze and accuracy of sarcasm in Krishna's tone, and I'm glad that he joined Google to work on the pain-points he addressed in this book.
@@ -47,7 +46,7 @@ Following the "there is an app for that" mentality, we see this tactic's applica
 
 > more screens -> more ads -> more revenue
 
-The best minds of our generation are thinking about how to make people click ads.
+The [best minds of our generation](/tags/bright-minds) are thinking about how to make people click ads.
 
 The general goal is to do whatever possible to keep more and more of us logged in wired, dragging us back for more interface time because the more eyeballs, the more money they can sell their ads for; and the happier their shareholders.
 

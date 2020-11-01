@@ -8,33 +8,33 @@ import { MetaImage } from '../types'
 
 const PUBLIC_FOLDER = join(process.cwd(), 'public')
 
-type ImageData = {
-  buffer: Buffer
-  ratio: number
-  width: number
-  height: number
-}
-
 const getImageDataFromBuffer = (buffer: Buffer) => {
   const { width, height } = imageSize(buffer)
 
   if (!width || !height) {
-    throw new Error('Could not read image data')
+    throw new Error('Could not get image data')
   }
 
   return { buffer, ratio: width / height, width, height }
 }
 
-export const getLocalImageData = async (url: string): Promise<ImageData> => {
+type ImageData = ReturnType<typeof getImageDataFromBuffer>
+
+const getLocalImageData = async (url: string): Promise<ImageData> => {
   const buffer = fs.readFileSync(PUBLIC_FOLDER + url)
   return getImageDataFromBuffer(buffer)
 }
 
-export const getRemoteImageData = async (url: string): Promise<ImageData> => {
+const getRemoteImageData = async (url: string): Promise<ImageData> => {
   const response = await fetch(url)
   const buffer = await response.buffer()
   return getImageDataFromBuffer(buffer)
 }
+
+export const getImageData = (url: string) =>
+  url.startsWith('/') ? getLocalImageData(url) : getRemoteImageData(url)
+
+const META_IMAGE_BG_FILL_COLOR = '#050505'
 
 export const generateMetaImage = async ({
   directory,
@@ -53,7 +53,7 @@ export const generateMetaImage = async ({
   if (!fs.existsSync(absolutePath)) {
     const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
     const context = canvas.getContext('2d')
-    context.fillStyle = '#050505'
+    context.fillStyle = META_IMAGE_BG_FILL_COLOR
     context.fillRect(0, 0, META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
 
     const image = await loadImage(data.buffer)
