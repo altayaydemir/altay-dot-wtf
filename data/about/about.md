@@ -2,7 +2,7 @@
 date: '2020-10-31'
 ---
 
-## what I do
+### what I do
 
 living in prenzlauerberg, berlin
 
@@ -10,9 +10,7 @@ working at [klarna](https://klarna.com) as software engineer in the day-time
 
 reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time
 
-&nbsp;
-
-## what I enjoy
+### what I enjoy
 
 **using things** that are solving my problems.
 
@@ -24,9 +22,7 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 
 **connecting the people I know** and blissfully watching them help out each other.
 
-&nbsp;
-
-## who I admire
+### who I admire
 
 people who contributed enormously to my life during the past several years.
 
@@ -51,9 +47,7 @@ christian löffler, hælos, jakuzi
 **close-circle-mentor three**\
 [hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), matthias carigiet
 
-&nbsp;
-
-## what I did
+### what I did
 
 - **1994**: born in kayseri, turkey
 - **2000**: moved to antalya, turkey

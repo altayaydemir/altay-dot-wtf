@@ -7,6 +7,7 @@ tags:
   - derek-sivers
   - business
   - stay-small
+  - saying-no
   - why-are-you-doing-what-you-are-doing
 ---
 

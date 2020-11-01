@@ -6,7 +6,6 @@ tags:
   - software
   - performance
   - next-js
-  - dynamic-imports
 ---
 
 I am building this website with [Next.js](https://nextjs.org) and obviously charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
@@ -41,7 +40,7 @@ Proceeding with the latter, I know one thing which doesn't get minified: **error
 
 And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be defined` in the `node_modules` is a good next step for approaching to the crux.
 
-![](/images/articles/happier-lighthouse/search-results-for-error-message.png)
+![Search results for the error message.](/images/articles/happier-lighthouse/search-results-for-error-message.png)
 
 Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it is time to discover what I am doing wrong.
 

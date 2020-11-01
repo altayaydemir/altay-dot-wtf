@@ -16,7 +16,7 @@ const Tags: React.FC<Props> = ({ tags, fontSize = 0, spacing = 1 }) => {
         .sort((a, b) => a.localeCompare(b))
         .map((tag) => (
           <NextLink key={tag} href={`/tags/${tag}`} passHref>
-            <Link color="linkTag">
+            <Link color="textTertiary">
               <Text fontSize={fontSize} display="inline-block" marginRight={spacing}>
                 #{tag}
               </Text>

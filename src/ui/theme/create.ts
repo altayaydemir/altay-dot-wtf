@@ -6,7 +6,7 @@ import { Theme as BaseTheme } from 'styled-system'
 export type ThemeOptions = { dark: boolean }
 
 const COLORS_LIGHT = {
-  background: '#fff',
+  background: '#fcfcfc',
   backgroundSecondary: '#f6f6f9',
   text: '#050505',
   textSecondary: '#2f3037',
@@ -14,8 +14,8 @@ const COLORS_LIGHT = {
   textInlineCode: '#2f3037',
   linkPrimary: '#007AFF',
   linkBackground: '#F1F5FC',
-  linkTag: '#949494',
-  borderPrimary: 'rgba(0, 0, 0, 0.05)',
+  borderHR: '#F1F5FC',
+  borderPrimary: 'rgba(241, 245, 252)',
   imageBackground: 'rgba(255, 255, 255, 0.75)',
 }
 
@@ -30,8 +30,8 @@ const COLORS_DARK: Colors = {
   textInlineCode: '#DEDFE5',
   linkPrimary: '#fdce45',
   linkBackground: '#222222',
-  linkTag: 'rgba(255, 255, 255, 0.3)',
-  borderPrimary: 'rgba(0, 0, 0, 0.5)',
+  borderHR: '#828282',
+  borderPrimary: 'rgba(130, 130, 130, 0.2)',
   imageBackground: 'rgba(0, 0, 0, 0.75)',
 }
 

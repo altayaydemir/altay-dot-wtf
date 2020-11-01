@@ -17,7 +17,7 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
 
     <Box>
       {data.map((d) => (
-        <NextLink key={d.slug} href={`/now/${d}`}>
+        <NextLink key={d.slug} href={`/now/${d.slug}`}>
           <Link>
             <Flex alignItems="center" mb={1}>
               <Text mr={1} fontSize={1}>

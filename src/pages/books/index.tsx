@@ -40,7 +40,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
 
               {book.meta.oneliner ? (
                 <Box display="inline-block">
-                  <hr style={{ width: '10%', marginLeft: 0, opacity: 0.5 }} />
+                  <hr style={{ width: '10%', marginLeft: 0 }} />
 
                   <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
                     {book.meta.oneliner}

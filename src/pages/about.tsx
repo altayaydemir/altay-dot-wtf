@@ -8,10 +8,21 @@ export const getStaticProps = async () => ({
   props: await getContentDetails('about', 'about'),
 })
 
+const sx = {
+  '& > div:first-of-type > h3': {
+    marginTop: '0!important',
+  },
+  '& > * > h3': {
+    fontSize: 3,
+    marginTop: 5,
+  },
+}
+
 const About: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
     <NextSeo title="about" />
-    <Box mt={-4}>
+
+    <Box sx={sx}>
       <Markdown>{markdown}</Markdown>
     </Box>
   </>

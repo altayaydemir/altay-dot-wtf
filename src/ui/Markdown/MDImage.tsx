@@ -16,7 +16,7 @@ const MDImage: React.FC<Props> = ({ src, alt }) => {
   return (
     <Box my={3}>
       <Zoom zoomMargin={96} overlayBgColorEnd={theme.colors.imageBackground}>
-        <Image alt={alt} src={src} unsized className="image-lazy image-markdown" />
+        <Image alt={alt} src={src} unsized className="image-lazy image-markdown" sizes="100%" />
       </Zoom>
     </Box>
   )

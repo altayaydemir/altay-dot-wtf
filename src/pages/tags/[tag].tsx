@@ -76,7 +76,9 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
     <>
       <NextSeo title={heading} description={description} />
 
-      <Heading fontSize={3}>{heading}</Heading>
+      <Heading fontSize={3} fontWeight="800">
+        {heading}
+      </Heading>
 
       {data.note ? <Tags tags={data.note.meta.tags} /> : null}
 

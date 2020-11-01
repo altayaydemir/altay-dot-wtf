@@ -25,8 +25,8 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   hr {
-    border-color: ${theme.colors.borderPrimary};
-    opacity: 0.5;
+    border-color: ${theme.colors.borderHR};
+    opacity: 0.2;
   }
 
   a {

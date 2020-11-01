@@ -39,11 +39,14 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             src={data.meta.metaImage.url}
             width={data.meta.metaImage.width}
             height={data.meta.metaImage.height}
+            priority={true}
           />
         </Box>
       ) : null}
 
-      <Heading fontSize={[3, 4]}>{title}</Heading>
+      <Heading fontSize={[3, 4]} fontWeight="800">
+        {title}
+      </Heading>
 
       <Box my={2} />
 
