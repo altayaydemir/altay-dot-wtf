@@ -19,10 +19,13 @@ export const getContentDetails = async <T extends Content>(
   } as T
 }
 
-export const getContentList = async <T extends Content>(contentType: ContentType) => {
+export const getContentList = async <T extends Content>(
+  contentType: ContentType,
+  { withMarkdown = false } = {},
+) => {
   const contentList = await Promise.all(
     getMarkdownFileNames(contentType).map((slug) => getContentDetails<T>(contentType, slug)),
   )
 
-  return contentList.map((c) => ({ ...c, markdown: '' }))
+  return contentList.map((c) => ({ ...c, markdown: withMarkdown ? c.markdown : '' }))
 }

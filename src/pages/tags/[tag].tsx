@@ -99,7 +99,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
             <NextLink href={getURLForContentPage(content)} passHref>
               <Link>
                 <Text fontSize={2} fontWeight="bold">
-                  {content.meta.title}
+                  {content.meta.title || content.slug}
                 </Text>
               </Link>
             </NextLink>

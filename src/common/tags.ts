@@ -3,7 +3,8 @@ import { TaggedContent, TaggedContentType } from '../types'
 import { sortContentByDate } from './utils'
 
 const TAGGED_CONTENT_TYPES: TaggedContentType[] = ['article', 'book', 'note']
-const getAllTaggedContents = () => Promise.all(TAGGED_CONTENT_TYPES.map(getContentList))
+const getAllTaggedContents = () =>
+  Promise.all(TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withMarkdown: true })))
 
 const getTagsFromMeta = (content: TaggedContent) => content.meta.tags || []
 
