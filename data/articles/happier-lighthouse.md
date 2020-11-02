@@ -82,7 +82,7 @@ Although `React` allows lazy loading with the [suspense API](https://reactjs.org
 
 However, our thoughtful friend `Next.js` offers an alternative API for dynamic imports. It's called [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) and pretty straightforward for such a use-case like this.
 
-First, I changed my usage of `react-syntax-higlighter` to load and register parsers for the languages I use.
+First, I changed my usage of `react-syntax-higlighter` to load and register parsers only for the languages I use.
 
 ```jsx
 // MarkdownCodeBlock.jsx
@@ -100,7 +100,7 @@ const MarkdownCodeBlock = ({ language, value }) => (
 export default MarkdownCodeBlock
 ```
 
-Then, I changed strategy of using the syntax higlighter to be on demand and follow the lazy approach by splitting the components.
+I also changed the strategy of using syntax higlighter to be on demand, so the other pages using markdown (such as [book notes](/books)) won't load `react-markdown` and friends.
 
 ```jsx
 // Markdown.jsx
@@ -124,7 +124,7 @@ export default Markdown
 
 ### ...and then, did they live happily after? 🤖👨‍💻
 
-In the end, performance score of [my home page](/) increased dramatically.
+In the end, performance score of [the home page](/) increased dramatically.
 
 ![Lighthouse score, after the optimisation](/images/articles/happier-lighthouse/lighthouse-score-after.png)
 
