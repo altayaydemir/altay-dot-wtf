@@ -1,16 +1,33 @@
 import NextLink from 'next/link'
-import { Box, Text, Link, Flex } from 'rebass'
+import { Box, Heading, Text, Link, Flex } from 'rebass'
 import { VscArrowRight } from 'react-icons/vsc'
-import { HOME } from '../config'
-import PageHeader from '../ui/PageHeader'
+
+const data = {
+  title: 'hi, my name is altay.',
+  description: [
+    `thanks for visiting my website.`,
+    `I am a software engineer currently living in berlin.`,
+    `I enjoy building things that are solving problems I empathize with.`,
+  ],
+  links: [
+    {
+      label: 'more about me',
+      href: '/about',
+    },
+    {
+      label: 'what am I doing now',
+      href: '/now',
+    },
+  ],
+} as const
 
 const Home: React.FC = () => (
   <>
-    <PageHeader title={HOME.title} />
+    <Heading fontSize={3}>{data.title}</Heading>
 
     <Box m={3} />
 
-    {HOME.description.map((i) => (
+    {data.description.map((i) => (
       <Text key={i} color="textSecondary">
         {i}
       </Text>
@@ -19,14 +36,14 @@ const Home: React.FC = () => (
     <Box m={3} />
 
     <>
-      {HOME.links.map((link) => (
+      {data.links.map((link) => (
         <Box key={link.href}>
           <NextLink href={link.href} passHref>
             <Link>
-              <Flex alignItems="center">
+              <Box display="inline-flex" sx={{ alignItems: 'center' }}>
                 <Text mr={1}>{link.label}</Text>
                 <VscArrowRight />
-              </Flex>
+              </Box>
             </Link>
           </NextLink>
         </Box>
