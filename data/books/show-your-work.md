@@ -57,7 +57,7 @@ Is it useful or interesting?
 
 ✅ YES --> SHARE\
 ❌ NO --> DON'T\
-🤷- ‍♂️ I DON'T KNOW --> WAIT 24 HOURS
+🤷 I DON'T KNOW --> WAIT 24 HOURS
 
 #### What to Share
 

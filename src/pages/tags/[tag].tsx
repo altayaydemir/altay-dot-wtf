@@ -41,7 +41,19 @@ export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async
   }
 }
 
-const getURLForContentPage = (content: TaggedContent) => {
+const getDescription = (count: number) => {
+  if (count === 0) {
+    return `sorry, I couldn't find anything tagged with that.`
+  }
+
+  if (count === 1) {
+    return `there is only one thing related to that.`
+  }
+
+  return `there are ${count} things related to that.`
+}
+
+const getURLForContent = (content: TaggedContent) => {
   switch (content.type) {
     case 'article':
       return `/articles/${content.slug}`
@@ -54,16 +66,17 @@ const getURLForContentPage = (content: TaggedContent) => {
   }
 }
 
-const getDescription = (count: number) => {
-  if (count === 0) {
-    return `sorry, I couldn't find anything tagged with that.`
-  }
+const getTitleForContent = (content: TaggedContent) => {
+  switch (content.type) {
+    case 'book':
+      return `${content.meta.title} by ${content.meta.authors.join(', ')}`
 
-  if (count === 1) {
-    return `there is only one thing related to that.`
-  }
+    case 'note':
+      return `#${content.slug}`
 
-  return `there are ${count} things related to that.`
+    default:
+      return content.meta.title
+  }
 }
 
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
@@ -98,10 +111,10 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
 
         {data.items.map((content) => (
           <Box key={content.type + content.slug} mb={3}>
-            <NextLink href={getURLForContentPage(content)} passHref>
+            <NextLink href={getURLForContent(content)} passHref>
               <Link>
                 <Text fontSize={2} fontWeight="bold">
-                  {content.meta.title || content.slug}
+                  {getTitleForContent(content)}
                 </Text>
               </Link>
             </NextLink>
