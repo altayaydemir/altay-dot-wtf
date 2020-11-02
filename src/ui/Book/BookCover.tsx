@@ -12,7 +12,7 @@ const MAX_WIDTH = 144
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
   <Box display="inline-block">
     <Image
-      className="image-lazy image-book-cover "
+      className="image-lazy image-book-cover"
       alt={bookMeta.title}
       src={bookMeta.coverImage.url}
       width={width}

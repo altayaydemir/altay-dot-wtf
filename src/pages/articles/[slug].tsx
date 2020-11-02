@@ -35,7 +35,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       {data.meta.metaImage ? (
         <Box mb={4}>
           <Image
-            className="image-markdown"
+            className="image-markdown image-lazy"
             alt={data.meta.title}
             src={data.meta.metaImage.url}
             width={data.meta.metaImage.width}
