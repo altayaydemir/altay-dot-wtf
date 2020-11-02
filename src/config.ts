@@ -58,7 +58,7 @@ export const FOOTER = {
   links: [
     {
       label: 'email',
-      href: 'mailto:altay.aydemir@icloud.com',
+      href: 'mailto:altay@aydemir.io',
     },
     {
       label: 'twitter',
