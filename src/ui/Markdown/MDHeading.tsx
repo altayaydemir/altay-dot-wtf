@@ -1,11 +1,14 @@
-import { Box } from 'rebass'
+import { Box, SxStyleProp } from 'rebass'
 import { renderers } from 'react-markdown'
 
 type Props = { level: number }
 
-const MDHeadingStyle = {
+const MDHeadingStyle: SxStyleProp = {
   '& > h1, h2, h3, h4, h5, h6': {
     marginTop: 4,
+  },
+  '& > h3': {
+    marginTop: 5,
   },
   '& > h2': {
     paddingBottom: 2,

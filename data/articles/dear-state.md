@@ -270,8 +270,6 @@ switch (this.state.type) {
 
 > 🤖: 01001110011010010110001101100101
 
----
-
 ### Resources
 
 - ["Effective TypeScript"](https://www.oreilly.com/library/view/effective-typescript/9781492053736/) by [Dan Vanderkam](https://github.com/danvk)

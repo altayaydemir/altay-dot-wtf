@@ -33,7 +33,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       />
 
       {data.meta.metaImage ? (
-        <Box mb={3}>
+        <Box mb={4}>
           <Image
             className="image-markdown"
             alt={data.meta.title}
@@ -51,14 +51,13 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
       <Box my={2} />
 
-      <Text fontSize={1} color="textTertiary">
-        {format(new Date(data.meta.date), 'PPP')} (
-        {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })})
-      </Text>
-
       <Tags tags={data.meta.tags} />
 
-      <Box my={2} />
+      <Text fontSize={1} color="textTertiary" title={format(new Date(data.meta.date), 'PPP')}>
+        Updated {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })}
+      </Text>
+
+      <Box my={3} />
 
       <Markdown>{data.markdown}</Markdown>
     </>

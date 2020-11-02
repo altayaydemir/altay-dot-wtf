@@ -64,12 +64,12 @@ They do not behave like waves, they do not behave like particles, they do not be
 
 - [https://www.chabotcollege.edu/faculty/shildreth/isls/2005program/feynman.htm](https://www.chabotcollege.edu/faculty/shildreth/isls/2005program/feynman.htm)
 
-### Crash Course Physics - Quantum Mechanics
+**Crash Course Physics - Quantum Mechanics**
 
 - [https://www.youtube.com/watch?v=7kb1VT0J3DE](https://www.youtube.com/watch?v=7kb1VT0J3DE)
 - [https://www.youtube.com/watch?v=qO_W70VegbQ](https://www.youtube.com/watch?v=qO_W70VegbQ)
 
-### TED-Ed - Chad Orzel
+**TED-Ed - Chad Orzel**
 
 - [https://www.youtube.com/watch?v=Hk3fgjHNQ2Q](https://www.youtube.com/watch?v=Hk3fgjHNQ2Q)
 - [https://www.youtube.com/watch?v=TQKELOE9eY4](https://www.youtube.com/watch?v=TQKELOE9eY4)

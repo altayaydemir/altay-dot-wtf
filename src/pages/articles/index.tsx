@@ -30,7 +30,7 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
           <Box m={1} />
 
           <Text fontSize={0} color="textTertiary">
-            {'written '}
+            {'updated '}
             {formatDistanceToNow(new Date(article.meta.date), { addSuffix: true })}
           </Text>
         </Box>

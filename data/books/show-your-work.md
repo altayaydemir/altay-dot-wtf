@@ -55,29 +55,29 @@ Ask this to yourself every time you turn in a piece of something. If you are uns
 
 Is it useful or interesting?
 
-- ✅ YES --> SHARE
-- ❌ NO --> DON'T
-- 🤷- ‍♂️ I DON'T KNOW --> WAIT 24 HOURS
+✅ YES --> SHARE\
+❌ NO --> DON'T\
+🤷- ‍♂️ I DON'T KNOW --> WAIT 24 HOURS
 
 #### What to Share
 
-- **Early stage** --> Inspirations
-- **Middle stage** --> Methods and progress
-- **Final stage** --> The product
+**Early stage** --> Inspirations \
+**Middle stage** --> Methods and progress \
+**Final stage** --> The product
 
 #### What to Show
 
-- ❌ ~~Selfies~~
-- ❌ ~~Babies~~
-- ❌ ~~Sunsets~~
-- ❌ ~~Lunches~~
-- ❌ ~~Cats, dogs, turtles, guinea pigs~~
-- ❌ ~~Lattes~~
-- ✅ Your work
+❌ ~~Selfies~~ \
+❌ ~~Babies~~ \
+❌ ~~Sunsets~~ \
+❌ ~~Lunches~~ \
+❌ ~~Cats, dogs, turtles, guinea pigs~~ \
+❌ ~~Lattes~~ \
+✅ Your work
 
 ### Turn Your Flow Into Stock
 
-ideas -> tweets -> videos, blog posts, talks, podcasts -> books
+> ideas -> tweets -> videos, blog posts, talks, podcasts -> books
 
 ### Your Real Estate
 
@@ -97,16 +97,16 @@ The stories you tell about your work influences how people perceive it.
 
 ### A Good Pitch
 
-- **Act I - History:** Where have you been, what do you want, and what did you do to get it.
-- **Act II: Present:** Where are you now?
-- **Act III: Future:** How the audience can help you to get there.
+**Act I - History:** Where have you been, what do you want, and what did you do to get it. \
+**Act II: Present:** Where are you now? \
+**Act III: Future:** How the audience can help you to get there.
 
 ### Talking About Yourself
 
-- Be honest, kind, and patient
-- Be humble - adjective free: **~~Amazing~~ Engineer**
-- Biography: two-sentence explanation.
-- Unless you are a real ninja, rockstar, or guru, stay away from those words.
+Be honest, kind, and patient \
+Be humble - adjective free: **~~Amazing~~ Engineer**
+Biography: two-sentence explanation. \
+Unless you are a real ninja, rockstar, or guru, stay away from those words.
 
 ## 6. Teach What You Know
 
