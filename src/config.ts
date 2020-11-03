@@ -63,6 +63,10 @@ export const HEADER = {
             href: '/now',
           },
           {
+            label: 'journal',
+            href: '/private/journal',
+          },
+          {
             label: 'articles',
             href: '/articles',
           },
@@ -76,7 +80,7 @@ export const HEADER = {
           },
           {
             label: 'vocabulary',
-            href: '/vocabulary',
+            href: '/private/vocabulary',
           },
         ],
 } as const

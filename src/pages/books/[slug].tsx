@@ -3,11 +3,11 @@ import { NextSeo } from 'next-seo'
 import { Flex, Box } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
 import type { Book } from '../../types'
-import ContentTitle from '../../ui/ContentTitle'
-import BookCover from '../../ui/Book/BookCover'
-import BookInfo from '../../ui/Book/BookInfo'
-import Markdown from '../../ui/Markdown'
-import Tags from '../../ui/Tags'
+import ContentTitle from '../../components/ContentTitle'
+import BookCover from '../../components/Book/BookCover'
+import BookInfo from '../../components/Book/BookInfo'
+import Markdown from '../../components/Markdown'
+import Tags from '../../components/Tags'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')

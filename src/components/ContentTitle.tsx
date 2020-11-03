@@ -2,7 +2,7 @@ import { Box, Heading, Text } from 'rebass'
 import dynamic from 'next/dynamic'
 import type { TaggedContent } from '../types'
 
-const LockIcon = dynamic(() => import('./Icons/Lock'))
+const LockIcon = dynamic(() => import('../components/Icon/Lock'))
 
 type Props = {
   meta: TaggedContent['meta']

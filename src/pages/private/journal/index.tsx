@@ -3,22 +3,22 @@ import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { VscChevronRight } from 'react-icons/vsc'
-import { getStaticPropsForContentList } from '../../common/page'
-import PageHeader from '../../components/PageHeader'
-import { Now } from '../../types'
+import { getStaticPropsForContentList } from '../../../common/page'
+import PageHeader from '../../../components/PageHeader'
+import type { Journal } from '../../../types'
 
-export const getStaticProps = getStaticPropsForContentList<Now>('now')
+export const getStaticProps = getStaticPropsForContentList<Journal>('journal')
 
-const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
+const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={`history`} description={`what I've been doing`} />
+    <PageHeader title={`journal`} description={`what I've been doing, in detail`} />
 
     <Box margin={2} />
 
     <>
       {data.map((d) => (
         <Box key={d.slug}>
-          <NextLink href={`/now/${d.slug}`}>
+          <NextLink href={`/private/journal/${d.slug}`}>
             <Link>
               <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
                 <Text mr={1} fontSize={1}>
@@ -35,4 +35,4 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
   </>
 )
 
-export default NowHistory
+export default JournalPage

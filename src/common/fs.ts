@@ -10,6 +10,10 @@ const getContentDirectoryForType = (type: ContentType) => {
       return 'books'
     case 'note':
       return 'notes'
+    case 'vocabulary':
+      return 'private/vocabulary'
+    case 'journal':
+      return 'private/journal'
     default:
       return type
   }
@@ -22,14 +26,23 @@ export const getContentDirectoryPath = (contentType: ContentType) => {
 export const getMarkdownFileNames = (contentType: ContentType) => {
   const directory = getContentDirectoryPath(contentType)
 
-  return fs
-    .readdirSync(directory, 'utf-8')
-    .filter((f) => f.endsWith('.md'))
-    .map((f) => f.split('.md'))
-    .map(([fileName]) => fileName)
+  try {
+    return fs
+      .readdirSync(directory, 'utf-8')
+      .filter((f) => f.endsWith('.md'))
+      .map((f) => f.split('.md'))
+      .map(([fileName]) => fileName)
+  } catch (e) {
+    return []
+  }
 }
 
 export const getMarkdownFile = (contentType: ContentType, fileName: string) => {
   const directory = getContentDirectoryPath(contentType)
-  return fs.readFileSync(`${directory}/${fileName}.md`, 'utf-8')
+
+  try {
+    return fs.readFileSync(`${directory}/${fileName}.md`, 'utf-8')
+  } catch (e) {
+    return ''
+  }
 }

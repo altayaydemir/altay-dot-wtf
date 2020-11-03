@@ -5,9 +5,9 @@ import { Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
 import type { Article } from '../../types'
-import ContentTitle from '../../ui/ContentTitle'
-import Markdown from '../../ui/Markdown'
-import Tags from '../../ui/Tags'
+import ContentTitle from '../../components/ContentTitle'
+import Markdown from '../../components/Markdown'
+import Tags from '../../components/Tags'
 import { SITE_URL } from '../../config'
 
 export const getStaticPaths = getStaticPathsForContent('article')

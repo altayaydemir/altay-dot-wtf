@@ -4,8 +4,8 @@ import { format } from 'date-fns'
 import { getMarkdownFileNames } from '../../common/fs'
 import { getContentDetails } from '../../common/content'
 import { Now } from '../../types'
-import Markdown from '../../ui/Markdown'
-import PageHeader from '../../ui/PageHeader'
+import Markdown from '../../components/Markdown'
+import PageHeader from '../../components/PageHeader'
 
 export const getStaticProps = async () => {
   const [latest] = getMarkdownFileNames('now').reverse()

@@ -3,10 +3,10 @@ import NextLink from 'next/link'
 import { Box, Flex, Text, Link } from 'rebass'
 import { getStaticPropsForContentList } from '../../common/page'
 import type { Book } from '../../types'
-import PageHeader from '../../ui/PageHeader'
-import ContentTitle from '../../ui/ContentTitle'
-import BookCover from '../../ui/Book/BookCover'
-import BookInfo from '../../ui/Book/BookInfo'
+import PageHeader from '../../components/PageHeader'
+import ContentTitle from '../../components/ContentTitle'
+import BookCover from '../../components/Book/BookCover'
+import BookInfo from '../../components/Book/BookInfo'
 
 export const getStaticProps = getStaticPropsForContentList<Book>('book')
 

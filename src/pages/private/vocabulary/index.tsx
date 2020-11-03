@@ -1,14 +1,14 @@
 import { InferGetStaticPropsType } from 'next'
-import { Box } from 'rebass'
-import Markdown from '../ui/Markdown'
-import { getContentDetails } from '../common/content'
-import PageHeader from '../ui/PageHeader'
+import { Box, SxStyleProp } from 'rebass'
+import { getContentDetails } from '../../../common/content'
+import Markdown from '../../../components/Markdown'
+import PageHeader from '../../../components/PageHeader'
 
 export const getStaticProps = async () => ({
   props: await getContentDetails('vocabulary', 'vocabulary'),
 })
 
-const sx = {
+const sx: SxStyleProp = {
   '& > div > h3': {
     marginTop: 5,
     marginBottom: -2,

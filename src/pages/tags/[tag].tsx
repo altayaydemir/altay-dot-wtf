@@ -6,8 +6,8 @@ import { formatDistanceToNow } from 'date-fns'
 import { getContentDetails } from '../../common/content'
 import { getAllTags, getContentsByTag } from '../../common/tags'
 import { TaggedContent, Note } from '../../types'
-import Tags from '../../ui/Tags'
-import Markdown from '../../ui/Markdown'
+import Tags from '../../components/Tags'
+import Markdown from '../../components/Markdown'
 
 export const getStaticPaths: GetStaticPaths = async () => ({
   paths: (await getAllTags()).map((tag) => ({ params: { tag } })),

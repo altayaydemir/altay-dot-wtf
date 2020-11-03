@@ -33,8 +33,8 @@ As a start, I took several topics I want to get better at and use reconnaissance
 
 - **self-help:** desperately need it; helps for motivation.
 - **productivity:** I like playing around with processes and optimizing stuff.
-- **product/service design:** I enjoy building things to solve people's problems, but need to understand first.
-- **software engineering:** It's a great form of leverage, also how I get paid. and someone needs to make money to buy those books.
+- **product/service design:** I enjoy building things to solve people's problems, but need to understand them first.
+- **software engineering:** It's a great form of leverage, also how I get paid. someone needs to make money to buy those books.
 
 I tried to read every day and take notes during the past two years, with a roughly 60% success rate. I attempted to implement the learnings in my way of doing things. Some worked very well; many I haven't figured out how to use.
 

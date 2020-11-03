@@ -24,6 +24,10 @@ export type Now = BaseContent & {
   type: 'now'
 }
 
+export type Journal = BaseContent & {
+  type: 'journal'
+}
+
 export type Note = BaseContent & {
   type: 'note'
   meta: BaseMeta & {
@@ -60,7 +64,7 @@ export type Vocabulary = BaseContent & {
   type: 'vocabulary'
 }
 
-export type Content = Now | Note | Article | Book | About | Vocabulary
+export type Content = Now | Note | Article | Book | About | Vocabulary | Journal
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book
