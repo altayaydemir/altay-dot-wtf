@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box, SxStyleProp } from 'rebass'
-import { getContentDetails } from 'common/content'
+import { getContentDetails } from 'api/content'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
 
