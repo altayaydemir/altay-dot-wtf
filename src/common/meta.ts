@@ -1,4 +1,4 @@
-import { fetchBookData } from './api'
+import { fetchBookData } from './http'
 import { getImageData, generateMetaImage } from './image'
 import { Article, Book, Content, ContentType } from '../types'
 

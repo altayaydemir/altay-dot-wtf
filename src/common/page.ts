@@ -4,10 +4,14 @@ import { getMarkdownFileNames } from './fs'
 import { getContentDetails, getContentList } from './content'
 import { sortContentByDate } from './utils'
 
-export const getStaticPathsForContent = (contentType: ContentType): GetStaticPaths => async () => ({
-  paths: getMarkdownFileNames(contentType).map((slug) => ({ params: { slug } })),
-  fallback: false,
-})
+export const getStaticPathsForContent = (contentType: ContentType): GetStaticPaths => async () => {
+  const data = await getContentList(contentType)
+
+  return {
+    paths: data.map(({ slug }) => ({ params: { slug } })),
+    fallback: false,
+  }
+}
 
 type ContentDetailsProps<T> = { data: T } | { data: undefined }
 

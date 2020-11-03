@@ -10,8 +10,23 @@ type BookData = {
   coverImageURL: string
 }
 
-const decodeGoogleBooksResponse = (isbn: string, json: Record<string, any>): BookData => {
-  if (!json || !json.totalItems) throw new Error(`Could not decode data for: ${isbn}`)
+type GoogleBooksQueryResult = {
+  totalItems: number
+  items: Array<{
+    volumeInfo: {
+      title: string
+      authors: string[]
+      imageLinks: {
+        thumbnail: string
+      }
+    }
+  }>
+}
+
+const decodeGoogleBooksResponse = (isbn: string, json: GoogleBooksQueryResult): BookData => {
+  if (!json || !json.totalItems) {
+    throw new Error(`Could not decode GoogleBooks response for: ${isbn}`)
+  }
 
   return {
     isbn,
