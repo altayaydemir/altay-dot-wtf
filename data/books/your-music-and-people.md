@@ -1,5 +1,5 @@
 ---
-draft: true
+private: true
 isbn: '9781988575018'
 date: '2020-10-18'
 rating: '10/10'

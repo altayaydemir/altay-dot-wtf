@@ -5,7 +5,7 @@ export type MetaImage = {
 }
 
 export type BaseMeta = {
-  draft: boolean
+  private: boolean
   date: string
   tags: string[] | undefined
 }

@@ -1,8 +1,12 @@
+import { getMarkdownFileNames } from './fs'
 import { getContentList } from './content'
 import { TaggedContent, TaggedContentType } from '../types'
 import { sortContentByDate } from './utils'
 
 const TAGGED_CONTENT_TYPES: TaggedContentType[] = ['article', 'book', 'note']
+
+const getTagsFromNoteNames = () => getMarkdownFileNames('note')
+
 const getAllTaggedContents = () =>
   Promise.all(TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withMarkdown: true })))
 
@@ -16,6 +20,11 @@ const getTagsFromMarkdown = (content: TaggedContent) => {
 export const getAllTags = async () => {
   const contents = (await getAllTaggedContents()).flat() as TaggedContent[]
   const tags = new Set<string>()
+
+  contents
+    .map(getTagsFromNoteNames)
+    .flat()
+    .forEach((tag) => (tags.has(tag) ? null : tags.add(tag)))
 
   contents
     .map(getTagsFromMeta)

@@ -99,43 +99,45 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
         <Markdown>{data.note ? data.note.markdown : description}</Markdown>
       </Box>
 
-      <Box>
-        {data.note ? (
-          <Box mt={4} mb={2}>
-            <Heading fontSize={3} color="textSecondary">
-              mentioned in
-            </Heading>
-            <hr />
-          </Box>
-        ) : null}
-
-        {data.items.map((content) => (
-          <Box key={content.type + content.slug} mb={3}>
-            <NextLink href={getURLForContent(content)} passHref>
-              <Link>
-                <Text fontSize={2} fontWeight="bold">
-                  {getTitleForContent(content)}
-                </Text>
-              </Link>
-            </NextLink>
-
-            <Box>
-              <Text color="textSecondary" display="inline" fontSize={1}>
-                {content.type}
-              </Text>
-
-              <Text color="textSecondary" display="inline-block" mx={1}>
-                ·
-              </Text>
-
-              <Text color="textTertiary" display="inline" fontSize={1}>
-                {'added '}
-                {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
-              </Text>
+      {data.items.length ? (
+        <Box>
+          {data.note ? (
+            <Box mt={4} mb={2}>
+              <Heading fontSize={3} color="textSecondary">
+                mentioned in
+              </Heading>
+              <hr />
             </Box>
-          </Box>
-        ))}
-      </Box>
+          ) : null}
+
+          {data.items.map((content) => (
+            <Box key={content.type + content.slug} mb={3}>
+              <NextLink href={getURLForContent(content)} passHref>
+                <Link>
+                  <Text fontSize={2} fontWeight="bold">
+                    {getTitleForContent(content)}
+                  </Text>
+                </Link>
+              </NextLink>
+
+              <Box>
+                <Text color="textSecondary" display="inline" fontSize={1}>
+                  {content.type}
+                </Text>
+
+                <Text color="textSecondary" display="inline-block" mx={1}>
+                  ·
+                </Text>
+
+                <Text color="textTertiary" display="inline" fontSize={1}>
+                  {'added '}
+                  {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
+                </Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      ) : null}
     </>
   )
 }

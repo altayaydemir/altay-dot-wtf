@@ -28,7 +28,7 @@ export const getContentList = async <T extends Content>(
   )
 
   if (process.env.NODE_ENV === 'production') {
-    contentList = contentList.filter((c) => !c.meta.draft)
+    contentList = contentList.filter((c) => !c.meta.private)
   }
 
   return contentList.map((c) => ({ ...c, markdown: withMarkdown ? c.markdown : '' }))
