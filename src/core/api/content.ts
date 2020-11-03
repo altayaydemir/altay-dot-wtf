@@ -19,17 +19,25 @@ export const getContentDetails = async <T extends Content>(
   } as T
 }
 
+const getFilteredContentList = <T extends Content[]>(collection: T) => {
+  if (process.env.NODE_ENV === 'production') {
+    return collection.filter((c) => !c.meta.draft)
+  }
+
+  return collection
+}
+
 export const getContentList = async <T extends Content>(
   contentType: ContentType,
   { withMarkdown = false } = {},
 ) => {
-  let contentList = await Promise.all(
-    getMarkdownFileNames(contentType).map((slug) => getContentDetails<T>(contentType, slug)),
+  const fileNames = getMarkdownFileNames(contentType)
+  const contentList = await Promise.all(
+    fileNames.map((slug) => getContentDetails<T>(contentType, slug)),
   )
 
-  if (process.env.NODE_ENV === 'production') {
-    contentList = contentList.filter((c) => !c.meta.private)
-  }
-
-  return contentList.map((c) => ({ ...c, markdown: withMarkdown ? c.markdown : '' }))
+  return getFilteredContentList(contentList).map((c) => ({
+    ...c,
+    markdown: withMarkdown ? c.markdown : '',
+  }))
 }

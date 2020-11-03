@@ -1,5 +1,5 @@
 ---
-private: true
+draft: true
 title: How do I read a book
 oneliner: It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
 date: '2020-11-02'
