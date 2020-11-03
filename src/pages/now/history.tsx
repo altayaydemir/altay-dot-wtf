@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Flex, Box, Text, Link } from 'rebass'
+import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { VscChevronRight } from 'react-icons/vsc'
 import { getStaticPropsForContentList } from '../../common/page'
@@ -15,21 +15,23 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
 
     <Box margin={2} />
 
-    <Box>
+    <>
       {data.map((d) => (
-        <NextLink key={d.slug} href={`/now/${d.slug}`}>
-          <Link>
-            <Flex alignItems="center" mb={1}>
-              <Text mr={1} fontSize={1}>
-                {format(new Date(d.slug), 'MMMM yyyy')}
-              </Text>
+        <Box key={d.slug}>
+          <NextLink href={`/now/${d.slug}`}>
+            <Link>
+              <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
+                <Text mr={1} fontSize={1}>
+                  {format(new Date(d.slug), 'MMMM yyyy')}
+                </Text>
 
-              <VscChevronRight />
-            </Flex>
-          </Link>
-        </NextLink>
+                <VscChevronRight />
+              </Box>
+            </Link>
+          </NextLink>
+        </Box>
       ))}
-    </Box>
+    </>
   </>
 )
 
