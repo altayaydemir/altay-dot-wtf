@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next'
-import { getAllTags } from 'api/tags'
+import { getAllTags } from 'core/api/tags'
 import Tags from 'components/Tags'
 
 export const getStaticProps = async () => ({

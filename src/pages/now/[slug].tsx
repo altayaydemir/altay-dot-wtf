@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box } from 'rebass'
 import { format } from 'date-fns'
-import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'api/page'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import { Now } from 'types'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
