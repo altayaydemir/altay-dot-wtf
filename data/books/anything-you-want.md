@@ -8,7 +8,7 @@ tags:
   - business
   - staying-small
   - saying-no
-  - why-are-you-doing-what-you-are-doing
+  - why-are-you-doing
 ---
 
 ## Your Company is Your Utopia

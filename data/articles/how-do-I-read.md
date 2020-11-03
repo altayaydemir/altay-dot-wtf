@@ -23,7 +23,7 @@ So, I tried to initiate a new way of doing things around the time I moved to a n
 It must be something related to prosperity!
 
 **Hmm, maybe not...** \
-My impression is their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing-what-you-are-doing).
+My impression is their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing).
 
 **Do I know that?** \
 I guess not; that's what I should get to find out first.
