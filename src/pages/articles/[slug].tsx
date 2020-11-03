@@ -1,10 +1,11 @@
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-import { Heading, Text, Box } from 'rebass'
+import { Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
-import { Article } from '../../types'
+import type { Article } from '../../types'
+import ContentTitle from '../../ui/ContentTitle'
 import Markdown from '../../ui/Markdown'
 import Tags from '../../ui/Tags'
 import { SITE_URL } from '../../config'
@@ -45,9 +46,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         </Box>
       ) : null}
 
-      <Heading fontSize={[3, 4]} fontWeight="800">
-        {title}
-      </Heading>
+      <ContentTitle fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
 
       <Box my={2} />
 

@@ -1,9 +1,10 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
-import { Box, Text, Link, Heading } from 'rebass'
+import { Box, Text, Link } from 'rebass'
 import { getStaticPropsForContentList } from '../../common/page'
-import { Article } from '../../types'
+import type { Article } from '../../types'
+import ContentTitle from '../../ui/ContentTitle'
 import PageHeader from '../../ui/PageHeader'
 
 export const getStaticProps = getStaticPropsForContentList<Article>('article')
@@ -17,7 +18,7 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
         <Box key={article.slug} my={4}>
           <NextLink href={`/articles/${article.slug}`} passHref>
             <Link>
-              <Heading fontSize={3}>{article.meta.title}</Heading>
+              <ContentTitle fontSize={3} meta={article.meta} />
             </Link>
           </NextLink>
 

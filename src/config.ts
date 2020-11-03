@@ -33,24 +33,52 @@ export const SEO: NextSeoProps = {
 
 export const HEADER = {
   title: SITE_TITLE,
-  links: [
-    {
-      label: 'about',
-      href: '/about',
-    },
-    {
-      label: 'now',
-      href: '/now',
-    },
-    {
-      label: 'articles',
-      href: '/articles',
-    },
-    {
-      label: 'books',
-      href: '/books',
-    },
-  ],
+  links:
+    process.env.NODE_ENV === 'production'
+      ? [
+          {
+            label: 'about',
+            href: '/about',
+          },
+          {
+            label: 'now',
+            href: '/now',
+          },
+          {
+            label: 'articles',
+            href: '/articles',
+          },
+          {
+            label: 'books',
+            href: '/books',
+          },
+        ]
+      : [
+          {
+            label: 'about',
+            href: '/about',
+          },
+          {
+            label: 'now',
+            href: '/now',
+          },
+          {
+            label: 'articles',
+            href: '/articles',
+          },
+          {
+            label: 'books',
+            href: '/books',
+          },
+          {
+            label: 'tags',
+            href: '/tags',
+          },
+          {
+            label: 'vocabulary',
+            href: '/vocabulary',
+          },
+        ],
 } as const
 
 export const FOOTER = {

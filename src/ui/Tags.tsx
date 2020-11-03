@@ -2,13 +2,13 @@ import { Box, Text, Link } from 'rebass'
 import NextLink from 'next/link'
 
 type Props = {
-  tags: undefined | string[]
+  tags?: string[]
   fontSize?: number | number[]
   spacing?: number | number[]
 }
 
-const Tags: React.FC<Props> = ({ tags, fontSize = 0, spacing = 1 }) => {
-  if (!tags || tags.length === 0) return null
+const Tags: React.FC<Props> = ({ tags = [], fontSize = 0, spacing = 1 }) => {
+  if (tags.length === 0) return null
 
   return (
     <Box display="inline-block">

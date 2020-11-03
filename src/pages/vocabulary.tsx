@@ -22,7 +22,7 @@ const Vocabulary: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
   <>
     <PageHeader
       title="vocabulary"
-      description="words and expressions I read somewhere and would like to keep in mind."
+      description="words or expressions I read somewhere and would like to keep in mind."
     />
 
     <Box sx={sx}>

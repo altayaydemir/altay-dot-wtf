@@ -1,9 +1,10 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
-import { Heading, Box, Flex, Text, Link } from 'rebass'
+import { Box, Flex, Text, Link } from 'rebass'
 import { getStaticPropsForContentList } from '../../common/page'
-import { Book } from '../../types'
+import type { Book } from '../../types'
 import PageHeader from '../../ui/PageHeader'
+import ContentTitle from '../../ui/ContentTitle'
 import BookCover from '../../ui/Book/BookCover'
 import BookInfo from '../../ui/Book/BookInfo'
 
@@ -28,7 +29,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
             <Box>
               <NextLink href={`/books/${book.slug}`} passHref>
                 <Link title={book.meta.title}>
-                  <Heading fontSize={[1, 2]}>{book.meta.title}</Heading>
+                  <ContentTitle fontSize={[1, 2]} meta={book.meta} />
                 </Link>
               </NextLink>
 

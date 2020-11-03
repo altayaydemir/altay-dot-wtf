@@ -1,10 +1,10 @@
-### **lack of everyday exposure to <something>**
+### lack of everyday exposure to <something>
 
 _Their developer's lack of everyday exposure to language and its alphabet is also evident in the typeface designs._
 
 [Arcade Game Typography](/books/arcade-game-typography)
 
-### **reconnaissance**
+### reconnaissance
 
 exploration, discovery.
 
@@ -12,7 +12,7 @@ _Think of prototyping as the reconnaissance and intelligence gathering that take
 
 [The Pragmatic Programmer](/books/the-pragmatic/programmer)
 
-### **chagrin.**
+### chagrin
 
 feel dismissed or humiliated
 
@@ -20,13 +20,13 @@ _The book is in plain text, much to the chagrin of the publisher who wanted us t
 
 [The Pragmatic Programmer](/books/the-pragmatic/programmer)
 
-### **there is a lot that’s been set on motion that we cannot undo**
+### there is a lot that’s been set on motion that we cannot undo
 
 _I am married to a marine biologist and there is definitely a lot that has been set on motion that we cannot undo._
 
 Answering the "How screwed are we" question in How to Save a Planet podcast
 
-### **semaphore**
+### semaphore
 
 A semaphore is simply a thing that only one person can own at a time.
 
@@ -34,7 +34,7 @@ _Shared resource locking example for opening the pie case by holding an object._
 
 [The Pragmatic Programmer](/books/the-pragmatic/programmer)
 
-### **ephemeral**
+### ephemeral
 
 lasting for a very short time - temporary.
 
@@ -42,13 +42,13 @@ _Version control allows builds machines to be ephemeral._
 
 [The Pragmatic Programmer](/books/the-pragmatic/programmer)
 
-### **shirk**
+### shirk
 
 avoid or neglect (a duty or responsibility).
 
 _[Pragmatic programmer](/books/the-pragmatic-programmer)s don't shirk from responsibility._
 
-### **rejoice**
+### rejoice
 
 feel or show great joy or delight.
 
@@ -150,7 +150,7 @@ _There are studies that provide a glimpse into fundamentals of behavior shaping.
 
 [Laws of UX](/books/laws-of-ux)
 
-### **truism**
+### truism
 
 a statement that obviously true and says nothing new or interesting.
 
@@ -183,6 +183,8 @@ _The chasm between developer and entrepreneur._
 [Start Small Stay Small](/books/start-small-stay-small)
 
 ### behemoth
+
+a huge or monstrous creature.
 
 _Behemoth if-else expression._
 
