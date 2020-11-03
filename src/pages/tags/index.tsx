@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
-import { getAllTags } from '../../common/tags'
-import Tags from '../../components/Tags'
+import { getAllTags } from 'common/tags'
+import Tags from 'components/Tags'
 
 export const getStaticProps = async () => ({
   props: { tags: await getAllTags() },

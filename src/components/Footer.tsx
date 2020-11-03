@@ -1,5 +1,5 @@
 import { Box, Heading, Link } from 'rebass'
-import { FOOTER } from '../config'
+import { FOOTER } from 'config'
 
 const { title, links } = FOOTER
 

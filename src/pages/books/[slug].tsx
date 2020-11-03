@@ -1,13 +1,13 @@
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import { Flex, Box } from 'rebass'
-import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
-import type { Book } from '../../types'
-import ContentTitle from '../../components/ContentTitle'
-import BookCover from '../../components/Book/BookCover'
-import BookInfo from '../../components/Book/BookInfo'
-import Markdown from '../../components/Markdown'
-import Tags from '../../components/Tags'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'common/page'
+import type { Book } from 'types'
+import ContentTitle from 'components/ContentTitle'
+import BookCover from 'components/Book/BookCover'
+import BookInfo from 'components/Book/BookInfo'
+import Markdown from 'components/Markdown'
+import Tags from 'components/Tags'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')

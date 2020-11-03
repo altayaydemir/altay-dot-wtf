@@ -2,10 +2,10 @@ import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 import { Box, Text, Link } from 'rebass'
-import { getStaticPropsForContentList } from '../../common/page'
-import type { Article } from '../../types'
-import ContentTitle from '../../components/ContentTitle'
-import PageHeader from '../../components/PageHeader'
+import { getStaticPropsForContentList } from 'common/page'
+import type { Article } from 'types'
+import ContentTitle from 'components/ContentTitle'
+import PageHeader from 'components/PageHeader'
 
 export const getStaticProps = getStaticPropsForContentList<Article>('article')
 

@@ -3,8 +3,8 @@ import fs from 'fs'
 import fetch from 'node-fetch'
 import imageSize from 'image-size'
 import { createCanvas, loadImage } from 'canvas'
-import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from '../config'
-import { MetaImage } from '../types'
+import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
+import { MetaImage } from 'types'
 
 const PUBLIC_FOLDER = join(process.cwd(), 'public')
 

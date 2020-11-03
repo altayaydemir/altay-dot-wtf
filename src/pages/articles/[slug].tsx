@@ -3,12 +3,12 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-import { getStaticPathsForContent, getStaticPropsForContentDetails } from '../../common/page'
-import type { Article } from '../../types'
-import ContentTitle from '../../components/ContentTitle'
-import Markdown from '../../components/Markdown'
-import Tags from '../../components/Tags'
-import { SITE_URL } from '../../config'
+import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'common/page'
+import type { Article } from 'types'
+import ContentTitle from 'components/ContentTitle'
+import Markdown from 'components/Markdown'
+import Tags from 'components/Tags'
+import { SITE_URL } from 'config'
 
 export const getStaticPaths = getStaticPathsForContent('article')
 export const getStaticProps = getStaticPropsForContentDetails<Article>('article')

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Box } from 'rebass'
-import { Book } from '../../types'
+import { Book } from 'types'
 
 type Props = {
   bookMeta: Book['meta']

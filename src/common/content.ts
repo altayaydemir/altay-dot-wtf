@@ -1,5 +1,5 @@
 import matter from 'gray-matter'
-import { Content, ContentType } from '../types'
+import { Content, ContentType } from 'types'
 import { getMarkdownFileNames, getMarkdownFile } from './fs'
 import { getMeta } from './meta'
 

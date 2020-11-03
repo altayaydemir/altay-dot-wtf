@@ -1,11 +1,11 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box, Text } from 'rebass'
 import { format } from 'date-fns'
-import { getMarkdownFileNames } from '../../common/fs'
-import { getContentDetails } from '../../common/content'
-import { Now } from '../../types'
-import Markdown from '../../components/Markdown'
-import PageHeader from '../../components/PageHeader'
+import { getMarkdownFileNames } from 'common/fs'
+import { getContentDetails } from 'common/content'
+import { Now } from 'types'
+import Markdown from 'components/Markdown'
+import PageHeader from 'components/PageHeader'
 
 export const getStaticProps = async () => {
   const [latest] = getMarkdownFileNames('now').reverse()

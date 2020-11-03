@@ -1,8 +1,8 @@
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import { Box, SxStyleProp } from 'rebass'
-import Markdown from '../../components/Markdown'
-import { getContentDetails } from '../../common/content'
+import Markdown from 'components/Markdown'
+import { getContentDetails } from 'common/content'
 
 export const getStaticProps = async () => ({
   props: await getContentDetails('about', 'about'),

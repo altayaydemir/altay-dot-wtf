@@ -1,12 +1,12 @@
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link } from 'rebass'
-import { getStaticPropsForContentList } from '../../common/page'
-import type { Book } from '../../types'
-import PageHeader from '../../components/PageHeader'
-import ContentTitle from '../../components/ContentTitle'
-import BookCover from '../../components/Book/BookCover'
-import BookInfo from '../../components/Book/BookInfo'
+import { getStaticPropsForContentList } from 'common/page'
+import type { Book } from 'types'
+import PageHeader from 'components/PageHeader'
+import ContentTitle from 'components/ContentTitle'
+import BookCover from 'components/Book/BookCover'
+import BookInfo from 'components/Book/BookInfo'
 
 export const getStaticProps = getStaticPropsForContentList<Book>('book')
 

@@ -1,6 +1,6 @@
 import { fetchBookData } from './http'
 import { getImageData, generateMetaImage } from './image'
-import { Article, Book, Content, ContentType } from '../types'
+import { Article, Book, Content, ContentType } from 'types'
 
 const getArticleMeta = async (slug: string, meta: Article['meta']) => {
   let metaImage: Article['meta']['metaImage'] = null

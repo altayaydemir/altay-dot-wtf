@@ -3,9 +3,9 @@ import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { VscChevronRight } from 'react-icons/vsc'
-import { getStaticPropsForContentList } from '../../common/page'
-import PageHeader from '../../components/PageHeader'
-import { Now } from '../../types'
+import { getStaticPropsForContentList } from 'common/page'
+import PageHeader from 'components/PageHeader'
+import { Now } from 'types'
 
 export const getStaticProps = getStaticPropsForContentList<Now>('now')
 

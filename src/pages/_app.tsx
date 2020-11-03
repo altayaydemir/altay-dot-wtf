@@ -6,10 +6,10 @@ import PlausibleProvider from 'next-plausible'
 import { ThemeProvider } from 'emotion-theming'
 import { Global } from '@emotion/core'
 import useDarkMode from 'use-dark-mode'
-import { SEO, HOSTNAME } from '../config'
-import { createTheme } from '../theme/create'
-import { createGlobalStyles } from '../theme/globalStyles'
-import Layout from '../components/Layout'
+import { SEO, HOSTNAME } from 'config'
+import { createTheme } from 'theme/create'
+import { createGlobalStyles } from 'theme/globalStyles'
+import Layout from 'components/Layout'
 
 const Providers: React.FC = ({ children }) => {
   const [mounted, setMounted] = useState(false)

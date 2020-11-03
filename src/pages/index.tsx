@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Box, Heading, Text, Link, Flex } from 'rebass'
+import { Box, Heading, Text, Link } from 'rebass'
 import { VscArrowRight } from 'react-icons/vsc'
 
 const data = {

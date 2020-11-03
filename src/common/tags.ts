@@ -1,6 +1,6 @@
 import { getMarkdownFileNames } from './fs'
 import { getContentList } from './content'
-import { TaggedContent, TaggedContentType } from '../types'
+import { TaggedContent, TaggedContentType } from 'types'
 import { sortContentByDate } from './utils'
 
 const TAGGED_CONTENT_TYPES: TaggedContentType[] = ['article', 'book', 'note']

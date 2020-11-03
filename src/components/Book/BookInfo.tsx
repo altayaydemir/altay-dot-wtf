@@ -1,7 +1,7 @@
 import { Box, Text, Link } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { VscLinkExternal } from 'react-icons/vsc'
-import { Book } from '../../types'
+import { Book } from 'types'
 
 type Props = {
   bookMeta: Book['meta']

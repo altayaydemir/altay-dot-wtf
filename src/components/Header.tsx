@@ -1,8 +1,8 @@
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Flex, Box, Heading, Link, Text } from 'rebass'
-import { HEADER } from '../config'
-import styled from '../theme/styled'
+import { HEADER } from 'config'
+import styled from 'theme/styled'
 
 const { title, links } = HEADER
 

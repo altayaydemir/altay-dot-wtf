@@ -1,5 +1,5 @@
 import { Text } from 'rebass'
-import styled from '../../theme/styled'
+import styled from 'theme/styled'
 
 const Paragraph = styled(Text)`
   margin: 16px 0;

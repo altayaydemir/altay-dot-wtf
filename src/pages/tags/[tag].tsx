@@ -3,11 +3,11 @@ import NextLink from 'next/link'
 import { NextSeo } from 'next-seo'
 import { Box, Text, Link, Heading } from 'rebass'
 import { formatDistanceToNow } from 'date-fns'
-import { getContentDetails } from '../../common/content'
-import { getAllTags, getContentsByTag } from '../../common/tags'
-import { TaggedContent, Note } from '../../types'
-import Tags from '../../components/Tags'
-import Markdown from '../../components/Markdown'
+import { getContentDetails } from 'common/content'
+import { getAllTags, getContentsByTag } from 'common/tags'
+import Tags from 'components/Tags'
+import Markdown from 'components/Markdown'
+import type { TaggedContent, Note } from 'types'
 
 export const getStaticPaths: GetStaticPaths = async () => ({
   paths: (await getAllTags()).map((tag) => ({ params: { tag } })),
