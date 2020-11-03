@@ -19,11 +19,13 @@ const getRedirects = () => {
   ]
 
   if (process.env.NODE_ENV === 'production') {
-    redirects = redirects.concat({
-      source: '/private/*',
-      destination: '/',
-      permanent: true,
-    })
+    redirects = redirects.concat([
+      {
+        source: '/private/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ])
   }
 
   return redirects
