@@ -13,8 +13,13 @@ module.exports = withBundleAnalyzer({
       {
         source: '/cv',
         destination: '/documents/cv.pdf',
-        permanent: true,
+        permanent: false,
       },
+      {
+        source: '/chat',
+        destination: 'https://whereby.com/aydemir',
+        permanent: false,
+      }
     ]
   },
 })

@@ -28,30 +28,24 @@ const Providers: React.FC = ({ children }) => {
     </PlausibleProvider>
   )
 
-  if (!mounted) {
-    return <div style={{ visibility: 'hidden' }}>{body}</div>
-  }
-
-  return body
+  return mounted ? body : <div style={{ visibility: 'hidden' }}>{body}</div>
 }
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return (
-    <Providers>
-      <Head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </Head>
+const App: React.FC<AppProps> = ({ Component, pageProps }) => (
+  <Providers>
+    <Head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+    </Head>
 
-      <DefaultSeo {...SEO} />
+    <DefaultSeo {...SEO} />
 
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Providers>
-  )
-}
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </Providers>
+)
 
 export default App
