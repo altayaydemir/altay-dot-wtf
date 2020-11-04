@@ -8,7 +8,7 @@ const TAGGED_CONTENT_TYPES: TaggedContentType[] = ['article', 'book', 'note']
 const getTagsFromNoteNames = () => getMarkdownFileNames('note')
 
 const getAllTaggedContents = () =>
-  Promise.all(TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withMarkdown: true })))
+  Promise.all(TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withDetails: true })))
 
 const getTagsFromMeta = (content: TaggedContent) => content.meta.tags || []
 

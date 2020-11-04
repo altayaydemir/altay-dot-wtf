@@ -3,9 +3,10 @@ import { NextSeo } from 'next-seo'
 import { Box, SxStyleProp } from 'rebass'
 import Markdown from 'components/Markdown'
 import { getContentDetails } from 'core/api/content'
+import type { About } from 'types'
 
 export const getStaticProps = async () => ({
-  props: await getContentDetails('about', 'about'),
+  props: await getContentDetails<About>('about', 'about'),
 })
 
 const sx: SxStyleProp = {
@@ -23,7 +24,7 @@ const sx: SxStyleProp = {
   },
 }
 
-const About: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
+const AboutPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
     <NextSeo title="about" />
 
@@ -33,4 +34,4 @@ const About: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markd
   </>
 )
 
-export default About
+export default AboutPage

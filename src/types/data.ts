@@ -5,9 +5,9 @@ export type MetaImage = {
 }
 
 export type BaseMeta = {
+  tags: string[] | undefined
   draft: boolean
   date: string
-  tags: string[] | undefined
 }
 
 export type BaseMDMeta = BaseMeta
@@ -66,7 +66,19 @@ export type Vocabulary = BaseMDContent & {
   type: 'vocabulary'
 }
 
-export type Content = Now | Note | Article | Book | About | Vocabulary | Journal
+export type BoookmarkJSON = {
+  url: string
+  title: string
+  description?: string
+}
+
+export type Bookmark = {
+  type: 'bookmark'
+  slug: string
+  meta: BaseMeta & BoookmarkJSON
+}
+
+export type Content = Now | Note | Article | Book | About | Vocabulary | Journal | Bookmark
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book

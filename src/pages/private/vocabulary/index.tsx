@@ -1,11 +1,12 @@
 import { InferGetStaticPropsType } from 'next'
 import { Box, SxStyleProp } from 'rebass'
 import { getContentDetails } from 'core/api/content'
+import type { Vocabulary } from 'types'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
 
 export const getStaticProps = async () => ({
-  props: await getContentDetails('vocabulary', 'vocabulary'),
+  props: await getContentDetails<Vocabulary>('vocabulary', 'vocabulary'),
 })
 
 const sx: SxStyleProp = {
@@ -18,7 +19,7 @@ const sx: SxStyleProp = {
   },
 }
 
-const Vocabulary: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
+const VocabularyPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
     <PageHeader
       title="vocabulary"
@@ -31,4 +32,4 @@ const Vocabulary: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
   </>
 )
 
-export default Vocabulary
+export default VocabularyPage
