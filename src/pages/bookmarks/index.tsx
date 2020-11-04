@@ -12,7 +12,7 @@ type Bookmark = {
 
 const formatBookmark = (bookmark: Bookmark) => {
   const url = new URL(bookmark.url)
-  const formattedURL = url.protocol + url.hostname + '/' + url.pathname + `?ref=${SITE_URL}`
+  const formattedURL = url.protocol + url.hostname + url.pathname + `?ref=${SITE_URL}`
   return { ...bookmark, host: url.hostname, url: formattedURL }
 }
 
