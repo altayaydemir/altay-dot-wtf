@@ -3,9 +3,9 @@ import { Box, Text } from 'rebass'
 import { format } from 'date-fns'
 import { getMarkdownFileNames } from 'core/api/fs'
 import { getContentDetails } from 'core/api/content'
-import { Now } from 'types'
-import Markdown from 'components/Markdown'
+import type { Now } from 'types'
 import PageHeader from 'components/PageHeader'
+import Markdown from 'components/Markdown'
 
 export const getStaticProps = async () => {
   const [latest] = getMarkdownFileNames('now').reverse()
@@ -28,11 +28,11 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
         metaDescription={`what am I doing as of ${formattedDate}`}
       />
 
-      <Box margin={4} />
+      <Box m={4} />
 
       <Markdown>{data.markdown}</Markdown>
 
-      <Box margin={4} />
+      <Box m={4} />
 
       <Text fontSize={0} color="textTertiary">
         Last updated at {formattedDate}

@@ -16,7 +16,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
 
     <Box>
       {data.map((book) => (
-        <Box key={book.slug} marginY={4}>
+        <Box key={book.slug} my={4}>
           <Flex>
             <NextLink href={`/books/${book.slug}`} passHref>
               <a title={book.meta.title}>
@@ -24,7 +24,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
               </a>
             </NextLink>
 
-            <Box margin={2} />
+            <Box m={2} />
 
             <Box>
               <NextLink href={`/books/${book.slug}`} passHref>
@@ -33,11 +33,11 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
                 </Link>
               </NextLink>
 
-              <Box margin={1} />
+              <Box m={1} />
 
               <BookInfo short bookMeta={book.meta} fontSize={[0, 1]} spacing={0} />
 
-              <Box margin={1} />
+              <Box m={1} />
 
               {book.meta.oneliner ? (
                 <Box display="inline-block">

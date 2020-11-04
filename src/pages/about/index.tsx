@@ -9,13 +9,17 @@ export const getStaticProps = async () => ({
 })
 
 const sx: SxStyleProp = {
-  '& > div:first-of-type > h3': {
+  '& > *:first-of-type > h3': {
     marginTop: '0!important',
   },
-  '& > div > h3': {
+  '& > * > h3': {
     fontSize: 3,
-    marginTop: 5,
-    marginBottom: -2,
+  },
+  '& > ul': {
+    marginY: 3,
+  },
+  '& > * > li': {
+    marginY: 3,
   },
 }
 

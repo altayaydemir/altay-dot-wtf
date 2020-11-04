@@ -33,7 +33,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
         <BookCover bookMeta={data.meta} />
 
-        <Box margin={2} />
+        <Box m={2} />
 
         <Box>
           <ContentTitle fontSize={[1, 2, 3]} fontWeight="800" meta={data.meta} />
@@ -43,7 +43,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         </Box>
       </Flex>
 
-      <Box margin={3} />
+      <Box m={3} />
 
       <Markdown>{data.markdown}</Markdown>
     </>

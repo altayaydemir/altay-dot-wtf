@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useTheme } from 'emotion-theming'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
-import { Theme } from 'theme/create'
+import { Theme } from 'theme'
 
 type Props = {
   alt: string

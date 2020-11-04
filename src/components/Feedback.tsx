@@ -39,27 +39,27 @@ const config = {
 
 type FeedbackState = 'pristine' | 'sending' | 'success' | 'failure'
 
-const FeedBackMessage: React.FC<{ feedbackState: FeedbackState }> = ({ feedbackState }) => {
-  const style: SxStyleProp = {
-    paddingY: 2,
-    paddingX: 4,
-    borderRadius: 4,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
-  }
+const feedbackMessageStyle: SxStyleProp = {
+  paddingY: 2,
+  paddingX: 4,
+  borderRadius: 4,
+  fontWeight: 'bold',
+  color: 'white',
+  textAlign: 'center',
+}
 
+const FeedBackMessage: React.FC<{ feedbackState: FeedbackState }> = ({ feedbackState }) => {
   switch (feedbackState) {
     case 'success':
       return (
-        <Text sx={style} backgroundColor="green">
+        <Text sx={feedbackMessageStyle} backgroundColor="green">
           I got your message, thank you!
         </Text>
       )
 
     case 'failure':
       return (
-        <Text sx={style} backgroundColor="red">
+        <Text sx={feedbackMessageStyle} backgroundColor="red">
           Oops, an error occurred 😅
         </Text>
       )

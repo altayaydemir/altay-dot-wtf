@@ -1,5 +1,5 @@
 ---
-date: '2020-10-31'
+date: '2020-11-04'
 ---
 
 ### what I do
@@ -27,13 +27,13 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 people who contributed enormously to my life during the past several years.
 
 **the big three**\
-naval ravikant, [derek sivers](/tags/derek-sivers), [seth godin](/tags/seth-godin)
+naval ravikant, derek sivers, seth godin
 
 **productive three**\
-cal newport, james clear, the make time duo
+cal newport, james clear, make time duo
 
 **designer three**\
-[austin kleon](/tags/austin-kleon), andy j. pizza, the design details duo
+austin kleon, brian lovin, andy j. pizza
 
 **hacker three**\
 guillermo rauch, scott wlatschin, dan abramov
@@ -60,7 +60,7 @@ christian löffler, hælos, jakuzi
 
 - **2016**: graduated and started working at [**vispera**](https://vispera.co), a computer-vision and image recognition startup. built data visualization and forms with a bunch of fields.
 - **2015 to 2016:** front-end developer internships at _[taze](https://tazebt.com)_ and _[peergust](https://angel.co/peergust)_
-- **2015**: did an awfully incompetent but motivating coding bootcamp. quit all the off-school things to focus on graduating on time. took classes from visual communication design and computer science departments. learned a lot by building tangible things[\*](https://github.com/altayaydemir/bilgi-shuttle-ios)[\*](https://github.com/altayaydemir/vcd-ibeacon), and met with many smart people.
+- **2015**: did an incompetent yet motivating coding bootcamp. quit all the off-school things to focus on graduating on time. took classes from visual communication design and computer science departments. learned a lot by building tangible things[\*](https://github.com/altayaydemir/bilgi-shuttle-ios)[\*](https://github.com/altayaydemir/vcd-ibeacon), and met with many smart people.
 - **2013 to 2015**: worked as staff writer at [**bant mag**](https://bantmag.com), an independent arts magazine. it was my dream job around that time. mostly worked on the news website, also wrote album/live-show reviews and did interviews for [the monthly issue](http://dergi.bantmag.com).
 - **2012**: moved to istanbul. started studying mechanical engineering at [istanbul bilgi university](https://www.bilgi.edu.tr/en/).
 
@@ -71,6 +71,6 @@ christian löffler, hælos, jakuzi
 - **2008 to 2009:** published a fanzine called **Uzak**, with friends who were also poetically suffering from puberty.
 - **2007 to 2012**: played drums in punk and indie rock bands till the end of high school. [recorded a demo](https://soundcloud.com/manevraonline/sets/palyaco) with the most memorable one, [**manevra**](https://vimeo.com/26003192).
 - **2007**: built a non-official website for my middle school. took it down after one week because teachers read the comments written by students in the forum and wanted to sue me.
-- **1994 to 2006**: wanted to become a footballer and/or software engineer. I'm still fairly good at FIFA.
+- **1994 to 2006**: wanted to become a footballer and/or do computer stuff. I'm still fairly good at FIFA.
 - **2000**: moved to antalya, turkey
 - **1994**: born in kayseri, turkey

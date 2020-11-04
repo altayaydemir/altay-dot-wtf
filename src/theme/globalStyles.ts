@@ -48,13 +48,13 @@ export const createGlobalStyles = (theme: Theme) => `
 
   ul, ol {
     padding: 0;
-    margin: 16px 0 16px 24px;
+    margin: 4px 0 4px 24px;
     color: ${theme.colors.textSecondary};
   }
 
   li {
     line-height: 1.4;
-    margin: 12px 0 0 0;
+    margin: 4px 0;
   }
 
   .image-lazy {

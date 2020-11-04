@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 import { VscChevronRight } from 'react-icons/vsc'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
-import { Now } from 'types'
+import type { Now } from 'types'
 
 export const getStaticProps = getStaticPropsForContentList<Now>('now')
 
@@ -13,7 +13,7 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
   <>
     <PageHeader title={`history`} description={`what I've been doing`} />
 
-    <Box margin={2} />
+    <Box m={2} />
 
     <>
       {data.map((d) => (

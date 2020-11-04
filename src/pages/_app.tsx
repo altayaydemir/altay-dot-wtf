@@ -7,7 +7,7 @@ import { ThemeProvider } from 'emotion-theming'
 import { Global } from '@emotion/core'
 import useDarkMode from 'use-dark-mode'
 import { SEO, HOSTNAME } from 'config'
-import { createTheme } from 'theme/create'
+import { createTheme } from 'theme'
 import { createGlobalStyles } from 'theme/globalStyles'
 import Layout from 'components/Layout'
 

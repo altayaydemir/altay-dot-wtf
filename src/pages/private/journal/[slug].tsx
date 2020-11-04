@@ -10,13 +10,6 @@ export const getStaticPaths = getStaticPathsForContent('journal')
 export const getStaticProps = getStaticPropsForContentDetails<Journal>('journal')
 
 const sx: SxStyleProp = {
-  '& > * ul': {
-    marginY: 1,
-    paddingY: 0,
-  },
-  '& > * li': {
-    marginY: 0,
-  },
   '& > hr': {
     marginTop: 5,
     opacity: 0.1,
@@ -30,19 +23,16 @@ const JournalDetailPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>
     <>
       <PageHeader
         title={`journal`}
-        description={`what I've been doing in detail, from ${format(
-          new Date(data.meta.date),
-          'MMMM yyyy',
-        )}`}
+        description={`details from ${format(new Date(data.meta.date), 'MMMM yyyy')}`}
       />
 
-      <Box margin={4} />
+      <Box m={4} />
 
       <Box sx={sx}>
         <Markdown>{data.markdown}</Markdown>
       </Box>
 
-      <Box margin={6} />
+      <Box m={6} />
     </>
   )
 }

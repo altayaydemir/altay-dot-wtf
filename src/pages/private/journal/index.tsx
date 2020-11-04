@@ -13,7 +13,7 @@ const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   <>
     <PageHeader title={`journal`} description={`what I've been doing, in detail`} />
 
-    <Box margin={2} />
+    <Box m={3} />
 
     <>
       {data.map((d) => (

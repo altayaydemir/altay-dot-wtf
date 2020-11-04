@@ -11,7 +11,11 @@ const MDQuote = dynamic(() => import('./MDQuote'))
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
 const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 
-const Markdown: React.FC<{ children: string }> = ({ children }) => (
+export type Props = {
+  children: string
+}
+
+const Markdown: React.FC<Props> = ({ children }) => (
   <ReactMarkdown
     plugins={[gfm]}
     escapeHtml={true}
