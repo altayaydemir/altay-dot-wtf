@@ -16,7 +16,9 @@ export const createGlobalStyles = (theme: Theme) => `
     line-height: 1.4;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -38,6 +40,10 @@ export const createGlobalStyles = (theme: Theme) => `
       color: ${theme.colors.linkPrimary}!important;
       text-decoration: underline;
     }
+  }
+
+  button {
+    cursor: pointer;
   }
 
   ul, ol {

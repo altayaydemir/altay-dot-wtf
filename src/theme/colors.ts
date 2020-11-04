@@ -10,6 +10,9 @@ export const COLORS_LIGHT = {
   borderHR: '#F1F5FC',
   borderPrimary: 'rgba(241, 245, 252)',
   imageBackground: 'rgba(255, 255, 255, 0.75)',
+  inputPlaceholder: '#E1E2E3',
+  red: '#9d261d',
+  green: '#1fae7d',
 }
 
 export type Colors = typeof COLORS_LIGHT
@@ -26,4 +29,7 @@ export const COLORS_DARK: Colors = {
   borderHR: '#565656',
   borderPrimary: 'rgba(130, 130, 130, 0.2)',
   imageBackground: 'rgba(0, 0, 0, 0.75)',
+  inputPlaceholder: '#404040',
+  red: '#e74c3c',
+  green: '#1fae7d',
 }

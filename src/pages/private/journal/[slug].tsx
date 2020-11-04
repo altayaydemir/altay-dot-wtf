@@ -41,6 +41,8 @@ const JournalDetailPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>
       <Box sx={sx}>
         <Markdown>{data.markdown}</Markdown>
       </Box>
+
+      <Box margin={6} />
     </>
   )
 }

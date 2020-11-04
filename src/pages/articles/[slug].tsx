@@ -1,3 +1,4 @@
+import { SITE_URL } from 'config'
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
@@ -6,9 +7,9 @@ import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import type { Article } from 'types'
 import ContentTitle from 'components/ContentTitle'
-import Markdown from 'components/Markdown'
 import Tags from 'components/Tags'
-import { SITE_URL } from 'config'
+import Markdown from 'components/Markdown'
+import Feedback from 'components/Feedback'
 
 export const getStaticPaths = getStaticPathsForContent('article')
 export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
@@ -59,6 +60,12 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Box my={3} />
 
       <Markdown>{data.markdown}</Markdown>
+
+      <Box my={6} />
+
+      <Feedback />
+
+      <Box my={6} />
     </>
   )
 }
