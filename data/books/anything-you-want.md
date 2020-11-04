@@ -50,7 +50,7 @@ The cruel fact **you can't please everyone** will also be easier to accept.
 
 ## Ideas and Execution
 
-Ideas are just multipliers for execution.
+Ideas are just [multipliers for execution](/tags/execution-factor).
 
 An awful idea (-1 points) multiplied with brilliant execution (100) would make you waste a hurtful amount of resources. On the other hand, a great idea (100 points) with no execution (0) could also make you earn nothing.
 
