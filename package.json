@@ -30,6 +30,7 @@
     "react-markdown": "^5.0.2",
     "react-medium-image-zoom": "^4.3.1",
     "react-syntax-highlighter": "^15.3.0",
+    "react-use": "^15.3.4",
     "rebass": "^4.0.7",
     "remark-gfm": "^1.0.0",
     "use-dark-mode": "^2.3.1"

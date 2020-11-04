@@ -37,7 +37,7 @@ export const getMarkdownFileNames = (contentType: ContentType) => {
   }
 }
 
-export const getMarkdownFile = (contentType: ContentType, fileName: string) => {
+export const readMarkdownFile = (contentType: ContentType, fileName: string) => {
   const directory = getContentDirectoryPath(contentType)
 
   try {
@@ -45,4 +45,9 @@ export const getMarkdownFile = (contentType: ContentType, fileName: string) => {
   } catch (e) {
     return ''
   }
+}
+
+export const readJSONFile = (fileName: string) => {
+  const directory = join(process.cwd(), 'data', fileName)
+  return JSON.parse(fs.readFileSync(directory, 'utf-8'))
 }

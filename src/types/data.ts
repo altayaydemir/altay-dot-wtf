@@ -66,19 +66,7 @@ export type Vocabulary = BaseMDContent & {
   type: 'vocabulary'
 }
 
-export type BoookmarkJSON = {
-  url: string
-  title: string
-  description?: string
-}
-
-export type Bookmark = {
-  type: 'bookmark'
-  slug: string
-  meta: BaseMeta & BoookmarkJSON
-}
-
-export type Content = Now | Note | Article | Book | About | Vocabulary | Journal | Bookmark
+export type Content = Now | Note | Article | Book | About | Vocabulary | Journal
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book

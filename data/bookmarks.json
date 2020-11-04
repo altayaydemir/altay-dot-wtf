@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Intellectual Humility",
+    "description": "An interesting read that investigates why it's hard to realize our own ignorance. The first rule of the Dunning-Kruger club is you don't know that you're a member.",
+    "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication"
+  },
+  {
+    "title": "Dense Discovery",
+    "description": "My favorite weekly newsletter about technology, design and culture. Published by Kai Branch.",
+    "url": "https://densediscovery.com"
+  },
+  {
+    "title": "Chill Institute",
+    "description": "A complementary service to enhance your put.io experience.",
+    "url": "https://chill.institute"
+  },
+  {
+    "title": "7 Principles of Rich Web Applications",
+    "description": "An article from Vercel's CEO Guillermo Rauch, dates back to 2014. It's fascinating to see where Next.js is now, after reading the ideological origins.",
+    "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications"
+  }
+]

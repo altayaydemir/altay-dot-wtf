@@ -4,7 +4,13 @@ import { FOOTER } from 'config'
 const { title, links } = FOOTER
 
 const Footer = () => (
-  <Box>
+  <Box
+    sx={{
+      borderTop: '1px solid',
+      borderColor: 'borderMenu',
+      paddingY: 3,
+    }}
+  >
     <Heading fontSize={2}>{title}</Heading>
 
     <Box>

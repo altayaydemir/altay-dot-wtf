@@ -1,13 +1,13 @@
 import matter from 'gray-matter'
 import { Content, ContentType } from 'types'
-import { getMarkdownFileNames, getMarkdownFile } from './fs'
+import { getMarkdownFileNames, readMarkdownFile } from './fs'
 import { getMeta } from './meta'
 
 const getMarkdownContentDetails = async <T extends Content>(
   contentType: ContentType,
   fileName: string,
 ) => {
-  const md = getMarkdownFile(contentType, fileName)
+  const md = readMarkdownFile(contentType, fileName)
   const { content, data } = matter(md)
   const meta = await getMeta<T>(contentType, fileName, data)
 
@@ -23,18 +23,10 @@ export const getContentDetails = <T extends Content>(
   contentType: ContentType,
   fileName: string,
 ) => {
-  if (contentType === 'bookmark') {
-    return {} as T
-  }
-
   return getMarkdownContentDetails<T>(contentType, fileName)
 }
 
 const minifyContentListItem = <T extends Content>(data: T) => {
-  if (data.type === 'bookmark') {
-    return data
-  }
-
   return { ...data, markdown: '' } as T
 }
 

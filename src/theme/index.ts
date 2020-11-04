@@ -24,13 +24,15 @@ const formInputStyle: SxStyleProp = {
   },
 }
 
+export const MOBILE_BREAKPOINT = 640
+
 export const createTheme = (options: ThemeOptions) => ({
   ...preset,
   ...options,
   variants: {},
-  space: [0, 4, 8, 16, 32, 48, 64, 128, 256, 512],
+  space: [0, 4, 8, 16, 32, 48, 64, 80, 128, 256, 512],
   fontSizes: [14, 16, 18, 24, 32, 48, 64],
-  breakpoints: ['360px', '640px', '960px'],
+  breakpoints: ['480px', '640px', '960px'],
   colors: options.dark ? COLORS_DARK : COLORS_LIGHT,
   forms: {
     input: formInputStyle,

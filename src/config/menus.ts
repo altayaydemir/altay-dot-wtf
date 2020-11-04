@@ -21,16 +21,12 @@ export const HEADER = {
             label: 'books',
             href: '/books',
           },
+          {
+            label: 'bookmarks',
+            href: '/bookmarks',
+          },
         ]
       : [
-          {
-            label: 'about',
-            href: '/about',
-          },
-          {
-            label: 'now',
-            href: '/now',
-          },
           {
             label: 'journal',
             href: '/private/journal',
@@ -50,6 +46,10 @@ export const HEADER = {
           {
             label: 'vocabulary',
             href: '/private/vocabulary',
+          },
+          {
+            label: 'bookmarks',
+            href: '/bookmarks',
           },
         ],
 } as const
