@@ -10,43 +10,45 @@ export type BaseMeta = {
   tags: string[] | undefined
 }
 
-export type BaseContent = {
+export type BaseMDMeta = BaseMeta
+
+export type BaseMDContent = {
   slug: string
   markdown: string
-  meta: BaseMeta
+  meta: BaseMDMeta
 }
 
-export type About = BaseContent & {
+export type About = BaseMDContent & {
   type: 'about'
 }
 
-export type Now = BaseContent & {
+export type Now = BaseMDContent & {
   type: 'now'
 }
 
-export type Journal = BaseContent & {
+export type Journal = BaseMDContent & {
   type: 'journal'
 }
 
-export type Note = BaseContent & {
+export type Note = BaseMDContent & {
   type: 'note'
-  meta: BaseMeta & {
+  meta: BaseMDMeta & {
     title: string
   }
 }
 
-export type Article = BaseContent & {
+export type Article = BaseMDContent & {
   type: 'article'
-  meta: BaseMeta & {
+  meta: BaseMDMeta & {
     title: string
     oneliner: string
     metaImage: MetaImage | null
   }
 }
 
-export type Book = BaseContent & {
+export type Book = BaseMDContent & {
   type: 'book'
-  meta: BaseMeta & {
+  meta: BaseMDMeta & {
     title: string
     oneliner: string
     authors: string[]
@@ -60,7 +62,7 @@ export type Book = BaseContent & {
   }
 }
 
-export type Vocabulary = BaseContent & {
+export type Vocabulary = BaseMDContent & {
   type: 'vocabulary'
 }
 

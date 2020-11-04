@@ -1,4 +1,4 @@
 import styled, { CreateStyled } from '@emotion/styled'
-import type { Theme } from './create'
+import type { Theme } from '.'
 
 export default styled as CreateStyled<Theme>

@@ -1,4 +1,4 @@
-import type { Theme } from './create'
+import type { Theme } from '.'
 
 export const createGlobalStyles = (theme: Theme) => `
   * {
