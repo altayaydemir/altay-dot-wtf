@@ -7,20 +7,12 @@ const MDQuote: React.FC = ({ children }) => (
       borderLeftWidth: 2,
       borderLeftColor: 'textTertiary',
       borderLeftStyle: 'solid',
+      paddingY: 2,
+      paddingX: 4,
     }}
-    padding={[1, 3]}
-    paddingLeft={2}
     marginY={[1, 3]}
   >
-    <Text
-      css={`
-        * {
-          margin: 0 !important;
-        }
-      `}
-    >
-      {children}
-    </Text>
+    <Text>{children}</Text>
   </Box>
 )
 

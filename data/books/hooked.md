@@ -94,9 +94,8 @@ The search for intrinsic rewards of mastery, competence, and completion.
 
 [The Manipulation Matrix](https://designli.co/blog/using-the-manipulation-matrix-for-ethical-behavioral-design/)
 
-Mahatma Gandhi’s famous quote:
-
 > Build the change they want to see in the world.
+> &mdash; Mahatma Gandhi
 
 ## Extras
 

@@ -111,9 +111,11 @@ Eventually, those try-outs are making an impact. I remember and think more delib
 
 ### Taking action
 
-Now we arrived at a decent spot to sneak in this famous quote from Abraham Lincoln:
+Now we arrived at a decent spot to sneak in this famous quote.
 
-> "If I had eight hours to chop down a tree, I'd spend six hours sharpening my axe."
+> If I had eight hours to chop down a tree, I'd spend six hours sharpening my axe.
+>
+> &mdash; **Abraham Lincoln**
 
 Do you remember what those _heroic_ people I bowed at the beginning of this post were remarkably qualified at?
 

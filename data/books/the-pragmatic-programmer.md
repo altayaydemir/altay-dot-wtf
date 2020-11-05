@@ -16,9 +16,9 @@ In general, it gives bits of advice around professionalism and indicates that we
 
 We have agency! The industry gives us opportunity to choose our work environment, field and technologies.
 
-As Martin Fowler says:
-
 > You can change your organization or change your organization.
+>
+> &mdash; Martin Fowler
 
 ### 2. The Cat Ate My Source Code
 

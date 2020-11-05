@@ -182,8 +182,9 @@ Your work is not your identity. Keep yourself closer to people who like you beca
 
 ## 9. Sell Out
 
-> "Let's write a swimming pool." \
-> The Beatles
+> Let's write a swimming pool.
+>
+> &mdash; - The Beatles
 
 Ask for money when you are confident and at a fair price.
 

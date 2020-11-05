@@ -65,7 +65,9 @@ In a perfect world, would you need advertising? Think about this before you eage
 - Are you profitable?
 - **Isn't that enough?**
 
-> "I miss the mob. Wall Street MBA's optimizing everything, and now I need to pay 25 cents for ketchup on my hotdog." NY Taxi Driver
+> "I miss the mob. Wall Street MBA's optimizing everything, and now I need to pay 25 cents for ketchup on my hotdog."
+>
+> &mdash; NY Taxi Driver
 
 ### How Do You Grade Yourself?
 

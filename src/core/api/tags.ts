@@ -12,9 +12,20 @@ const getAllTaggedContents = () =>
 
 const getTagsFromMeta = (content: TaggedContent) => content.meta.tags || []
 
+const transformTagLink = (tagLink: string) => {
+  const extractedLink = tagLink.replace('(/tags/', '').replace(')', '')
+
+  // `?target=blank`
+  if (extractedLink.includes('?')) {
+    return extractedLink.split('?')[0]
+  }
+
+  return extractedLink
+}
+
 const getTagsFromMarkdown = (content: TaggedContent) => {
   const tagLinks = content.markdown.match(/\(\/tags\/.+\)/g)
-  return tagLinks ? tagLinks.map((tagLink) => tagLink.replace('(/tags/', '').replace(')', '')) : []
+  return tagLinks ? tagLinks.map(transformTagLink) : []
 }
 
 export const getAllTags = async () => {
