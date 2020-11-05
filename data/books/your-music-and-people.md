@@ -87,7 +87,9 @@ You can do anything, but you can't do everything.
 Saying you need a [certain expensive tool](/tags/fancy-tools) is a form of avoiding work.
 Being resourceful shows you can survive.
 
-**Be specific on [what you want](/tags/what-you-want).** You can't act on a vague goal. When you don't know the next step, you [procascinate](/tags/procrastination) or feel lost.
+**You can't act on a vague goal.**
+[Be specific on what you want](/tags/be-specific).
+When you don't know the next step, you feel lost and [procrastinate](/tags/procrastination).
 
 - Write down everything you know. Include every detail and your philosophy.
 - Break details into specific ingredients.

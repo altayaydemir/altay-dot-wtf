@@ -24,7 +24,7 @@ const transformTagLink = (tagLink: string) => {
 }
 
 const getTagsFromMarkdown = (content: TaggedContent) => {
-  const tagLinks = content.markdown.match(/\(\/tags\/.+\)/g)
+  const tagLinks = content.markdown.match(/\(\/tags\/[^)]*\)/g)
   return tagLinks ? tagLinks.map(transformTagLink) : []
 }
 

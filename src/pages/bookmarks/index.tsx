@@ -32,7 +32,7 @@ const descriptionStyle: SxStyleProp = {
 
 const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title="bookmarks" description="links to the cool things." />
+    <PageHeader title="bookmarks" description="a list of cool things all over the www." />
 
     <>
       {data.map((bookmark) => (
