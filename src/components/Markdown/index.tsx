@@ -6,7 +6,7 @@ import MDHeading from './MDHeading'
 import MDParagraph from './MDParagraph'
 import MDLink from './MDLink'
 
-const MDImage = dynamic(() => import('./MDImage'))
+const MDMedia = dynamic(() => import('./MDMedia'))
 const MDQuote = dynamic(() => import('./MDQuote'))
 const MDInlineCode = dynamic(() => import('./MDInlineCode'))
 const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
@@ -23,7 +23,7 @@ const Markdown: React.FC<Props> = ({ children }) => (
       paragraph: MDParagraph,
       heading: MDHeading,
       link: MDLink,
-      image: MDImage,
+      image: MDMedia,
       blockquote: MDQuote,
       inlineCode: MDInlineCode,
       code: MDCodeBlock,
