@@ -28,7 +28,7 @@ As a start, I took several topics to get better and use reconnaissance along the
 
 - **Self-help/productivity:** to keep the lights on.
 - **Creativity:** to build things and solve problems of people like me.
-- **Product/service design:** to understand both people and problems.
+- **Product/service design:** to understand both people and issues.
 - **Software engineering:** a great form of leverage and absorbs all the points above.
 
 During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me finish around [50 books](/books?target=blank) and learn many things, which I attempted to implement in my way of living. Some worked very well; many I haven't figured out how to use.
@@ -61,7 +61,7 @@ _Following days_
 
 Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
 
-My best-case outcome with this approach:
+The best-case outcome of this approach:
 
 - Having a reference for the first X percent of the book.
 - Bunch of left-alone highlights waiting to be carried over.
