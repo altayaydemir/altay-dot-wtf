@@ -1,6 +1,6 @@
 ---
 title: We built an iMessage Extension for our React Native app
-oneliner: now you can too.
+oneliner: Now you can too.
 date: '2019-04-14'
 tags:
   - software

@@ -1,6 +1,6 @@
 ---
 title: Dear state, please stop lying
-oneliner: a brief revisit of how we represent possible states while building user-interfaces.
+oneliner: A brief revisit of how we represent possible states while building user-interfaces.
 date: '2020-02-22'
 tags:
   - software

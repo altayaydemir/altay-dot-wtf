@@ -10,17 +10,16 @@ type Props = {
   fontWeight?: string
 }
 
-const ContentTitle: React.FC<Props> = ({ meta, ...headingProps }) =>
-  meta.draft ? (
-    <Box display="inline-flex" sx={{ alignItems: 'flex-end' }}>
+const ContentTitle: React.FC<Props> = ({ meta, ...headingProps }) => (
+  <Box display="inline-flex" sx={{ alignItems: 'flex-end' }}>
+    {meta.draft ? (
       <Text fontSize={headingProps.fontSize} mr={1} lineHeight={1}>
         <Icon />
       </Text>
+    ) : null}
 
-      <Heading {...headingProps}>{meta.title}</Heading>
-    </Box>
-  ) : (
     <Heading {...headingProps}>{meta.title}</Heading>
-  )
+  </Box>
+)
 
 export default ContentTitle
