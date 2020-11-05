@@ -16,13 +16,13 @@ And that's precisely what I did right after deploying a minimum bearable version
 
 ![Lighthouse score before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
-My beloved minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
+My tiny home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
 The report is quite clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
 
 ![Lighthouse score details, before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
-> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif) 👹👹👹
+> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif?target=blank) 👹👹👹
 
 ### Finding out what I am excessively loading
 
