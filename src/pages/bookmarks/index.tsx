@@ -17,7 +17,7 @@ const formatBookmark = (bookmark: Bookmark) => {
 }
 
 export const getStaticProps = async () => {
-  const bookmarks = readJSONFile('bookmarks.json') as Bookmark[]
+  const bookmarks = readJSONFile('bookmarks/bookmarks.json') as Bookmark[]
   const data = bookmarks.map(formatBookmark)
   return { props: { data } }
 }
