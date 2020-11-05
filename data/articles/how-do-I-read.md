@@ -109,7 +109,7 @@ Although the social aspect is a bit sabotaged by COVID, I try to read online dis
 
 Eventually, those try-outs started making more impact. I was remembering or thinking more deliberately about what I read and wanting to do something with them. That brought my next adversity: the realization of insufficient utilization.
 
-### Take action
+### Taking action
 
 Now we get to a decent spot to sneak in this famous quote from Abraham Lincoln:
 
