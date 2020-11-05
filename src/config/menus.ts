@@ -1,57 +1,43 @@
 import { SITE_TITLE } from './meta'
 
+const __DEV__ = process.env.NODE_ENV === 'development'
+
 export const HEADER = {
-  title: SITE_TITLE,
-  links:
-    process.env.NODE_ENV === 'production'
+  title: __DEV__ ? 'a.' : SITE_TITLE,
+  links: [
+    {
+      label: 'about',
+      href: '/about',
+    },
+    {
+      label: 'now',
+      href: '/now',
+    },
+    {
+      label: 'articles',
+      href: '/articles',
+    },
+    {
+      label: 'books',
+      href: '/books',
+    },
+    {
+      label: 'bookmarks',
+      href: '/bookmarks',
+    },
+    ...(__DEV__
       ? [
           {
-            label: 'about',
-            href: '/about',
+            label: 'vocab',
+            href: '/private/vocabulary',
           },
-          {
-            label: 'now',
-            href: '/now',
-          },
-          {
-            label: 'articles',
-            href: '/articles',
-          },
-          {
-            label: 'books',
-            href: '/books',
-          },
-          {
-            label: 'bookmarks',
-            href: '/bookmarks',
-          },
-        ]
-      : [
           {
             label: 'journal',
             href: '/private/journal',
           },
-          {
-            label: 'articles',
-            href: '/articles',
-          },
-          {
-            label: 'books',
-            href: '/books',
-          },
-          {
-            label: 'tags',
-            href: '/tags',
-          },
-          {
-            label: 'vocabulary',
-            href: '/private/vocabulary',
-          },
-          {
-            label: 'bookmarks',
-            href: '/bookmarks',
-          },
-        ],
+        ]
+      : []),
+  ],
 } as const
 
 export const FOOTER = {
