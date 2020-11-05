@@ -121,4 +121,5 @@ Good, now it's your turn. The real internalization happens when we craft tangibl
 
 A great book would make us want to do something, and there are many out there.
 
-Thanks for reading.
+Thanks for reading, and let me know if you have any suggestions.\
+I would love to learn from you.
