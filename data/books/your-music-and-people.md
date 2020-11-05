@@ -22,7 +22,7 @@ The way you present your art and what people know about it completely changes ho
 In case you feel uninspired or unmotivated, try to set some restrictions for your creation.
 
 Story of [Captain T's](https://sive.rs/capt), UFO music, and _confidential_ demo: One musician friend of Derek.
-They prepare a package that says _CONFIDENTIAL, NOT OPEN_, and send it to the radio stations of universities.
+They prepare a package that says _CONFIDENTIAL, DO NOT OPEN_, and send it to the radio stations of universities.
 375/500 of them played the album.
 
 Establishing an authentic way of communication based on your style and making them wonder about you is a perfect way to attract fans.

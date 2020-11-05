@@ -11,9 +11,9 @@ tags:
 
 This book is a great reference for the complex psychological concepts behind the fundamentals of designing intuitive products and experiences.
 
-![](/images/books/laws-of-ux/laws-of-ux-10.jpg)
+![Jakob's Law](/images/books/laws-of-ux/laws-of-ux-10.jpg)
 
-## Jakob's Law
+## [Jakob's Law](/tags/jakobs-law)
 
 _Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know._
 
