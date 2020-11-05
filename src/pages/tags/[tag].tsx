@@ -16,25 +16,18 @@ export const getStaticPaths: GetStaticPaths = async () => ({
 
 type TagContent =
   | { tag: string; data: undefined }
-  | { tag: string; data: { note: Note | null; items: TaggedContent[] } }
+  | { tag: string; data: { note: Note; items: TaggedContent[] } }
 
 export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async ({ params }) => {
   if (!params?.tag) {
     return { props: { data: undefined, tag: '' } }
   }
 
-  let note: Note | null = null
-  try {
-    note = await getContentDetails<Note>('note', params.tag)
-  } catch (e) {
-    /* no note for markdown, np 👍 */
-  }
-
   return {
     props: {
       tag: params.tag,
       data: {
-        note,
+        note: await getContentDetails<Note>('note', params.tag),
         items: await getContentsByTag(params.tag),
       },
     },
@@ -93,16 +86,16 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
         {heading}
       </Heading>
 
-      {data.note ? <Tags tags={data.note.meta.tags} /> : null}
+      {data.note.meta.tags ? <Tags tags={data.note.meta.tags} /> : null}
 
-      <Box my={2}>
-        <Markdown>{data.note ? data.note.markdown : description}</Markdown>
-      </Box>
+      <Box my={3} />
+
+      <Markdown>{data.note.markdown ? data.note.markdown : description}</Markdown>
 
       {data.items.length ? (
         <Box>
-          {data.note ? (
-            <Box mt={4} mb={2}>
+          {data.note.markdown ? (
+            <Box mt={6}>
               <Heading fontSize={3} color="textSecondary">
                 mentioned in
               </Heading>
@@ -111,7 +104,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
           ) : null}
 
           {data.items.map((content) => (
-            <Box key={content.type + content.slug} mb={3}>
+            <Box key={content.type + content.slug} my={3}>
               <NextLink href={getURLForContent(content)} passHref>
                 <Link>
                   <Text fontSize={2} fontWeight="bold">
@@ -130,7 +123,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
                 </Text>
 
                 <Text color="textTertiary" display="inline" fontSize={1}>
-                  {'added '}
+                  {'updated '}
                   {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
                 </Text>
               </Box>

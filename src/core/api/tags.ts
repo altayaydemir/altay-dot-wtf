@@ -13,7 +13,7 @@ const getAllTaggedContents = () =>
 const getTagsFromMeta = (content: TaggedContent) => content.meta.tags || []
 
 const transformTagLink = (tagLink: string) => {
-  const extractedLink = tagLink.replace('(/tags/', '').replace(')', '')
+  const extractedLink = tagLink.split('(/tags/')[1].split(')')[0]
 
   // `?target=blank`
   if (extractedLink.includes('?')) {
