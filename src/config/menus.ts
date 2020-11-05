@@ -28,6 +28,10 @@ export const HEADER = {
     ...(__DEV__
       ? [
           {
+            label: 'tags',
+            href: '/tags',
+          },
+          {
             label: 'vocab',
             href: '/private/vocabulary',
           },
