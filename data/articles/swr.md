@@ -5,7 +5,7 @@ oneliner: Time to write another NPM package to install another NPM package.
 date: '2020-11-05T10:11:53Z'
 tags:
   - software
-  - react-native
+  - typescript
 ---
 
 It's been several years since the hooks bestowed to the React community. They might be more challenging to understand than predictably named life-cycled methods in class components, especially for the newcomers. Once we get the idea by causing many infinite loops, it significantly improves the codebase.

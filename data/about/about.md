@@ -4,11 +4,11 @@ date: '2020-11-04'
 
 ### what I do
 
-living in prenzlauerberg, berlin
+living in prenzlauerberg, berlin.
 
-working at [klarna](https://klarna.com) as software engineer in the day-time
+working at [klarna](https://klarna.com) as software engineer in the day-time.
 
-reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time
+reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time.
 
 ### what I enjoy
 
