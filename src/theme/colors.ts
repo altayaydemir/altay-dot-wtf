@@ -1,7 +1,7 @@
 export const COLORS_LIGHT = {
   background: '#fcfcfc',
   backgroundSecondary: '#f6f6f9',
-  backgroundHeader: 'rgba(5, 5, 5, 0.8)',
+  backgroundHeader: '#fcfcfc',
   text: '#050505',
   textSecondary: '#2f3037',
   textTertiary: '#686B78',
