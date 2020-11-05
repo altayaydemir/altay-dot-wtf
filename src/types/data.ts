@@ -43,6 +43,7 @@ export type Article = BaseMDContent & {
     title: string
     oneliner: string
     metaImage: MetaImage | null
+    readingTime: string
   }
 }
 

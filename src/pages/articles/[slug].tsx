@@ -54,7 +54,11 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Tags tags={data.meta.tags} />
 
       <Text fontSize={1} color="textTertiary" title={format(new Date(data.meta.date), 'PPP')}>
-        Updated {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })}
+        {'updated '} {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })}
+        <Box display="inline" mx={1}>
+          ·
+        </Box>
+        {data.meta.readingTime}
       </Text>
 
       <Box my={3} />
