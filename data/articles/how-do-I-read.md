@@ -1,7 +1,7 @@
 ---
 title: How do I read a book
 oneliner: It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
-date: '2020-11-05T01:14:32Z2'
+date: '2020-11-05T07:29:00Z'
 tags:
   - how-to-read
 ---
@@ -18,26 +18,26 @@ So, I tried to initiate a new way of doing things when I moved to a new country 
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or, maybe the opposite.
 
-My impression is; their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here.
+My impression is; their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing?target=blank). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here.
 
 ### Why do I read
 
-Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they eventually become more qualified and improve the [execution factor](/tags/execution-factor).
+Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they eventually become more qualified and improve the [execution factor](/tags/execution-factor?target=blank).
 
 As a start, I took several topics to get better and use reconnaissance along the way.
 
-- **Self-help/productivity:** helps to keep the lights on.
+- **Self-help/productivity:** to keep the lights on.
 - **Creativity:** to build things and solve problems of people like me.
-- **Product/service design:** need to understand both people and problems.
-- **Software engineering:** it's a great form of leverage and absorbs all the points above.
+- **Product/service design:** to understand both people and problems.
+- **Software engineering:** a great form of leverage and absorbs all the points above.
 
-During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me finish around 50 books and learn many things, which I attempted to implement in my way of living. Some worked very well; many I haven't figured out how to use.
+During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me finish around [50 books](/books?target=blank) and learn many things, which I attempted to implement in my way of living. Some worked very well; many I haven't figured out how to use.
 
 I'm still at the very beginning, and feeling like there won't be any spot for me to say _"halfway there."_ No matter what, I rejoice in the process. It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
 
 I reckon the existence of more people like me, and a good nudge to get out of bed is to find a way to help them solve their problems.
 
-Here we go.
+So here we go.
 
 ### "This is my original storino, please no copy pasterino"
 
@@ -66,12 +66,13 @@ My best-case outcome with this approach:
 - Having a reference for the first X percent of the book.
 - Bunch of left-alone highlights waiting to be carried over.
 - Not many ideas of my own about the topic.
+- An example of this method, from _[Company of One](/books/company-of-one?target=blank)_
 
-_An example of this method: [Company of One](/books/company-of-one)_
+It was indeed a nice start in terms of awareness, yet not very practical.
 
 ### "I think I'm doing it wrong."
 
-It was indeed a nice start in terms of awareness, yet not very practical. Like the beginning of this story, it didn't take too long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but very few remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
+Like the beginning of this story, it didn't take too long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but very few remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
 
 They lacked two things: **interpretation** and **internalization**.
 
@@ -79,26 +80,34 @@ Then I decided to try out more concrete approaches:
 
 #### Shorter notes, with my own words
 
-To bring some joy to the process, I ditched the digital documentation part (well, not completely) and got myself an iPad with Apple Pencil to feel more papery. Here's an example from [Make Time](/books/make-time).
+To bring some joy to the process, I ditched the digital documentation part (well, not completely) and got myself an iPad with Apple Pencil to feel more papery.
+
+Here's an example from [_Make Time_](/books/make-time?target=blank).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 
-After getting side-tracked by the rabbit hole called _the internet_ while taking notes on the iPad, I found myself another way to apply the first idea to feel even more papery. Here's an example from _User Friendly_, which I am currently reading.
+After getting side-tracked by the rabbit hole called _the internet_ while taking notes on the iPad, I went after the papery feeling even more. Sticky notes worked well since they are easy to carry over.
+
+Here's an example from _User Friendly_, which I'm currently reading.
 
 ![Sticky notes from User Friendly](/images/articles/how-do-I-read/how-do-I-read-post-it.jpg)
 
 The process looks like this:
 
 1. Take byte-sized notes while reading.
-2. Chunk them by chapter or topic.
+2. Chunk them by topic.
 3. _Marinate_ in somewhere visible like in a wall or notebook.
-4. After several weeks, carry them over to text documents and skim the book simultaneously.
+4. After several weeks, carry them over to text documents while skimming the book.
+
+In addition to that, the highlights are [tagged](/tags?target=blank) based on their topic, which is something I read on _How to Take Smart Notes_ but not extensively utilized yet. It's especially helpful while taking action.
+
+![Tags](/images/articles/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 
 Although the social aspect is a bit sabotaged by COVID, I try to read online discussions and listen to podcast episodes related to the books I was reading. This approach also made me discover new mediums when I look for what to read next.
 
-Eventually, those try-outs started making more impact. I was not only remembering or thinking more deliberately about what I have read, but I also wanted to do something with them. That brought my next adversity: I am not doing much with what I consume.
+Eventually, those try-outs started making more impact. I was remembering or thinking more deliberately about what I read and wanting to do something with them. That brought my next adversity: the realization of insufficient utilization.
 
 ### Take action
 
@@ -110,6 +119,6 @@ Do you remember what those _heroic_ people I bowed at the beginning of this post
 
 Good, now it's your turn. The real internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
 
-A great book would make us want to do something, and I'm sure there are many out there.
+A great book would make us want to do something, and there are many out there.
 
 Thanks for reading.

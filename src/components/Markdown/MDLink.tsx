@@ -6,7 +6,7 @@ type Props = {
 }
 
 const MDLink: React.FC<Props> = ({ href, children }) => {
-  if (href.startsWith('http')) {
+  if (href.startsWith('http') || href.endsWith('?target=blank')) {
     return (
       <Link href={href} target="_blank" rel="noreferrer noopener">
         {children}
