@@ -1,12 +1,12 @@
 ---
 title: How do I read a book
 oneliner: It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
-date: '2020-11-05T00:35:25Z'
+date: '2020-11-05T01:14:32Z2'
 tags:
-  - how-to
+  - how-to-read
 ---
 
-I am soon to become twenty-seven, and I complain almost about everything. Around two years ago, I realized I have no idea how to read a book. I was not a bookworm but still worried about my incapability of doing it adequately. I'm sure there are many comprehensive academic analyses of the issue, which could be understood by some intellectually-aware-yet-isolated part of the society. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
+I am soon to become twenty-seven, and I complain almost about everything. Around two years ago, I realized I have no idea how to read a book. I wasn't a bookworm but still worried about my incapability of doing it adequately. I'm sure there are many comprehensive academic analyses of the issue, which could be understood by some intellectually-aware-yet-isolated part of the society. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
 
 Well, hello? 👋
 
@@ -14,7 +14,7 @@ Well, hello? 👋
 
 I habitually try to solve my problems by attempting radical changes to trigger a chain of reactions. Although there is a limit to the things we can change simultaneously, starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
 
-So, I tried to initiate a new way of doing things around the time I moved to a new country two years ago. I began to walk around the flat pedestals of my quiet neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of _Naval Ravikant_, _Seth Godin_, _Cal Newport_. Every sentence that came out from their mouth is like effortless aphorisms.
+So, I tried to initiate a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of _Naval Ravikant_, _Seth Godin_, _Cal Newport_. Every sentence that came out from their mouth was like effortless aphorisms.
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or, maybe the opposite.
 
@@ -22,18 +22,18 @@ My impression is; their most inherent trait is being uttermost aware of [why the
 
 ### Why do I read
 
-Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they eventually become more qualified and improve the [execution factor](/tags/execution-factor) while building things.
+Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they eventually become more qualified and improve the [execution factor](/tags/execution-factor).
 
-As a start, I took several topics I want to get better at and use reconnaissance along the way.
+As a start, I took several topics to get better and use reconnaissance along the way.
 
-- **Self-help/productivity:** It helps to keep the lights on.
-- **Product/service design:** I enjoy building things to solve people's problems, but need to understand them first.
-- **Software engineering:** It's a great form of leverage, also how I get paid. Someone needs to make money to buy those books.
-- **Creativity:** I like playing around with processes and optimizing stuff.
+- **Self-help/productivity:** helps to keep the lights on.
+- **Creativity:** to build things and solve problems of people like me.
+- **Product/service design:** need to understand both people and problems.
+- **Software engineering:** it's a great form of leverage and absorbs all the points above.
 
-Then I tried to read every day and take notes during the past two years, with a roughly 60% success rate. That made me finish around 50 books and learn many things, which I attempted to implement the learnings in my way of living. Some worked very well; many I haven't figured out how to use.
+During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me finish around 50 books and learn many things, which I attempted to implement in my way of living. Some worked very well; many I haven't figured out how to use.
 
-I'm at the very beginning, and feeling like there won't be any spot for me to say _"halfway there."_ No matter what, I rejoice in the process. It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
+I'm still at the very beginning, and feeling like there won't be any spot for me to say _"halfway there."_ No matter what, I rejoice in the process. It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
 
 I reckon the existence of more people like me, and a good nudge to get out of bed is to find a way to help them solve their problems.
 
@@ -55,10 +55,9 @@ _The next day_
 
 _Following days_
 
-- Repeat 4 and 5 until I get bored in the loop at some point.
-- Stop taking notes in a place where things got intense.
-- Finish the book...
-- Well, now I have to go through it again because the note-taking part left behind.
+6. Repeat 4 and 5 until I get bored in the loop at some point.
+7. Stop taking notes in a place where things got intense.
+8. Finish the book... Well, now I have to go through it again because the note-taking part left behind.
 
 Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
 
@@ -74,7 +73,7 @@ _An example of this method: [Company of One](/books/company-of-one)_
 
 It was indeed a nice start in terms of awareness, yet not very practical. Like the beginning of this story, it didn't take too long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but very few remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
 
-They lacked two things: interpretation and internalization.
+They lacked two things: **interpretation** and **internalization**.
 
 Then I decided to try out more concrete approaches:
 
@@ -95,7 +94,7 @@ The process looks like this:
 3. _Marinate_ in somewhere visible like in a wall or notebook.
 4. After several weeks, carry them over to text documents and skim the book simultaneously.
 
-#### Listen what other readers say
+#### Listen to what other readers say
 
 Although the social aspect is a bit sabotaged by COVID, I try to read online discussions and listen to podcast episodes related to the books I was reading. This approach also made me discover new mediums when I look for what to read next.
 
@@ -109,6 +108,8 @@ Now we get to a decent spot to sneak in this famous quote from Abraham Lincoln:
 
 Do you remember what those _heroic_ people I bowed at the beginning of this post were extremely qualified at?
 
-Good, now it's your turn. And mine. A great book would make us want to do something, and I'm sure there are many out there.
+Good, now it's your turn. The real internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
+
+A great book would make us want to do something, and I'm sure there are many out there.
 
 Thanks for reading.
