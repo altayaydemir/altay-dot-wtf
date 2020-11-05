@@ -24,7 +24,7 @@ const config = {
     },
     {
       name: 'email',
-      type: 'text',
+      type: 'email',
       label: 'Your email address',
       required: false,
     },
@@ -37,7 +37,11 @@ const config = {
   ],
 }
 
-type FeedbackState = 'pristine' | 'sending' | 'success' | 'failure'
+type FeedbackState =
+  | { type: 'pristine' }
+  | { type: 'sending' }
+  | { type: 'success' }
+  | { type: 'failure'; error: unknown }
 
 const feedbackMessageStyle: SxStyleProp = {
   paddingY: 2,
@@ -49,7 +53,7 @@ const feedbackMessageStyle: SxStyleProp = {
 }
 
 const FeedBackMessage: React.FC<{ feedbackState: FeedbackState }> = ({ feedbackState }) => {
-  switch (feedbackState) {
+  switch (feedbackState.type) {
     case 'success':
       return (
         <Text sx={feedbackMessageStyle} backgroundColor="green">
@@ -70,17 +74,20 @@ const FeedBackMessage: React.FC<{ feedbackState: FeedbackState }> = ({ feedbackS
 }
 
 const Feedback = () => {
-  const [state, setState] = useState<FeedbackState>('pristine')
+  const [state, setState] = useState<FeedbackState>({ type: 'pristine' })
 
   const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setState('sending')
+    setState({ type: 'sending' })
+
+    const formData = new FormData(e.target as HTMLFormElement)
+    formData.append('path', window.location.pathname)
 
     try {
-      await sendEmail(new FormData(e.target as HTMLFormElement))
-      setState('success')
-    } catch (e) {
-      setState('failure')
+      await sendEmail(formData)
+      setState({ type: 'success' })
+    } catch (error) {
+      setState({ type: 'failure', error })
     }
   }, [])
 
@@ -107,17 +114,17 @@ const Feedback = () => {
 
             <Box m={2} />
 
-            {field.type === 'text' ? (
-              <Input {...field} placeholder={label} />
-            ) : (
+            {field.type === 'textarea' ? (
               <Textarea {...field} placeholder={label} />
+            ) : (
+              <Input {...field} placeholder={label} />
             )}
           </Box>
         ))}
 
         <Flex flexDirection="column" alignItems="flex-end">
-          <Button disabled={state === 'sending'} minWidth={100}>
-            {state === 'sending' ? config.copy.submitBusy : config.copy.submit}
+          <Button disabled={state.type === 'sending'} minWidth={100}>
+            {state.type === 'sending' ? config.copy.submitBusy : config.copy.submit}
           </Button>
         </Flex>
 

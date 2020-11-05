@@ -7,12 +7,15 @@ export const headerStyle: SxStyleProp = {
   left: 0,
   top: 0,
   paddingX: 3,
-  paddingY: [2, 2, 2],
+  paddingY: 2,
   borderBottom: '1px solid',
   borderColor: 'borderMenu',
   backgroundColor: 'backgroundHeader',
   backdropFilter: 'saturate(200%) blur(20px)',
   '& > *': {
     lineHeight: 1,
+  },
+  '& > * > a:hover': {
+    textDecoration: 'none',
   },
 }

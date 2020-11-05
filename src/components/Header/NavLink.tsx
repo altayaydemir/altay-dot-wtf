@@ -1,12 +1,5 @@
 import NextLink from 'next/link'
 import { Link, Text, SxStyleProp } from 'rebass'
-import styled from 'theme/styled'
-
-export const HeaderLinkContainer = styled(Link)`
-  &:hover {
-    text-decoration: none;
-  }
-`
 
 type Props = {
   href: string
@@ -15,9 +8,9 @@ type Props = {
   active: boolean
 }
 
-export const HeaderLink: React.FC<Props> = ({ href, label, active, style }) => (
+const NavLink: React.FC<Props> = ({ href, label, active, style }) => (
   <NextLink href={href} passHref>
-    <HeaderLinkContainer color="text">
+    <Link color="text">
       <Text
         sx={{
           ...style,
@@ -29,6 +22,8 @@ export const HeaderLink: React.FC<Props> = ({ href, label, active, style }) => (
       >
         {label}
       </Text>
-    </HeaderLinkContainer>
+    </Link>
   </NextLink>
 )
+
+export default NavLink
