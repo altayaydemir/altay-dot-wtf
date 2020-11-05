@@ -6,7 +6,7 @@ tags:
   - how-to-read
 ---
 
-I am soon to become twenty-seven, and I complain almost about everything. Around two years ago, I realized I have no idea how to read a book. I wasn't a bookworm but still worried about my incapability of doing it adequately. I'm sure there are many comprehensive academic analyses of the issue, which could be understood by some intellectually-aware-yet-isolated part of the society. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
+I'm soon to become twenty-seven, and I complain almost about everything. One of my most recent realizations is having no idea how to read a book. I had many skilled teachers, leads, mentors, but none of them taught me anything about that. Maybe I didn't ask the right questions, or they don't know either. There are probably many comprehensive academic analyses of the issue, which could be understood by some intellectually-aware-yet-isolated part of society. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
 
 Well, hello? 👋
 
