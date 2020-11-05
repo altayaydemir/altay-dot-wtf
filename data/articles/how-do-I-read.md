@@ -14,7 +14,7 @@ Well, hello? 👋
 
 I habitually try to solve my problems by attempting radical changes to trigger a chain of reactions. Although there is a limit to the things we can change simultaneously, starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
 
-So, I tried to initiate a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_ and _Cal Newport_. Every sentence that came out from their mouth was like effortless aphorisms.
+So, I tried to initiate a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_, and _Cal Newport_. Every sentence that came out from their mouth was like effortless aphorisms.
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or, maybe the opposite.
 
@@ -33,13 +33,13 @@ As a start, I took several topics to get better and use reconnaissance along the
 
 During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me finish around [50 books](/books?target=blank) and learn many things, which I attempted to implement in my way of living. Some worked very well; many I haven't figured out how to use.
 
-I'm still at the very beginning, and feeling like there won't be any spot for me to say _"halfway there."_ No matter what, I rejoice in the process. It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
+I'm still at the very beginning, and feeling like there won't be any spot for me to say _"halfway there."_ No matter what, I rejoice in the process. It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds. Which I also did during the quarantine.
 
 I reckon the existence of more people like me, and a good nudge to get out of bed is to find a way to help them solve their problems.
 
 So here we go.
 
-### "This is my original storino, please no copy pasterino"
+### "This is my original storino, please no copy pasterino."
 
 The first iteration of the note-taking ceremony started by underlining everything that made sense to me. Since I was new to the literature for most topics, that was quite a lot of highlights and sometimes a bookmark on the whole page. After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or directly rewriting whatever the book says.
 
@@ -57,7 +57,7 @@ _Following days_
 
 6. Repeat 4 and 5 until I get bored in the loop at some point.
 7. Stop taking notes in a place where things got intense.
-8. Finish the book... Well, now I have to go through it again because the note-taking part left behind.
+8. Finish the book. Well, now I have to go through it again because the note-taking part left behind.
 
 Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
 
@@ -68,9 +68,9 @@ The best-case outcome of this approach:
 - Not many ideas of my own about the topic.
 - An example of this method, from _[Company of One](/books/company-of-one?target=blank)_
 
-It was indeed a nice start in terms of awareness, yet not very practical.
+It was indeed a positive start in terms of awareness, yet not very practical.
 
-### "I think I'm doing it wrong."
+### "Do you read me?"
 
 Like the beginning of this story, it didn't take too long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but very few remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
 
@@ -80,13 +80,13 @@ Then I decided to try out more concrete approaches:
 
 #### Shorter notes, with my own words
 
-To bring some joy to the process, I ditched the digital documentation part (well, not completely) and got myself an iPad with Apple Pencil to feel more papery.
+To bring some joy to the process, I ditched the digital documentation part (not entirely) and got myself an iPad with Apple Pencil to feel more papery.
 
 Here's an example from [_Make Time_](/books/make-time?target=blank).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 
-After getting side-tracked by the rabbit hole called _the internet_ while taking notes on the iPad, I went after the papery feeling even more. Sticky notes worked well since they are easy to carry over.
+Sometimes I get side-tracked by the rabbit hole called _the internet_ while taking notes on the iPad. My other approach is going all-in on paper. Sticky notes work quite well in terms of logistics.
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
@@ -99,23 +99,23 @@ The process looks like this:
 3. _Marinate_ in somewhere visible like in a wall or notebook.
 4. After several weeks, carry them over to text documents while skimming the book.
 
-In addition to that, the highlights are [tagged](/tags?target=blank) based on their topic, which is something I read on _How to Take Smart Notes_ but not extensively utilized yet. It's especially helpful while taking action.
+In addition to that, the highlights are [tagged](/tags?target=blank) based on their topic, which is something I read on _How to Take Smart Notes_ but not extensively utilized. It's especially helpful while taking action.
 
 ![Tags](/images/articles/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 
-Although the social aspect is a bit sabotaged by COVID, I try to read online discussions and listen to podcast episodes related to the books I was reading. This approach also made me discover new mediums when I look for what to read next.
+Although the social aspect is a bit sabotaged by the pandemic, I try to read online discussions and listen to podcast episodes related to the books I was reading. It also helps me to discover new mediums to find the next reading.
 
-Eventually, those try-outs started making more impact. I was remembering or thinking more deliberately about what I read and wanting to do something with them. That brought my next adversity: the realization of insufficient utilization.
+Eventually, those try-outs are making an impact. I remember and think more deliberately about what I read and what to do with them. However, I haven't done much yet. That brings the next adversity: awareness of insufficient utilization.
 
 ### Taking action
 
-Now we get to a decent spot to sneak in this famous quote from Abraham Lincoln:
+Now we arrived at a decent spot to sneak in this famous quote from Abraham Lincoln:
 
 > "If I had eight hours to chop down a tree, I'd spend six hours sharpening my axe."
 
-Do you remember what those _heroic_ people I bowed at the beginning of this post were extremely qualified at?
+Do you remember what those _heroic_ people I bowed at the beginning of this post were remarkably qualified at?
 
 Good, now it's your turn. The real internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
 
