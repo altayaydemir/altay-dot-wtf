@@ -1,9 +1,9 @@
 ---
 title: How do I read a book
 oneliner: It is much more pleasant than playing 300 games of League of Legends and losing half of them to a bunch of 12-year-olds.
-date: '2020-11-05'
+date: '2020-11-05T00:35:25Z'
 tags:
-  - how-to-read
+  - how-to
 ---
 
 I am soon to become twenty-seven, and I complain almost about everything. Around two years ago, I realized I have no idea how to read a book. I was not a bookworm but still worried about my incapability of doing it adequately. I'm sure there are many comprehensive academic analyses of the issue, which could be understood by some intellectually-aware-yet-isolated part of the society. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
@@ -39,7 +39,7 @@ I reckon the existence of more people like me, and a good nudge to get out of be
 
 Here we go.
 
-### Take one: "This is my original storino, please no copy pasterino."
+### "This is my original storino, please no copy pasterino"
 
 The first iteration of the note-taking ceremony started by underlining everything that made sense to me. Since I was new to the literature for most topics, that was quite a lot of highlights and sometimes a bookmark on the whole page. After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or directly rewriting whatever the book says.
 
@@ -70,7 +70,7 @@ My best-case outcome with this approach:
 
 _An example of this method: [Company of One](/books/company-of-one)_
 
-### Take two: "I think I am doing it wrong."
+### "I think I'm doing it wrong."
 
 It was indeed a nice start in terms of awareness, yet not very practical. Like the beginning of this story, it didn't take too long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but very few remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
 
@@ -95,13 +95,13 @@ The process looks like this:
 3. _Marinate_ in somewhere visible like in a wall or notebook.
 4. After several weeks, carry them over to text documents and skim the book simultaneously.
 
-### Hear what other people think
+#### Listen what other readers say
 
 Although the social aspect is a bit sabotaged by COVID, I try to read online discussions and listen to podcast episodes related to the books I was reading. This approach also made me discover new mediums when I look for what to read next.
 
 Eventually, those try-outs started making more impact. I was not only remembering or thinking more deliberately about what I have read, but I also wanted to do something with them. That brought my next adversity: I am not doing much with what I consume.
 
-### Take three: "Take action."
+### Take action
 
 Now we get to a decent spot to sneak in this famous quote from Abraham Lincoln:
 
