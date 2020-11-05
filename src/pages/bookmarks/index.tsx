@@ -1,26 +1,9 @@
-import { SITE_URL } from 'config'
 import { InferGetStaticPropsType } from 'next'
 import { Box, Text, Link, Heading, SxStyleProp } from 'rebass'
-import { readJSONFile } from 'core/api/fs'
+import { getBookmarks } from 'core/api/bookmarks'
 import PageHeader from 'components/PageHeader'
 
-type Bookmark = {
-  url: string
-  title: string
-  description?: string
-}
-
-const formatBookmark = (bookmark: Bookmark) => {
-  const url = new URL(bookmark.url)
-  const formattedURL = url.protocol + url.hostname + url.pathname + `?ref=${SITE_URL}`
-  return { ...bookmark, host: url.hostname, url: formattedURL }
-}
-
-export const getStaticProps = async () => {
-  const bookmarks = readJSONFile('bookmarks/bookmarks.json') as Bookmark[]
-  const data = bookmarks.map(formatBookmark)
-  return { props: { data } }
-}
+export const getStaticProps = async () => ({ props: { data: getBookmarks() } })
 
 const descriptionStyle: SxStyleProp = {
   paddingLeft: 2,
