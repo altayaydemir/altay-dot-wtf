@@ -1,46 +1,18 @@
-import { InferGetStaticPropsType } from 'next'
-import NextLink from 'next/link'
-import { formatDistanceToNow } from 'date-fns'
-import { Box, Text, Link } from 'rebass'
-import { getStaticPropsForContentList } from 'core/api/page'
+import type { InferGetStaticPropsType } from 'next'
 import type { Article } from 'types'
-import ContentTitle from 'components/ContentTitle'
+import { articlesCopy } from 'config/copy'
+import { getStaticPropsForContentList } from 'core/api/page'
+import { Box } from 'rebass'
 import PageHeader from 'components/PageHeader'
+import ArticleList from 'components/Article/ArticleList'
 
 export const getStaticProps = getStaticPropsForContentList<Article>('article')
 
 const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title="articles" description="learnings worth sharing, mostly about software." />
-
-    <Box>
-      {data.map((article) => (
-        <Box key={article.slug} my={4}>
-          <NextLink href={`/articles/${article.slug}`} passHref>
-            <Link>
-              <ContentTitle fontSize={3} meta={article.meta} />
-            </Link>
-          </NextLink>
-
-          <Box m={1} />
-
-          <Text fontSize={1} color="textSecondary">
-            {article.meta.oneliner}
-          </Text>
-
-          <Box m={1} />
-
-          <Text fontSize={0} color="textTertiary">
-            {'updated '}
-            {formatDistanceToNow(new Date(article.meta.date), { addSuffix: true })}
-            <Box display="inline" mx={1}>
-              ·
-            </Box>
-            {article.meta.readingTime}
-          </Text>
-        </Box>
-      ))}
-    </Box>
+    <PageHeader title={articlesCopy.title} description={articlesCopy.description} />
+    <Box m={4} />
+    <ArticleList data={data} titleSize={[2, 3]} />
   </>
 )
 

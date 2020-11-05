@@ -11,9 +11,9 @@ type Props = {
 }
 
 const ContentTitle: React.FC<Props> = ({ meta, ...headingProps }) => (
-  <Box display="inline-flex" sx={{ alignItems: 'flex-end' }}>
+  <Box display="inline-flex">
     {meta.draft ? (
-      <Text fontSize={headingProps.fontSize} mr={1} lineHeight={1}>
+      <Text fontSize={headingProps.fontSize} mr={1}>
         <Icon />
       </Text>
     ) : null}

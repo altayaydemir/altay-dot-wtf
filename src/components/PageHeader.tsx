@@ -26,7 +26,7 @@ const PageHeader: React.FC<Props> = ({ title, metaTitle, description, metaDescri
       </Heading>
 
       {description ? (
-        <Text color="textSecondary" fontSize={[1, 2]}>
+        <Text fontSize={[1, 2]}>
           <Markdown>{description}</Markdown>
         </Text>
       ) : null}

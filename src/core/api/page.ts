@@ -2,7 +2,6 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { Content, ContentType } from 'types'
 import { getMarkdownFileNames } from './fs'
 import { getContentDetails, getContentList } from './content'
-import { sortContentByDate } from './utils'
 
 export const getStaticPathsForContent = (contentType: ContentType): GetStaticPaths => async () => {
   const data = await getContentList(contentType)
@@ -38,7 +37,7 @@ export const getStaticPropsForContentList = <T extends Content>(
 
   return {
     props: {
-      data: sortContentByDate(data),
+      data,
     },
   }
 }

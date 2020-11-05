@@ -1,46 +1,47 @@
+import type { Article, Content } from 'types'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { homeCopy, articlesCopy } from 'config/copy'
 import NextLink from 'next/link'
 import { Box, Heading, Text, Link } from 'rebass'
 import { VscArrowRight } from 'react-icons/vsc'
+import { getContentList } from 'core/api/content'
+import ArticleList from 'components/Article/ArticleList'
 
-const data = {
-  title: 'hi, my name is altay.',
-  description: [
-    `thanks for visiting my website.`,
-    `I am a software engineer currently living in berlin.`,
-    `I enjoy building things that are solving problems I empathize with.`,
-  ],
-  links: [
-    {
-      label: 'more about me',
-      href: '/about',
-    },
-    {
-      label: 'what am I doing now',
-      href: '/now',
-    },
-  ],
-} as const
+type HomeSection = {
+  title: string
+  data: Content[]
+}
 
-const Home: React.FC = () => (
+export const getStaticProps: GetStaticProps<{ sections: HomeSection[] }> = async () => {
+  const articles = await getContentList<Article>('article')
+  const sections = [
+    {
+      title: articlesCopy.title,
+      data: articles,
+    },
+  ]
+
+  return { props: { sections } }
+}
+
+const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sections }) => (
   <>
-    <Heading fontSize={3}>{data.title}</Heading>
+    <Heading fontSize={3}>{homeCopy.title}</Heading>
 
     <Box m={3} />
 
-    {data.description.map((i) => (
+    {homeCopy.description.map((i) => (
       <Text key={i} color="textSecondary">
         {i}
       </Text>
     ))}
 
-    <Box m={3} />
-
-    <>
-      {data.links.map((link) => (
+    <Box my={3}>
+      {homeCopy.links.map((link) => (
         <Box key={link.href}>
           <NextLink href={link.href} passHref>
             <Link>
-              <Box display="inline-flex" sx={{ alignItems: 'center' }}>
+              <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
                 <Text mr={1}>{link.label}</Text>
                 <VscArrowRight />
               </Box>
@@ -48,7 +49,19 @@ const Home: React.FC = () => (
           </NextLink>
         </Box>
       ))}
-    </>
+    </Box>
+
+    {sections.map((section) => (
+      <Box key={section.title} my={5}>
+        <Heading as="h3" fontSize={3}>
+          {section.title}
+        </Heading>
+
+        <Box my={2} />
+
+        <ArticleList data={section.data as Article[]} titleSize={2} />
+      </Box>
+    ))}
   </>
 )
 

@@ -2,6 +2,7 @@ import matter from 'gray-matter'
 import { Content, ContentType } from 'types'
 import { getMarkdownFileNames, readMarkdownFile } from './fs'
 import { getMeta } from './meta'
+import { sortContentByDate } from './utils'
 
 const getMarkdownContentDetails = async <T extends Content>(
   contentType: ContentType,
@@ -48,5 +49,5 @@ export const getContentList = async <T extends Content>(
     return contentList
   }
 
-  return contentList.map(minifyContentListItem)
+  return sortContentByDate(contentList.map(minifyContentListItem))
 }
