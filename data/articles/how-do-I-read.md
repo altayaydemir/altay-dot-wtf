@@ -14,7 +14,7 @@ Well, hello? 👋
 
 I habitually try to solve my problems by attempting radical changes to trigger a chain of reactions. Although there is a limit to the things we can change simultaneously, starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
 
-So, I tried to initiate a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of _Naval Ravikant_, _Seth Godin_, _Cal Newport_. Every sentence that came out from their mouth was like effortless aphorisms.
+So, I tried to initiate a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _the Knowledge Project_ and _the Tim Ferriss Show_. I still recognize the cobblestones I was stepping on while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_ and _Cal Newport_. Every sentence that came out from their mouth was like effortless aphorisms.
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or, maybe the opposite.
 
