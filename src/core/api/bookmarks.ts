@@ -16,7 +16,7 @@ export type Bookmark = BookmarkJSON & {
 
 const formatBookmark = (bookmark: BookmarkJSON): Bookmark => {
   const url = new URL(bookmark.url)
-  const formattedURL = url.protocol + url.hostname + url.pathname + `?ref=${SITE_URL}`
+  const formattedURL = 'https://' + url.hostname + url.pathname + `?ref=${SITE_URL}`
 
   return {
     ...bookmark,
