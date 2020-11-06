@@ -24,7 +24,7 @@ const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           </NextLink>
 
           <Text color="textTertiary" fontSize={0}>
-            {format(new Date(d.meta.date), 'PPP')}
+            {d.meta.pinned ? 'pinned' : format(new Date(d.meta.date), 'PPP')}
           </Text>
         </Box>
       ))}

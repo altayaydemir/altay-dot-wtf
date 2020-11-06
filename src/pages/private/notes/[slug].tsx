@@ -13,7 +13,10 @@ const PrivateNotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> 
 
   return (
     <>
-      <PageHeader title={data.meta.title} description={format(new Date(data.meta.date), 'PPP')} />
+      <PageHeader
+        title={data.meta.title}
+        description={`updated ${format(new Date(data.meta.date), 'PPP')}`}
+      />
 
       <hr />
 

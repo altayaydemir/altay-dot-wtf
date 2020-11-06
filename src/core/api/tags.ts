@@ -2,12 +2,12 @@ import { TaggedItem, TaggedContent, isTaggedContent, Bookmark, TAGGED_CONTENT_TY
 import { getMarkdownFileNames } from './fs'
 import { getBookmarks } from './bookmarks'
 import { getContentList } from './content'
-import { sortContentByDate } from './utils'
+import { sortContent } from './utils'
 
 const getTaggedContents = async () => {
   const fetcher = TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withDetails: true }))
   const markdownContents = (await Promise.all(fetcher)).flat() as TaggedContent[]
-  return sortContentByDate(markdownContents)
+  return sortContent(markdownContents)
 }
 
 const getTaggedBookmarks = (): Bookmark[] => {
