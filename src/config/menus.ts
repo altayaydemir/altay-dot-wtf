@@ -32,12 +32,12 @@ export const HEADER = {
             href: '/tags',
           },
           {
-            label: 'vocab',
-            href: '/private/vocabulary',
-          },
-          {
             label: 'journal',
             href: '/private/journal',
+          },
+          {
+            label: 'notes',
+            href: '/private/notes',
           },
         ]
       : []),

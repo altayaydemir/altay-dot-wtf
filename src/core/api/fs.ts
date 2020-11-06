@@ -10,8 +10,8 @@ const getContentDirectoryForType = (type: ContentType) => {
       return 'books'
     case 'note':
       return 'notes'
-    case 'vocabulary':
-      return 'private/vocabulary'
+    case 'private-note':
+      return 'private/notes'
     case 'journal':
       return 'private/journal'
     default:

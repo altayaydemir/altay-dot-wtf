@@ -63,8 +63,12 @@ export type Book = BaseMDContent & {
   }
 }
 
-export type Vocabulary = BaseMDContent & {
-  type: 'vocabulary'
+export type PrivateNote = BaseMDContent & {
+  type: 'private-note'
+  meta: BaseMDMeta & {
+    priority: number
+    title: string
+  }
 }
 
 export type BookmarkJSON = {
@@ -80,7 +84,7 @@ export type Bookmark = BookmarkJSON & {
   tags: string[]
 }
 
-export type Content = Now | Note | Article | Book | About | Vocabulary | Journal
+export type Content = Now | Note | Article | Book | About | PrivateNote | Journal
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book
