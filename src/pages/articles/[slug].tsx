@@ -7,7 +7,7 @@ import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import type { Article } from 'types'
 import ContentTitle from 'components/ContentTitle'
-import Tags from 'components/Tags'
+import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
 

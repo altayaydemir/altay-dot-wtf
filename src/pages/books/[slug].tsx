@@ -7,7 +7,7 @@ import ContentTitle from 'components/ContentTitle'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
-import Tags from 'components/Tags'
+import Tags from 'components/Tag/Tags'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')

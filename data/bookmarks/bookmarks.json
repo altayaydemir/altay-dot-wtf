@@ -2,17 +2,20 @@
   {
     "title": "Group Chat: The Best Way to Totally Stress Out Your Team",
     "description": "How Basecamp overcomes the negatives of group chat by encouraging asyncronous communication.",
-    "url": "https://basecamp.com/guides/group-chat-problems"
+    "url": "https://basecamp.com/guides/group-chat-problems",
+    "tags": ["digital-clutter"]
   },
   {
     "title": "My best products are joke",
     "description": "When and how to use humor in copywriting.",
-    "url": "https://vanschneider.com/best-products-joke"
+    "url": "https://vanschneider.com/best-products-joke",
+    "tags": ["ux-writing"]
   },
   {
     "title": "Whereby",
     "description": "A video-conferencing app with a clean design. Works well in the web browser without any hustle and doesn't try to capture all the possible information from guests.",
-    "url": "https://whereby.com"
+    "url": "https://whereby.com",
+    "tags": ["cool-things"]
   },
   {
     "title": "Intellectual Humility",
@@ -22,16 +25,19 @@
   {
     "title": "Dense Discovery",
     "description": "My favorite weekly newsletter on technology, design and culture. Published by Kai Branch.",
-    "url": "https://densediscovery.com"
+    "url": "https://densediscovery.com",
+    "tags": ["newsletter"]
   },
   {
     "title": "Chill Institute",
     "description": "A complementary service to enhance your put.io experience.",
-    "url": "https://chill.institute"
+    "url": "https://chill.institute",
+    "tags": ["cool-things"]
   },
   {
     "title": "7 Principles of Rich Web Applications",
     "description": "An article from Vercel's CEO Guillermo Rauch, dates back to 2014. It's fascinating to see where Next.js is now, after reading the ideological origins.",
-    "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications"
+    "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications",
+    "tags": ["next-js"]
   }
 ]

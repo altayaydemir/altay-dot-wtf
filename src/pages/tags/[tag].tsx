@@ -1,13 +1,12 @@
-import { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next'
-import NextLink from 'next/link'
+import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next'
+import type { TaggedItem, Note } from 'types'
 import { NextSeo } from 'next-seo'
-import { Box, Text, Link, Heading } from 'rebass'
-import { formatDistanceToNow } from 'date-fns'
+import { Box, Heading } from 'rebass'
 import { getContentDetails } from 'core/api/content'
-import { getAllTags, getContentsByTag } from 'core/api/tags'
-import Tags from 'components/Tags'
+import { getAllTags, getTaggedItemsByTag } from 'core/api/tags'
+import Tags from 'components/Tag/Tags'
+import TaggedItems from 'components/Tag/TaggedItems'
 import Markdown from 'components/Markdown'
-import type { TaggedContent, Note } from 'types'
 
 export const getStaticPaths: GetStaticPaths = async () => ({
   paths: (await getAllTags()).map((tag) => ({ params: { tag } })),
@@ -16,7 +15,7 @@ export const getStaticPaths: GetStaticPaths = async () => ({
 
 type TagContent =
   | { tag: string; data: undefined }
-  | { tag: string; data: { note: Note; items: TaggedContent[] } }
+  | { tag: string; data: { note: Note; items: TaggedItem[] } }
 
 export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async ({ params }) => {
   if (!params?.tag) {
@@ -28,7 +27,7 @@ export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async
       tag: params.tag,
       data: {
         note: await getContentDetails<Note>('note', params.tag),
-        items: await getContentsByTag(params.tag),
+        items: await getTaggedItemsByTag(params.tag),
       },
     },
   }
@@ -44,32 +43,6 @@ const getDescription = (count: number) => {
   }
 
   return `there are ${count} things related to that.`
-}
-
-const getURLForContent = (content: TaggedContent) => {
-  switch (content.type) {
-    case 'article':
-      return `/articles/${content.slug}`
-
-    case 'book':
-      return `/books/${content.slug}`
-
-    default:
-      return `/tags/${content.slug}`
-  }
-}
-
-const getTitleForContent = (content: TaggedContent) => {
-  switch (content.type) {
-    case 'book':
-      return `${content.meta.title} by ${content.meta.authors.join(', ')}`
-
-    case 'note':
-      return `#${content.slug}`
-
-    default:
-      return content.meta.title
-  }
 }
 
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
@@ -103,32 +76,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
             </Box>
           ) : null}
 
-          {data.items.map((content) => (
-            <Box key={content.type + content.slug} my={3}>
-              <NextLink href={getURLForContent(content)} passHref>
-                <Link>
-                  <Text fontSize={2} fontWeight="bold">
-                    {getTitleForContent(content)}
-                  </Text>
-                </Link>
-              </NextLink>
-
-              <Box>
-                <Text color="textSecondary" display="inline" fontSize={1}>
-                  {content.type}
-                </Text>
-
-                <Text color="textSecondary" display="inline-block" mx={1}>
-                  ·
-                </Text>
-
-                <Text color="textTertiary" display="inline" fontSize={1}>
-                  {'updated '}
-                  {formatDistanceToNow(new Date(content.meta.date), { addSuffix: true })}
-                </Text>
-              </Box>
-            </Box>
-          ))}
+          <TaggedItems data={data.items} />
         </Box>
       ) : null}
     </>

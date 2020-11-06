@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next'
 import { getAllTags } from 'core/api/tags'
-import Tags from 'components/Tags'
+import Tags from 'components/Tag/Tags'
 import PageHeader from 'components/PageHeader'
 import { Box } from 'rebass'
 

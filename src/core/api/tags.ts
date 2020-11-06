@@ -54,19 +54,19 @@ const getTaggedItemTags = (item: TaggedItem) => {
 }
 
 export const getAllTags = async () => {
-  const contents = await getTaggedItems()
+  const items = await getTaggedItems()
   const tags = new Set<string>()
 
-  contents
+  items
     .map(getTagsFromNoteNames)
     .flat()
-    .forEach((tag) => tags.has(tag) && tags.add(tag))
+    .forEach((tag) => !tags.has(tag) && tags.add(tag))
 
-  contents
+  items
     .map(getTaggedItemTags)
     .filter((tags) => tags.length)
     .flat()
-    .forEach((tag) => tags.has(tag) && tags.add(tag))
+    .forEach((tag) => !tags.has(tag) && tags.add(tag))
 
   return Array.from(tags).sort((a, b) => a.localeCompare(b))
 }
