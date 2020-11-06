@@ -67,8 +67,28 @@ export type Vocabulary = BaseMDContent & {
   type: 'vocabulary'
 }
 
+export type BookmarkJSON = {
+  url: string
+  title: string
+  description?: string
+  tags?: string[]
+}
+
+export type Bookmark = BookmarkJSON & {
+  type: 'bookmark'
+  host: string
+  tags: string[]
+}
+
 export type Content = Now | Note | Article | Book | About | Vocabulary | Journal
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book
-export type TaggedContentType = TaggedContent['type']
+export const TAGGED_CONTENT_TYPES: TaggedContent['type'][] = ['article', 'book', 'note']
+
+export type TaggedItem = TaggedContent | Bookmark
+export type TaggedItemType = TaggedItem['type']
+
+export const isTaggedContent = (taggedItem: TaggedItem): taggedItem is TaggedContent => {
+  return (TAGGED_CONTENT_TYPES as string[]).includes(taggedItem.type)
+}
