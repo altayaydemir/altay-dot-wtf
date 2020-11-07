@@ -1,6 +1,6 @@
 ---
 title: Leveraging dynamic imports to make Lighthouse happier
-oneliner: Using a 450KB library to render a heading and three paragraphs is probably not my brightest decision.
+oneliner: Using a 450KB library to render a heading and paragraph was not my brightest decision.
 date: '2020-11-01'
 tags:
   - software
@@ -8,11 +8,11 @@ tags:
   - next-js
 ---
 
-I am building this website with [Next.js](https://nextjs.org) and obviously charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
+I am building this website with [Next.js](https://nextjs.org) and charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
 
-In addition to eliminating the friction, Vercel also provides [analytics](https://nextjs.org/analytics) and [Lighthouse integration](https://vercel.com/integrations/lighthouse) to monitor how your website is doing when it comes to vital metrics for the user experience.
+In addition to eliminating the friction, Vercel also provides [analytics](https://nextjs.org/analytics) and [Lighthouse integration](https://vercel.com/integrations/lighthouse) to monitor how your website is performing when it comes to vital metrics for the user experience.
 
-And that's precisely what I did right after deploying a minimum bearable version, but the results were not satisfying at all.
+And that's precisely what I did right after deploying a minimum bearable version. But the results were not satisfying at all.
 
 ![Lighthouse score before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
