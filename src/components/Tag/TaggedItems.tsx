@@ -15,7 +15,7 @@ const getTitle = (item: TaggedItem) => {
       return `${item.meta.title} by ${item.meta.authors.join(', ')}`
 
     case 'note':
-      return `#${item.slug}`
+      return item.meta.title ?? `#${item.slug}`
 
     case 'article':
       return item.meta.title

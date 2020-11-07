@@ -1,4 +1,5 @@
 ---
+title: Error Handling
 date: '2020-11-03'
 tags:
   - software
