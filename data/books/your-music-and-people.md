@@ -9,8 +9,9 @@ tags:
   - marketing
 ---
 
-Byte-size stories from Derek Sivers experience in the music industry.
-It has lovely guidance around finding a niche, building an audience, being resourceful, and expanding the network by developing valuable relationships with people.
+Byte-size stories from Derek Sivers' experience in the music industry.
+
+It's a great guide for finding a niche, building an audience, being resourceful, and expanding the network by developing valuable relationships with people.
 
 ## Creative
 
@@ -94,3 +95,70 @@ When you don't know the next step, you feel lost and [procrastinate](/tags/procr
 - Break details into specific ingredients.
 - Research what you don't know.
 - Turn your findings into actions.
+
+[A good plan wins no matter what happens.](/tags/without-getting-lucky)
+
+Assume nobody is going to help you. No investors, no heritage, no lottery. It's all up to you. You can't wait because there is nobody to wait. When someone does help you, that would make it better.
+
+Be prepared for two scenarios.
+
+The first one depends on nobody but you. There are no lucky breaks. Develop your skills, build your reputation, be small but sustainable.
+
+Second one makes use of the industry to build a good team, pursue deals and find investors.
+
+Prepare for either path, you will win any case.
+
+**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](/tags/what-are-you-doing)
+
+Every depressing situation may arise an opportunity. Hungry guy from music industry comes to Derek's university for a seminar. Derek orders a pizza to the classroom. They became friends after.
+
+## Describe
+
+- Be succinct.
+- Make people curious.
+- Speak everyday language, don't use weird artsy words.
+- Use tricks and phrases that worked on you.
+- ["Hillbilly Flamenco"](https://sive.rs/hillbf)
+
+[**Proudly exclude most people.** Blockbuster hits are dead, aim for the niche.](/tags/audience) Make bold statemens like "if you like Katty Perry, don't listen to this!". They will wonder, and listen.
+
+## Target
+
+**Do the opposite**. If everyone is hyper connected, it's more valuable to disconnect.
+
+> Be fearful when others are greedy, and be greedy when the others are fearful.
+
+> — Warren Buffett
+
+## Quantity
+
+[Keep a database of people](/tags/people-db), what they do, where they live, when was your last contact. Stay in touch. Keep the communication personalized.
+
+- A: 3 weeks
+- B: 2 months
+- C: 6 months
+- D: 12 months
+
+Find out what they are doing. Be unselfish and caring. Help them away, show appreciation.
+
+**Every breakthrough comes from someone you know.** Meet new people, stay in touch.
+
+[**Include everyone in your success**](/tags/success)**.** Return the favors. You are not pulled to success by destiny. You are lifted by the people around you.
+
+## Money
+
+[Pour your personality and philosophy into the way you do business.](/tags/your-utopia) Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
+
+**Some people like to pay.** Even if you are operating on a free-pricing plan, let people who want to contribute with their money.
+
+**Charging:** overpricing may motivate people to pay more attention.
+
+**Don't promote until people can take action. **
+
+Are fans telling friends? If no, then keep working.
+
+If yes, don't promote till they can't take action. Otherwise it's a waste of their attention.
+
+## Mindset
+
+**Move to the big city.** Possibilities on the internet are great, but living in New York and Los Angeles helped Derek. **It shows you are in the game.**
