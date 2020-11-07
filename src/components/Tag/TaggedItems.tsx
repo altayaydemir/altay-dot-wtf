@@ -4,7 +4,10 @@ import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 import { VscLinkExternal } from 'react-icons/vsc'
 
-type TaggedItemProps = { data: TaggedItem }
+type TaggedItemProps = {
+  tag: string
+  data: TaggedItem
+}
 
 const getTitle = (item: TaggedItem) => {
   switch (item.type) {
@@ -25,20 +28,20 @@ const getTitle = (item: TaggedItem) => {
   }
 }
 
-const getURLForContent = (content: TaggedContent) => {
+const getURLForContent = (content: TaggedContent, tag: string) => {
   switch (content.type) {
     case 'article':
-      return `/articles/${content.slug}`
+      return `/articles/${content.slug}?tag=${tag}`
 
     case 'book':
-      return `/books/${content.slug}`
+      return `/books/${content.slug}?tag=${tag}`
 
     default:
       return `/tags/${content.slug}`
   }
 }
 
-const TaggedItemHeading: React.FC<TaggedItemProps> = ({ data }) => {
+const TaggedItemHeading: React.FC<TaggedItemProps> = ({ tag, data }) => {
   const linkStyle: SxStyleProp = {
     display: 'inline-block',
     fontSize: 2,
@@ -48,7 +51,7 @@ const TaggedItemHeading: React.FC<TaggedItemProps> = ({ data }) => {
   if (isTaggedContent(data)) {
     return (
       <Box>
-        <NextLink href={getURLForContent(data)} passHref>
+        <NextLink href={getURLForContent(data, tag)} passHref scroll={false}>
           <Link sx={linkStyle}>{getTitle(data)}</Link>
         </NextLink>
       </Box>
@@ -82,9 +85,9 @@ const getSubtitle = (item: TaggedItem) => {
   }
 }
 
-const Item: React.FC<TaggedItemProps> = ({ data }) => (
+const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
   <Box my={3}>
-    <TaggedItemHeading data={data} />
+    <TaggedItemHeading tag={tag} data={data} />
 
     <Text color="textSecondary" display="inline" fontSize={1}>
       {data.type}
@@ -100,10 +103,10 @@ const Item: React.FC<TaggedItemProps> = ({ data }) => (
   </Box>
 )
 
-const TaggedItems: React.FC<{ data: TaggedItem[] }> = ({ data }) => (
+const TaggedItems: React.FC<{ tag: string; data: TaggedItem[] }> = ({ tag, data }) => (
   <>
     {data.map((taggedItem, index) => (
-      <Item key={index} data={taggedItem} />
+      <Item key={index} data={taggedItem} tag={tag} />
     ))}
   </>
 )

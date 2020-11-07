@@ -7,6 +7,8 @@ import { VscMenu, VscClose } from 'react-icons/vsc'
 import NavLink from './NavLink'
 import { headerStyle } from './style'
 
+const menuButtonStyle = { background: 'transparent', border: 'none', padding: 0 }
+
 const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }) => {
   const [showMenu, toggleShowMenu] = useToggle(false)
 
@@ -17,10 +19,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
   return (
     <>
       <Flex alignItems="center">
-        <button
-          onClick={toggleShowMenu}
-          style={{ background: 'transparent', border: 'none', padding: 0 }}
-        >
+        <button type="button" name="menu-button" onClick={toggleShowMenu} style={menuButtonStyle}>
           <Box color="text" padding={0} margin={0} fontSize={3} sx={{ lineHeight: 0 }}>
             {showMenu ? <VscClose /> : <VscMenu />}
           </Box>

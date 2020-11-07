@@ -18,11 +18,11 @@ So, I tried to start a new way of doing things when I moved to a new country two
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or the opposite.
 
-Their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing?target=blank). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here..
+Their most inherent trait is being uttermost aware of [why they are doing what they are doing](/tags/why-are-you-doing). Do I know that? I guess no; that's what I should get to find out first. How can I get better at what I am doing? Well, I suppose I need to know what's happening in the world and why I am here..
 
 ### Why do I read
 
-Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they become more qualified and improve the [execution factor](/tags/execution-factor?target=blank).
+Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they become more qualified and improve the [execution factor](/tags/execution-factor).
 
 As a start, I took several topics to get better and use reconnaissance along the way.
 

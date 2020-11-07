@@ -13,9 +13,8 @@ export const getStaticPaths: GetStaticPaths = async () => ({
   fallback: false,
 })
 
-type TagContent =
-  | { tag: string; data: undefined }
-  | { tag: string; data: { note: Note; items: TaggedItem[] } }
+type Data = { note: Note; items: TaggedItem[] }
+type TagContent = { tag: string; data: undefined } | { tag: string; data: Data }
 
 export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async ({ params }) => {
   if (!params?.tag) {
@@ -33,7 +32,17 @@ export const getStaticProps: GetStaticProps<TagContent, { tag: string }> = async
   }
 }
 
-const getDescription = (count: number) => {
+const getHeading = (data: Data) => {
+  if (data.note.markdown && data.note.meta.title) {
+    return data.note.meta.title
+  }
+
+  return `#${data.note.slug}`
+}
+
+const getDescription = (data: Data) => {
+  const count = data.items.length
+
   if (count === 0) {
     return `sorry, I couldn't find anything tagged with that.`
   }
@@ -48,8 +57,8 @@ const getDescription = (count: number) => {
 const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, tag }) => {
   if (!data || !tag) return null
 
-  const heading = `#${tag}`
-  const description = getDescription(data.items.length)
+  const heading = getHeading(data)
+  const description = getDescription(data)
 
   return (
     <>
@@ -69,14 +78,14 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
         <Box>
           {data.note.markdown ? (
             <Box mt={6}>
-              <Heading fontSize={3} color="textSecondary">
+              <Heading fontSize={3} color="text">
                 mentioned in
               </Heading>
               <hr />
             </Box>
           ) : null}
 
-          <TaggedItems data={data.items} />
+          <TaggedItems tag={tag} data={data.items} />
         </Box>
       ) : null}
     </>

@@ -8,11 +8,14 @@ import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
+import { useScrollToTag } from 'hooks/useScrollToTag'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
 
 const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  useScrollToTag()
+
   if (!data) return null
 
   const seoTitle = `${data.meta.title} by ${data.meta.authors.join(', ')}`

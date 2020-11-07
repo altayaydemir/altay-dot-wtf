@@ -10,11 +10,14 @@ import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
+import { useScrollToTag } from 'hooks/useScrollToTag'
 
 export const getStaticPaths = getStaticPathsForContent('article')
 export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
 
 const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
+  useScrollToTag()
+
   if (!data) return null
 
   const title = data.meta.title

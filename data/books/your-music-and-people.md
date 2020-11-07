@@ -84,11 +84,10 @@ You can do anything, but you can't do everything.
 ## Resourceful
 
 **Impress people with how little you spend.**
-Saying you need a [certain expensive tool](/tags/fancy-tools) is a form of avoiding work.
+[Saying you need a certain expensive tool is a form of avoiding work](/tags/fancy-tools).
 Being resourceful shows you can survive.
 
-**You can't act on a vague goal.**
-[Be specific on what you want](/tags/be-specific).
+**You can't act on a vague goal.** [Be specific on what you want](/tags/be-specific).
 When you don't know the next step, you feel lost and [procrastinate](/tags/procrastination).
 
 - Write down everything you know. Include every detail and your philosophy.

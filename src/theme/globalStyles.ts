@@ -37,7 +37,7 @@ export const createGlobalStyles = (theme: Theme) => `
     color: ${theme.colors.linkPrimary};
 
     &:hover {
-      color: ${theme.colors.linkPrimary}!important;
+      color: ${theme.colors.linkPrimary};
       text-decoration: underline;
     }
   }
