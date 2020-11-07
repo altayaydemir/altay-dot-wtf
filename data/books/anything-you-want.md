@@ -15,9 +15,13 @@ tags:
 
 Business is not about money. It's about making dreams come true for others and yourself.
 
-Starting a company is a great way to improve something and learn while doing. Your company is your little utopia; run it as you're in charge of your ideal world.
+Starting a company is a great way to improve something and learn while doing.
+[Your company is your little utopia; run it as you're in charge of your ideal world.](/tags/your-utopia)
 
-A business is a reflection of the creator. Pay attention to what excites you or what drains you. Make your company and role **anything you want**. Don't aim to grow; don't aim to drive the busy bandwagon. The real point of doing anything is to be happy, do whatever makes you happy.
+A business is a reflection of the creator. Pay attention to what excites you or what drains you.
+Make your company and role **anything you want**.
+Don't aim to grow; don't aim to drive the busy bandwagon.
+The real point of doing anything is to be happy, do whatever makes you happy.
 
 **How CD Baby became a thing:** Derek solved his problem first, which could be re-used for another person having the same problem. It started as an independent business for independent artists to sell their music online, without waiting for some big label to sign them and do it.
 
@@ -31,7 +35,7 @@ CD Baby just followed the idea of charging 4\$ per copy for albums, which was th
 
 ## Hell Yeah Or No
 
-[Persistence](/tags/persistence) is undoubtedly essential, but don't persistently do the wrong thing. Success comes from persistently improving and innovating.
+[Persistence is undoubtedly essential, but don't persistently do the wrong thing.](/tags/persistence) Success comes from persistently improving and innovating.
 
 We are all busy. Saying **"hell yeah, or no"** helps choose what to do with enjoyment.
 
@@ -50,7 +54,7 @@ The cruel fact **you can't please everyone** will also be easier to accept.
 
 ## Ideas and Execution
 
-Ideas are just [multipliers for execution](/tags/execution-factor).
+[Ideas are just multipliers for execution](/tags/execution-factor).
 
 An awful idea (-1 points) multiplied with brilliant execution (100) would make you waste a hurtful amount of resources. On the other hand, a great idea (100 points) with no execution (0) could also make you earn nothing.
 
@@ -90,7 +94,7 @@ Be ready to handle at least double the size of customers when it comes to operat
 
 ### But, for real...
 
-In the end, it's not about what you want to be. It is about what you have. Taking time to learn doing stuff by yourself is actually becoming someone who knows that. When you sign-up to run a marathon, you don't want a taxi to take you to the finish line.
+In the end, it's not about what you want to be. It is about what you have. Taking time to learn doing stuff by yourself is actually becoming someone who knows that. [When you sign-up to run a marathon, you don't want a taxi to take you to the finish line.](/tags/get-rich-quick)
 
 ### Promises
 
@@ -106,6 +110,10 @@ Move away and spend time on improvements.
 
 ### Delegate, but don't abdicate
 
-Too much delegation resulted in a weird situation. Employees get to choose the revenue sharing model. They end up giving all profit to themselves. Fixing it in a conflicting way was the beginning of the end for CD Baby. People's relationships got broken, and Derek stopped going to the office.
+Too much delegation resulted in a weird situation.
+Employees get to choose the revenue sharing model.
+They end up giving all profit to themselves.
+Fixing it in a conflicting way was the beginning of the end for CD Baby.
+People's relationships got broken, and Derek stopped going to the office.
 
 Eventually, he sold CD Baby and donated money to music education, where it all started for him. A sentimental ending for a great story.

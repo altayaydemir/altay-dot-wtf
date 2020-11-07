@@ -46,7 +46,7 @@ When you finally break through the Plateau of Latent Potential, people will call
 - You have a new goal and a new plan, but you haven’t changed who you are.
 - The ultimate form of intrinsic motivation is when a habit becomes part of your identity.
 
-**Two step process of changing your identity**
+**[Two step process of changing your identity](/tags/who-you-want-to-be)**
 
 1. Decide the type of person you want to be.
 2. Prove it to yourself with small wins.
