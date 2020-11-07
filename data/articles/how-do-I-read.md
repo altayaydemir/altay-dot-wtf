@@ -3,7 +3,7 @@ title: How do I read a book
 oneliner: It's more pleasant than playing 300 games of League of Legends during the lockdown.
 date: '2020-11-05T22:37:23Z'
 tags:
-  - book-notes
+  - note-taking
 ---
 
 I'm soon to become twenty-seven, and I complain almost about everything. One of my most recent realizations is having no idea how to read a book. I had many skilled teachers, leads, mentors, but none of them taught me anything about that. I suppose I didn't ask the right questions, and they were as clueless as me. I want to believe it's about _the system_ and people in charge who don't even know I am alive.

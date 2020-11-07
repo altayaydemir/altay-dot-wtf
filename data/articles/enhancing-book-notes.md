@@ -4,7 +4,7 @@ oneliner: You can read, you can code. So why not?
 date: '2020-11-07T15:29:40Z'
 tags:
   - software
-  - book-notes
+  - note-taking
 ---
 
 If you like to take notes from the books you read and know a little bit of JavaScript, this may help you.
