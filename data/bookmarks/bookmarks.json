@@ -3,7 +3,7 @@
     "title": "Website Carbon Calculator",
     "description": "How is your website impacting the planet?",
     "url": "https://websitecarbon.com",
-    "tags": [""]
+    "tags": []
   },
   {
     "title": "Andy Matuschak's working notes",
@@ -32,7 +32,8 @@
   {
     "title": "Intellectual Humility",
     "description": "An interesting read that investigates why it's hard to realize our own ignorance. The first rule of the Dunning-Kruger club is you don't know that you're a member.",
-    "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication"
+    "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication",
+    "tags": []
   },
   {
     "title": "Dense Discovery",
