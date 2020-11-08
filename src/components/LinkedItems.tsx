@@ -1,5 +1,5 @@
 import { Content } from 'types'
-import { Box, Text, Flex, SxStyleProp, Heading } from 'rebass'
+import { Box, Text, Flex, SxStyleProp, Heading, Link } from 'rebass'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 
@@ -53,24 +53,26 @@ const itemStyle: SxStyleProp = {
 }
 
 const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
-  <NextLink href={getURLForContent(data, slug)}>
-    <Box sx={itemStyle} p={2}>
-      <Text color="linkPrimary" fontSize={1} fontWeight="bold">
-        {getTitle(data)}
-      </Text>
+  <NextLink href={getURLForContent(data, slug)} passHref>
+    <Link href={getURLForContent(data, slug)} sx={{ '&:hover': { textDecoration: 'none' } }}>
+      <Box sx={itemStyle} p={2}>
+        <Text color="linkPrimary" fontSize={1} fontWeight="bold">
+          {getTitle(data)}
+        </Text>
 
-      <Text color="textSecondary" display="inline" fontSize={0}>
-        {data.type}
-      </Text>
+        <Text color="textSecondary" display="inline" fontSize={0}>
+          {data.type}
+        </Text>
 
-      <Text color="textSecondary" display="inline-block" mx={1}>
-        ·
-      </Text>
+        <Text color="textSecondary" display="inline-block" mx={1}>
+          ·
+        </Text>
 
-      <Text color="textTertiary" display="inline" fontSize={0}>
-        {getSubtitle(data)}
-      </Text>
-    </Box>
+        <Text color="textTertiary" display="inline" fontSize={0}>
+          {getSubtitle(data)}
+        </Text>
+      </Box>
+    </Link>
   </NextLink>
 )
 

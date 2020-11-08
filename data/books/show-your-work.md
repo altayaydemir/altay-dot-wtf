@@ -13,7 +13,7 @@ tags:
 
 ### Find a Scenius
 
-[Scenius](/tags/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
+[Scenius](/notes/scenius) is a community of people who produce great things by influencing each other by discussing, copying, and charming competitions.
 
 Start asking what you can do for the others instead of the opposing one-way question.
 
@@ -191,7 +191,7 @@ Ask for money when you are confident and at a fair price.
 
 ### Your Audience
 
-[Keep a mailing list](/tags/mailing-list).
+[Keep a mailing list](/tags/audience).
 People who sign-up for your mailing list are giving consent to be "disturbed" by you.
 Don't push your chance; don't turn into human spam.
 

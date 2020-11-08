@@ -22,7 +22,7 @@ The report is quite clear, it tells that I am basically making your computer loa
 
 ![Lighthouse score details, before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
-> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif?target=blank) 👹👹👹
+> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif) 👹👹👹
 
 ### Finding out what I am excessively loading
 

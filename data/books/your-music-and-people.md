@@ -132,7 +132,7 @@ Every depressing situation may arise an opportunity. Hungry guy from music indus
 
 ## Quantity
 
-[Keep a database of people](/tags/people-db), what they do, where they live, when was your last contact.
+Keep a database of people, what they do, where they live, when was your last contact.
 Stay in touch.
 Keep the communication personalized.
 
@@ -152,7 +152,9 @@ You are lifted by the people around you.
 
 ## Money
 
-[Pour your personality and philosophy into the way you do business.](/tags/your-utopia) Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
+[Pour your personality and philosophy into the way you do business.](/tags/your-utopia)
+
+Derek's pricing for a gig, 2000$/h for an hour, 1500$/h for two hours. "You pay me to get there, I enjoy the rest!"
 
 **Some people like to pay.** Even if you are operating on a free-pricing plan, let people who want to contribute with their money.
 

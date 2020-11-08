@@ -13,9 +13,9 @@ I've been using Apple Notes, Notion, sticky notes, and real paper to keep my not
 They were a bit unorganized and hard to index when needed.
 So I moved all to Markdown, and started publishing on this website.
 
-[Taking notes is the hard part](/articles/how-do-I-read?target=blank).
+[Taking notes is the hard part](/articles/how-do-I-read).
 Once you have them in place, making them look pretty is a joyful task to deal with.
-That's what I did while building the [book pages](/books?target=blank), without spending too much effort on details.
+That's what I did while building the book pages, without spending too much effort on details.
 It took me half-a-day to make it legit enough to share as learning in this article.
 
 ### Adding front-matter to Markdown

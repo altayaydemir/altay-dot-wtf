@@ -22,7 +22,7 @@ Their most inherent trait is being uttermost aware of [why they are doing what t
 
 ### Why do I read
 
-Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they become more qualified and improve the [execution factor](/tags/execution-factor).
+Like most decent accomplishments, wisdom doesn't arise overnight. As you can predict, another trait of the names mentioned is reading. They are quite skilled at learning and making use of the things they capture along the way. Combined with many other ingredients, they become more qualified and improve the [execution factor](/notes/execution-factor).
 
 As a start, I took several topics to get better and use reconnaissance along the way.
 
@@ -32,7 +32,7 @@ As a start, I took several topics to get better and use reconnaissance along the
 - **Software engineering**: a great form of leverage and absorbs all the points above.
 
 During the past two years, I tried to read every day and take notes with a roughly 60% success rate.
-That made me read around [50 books](/books?target=blank) and learn many things, which I attempted to integrate into my life.
+That made me read around [50 books](/books) and learn many things, which I attempted to integrate into my life.
 Some worked very well; many I haven't figured out how to use.
 
 I'm still at the very beginning and feeling like there won't be any spot for me to say "halfway there."
@@ -74,7 +74,7 @@ The best-case outcome of this approach:
 - Having a reference for the first X percent of the book.
 - Bunch of left-alone highlights waiting for someone to carry them over.
 - Few ideas of my own about the topic.
-- An example of this method, from _[Company of One](/books/company-of-one?target=blank)_
+- An example of this method, from _[Company of One](/books/company-of-one)_
 
 That was a positive start for awareness, yet not very practical.
 
@@ -104,11 +104,11 @@ So here's what I am trying to do:
 2.  Chunk by topic.
 3.  _Marinate_ them somewhere visible like in a wall or notebook.
 4.  After several weeks, carry things over to text documents while skimming the book.
-5.  Publish notes in the [books](/books?target=blank) page.
+5.  Publish notes in this website.
 
 To bring some joy to the process, I ditched the keyboard-driven documentation. Now I have an iPad with Apple Pencil to feel more papery.
 
-Here's an example from [_Make Time_](/books/make-time?target=blank).
+Here's an example from [_Make Time_](/books/make-time).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 

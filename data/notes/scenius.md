@@ -16,10 +16,6 @@ A scenius is nurtured by several factors[^1]
 - Network effects of success
 - Local tolerance for the novelties
 
-&nbsp;
-
----
-
 ### References
 
 [^1]: https://kk.org/thetechnium/scenius-or-comm/

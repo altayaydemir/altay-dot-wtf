@@ -22,15 +22,15 @@ export const HEADER = {
       href: '/books',
     },
     {
-      label: 'notes',
-      href: '/notes',
-    },
-    {
       label: 'bookmarks',
       href: '/bookmarks',
     },
     ...(__DEV__
       ? [
+          {
+            label: 'notes',
+            href: '/notes',
+          },
           {
             label: 'tags',
             href: '/tags',
