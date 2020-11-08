@@ -8,15 +8,16 @@ import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
-import { useScrollToTag } from 'hooks/useScrollToTag'
+import LinkedItems from 'components/LinkedItems'
+import { useScrollToSource } from 'hooks/useScrollToSource'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')
 
-const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
-  useScrollToTag()
+const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+  useScrollToSource()
 
-  if (!data) return null
+  if (!data || !links) return null
 
   const seoTitle = `${data.meta.title} by ${data.meta.authors.join(', ')}`
   const seoDescription = `"${data.meta.oneliner}"`
@@ -49,6 +50,10 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       <Box m={3} />
 
       <Markdown>{data.markdown}</Markdown>
+
+      <Box m={6} />
+
+      <LinkedItems data={links} slug={data.slug} />
     </>
   )
 }

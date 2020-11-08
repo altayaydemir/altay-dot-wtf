@@ -10,15 +10,16 @@ import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
-import { useScrollToTag } from 'hooks/useScrollToTag'
+import { useScrollToSource } from 'hooks/useScrollToSource'
+import LinkedItems from 'components/LinkedItems'
 
 export const getStaticPaths = getStaticPathsForContent('article')
 export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
 
-const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
-  useScrollToTag()
+const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+  useScrollToSource()
 
-  if (!data) return null
+  if (!data || !links) return null
 
   const title = data.meta.title
   const description = data.meta.oneliner
@@ -64,15 +65,17 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         {data.meta.readingTime}
       </Text>
 
-      <Box my={3} />
+      <Box m={3} />
 
       <Markdown>{data.markdown}</Markdown>
 
-      <Box my={6} />
+      <Box m={4} />
 
       <Feedback />
 
-      <Box my={6} />
+      <Box m={4} />
+
+      <LinkedItems data={links} slug={data.slug} />
     </>
   )
 }

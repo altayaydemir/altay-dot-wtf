@@ -31,13 +31,13 @@ const getTitle = (item: TaggedItem) => {
 const getURLForContent = (content: TaggedContent, tag: string) => {
   switch (content.type) {
     case 'article':
-      return `/articles/${content.slug}?tag=${tag}`
+      return `/articles/${content.slug}?source=${tag}`
 
     case 'book':
-      return `/books/${content.slug}?tag=${tag}`
+      return `/books/${content.slug}?source=${tag}`
 
     default:
-      return `/notes/${content.slug}?tag=${tag}`
+      return `/notes/${content.slug}?source=${tag}`
   }
 }
 

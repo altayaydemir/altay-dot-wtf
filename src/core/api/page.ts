@@ -1,7 +1,8 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Content, ContentType } from 'types'
+import { Content, ContentType, isTaggedContent, TAGGED_CONTENT_TYPES } from 'types'
 import { getMarkdownFileNames } from './fs'
 import { getContentDetails, getContentList } from './content'
+import { getLinksToContent } from './tags'
 
 export const getStaticPathsForContent = (contentType: ContentType): GetStaticPaths => async () => {
   const data = await getContentList(contentType)
@@ -12,18 +13,22 @@ export const getStaticPathsForContent = (contentType: ContentType): GetStaticPat
   }
 }
 
-type ContentDetailsProps<T> = { data: T } | { data: undefined }
+type ContentDetailsProps<T> = { data: T; links: Content[] } | { data: undefined; links: undefined }
 
 export const getStaticPropsForContentDetails = <T extends Content>(
   contentType: ContentType,
 ): GetStaticProps<ContentDetailsProps<T>> => async ({ params }) => {
   const slug = getMarkdownFileNames(contentType).find((s) => s === params?.slug)
 
-  if (!slug) return { props: { data: undefined } }
+  if (!slug) return { props: { data: undefined, links: undefined } }
+
+  const data = await getContentDetails<T>(contentType, slug)
+  const links = isTaggedContent(data) ? await getLinksToContent(data) : []
 
   return {
     props: {
-      data: await getContentDetails<T>(contentType, slug),
+      data,
+      links,
     },
   }
 }

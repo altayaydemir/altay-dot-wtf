@@ -65,3 +65,27 @@ export const getTaggedItemsByTag = async (tag: string) => {
   const taggedItems = await getTaggedItems()
   return taggedItems.filter((taggedItem) => getTaggedItemTags(taggedItem).includes(tag))
 }
+
+const getTargetContentLinkRegex = (content: TaggedContent) => {
+  switch (content.type) {
+    case 'article':
+      return `/articles/${content.slug}`
+    case 'book':
+      return `/books/${content.slug}`
+    case 'note':
+      return `/notes/${content.slug}`
+    default:
+      return '__'
+  }
+}
+
+const getLinks = (source: TaggedContent, target: TaggedContent) => {
+  const regex = getTargetContentLinkRegex(target)
+  const linked = source.markdown.includes(regex)
+  return linked
+}
+
+export const getLinksToContent = async (content: TaggedContent) => {
+  const taggedContents = await getTaggedContents()
+  return taggedContents.filter((c) => c.slug !== content.slug).filter((c) => getLinks(c, content))
+}

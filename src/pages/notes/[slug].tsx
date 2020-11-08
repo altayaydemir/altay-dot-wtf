@@ -6,15 +6,16 @@ import { NextSeo } from 'next-seo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
 import { format, formatDistanceToNow } from 'date-fns'
-import { useScrollToTag } from 'hooks/useScrollToTag'
+import { useScrollToSource } from 'hooks/useScrollToSource'
+import LinkedItems from 'components/LinkedItems'
 
 export const getStaticPaths = getStaticPathsForContent('note')
 export const getStaticProps = getStaticPropsForContentDetails<Note>('note')
 
-const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => {
-  useScrollToTag()
+const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+  useScrollToSource()
 
-  if (!data) return null
+  if (!data || !links) return null
 
   return (
     <>
@@ -33,6 +34,10 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       {data.meta.tags ? <Tags tags={data.meta.tags} /> : null}
 
       <Markdown>{data.markdown}</Markdown>
+
+      <Box m={6} />
+
+      <LinkedItems data={links} slug={data.slug} />
     </>
   )
 }

@@ -93,6 +93,6 @@ export const TAGGED_CONTENT_TYPES: TaggedContent['type'][] = ['article', 'book',
 export type TaggedItem = TaggedContent | Bookmark
 export type TaggedItemType = TaggedItem['type']
 
-export const isTaggedContent = (taggedItem: TaggedItem): taggedItem is TaggedContent => {
+export const isTaggedContent = (taggedItem: TaggedItem | Content): taggedItem is TaggedContent => {
   return (TAGGED_CONTENT_TYPES as string[]).includes(taggedItem.type)
 }
