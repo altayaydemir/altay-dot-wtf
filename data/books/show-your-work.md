@@ -128,7 +128,8 @@ Being a good-storyteller comes from being even a better listener. "I like to wri
 
 The quality of your followers is more important than quantity; there is no need to waste time on hacks about how to get more followers.
 
-If you want followers, be someone worth following. Do your thing and talk about the stuff you love, and you'll eventually attract people who also love them.
+If you want followers, be someone worth following.
+Do your thing and talk about the stuff you love, and you'll eventually attract people who also love them.
 
 ### The Vampire Test
 
@@ -157,7 +158,8 @@ A great activity to do: go to museums or bookstores, so you can browse around if
 
 ## 8. Learn to Take a Punch
 
-Austin talks about his acquaintances from the design school. They were too harsh while reviewing each other's work to see if any of them are going to quit school. 🤡
+Austin talks about his acquaintances from the design school.
+They were too harsh while reviewing each other's work to see if any of them are going to quit school. 🤡
 
 Put out a lot of work, get punched a lot.
 
@@ -189,9 +191,12 @@ Ask for money when you are confident and at a fair price.
 
 ### Your Audience
 
-[Keep a mailing list](/tags/mailing-list). People who sign-up for your mailing list are giving consent to be "disturbed" by you. Don't push your chance; don't turn into human spam.
+[Keep a mailing list](/tags/mailing-list).
+People who sign-up for your mailing list are giving consent to be "disturbed" by you.
+Don't push your chance; don't turn into human spam.
 
-Interaction with the audience will require more time as it grows; schedule office hours for that. Don't consume the productive time.
+Interaction with the audience will require more time as it grows; schedule office hours for that.
+Don't consume the productive time.
 
 ### Opportunities
 
@@ -204,6 +209,6 @@ Say "no" to less of the things you want to do, even if they have a more signific
 
 Whether you've just won big or lost big, you still have to face the next question: _what's next?_
 
-### ~~Start Over~~ Being Again
+### ~~Start Over~~ Begin Again
 
 Whenever you feel like whatever there is more to learn about what you're doing, it's time to change course to learn something new to move forward.
