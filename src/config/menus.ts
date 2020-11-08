@@ -47,21 +47,3 @@ export const HEADER = {
       : []),
   ],
 } as const
-
-export const FOOTER = {
-  title: `me on the internets`,
-  links: [
-    {
-      label: 'email',
-      href: 'mailto:altay@aydemir.io',
-    },
-    {
-      label: 'twitter',
-      href: 'https://twitter.com/altayaydemir',
-    },
-    {
-      label: 'github',
-      href: 'https://github.com/altayaydemir',
-    },
-  ],
-} as const

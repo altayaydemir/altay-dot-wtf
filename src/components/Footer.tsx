@@ -1,18 +1,29 @@
-import { Box, Heading, Link } from 'rebass'
-import { FOOTER } from 'config'
+import { Flex, Box, Link } from 'rebass'
 
-const { title, links } = FOOTER
+const links = [
+  {
+    label: 'email',
+    href: 'mailto:altay@aydemir.io',
+  },
+  {
+    label: 'twitter',
+    href: 'https://twitter.com/altayaydemir',
+  },
+  {
+    label: 'github',
+    href: 'https://github.com/altayaydemir',
+  },
+]
 
 const Footer = () => (
-  <Box
+  <Flex
+    justifyContent="space-between"
     sx={{
       borderTop: '1px solid',
       borderColor: 'borderMenu',
       paddingY: 3,
     }}
   >
-    <Heading fontSize={2}>{title}</Heading>
-
     <Box>
       {links.map((link, index) => (
         <Box key={link.href} display="inline-block">
@@ -31,9 +42,7 @@ const Footer = () => (
         </Box>
       ))}
     </Box>
-
-    <Box m={4} />
-  </Box>
+  </Flex>
 )
 
 export default Footer
