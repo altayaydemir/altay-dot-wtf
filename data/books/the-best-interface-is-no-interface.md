@@ -2,7 +2,7 @@
 isbn: '9780133890334'
 date: '2020-10-19'
 rating: '8/10'
-oneliner: 'Our love for the digital interface is out of control, and our obsession with is ruining the future of innovation.'
+oneliner: 'Our love for the digital interface is out of control, and our obsession is ruining the future of innovation.'
 tags:
   - product-design
   - humane-design
