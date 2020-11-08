@@ -5,7 +5,7 @@ tags:
   - jakobs-law
 ---
 
-![](/images/notes/jakobs-law/tutanota-email-link.mp4)
+![](/images/notes/tutanota-email-link.mp4)
 
 I wanted to copy this mail address to sign-up for another newsletter.
 

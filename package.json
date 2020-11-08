@@ -33,6 +33,7 @@
     "react-use": "^15.3.4",
     "reading-time": "^1.2.0",
     "rebass": "^4.0.7",
+    "remark-footnotes": "^3.0.0",
     "remark-gfm": "^1.0.0",
     "use-dark-mode": "^2.3.1"
   },
