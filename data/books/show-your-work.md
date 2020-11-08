@@ -147,7 +147,7 @@ That is [the vampire test](/tags/the-vampire-test). Apply it to people, jobs, pr
 
 Find people who share the same values as you in a topic, and show the work to them before anyone else.
 
-They are your [scenius](/tags/scenius). Do what you can to nurture your relationship.
+Do what you can to nurture your relationship.
 
 ### Meet Up in Meatspace
 
@@ -161,12 +161,11 @@ Austin talks about his acquaintances from the design school. They were too harsh
 
 Put out a lot of work, get punched a lot.
 
-The more criticism you take, the more you realise it is harmless.
+[The more criticism you take, the more you realise it is harmless.](/tags/criticism)
 
-[Nobody died from a bad review.](/tags/criticism)\
-Take a deep breath and accept whatever comes.
+Nobody died from a bad review. Take a deep breath and accept whatever comes.
 
-You can't control the [criticism](/tags/criticism) you receive, but you can control how you react to it.
+You can't control the criticism you receive, but you can control how you react to it.
 
 Sometimes, having your work hated by a particular audience might be a badge of honor.
 
@@ -201,7 +200,7 @@ Say "no" to less of the things you want to do, even if they have a more signific
 
 ## 10. Stick Around
 
-**Don't quit your show.** The people who get what they are often the ones who just [stick around](/tags/persistence) long enough.
+[**Don't quit your show.** The people who get what they are often the ones who just stick around long enough.](/tags/persistence)
 
 Whether you've just won big or lost big, you still have to face the next question: _what's next?_
 

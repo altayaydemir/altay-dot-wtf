@@ -1,5 +1,4 @@
 import { TaggedItem, TaggedContent, isTaggedContent, Bookmark, TAGGED_CONTENT_TYPES } from 'types'
-import { getMarkdownFileNames } from './fs'
 import { getBookmarks } from './bookmarks'
 import { getContentList } from './content'
 import { sortContent } from './utils'
@@ -18,10 +17,6 @@ const getTaggedItems = async (): Promise<TaggedItem[]> => {
   const taggedBookmarks = getTaggedBookmarks()
   const taggedContents = await getTaggedContents()
   return [...taggedContents, ...taggedBookmarks]
-}
-
-const getTagsFromNoteNames = () => {
-  return getMarkdownFileNames('note')
 }
 
 const getTagsFromMeta = (item: TaggedItem) => {
@@ -56,11 +51,6 @@ const getTaggedItemTags = (item: TaggedItem) => {
 export const getAllTags = async () => {
   const items = await getTaggedItems()
   const tags = new Set<string>()
-
-  items
-    .map(getTagsFromNoteNames)
-    .flat()
-    .forEach((tag) => !tags.has(tag) && tags.add(tag))
 
   items
     .map(getTaggedItemTags)

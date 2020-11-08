@@ -15,7 +15,7 @@ const getTitle = (item: TaggedItem) => {
       return `${item.meta.title} by ${item.meta.authors.join(', ')}`
 
     case 'note':
-      return item.meta.title ?? `#${item.slug}`
+      return item.meta.title
 
     case 'article':
       return item.meta.title
@@ -37,7 +37,7 @@ const getURLForContent = (content: TaggedContent, tag: string) => {
       return `/books/${content.slug}?tag=${tag}`
 
     default:
-      return `/tags/${content.slug}`
+      return `/notes/${content.slug}?tag=${tag}`
   }
 }
 

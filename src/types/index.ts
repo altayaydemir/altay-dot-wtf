@@ -37,6 +37,14 @@ export type Note = BaseMDContent & {
   }
 }
 
+export type PrivateNote = BaseMDContent & {
+  type: 'private-note'
+  meta: BaseMDMeta & {
+    pinned: boolean
+    title: string
+  }
+}
+
 export type Article = BaseMDContent & {
   type: 'article'
   meta: BaseMDMeta & {
@@ -60,14 +68,6 @@ export type Book = BaseMDContent & {
     metaImage: MetaImage
     isbn: string
     rating: string
-  }
-}
-
-export type PrivateNote = BaseMDContent & {
-  type: 'private-note'
-  meta: BaseMDMeta & {
-    pinned: boolean
-    title: string
   }
 }
 

@@ -1,11 +1,9 @@
 import NextLink from 'next/link'
 import { Link } from 'rebass'
 
-type Props = {
-  href: string
-}
+type Props = { href: string }
 
-const TagLink: React.FC<Props> = ({ href, children }) => {
+const MDTagLink: React.FC<Props> = ({ href, children }) => {
   return (
     <NextLink href={href} passHref>
       <Link
@@ -28,17 +26,19 @@ const TagLink: React.FC<Props> = ({ href, children }) => {
   )
 }
 
+const MDExternalLink: React.FC<Props> = ({ href, children }) => (
+  <Link href={href} target="_blank" rel="noreferrer noopener">
+    {children}
+  </Link>
+)
+
 const MDLink: React.FC<Props> = ({ href, children }) => {
   if (href.startsWith('/tags')) {
-    return <TagLink href={href}>{children}</TagLink>
+    return <MDTagLink href={href}>{children}</MDTagLink>
   }
 
   if (href.startsWith('http') || href.endsWith('?target=blank')) {
-    return (
-      <Link href={href} target="_blank" rel="noreferrer noopener">
-        {children}
-      </Link>
-    )
+    return <MDExternalLink href={href}>{children}</MDExternalLink>
   }
 
   return (

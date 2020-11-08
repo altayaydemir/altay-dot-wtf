@@ -108,7 +108,7 @@ Second one makes use of the industry to build a good team, pursue deals and find
 
 Prepare for either path, you will win any case.
 
-**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](/tags/what-are-you-doing)
+**Extreme results come from extreme actions.** You can't do what everyone else does. Normal people live a normal life. [Find what you love, and let it kill you.](/tags/why-are-you-doing)
 
 Every depressing situation may arise an opportunity. Hungry guy from music industry comes to Derek's university for a seminar. Derek orders a pizza to the classroom. They became friends after.
 
@@ -132,7 +132,9 @@ Every depressing situation may arise an opportunity. Hungry guy from music indus
 
 ## Quantity
 
-[Keep a database of people](/tags/people-db), what they do, where they live, when was your last contact. Stay in touch. Keep the communication personalized.
+[Keep a database of people](/tags/people-db), what they do, where they live, when was your last contact.
+Stay in touch.
+Keep the communication personalized.
 
 - A: 3 weeks
 - B: 2 months
@@ -143,7 +145,10 @@ Find out what they are doing. Be unselfish and caring. Help them away, show appr
 
 **Every breakthrough comes from someone you know.** Meet new people, stay in touch.
 
-[**Include everyone in your success**](/tags/success)**.** Return the favors. You are not pulled to success by destiny. You are lifted by the people around you.
+[**Include everyone in your success**](/tags/success).
+Return the favors.
+You are not pulled to success by destiny.
+You are lifted by the people around you.
 
 ## Money
 

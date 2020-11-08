@@ -1,6 +1,8 @@
 ---
-title: Restrictions
+title: Coderetreat and restrictions
 date: '2020-11-05'
+tags:
+  - restrictions
 ---
 
 Defining some restrictions before you do something may make the process more joyful.

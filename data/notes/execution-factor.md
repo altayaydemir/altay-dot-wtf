@@ -1,6 +1,8 @@
 ---
 title: The Execution Factor
 date: '2020-11-04'
+tags:
+  - execution-factor
 ---
 
 Ideas are just multipliers for execution.

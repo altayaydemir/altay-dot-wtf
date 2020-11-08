@@ -1,11 +1,9 @@
 ---
-title: Error Handling
+title: Joe Armstrong on error handling
 date: '2020-11-03'
 tags:
   - software
 ---
-
-### Joe Armstrong: The Do's and Don'ts of Error Handling
 
 Notes from his [GOTO 2018 talk.](https://www.youtube.com/watch?v=TTM_b7EJg5E)
 

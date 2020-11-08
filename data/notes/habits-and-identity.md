@@ -1,6 +1,8 @@
 ---
-title: Who you want to be
+title: Habits and identity
 date: '2020-11-07T10:06:00Z'
+tags:
+  - who-you-want
 ---
 
 > Two-step process of changing your identity

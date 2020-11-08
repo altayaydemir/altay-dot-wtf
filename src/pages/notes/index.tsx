@@ -4,27 +4,27 @@ import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
-import type { PrivateNote } from 'types'
+import type { Note } from 'types'
 
-export const getStaticProps = getStaticPropsForContentList<PrivateNote>('private-note')
+export const getStaticProps = getStaticPropsForContentList<Note>('note')
 
-const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
+const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={`private notes`} description={`🔒 🤔`} />
+    <PageHeader title={`notes`} description={`🤔`} />
 
     <Box m={3} />
 
     <>
       {data.map((d) => (
         <Box key={d.slug} my={3}>
-          <NextLink href={`/private/notes/${d.slug}`} passHref>
+          <NextLink href={`/notes/${d.slug}`} passHref>
             <Link display="inline-block">
               <Text>{d.meta.title}</Text>
             </Link>
           </NextLink>
 
           <Text color="textTertiary" fontSize={0}>
-            {d.meta.pinned ? 'pinned' : format(new Date(d.meta.date), 'PPP')}
+            {format(new Date(d.meta.date), 'PPP')}
           </Text>
         </Box>
       ))}
@@ -32,4 +32,4 @@ const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   </>
 )
 
-export default JournalPage
+export default NotesPage

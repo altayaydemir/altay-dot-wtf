@@ -22,6 +22,10 @@ export const HEADER = {
       href: '/books',
     },
     {
+      label: 'notes',
+      href: '/notes',
+    },
+    {
       label: 'bookmarks',
       href: '/bookmarks',
     },
@@ -32,11 +36,11 @@ export const HEADER = {
             href: '/tags',
           },
           {
-            label: 'journal',
+            label: 'j',
             href: '/private/journal',
           },
           {
-            label: 'notes',
+            label: 'p',
             href: '/private/notes',
           },
         ]

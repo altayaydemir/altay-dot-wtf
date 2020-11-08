@@ -1,11 +1,9 @@
 ---
-title: Jakob's Law
+title: Tutanota's unintuitive email link
 date: '2020-11-05T19:50:22Z'
+tags:
+  - jakobs-law
 ---
-
-> Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know.
-
-### An example from an email service
 
 ![](/images/notes/jakobs-law/tutanota-email-link.mp4)
 
