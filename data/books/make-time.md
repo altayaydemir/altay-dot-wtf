@@ -1,7 +1,7 @@
 ---
 isbn: '0593079582'
 date: '2020-09-19'
-rating: '9/10'
+rating: '4/5'
 oneliner: 'Change comes from resetting defaults, installing barriers and designing how you spend your time.'
 tags:
   - productivity

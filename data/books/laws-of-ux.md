@@ -1,7 +1,7 @@
 ---
 isbn: '149205531X'
 date: '2020-08-29'
-rating: '10/10'
+rating: '5/5'
 oneliner: 'Use more meaningful metrics like "helping people to achieve their goals" rather than "daily active users" or "time spent on site".'
 tags:
   - psychology

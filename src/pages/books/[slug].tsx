@@ -19,19 +19,16 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
   if (!data || !links) return null
 
-  const seoTitle = `${data.meta.title} by ${data.meta.authors.join(', ')}`
-  const seoDescription = `"${data.meta.oneliner}"`
-
   return (
     <>
       <Flex>
         <NextSeo
-          title={seoTitle}
-          description={seoDescription}
+          title={data.meta.title}
+          description={data.meta.oneliner}
           openGraph={{
-            title: seoTitle,
-            description: seoDescription,
-            images: [{ alt: seoTitle, ...data.meta.metaImage }],
+            title: data.meta.title,
+            description: data.meta.oneliner,
+            images: [{ alt: data.meta.title, ...data.meta.metaImage }],
           }}
         />
 
@@ -41,8 +38,11 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
         <Box>
           <ContentTitle fontSize={[1, 2, 3]} fontWeight="800" meta={data.meta} />
+
           <Box my={2} />
+
           <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={[0, 1]} />
+
           <Tags tags={data.meta.tags} />
         </Box>
       </Flex>

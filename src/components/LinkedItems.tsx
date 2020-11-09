@@ -11,11 +11,7 @@ type LinkedItemProps = {
 const getTitle = (item: Content) => {
   switch (item.type) {
     case 'book':
-      return `${item.meta.title} by ${item.meta.authors.join(', ')}`
-
     case 'note':
-      return item.meta.title
-
     case 'article':
       return item.meta.title
 

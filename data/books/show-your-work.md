@@ -1,7 +1,7 @@
 ---
 isbn: '076117897X'
 date: '2020-10-04'
-rating: '10/10'
+rating: '5/5'
 oneliner: Unless you are a real ninja, rockstar, or guru, stay away from those words.
 tags:
   - austin-kleon

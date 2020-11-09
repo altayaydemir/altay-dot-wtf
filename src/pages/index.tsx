@@ -59,7 +59,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
 
         <Box my={2} />
 
-        <ArticleList data={section.data as Article[]} titleSize={2} />
+        <ArticleList data={section.data as Article[]} />
       </Box>
     ))}
   </>

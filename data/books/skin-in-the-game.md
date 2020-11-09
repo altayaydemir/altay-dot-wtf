@@ -1,7 +1,7 @@
 ---
 isbn: '042528462X'
 date: '2019-01-15'
-rating: '6/10'
+rating: '3/5'
 oneliner: 'You will never fully convince someone that he is wrong; only reality can.'
 tags:
   - philosophy

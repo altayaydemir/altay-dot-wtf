@@ -12,7 +12,6 @@ type Props = {
 
 const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
   const info = [
-    { key: 'written by', value: <b>{bookMeta.authors.join(', ')}</b> },
     {
       key: 'read',
       title: format(new Date(bookMeta.date), 'PPP'),
@@ -23,12 +22,11 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
       key: 'ISBN: ',
       value: (
         <Link
-          title="Open Amazon page"
-          href={`https://amazon.com/dp/${bookMeta.isbn}`}
+          title="Open Open Library Page"
+          href={`https://openlibrary.org/isbn/${bookMeta.isbn}`}
           target="_blank"
           rel="noopener"
           color="textTertiary"
-          fontSize={1}
         >
           <code>{bookMeta.isbn}</code>
 

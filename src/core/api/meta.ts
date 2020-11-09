@@ -36,7 +36,7 @@ const getBookMeta = async (slug: string, meta: Book['meta']) => {
 
   return {
     ...meta,
-    title,
+    title: `${title} by ${authors.join(', ')}`,
     authors,
     coverImage: {
       url: coverImageURL,

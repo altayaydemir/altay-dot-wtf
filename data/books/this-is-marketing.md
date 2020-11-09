@@ -1,7 +1,7 @@
 ---
 isbn: '0525540830'
 date: '2020-11-08T13:19:30Z'
-rating: '9/10'
+rating: '4/5'
 oneliner: 'What people say about you is more important than what you say.'
 tags:
   - marketing

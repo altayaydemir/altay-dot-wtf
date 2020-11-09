@@ -11,12 +11,8 @@ type TaggedItemProps = {
 
 const getTitle = (item: TaggedItem) => {
   switch (item.type) {
-    case 'book':
-      return `${item.meta.title} by ${item.meta.authors.join(', ')}`
-
     case 'note':
-      return item.meta.title
-
+    case 'book':
     case 'article':
       return item.meta.title
 

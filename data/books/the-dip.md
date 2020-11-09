@@ -1,7 +1,7 @@
 ---
 isbn: '0749928301'
 date: '2020-08-29'
-rating: '8/10'
+rating: '4/5'
 oneliner: "'Quitters never win and winners never quit' is a bad advice. Winners quit all the time. They just quit the right stuff at the right time."
 tags:
   - seth-godin

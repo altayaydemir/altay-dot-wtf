@@ -6,39 +6,27 @@ import ContentTitle from 'components/ContentTitle'
 
 type Props = {
   data: Article[]
-  itemSpacing?: number | number[]
-  elementSpacing?: number | number[]
-  titleSize?: number | number[]
-  onelinerSize?: number | number[]
-  dateSize?: number | number[]
 }
 
-const ArticleList: React.FC<Props> = ({
-  data,
-  itemSpacing = 4,
-  elementSpacing = 1,
-  titleSize = 3,
-  onelinerSize = 1,
-  dateSize = 1,
-}) => (
+const ArticleList: React.FC<Props> = ({ data }) => (
   <Box>
     {data.map((article) => (
-      <Box key={article.slug} mb={itemSpacing}>
+      <Box key={article.slug} mb={4}>
         <NextLink href={`/articles/${article.slug}`} passHref>
           <Link>
-            <ContentTitle fontSize={titleSize} meta={article.meta} />
+            <ContentTitle fontSize={2} meta={article.meta} />
           </Link>
         </NextLink>
 
-        <Box m={elementSpacing} />
+        <Box m={1} />
 
-        <Text fontSize={onelinerSize} color="textSecondary">
+        <Text fontSize={1} color="textSecondary">
           {article.meta.oneliner}
         </Text>
 
-        <Box m={elementSpacing} />
+        <Box m={1} />
 
-        <Text fontSize={dateSize} color="textTertiary">
+        <Text fontSize={1} color="textTertiary">
           {'updated '}
           {formatDistanceToNow(new Date(article.meta.date), { addSuffix: true })}
           <Box display="inline" mx={1}>
