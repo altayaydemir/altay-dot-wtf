@@ -127,7 +127,7 @@ Every depressing situation may arise an opportunity. Hungry guy from music indus
 **Do the opposite**. If everyone is hyper connected, it's more valuable to disconnect.
 
 > Be fearful when others are greedy, and be greedy when the others are fearful.
-
+>
 > — Warren Buffett
 
 ## Quantity

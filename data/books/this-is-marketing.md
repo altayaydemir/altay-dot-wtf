@@ -4,7 +4,7 @@ date: '2020-11-08T13:19:30Z'
 rating: '9/10'
 oneliner: 'What people say about you is more important than what you say.'
 tags:
-  - marketng
+  - marketing
   - seth-godin
 ---
 

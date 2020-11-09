@@ -81,7 +81,7 @@ const LinkedItems: React.FC<{ slug: string; data: Content[] }> = ({ slug, data }
     <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 8 }}>
       <Heading fontSize={2}>mentioned in </Heading>
 
-      <Flex mx={-3} alignItems="flex-start">
+      <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
         {data.map((item, index) => (
           <Box width={[1, 1, 1 / 2]} key={index} mt={1} px={2}>
             <Item data={item} slug={slug} />
