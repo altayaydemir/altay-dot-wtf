@@ -12,7 +12,7 @@ const ArticlesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
   <>
     <PageHeader title={articlesCopy.title} description={articlesCopy.description} />
     <Box m={4} />
-    <ArticleList data={data} titleSize={[2, 3]} />
+    <ArticleList data={data} />
   </>
 )
 
