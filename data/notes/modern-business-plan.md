@@ -1,5 +1,5 @@
 ---
-title: Seth Godin's better business plan
+title: Seth Godin's modern business plan
 date: '2020-11-09T06:57:16Z'
 tags:
   - seth-godin
@@ -37,3 +37,4 @@ How much money you need to start, be sustainable.
 ### References
 
 - [This is Marketing](/books/this-is-marketing)
+- [The Modern Business Plan](https://seths.blog/2010/05/the-modern-business-plan/)
