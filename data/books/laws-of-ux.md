@@ -7,6 +7,7 @@ tags:
   - psychology
   - product-design
   - humane-design
+  - jon-yablonski
 ---
 
 This book is a great reference for the complex psychological concepts behind the fundamentals of designing intuitive products and experiences.
