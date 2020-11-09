@@ -54,11 +54,13 @@ The cruel fact **you can't please everyone** will also be easier to accept.
 
 ## Ideas and Execution
 
-[Ideas are just multipliers for execution](/notes/execution-factor).
+Ideas are just multipliers for execution.
 
 An awful idea (-1 points) multiplied with brilliant execution (100) would make you waste a hurtful amount of resources. On the other hand, a great idea (100 points) with no execution (0) could also make you earn nothing.
 
-You can't pretend like there's only one way to do something. Make N radically different plans. Always have a backup plan.
+You can't pretend like there's only one way to do something.
+Make N radically different plans.
+Always have a backup plan.
 
 ## Why You Are Doing What You Are Doing
 
