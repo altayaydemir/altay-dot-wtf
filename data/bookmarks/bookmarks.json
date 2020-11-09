@@ -1,5 +1,16 @@
 [
   {
+    "title": "App Dissection",
+    "description": "Most of the apps are redesigned but Brian's comments are still valid.",
+    "url": "https://brianlovin.com/design-details"
+  },
+  {
+    "title": "Humane by Design",
+    "description": "A great resource on how to design more ethically humane systems.",
+    "url": "https://humanebydesign.com",
+    "tags": ["humane-design", "jon-yablonski"]
+  },
+  {
     "title": "Website Carbon Calculator",
     "description": "How is your website impacting the planet?",
     "url": "https://websitecarbon.com",
