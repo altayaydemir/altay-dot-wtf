@@ -1,9 +1,8 @@
 import { SITE_TITLE } from './meta'
-
-const __DEV__ = process.env.NODE_ENV === 'development'
+import { __DEV__ } from './env'
 
 export const HEADER = {
-  title: __DEV__ ? 'a.' : SITE_TITLE,
+  title: SITE_TITLE,
   links: [
     {
       label: 'about',
