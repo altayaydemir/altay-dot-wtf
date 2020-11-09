@@ -14,11 +14,11 @@ export const HEADER = {
       href: '/now',
     },
     {
-      label: 'articles',
+      label: 'writing',
       href: '/articles',
     },
     {
-      label: 'books',
+      label: 'reading',
       href: '/books',
     },
     {

@@ -1,3 +1,4 @@
+import { booksCopy } from 'config/copy'
 import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { Box, Flex, Text, Link } from 'rebass'
@@ -12,7 +13,7 @@ export const getStaticProps = getStaticPropsForContentList<Book>('book')
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title="books" description="notes from the books I read recently." />
+    <PageHeader title={booksCopy.title} description={booksCopy.description} />
 
     <Box>
       {data.map((book) => (

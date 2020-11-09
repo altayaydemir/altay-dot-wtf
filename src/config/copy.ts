@@ -18,6 +18,11 @@ export const homeCopy = {
 } as const
 
 export const articlesCopy = {
-  title: 'articles',
+  title: 'writing',
   description: 'learnings worth sharing.',
 } as const
+
+export const booksCopy = {
+  title: 'reading',
+  description: 'my notes from the books.',
+}
