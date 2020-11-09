@@ -24,5 +24,5 @@ export const articlesCopy = {
 
 export const booksCopy = {
   title: 'reading',
-  description: 'my notes from the books.',
+  description: 'notes from the books I read.',
 }
