@@ -2,7 +2,7 @@
 title: Simple questions
 date: '2020-11-10T20:02:22Z'
 tags:
-  - why are you doing
+  - why-are-you-doing
 ---
 
 Simple questions have painful answers.
