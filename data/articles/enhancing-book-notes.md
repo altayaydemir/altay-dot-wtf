@@ -33,9 +33,6 @@ oneliner: A dead program normally does a lot less damage than a crippled one.
 ---
 
 ## Chapter 1: A Pragmatic Philosophy
-
-In general, it gives bits of advice around professionalism and indicates that we, as programmers, can shape our paths.
-
 ...
 ```
 
