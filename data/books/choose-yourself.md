@@ -4,9 +4,8 @@ date: '2018-11-05'
 rating: '3/5'
 oneliner: 'You and I have the same twenty-four hours each day. Is that how you will spend yours?'
 tags:
-  - productivity
-  - habits
-  - saying-no
+  - james-altucher
+  - self-help
 ---
 
 > You and I have the same twenty-four hours each day. Is that how you will spend yours?
