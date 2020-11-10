@@ -11,7 +11,7 @@ export const getStaticProps = getStaticPropsForContentList<Journal>('journal')
 
 const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={`journal`} description={`what I've been doing, in detail`} />
+    <PageHeader title={`journal`} description={`what I've been doing, in detail.`} />
 
     <Box m={3} />
 
