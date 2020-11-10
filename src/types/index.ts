@@ -30,6 +30,10 @@ export type Journal = BaseMDContent & {
   type: 'journal'
 }
 
+export type Vocabulary = BaseMDContent & {
+  type: 'vocabulary'
+}
+
 export type Note = BaseMDContent & {
   type: 'note'
   meta: BaseMDMeta & {
@@ -84,7 +88,7 @@ export type Bookmark = BookmarkJSON & {
   tags: string[]
 }
 
-export type Content = Now | Note | Article | Book | About | PrivateNote | Journal
+export type Content = Now | Note | Article | Book | About | PrivateNote | Journal | Vocabulary
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Article | Book

@@ -49,7 +49,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
         {HEADER.links.map(({ label, href }) => (
           <Box key={href}>
             <NavLink
-              active={currentPathname.includes(href)}
+              active={currentPathname.startsWith(href)}
               href={href}
               label={label}
               style={{

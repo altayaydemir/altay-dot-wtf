@@ -31,7 +31,7 @@ export const HEADER = {
     ...(__DEV__
       ? [
           {
-            label: 'tags',
+            label: 't',
             href: '/tags',
           },
           {
@@ -41,6 +41,10 @@ export const HEADER = {
           {
             label: 'p',
             href: '/private/notes',
+          },
+          {
+            label: 'v',
+            href: '/vocabulary',
           },
         ]
       : []),

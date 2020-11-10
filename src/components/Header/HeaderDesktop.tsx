@@ -18,7 +18,7 @@ const HeaderDesktop: React.FC<{ currentPathname: string }> = ({ currentPathname 
           <NavLink
             href={href}
             label={label}
-            active={currentPathname.includes(href)}
+            active={currentPathname.startsWith(href)}
             style={{
               display: 'inline-block',
               fontWeight: 'bold',
