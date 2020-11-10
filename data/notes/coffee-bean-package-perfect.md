@@ -1,5 +1,5 @@
 ---
-title: The perfect coffee bean package
+title: A perfect coffee bean package
 date: '2020-11-09T18:30:21Z'
 tags:
   - design

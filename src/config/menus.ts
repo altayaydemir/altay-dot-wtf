@@ -13,11 +13,15 @@ export const HEADER = {
       href: '/now',
     },
     {
-      label: 'writing',
+      label: 'articles',
       href: '/articles',
     },
     {
-      label: 'reading',
+      label: 'notes',
+      href: '/notes',
+    },
+    {
+      label: 'books',
       href: '/books',
     },
     {
@@ -26,10 +30,6 @@ export const HEADER = {
     },
     ...(__DEV__
       ? [
-          {
-            label: 'notes',
-            href: '/notes',
-          },
           {
             label: 'tags',
             href: '/tags',
