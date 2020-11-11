@@ -6,14 +6,15 @@ import { createGlobalStyles } from 'theme/globalStyles'
 import { usePlausible } from 'next-plausible'
 import { useEffect } from 'react'
 
-type PlausibleEventFunction = (eventName: string, properties?: Record<string, unknown>) => void
+type PlausibleEventProperties = { props: Record<string, unknown> }
+type PlausibleEventFunction = (eventName: string, properties?: PlausibleEventProperties) => void
 
 export const ThemeProvider: React.FC = ({ children }) => {
   const { value: dark } = useDarkMode(false, { storageKey: undefined, onChange: () => null })
   const plausible = usePlausible() as PlausibleEventFunction
 
   useEffect(() => {
-    plausible('theme', { type: dark ? 'dark' : 'light' })
+    plausible('theme', { props: { type: dark ? 'dark' : 'light' } })
   }, [dark])
 
   return (
