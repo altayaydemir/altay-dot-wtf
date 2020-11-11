@@ -41,13 +41,13 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
               <Box m={1} />
 
               {book.meta.oneliner ? (
-                <Box display="inline-block">
-                  <hr style={{ width: '10%', marginLeft: 0 }} />
+                <>
+                  <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />
 
                   <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
                     {book.meta.oneliner}
                   </Text>
-                </Box>
+                </>
               ) : null}
             </Box>
           </Flex>

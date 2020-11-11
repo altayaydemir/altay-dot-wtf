@@ -34,7 +34,7 @@ const getRemoteImageData = async (url: string): Promise<ImageData> => {
 export const getImageData = (url: string) =>
   url.startsWith('/') ? getLocalImageData(url) : getRemoteImageData(url)
 
-const META_IMAGE_BG_FILL_COLOR = '#050505'
+const META_IMAGE_BG_FILL_COLOR = '#111111'
 
 export const generateMetaImage = async ({
   directory,

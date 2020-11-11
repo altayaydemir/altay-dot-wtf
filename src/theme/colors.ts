@@ -20,9 +20,9 @@ export const COLORS_LIGHT = {
 export type Colors = typeof COLORS_LIGHT
 
 export const COLORS_DARK: Colors = {
-  background: '#050505',
+  background: 'rgba(17, 17, 17, 1)',
   backgroundSecondary: 'rgba(255, 255, 255, 0.1)',
-  backgroundHeader: 'rgba(5, 5, 5, 0.8)',
+  backgroundHeader: 'rgba(17, 17, 17, 0.8)',
   text: '#fbfbfc',
   textSecondary: '#DEDFE5',
   textTertiary: '#9094A6',
@@ -30,8 +30,8 @@ export const COLORS_DARK: Colors = {
   linkPrimary: '#fdce45',
   linkBackground: '#222222',
   borderHR: '#565656',
-  borderMenu: 'rgba(130, 130, 130, 0.075)',
-  borderPrimary: 'rgba(130, 130, 130, 0.2)',
+  borderMenu: 'rgba(130, 130, 130, 0.01)',
+  borderPrimary: 'rgba(130, 130, 130, 0.1)',
   imageBackground: 'rgba(0, 0, 0, 0.75)',
   inputPlaceholder: '#404040',
   red: '#e74c3c',
