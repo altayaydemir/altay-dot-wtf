@@ -10,7 +10,7 @@ import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
-import { useScrollToSource } from 'hooks/useScrollToSource'
+import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
 
 export const getStaticPaths = getStaticPathsForContent('article')

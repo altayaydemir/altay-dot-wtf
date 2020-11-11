@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
 import { format, formatDistanceToNow } from 'date-fns'
-import { useScrollToSource } from 'hooks/useScrollToSource'
+import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
 
 export const getStaticPaths = getStaticPathsForContent('note')

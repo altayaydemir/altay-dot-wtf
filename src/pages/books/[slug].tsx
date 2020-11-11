@@ -9,7 +9,7 @@ import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
 import LinkedItems from 'components/LinkedItems'
-import { useScrollToSource } from 'hooks/useScrollToSource'
+import { useScrollToSource } from 'core/hooks/useScrollToSource'
 
 export const getStaticPaths = getStaticPathsForContent('book')
 export const getStaticProps = getStaticPropsForContentDetails<Book>('book')

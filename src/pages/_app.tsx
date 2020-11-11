@@ -1,31 +1,19 @@
-import { SEO, HOSTNAME } from 'config'
-import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
+import { SEO } from 'config'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import PlausibleProvider from 'next-plausible'
-import { ThemeProvider } from 'emotion-theming'
-import { Global } from '@emotion/core'
-import useDarkMode from 'use-dark-mode'
-import { createTheme } from 'theme'
-import { createGlobalStyles } from 'theme/globalStyles'
+import { AnalyticsProvider } from 'core/contexts/Analytics'
+import { ThemeProvider } from 'core/contexts/Theme'
+import { useMounted } from 'core/hooks/useMounted'
 import Layout from 'components/Layout'
 
 const Providers: React.FC = ({ children }) => {
-  const [mounted, setMounted] = useState(false)
-  const { value: dark } = useDarkMode(false, { storageKey: undefined, onChange: () => null })
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const mounted = useMounted()
 
   const body = (
-    <PlausibleProvider domain={HOSTNAME}>
-      <ThemeProvider theme={createTheme({ dark })}>
-        <Global styles={createGlobalStyles} />
-        {children}
-      </ThemeProvider>
-    </PlausibleProvider>
+    <AnalyticsProvider>
+      <ThemeProvider>{children}</ThemeProvider>
+    </AnalyticsProvider>
   )
 
   return mounted ? body : <div style={{ visibility: 'hidden' }}>{body}</div>
