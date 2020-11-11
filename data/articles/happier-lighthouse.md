@@ -125,7 +125,7 @@ export default Markdown
 
 ### ...and then, did they live happily after? 🤖👨‍💻
 
-In the end, performance score of [the home page](/) increased dramatically.
+In the end, the performance score of [the home page](/) increased dramatically.
 
 ![Lighthouse score, after the optimisation](/images/articles/happier-lighthouse/lighthouse-score-after.png)
 

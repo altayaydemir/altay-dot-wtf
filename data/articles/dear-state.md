@@ -7,7 +7,7 @@ tags:
   - typescript
 ---
 
-Is managing UI state is hard, or we make it hard for ourselves by not paying attention?
+Is managing the UI state is hard, or we make it hard for ourselves by not paying attention?
 
 How do we do that? 🤔
 
