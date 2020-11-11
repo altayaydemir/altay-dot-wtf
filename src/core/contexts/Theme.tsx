@@ -1,9 +1,9 @@
-import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming'
+import { useEffect } from 'react'
 import { Global } from '@emotion/core'
+import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming'
 import useDarkMode from 'use-dark-mode'
 import { createTheme } from 'theme'
 import { createGlobalStyles } from 'theme/globalStyles'
-import { useEffect } from 'react'
 
 export const ThemeProvider: React.FC = ({ children }) => {
   const { value: dark } = useDarkMode(false, { storageKey: undefined, onChange: () => null })
