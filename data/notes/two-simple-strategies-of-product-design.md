@@ -11,7 +11,7 @@ tags:
 
 ### Mental models
 
-People should be able to tell what your product does, and how it it benefits them through their mental model.
+People should be able to tell what your product does, and how it benefits them through their mental model.
 
 _Story of Renuka, from [User Friendly](/books/user-friendly)_
 

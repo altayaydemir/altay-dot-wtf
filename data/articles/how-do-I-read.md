@@ -12,9 +12,9 @@ Well, hello? 👋
 
 ### The Effortless Aphorisms
 
-I try to solve my problems by attempting radical changes to trigger a chain of reactions. Everyone has a limit on the things they can change at a time. But you never learn unless you push for it. Starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
+I try to solve my problems by attempting radical changes to trigger a chain of reactions. Everyone has a limit on the changes they can make at a time. But you never learn unless you push for it. Starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
 
-So, I tried to start a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _The Knowledge Project_ and _Tim Ferriss Show_. I still recognize the cobblestones I was stepping while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_, and _Derek Sivers_. Every sentence that came out from their mouth was like effortless aphorisms.
+I tried to start a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _The Knowledge Project_ and _Tim Ferriss Show_. I still recognize the cobblestones I was stepping while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_, and _Derek Sivers_. Every sentence that came out from their mouth was like effortless aphorisms.
 
 Wow! How do they know this much stuff? It must be something related to prosperity! Or the opposite.
 
@@ -33,11 +33,11 @@ As a start, I took several topics to get better and use reconnaissance along the
 
 During the past two years, I tried to read every day and take notes with a roughly 60% success rate.
 That made me read around [50 books](/books) and learn many things, which I attempted to integrate into my life.
-Some worked very well; many I haven't figured out how to use.
+Some worked well; many I haven't figured out how to use.
 
-I'm still at the very beginning and feeling like there won't be any spot for me to say "halfway there."
+I'm still at the beginning and feeling like there won't be any spot for me to say "halfway there."
 No matter what, I rejoice in the process.
-It is much more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds.
+It's much more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds.
 I also did that during the quarantine and lost half of them.
 
 I appreciate the existence of more people like me.
@@ -48,12 +48,12 @@ So here we go.
 ### "This is my original storino, please no copy pasterino."
 
 The note-taking ceremony started by underlining everything that made sense to me.
-I was new to the literature, so that was quite a lot of highlights.
+I was new to the literature, so that was a lot of highlights.
 After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or rewriting whatever the book says.
 
 In summary, that's how the process looked like:
 
-1.  Start the book, read a chapter, highlight/bookmark stuff.
+1.  Start the book, read a chapter, highlight/bookmark.
 2.  Carryover the highlights into a digital document.
 
 _The next day_
@@ -76,7 +76,7 @@ The best-case outcome of this approach:
 - Few ideas of my own about the topic.
 - An example of this method, from _[Company of One](/books/company-of-one)_
 
-That was a positive start for awareness, yet not very practical.
+That was a positive start for awareness, yet not practical.
 
 ### "Do you read me?"
 
@@ -112,7 +112,7 @@ Here's an example from [_Make Time_](/books/make-time).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 
-This approach works quite well. Yet, sometimes I get side-tracked by the rabbit hole called the internet. My other strategy is going all-in on paper. Sticky notes work well for logistics.
+This approach works well. Yet, sometimes I get side-tracked by the rabbit hole called the internet. My other strategy is going all-in on paper. Sticky notes are good for logistics.
 
 Here's an example from _User Friendly_, which I'm currently reading.
 

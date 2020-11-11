@@ -1,5 +1,5 @@
 ---
-title: Tutanota's unintuitive email link
+title: Tutanota's non-intuitive email link
 date: '2020-11-05T19:50:22Z'
 tags:
   - jakobs-law
@@ -15,7 +15,7 @@ I assumed they're rendering emails with
 <a href="mailto:a+vanschneider@aydemir.io">a+vanschneider@aydemir.io</a>
 ```
 
-A direct click to to that link would open `Mail.app`, which was not my aim.
+A direct click to that link would open `Mail.app`, which was not my aim.
 
 - I tried to select the text, didn't work.
 - I tried to right click the `a` so I could select `copy link` from the context menu, didn't work.
@@ -23,4 +23,4 @@ A direct click to to that link would open `Mail.app`, which was not my aim.
 
 It turns out that's a `button`, not an `anchor` tag!
 
-Their consideration is really thoughtful, but that's not how the links work. 😐
+Their consideration is thoughtful, but that's not how the links work. 😐

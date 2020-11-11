@@ -61,7 +61,7 @@ Our state initializes with `loading=false` and `fetchData` is called on `compone
 
 This will cause a flash in the `Loading` text since it's displayed after we render the empty list in our initial state (`data=[]`)
 
-But programmers are pragmatic and smart people; maybe we can quickly fix this by initializing the state with `loading=true`?
+But programmers are pragmatic and smart people; we can fix this by initializing the state with `loading=true`?
 
 ✅ - No more flashing UI.
 
@@ -125,9 +125,9 @@ class List extends React.Component {
 
 OK, this would work for our beloved users.
 
-However, readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call.
+But readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call.
 
-Again, we may come up with an ingenious solution to make that bearable, maybe by introducing a custom `onRetry` method.
+Again, we may come up with an ingenious solution to make that bearable, by introducing a custom `onRetry` method.
 
 ```jsx
 class List extends React.Component {
@@ -160,7 +160,7 @@ class List extends React.Component {
 
 ✅ - More readable and traceable.
 
-😰 - We are skipping a very fundamental point, and our state is still lying.
+😰 - We are skipping a fundamentally crucial point, and our state is still lying.
 
 ### Time to question our choices
 
@@ -192,7 +192,7 @@ Now we can use the simple but powerful [discriminated (or tagged) unions feature
 type State<T> = LoadingState | SuccessState<T> | FailureState
 ```
 
-By revisiting our state design, we made all of these questions irrelevant.
+By revisiting our state design, we made all these questions irrelevant.
 
 - ~~Why can our state have an error while loading is `true`?~~
 - ~~Why does our state have `data=[]` while loading is `true`?~~

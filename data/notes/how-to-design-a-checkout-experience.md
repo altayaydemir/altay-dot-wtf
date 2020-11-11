@@ -7,8 +7,8 @@ tags:
 
 Just do whatever Shopify does.
 
-I'm astonished by the swiftness of their checkout experience.
-It is so effortless that makes me worry about something went wrong.
+I'm astonished by the swiftness of their checkout experience.\
+It's so effortless that makes me worry about something went wrong.
 
 Everything with one hand.\
 Didn't need to type anything. One click, a fingerprint scan, done.

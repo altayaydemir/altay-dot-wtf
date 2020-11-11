@@ -10,13 +10,13 @@ Because they are almost indistinguishable from each other.
 
 ![](/images/notes/google-gsuite-icons.png)
 
-Appearantly they wanted to use all its colors on every icon.
-That might be a legit idea in terms of the brand consistency.
-But if you have all the GSuite apps in the same screen, good luck with your astigmathism.
+Apparently they wanted to use all its colors on every icon.
+That might be a legit idea for the brand consistency.
+But if you have all the GSuite apps in the same screen, good luck with your astigmatism.
 
 I wonder how they evaluated the accessibility aspect.
 
-Microsoft uses a distinct color for all the office apps, so you can tell the difference easily.
+Microsoft uses a distinct color for all the office apps, so you can tell the difference with no hustle.
 
 ![](/images/notes/microsoft-office-icons.png)
 

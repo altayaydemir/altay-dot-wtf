@@ -23,7 +23,7 @@ It took me half-a-day to make it legit enough to share as learning in this artic
 Before we get to the real acrobatics, we need some manual labor to do.
 
 You can use YAML syntax at the beginning of a Markdown file to define your metadata.
-There is a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
+There's a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
 
 ```
 ---
@@ -123,7 +123,7 @@ Alright, that seems doable with what we have so far.
 
 In my experience, the easiest way to generate a custom image in the NodeJS context is to use a canvas library.
 The easiest to use I found is, hold your breath, called `canvas`.
-I am also using `image-size` to obrain the `width` and `height` properties.
+I am also using `image-size` to gather the `width` and `height` properties.
 
 Here's how the flow looks like:
 

@@ -27,7 +27,7 @@ A deviation of the program.
 
 Log it to a stable storage and crash immediately.
 
-However, crashing will result end of losing everything for single threaded languages. Talks about concurrent programming.
+Crashing will result end of losing everything for single threaded languages. Talks about concurrent programming.
 
 #### Where do errors come from?
 

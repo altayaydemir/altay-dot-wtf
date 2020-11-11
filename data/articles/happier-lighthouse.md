@@ -12,13 +12,13 @@ I am building this website with [Next.js](https://nextjs.org) and charmed by the
 
 In addition to eliminating the friction, Vercel also provides [analytics](https://nextjs.org/analytics) and [Lighthouse integration](https://vercel.com/integrations/lighthouse) to monitor how your website is performing when it comes to vital metrics for the user experience.
 
-And that's precisely what I did right after deploying a minimum bearable version. But the results were not satisfying at all.
+And that's precisely what I did right after deploying a bearable version. But the results were not satisfying at all.
 
 ![Lighthouse score before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
-My tiny home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
+My minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
-The report is quite clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
+The report is clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
 
 ![Lighthouse score details, before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
@@ -26,7 +26,8 @@ The report is quite clear, it tells that I am basically making your computer loa
 
 ### Finding out what I am excessively loading
 
-The report shows which chunk is not utilized, unfortunately the code is minified.
+The report shows which chunk is not utilized.
+Unfortunately, the code is minified.
 
 So I basically have two choices:
 
@@ -42,15 +43,15 @@ And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be de
 
 ![Search results for the error message.](/images/articles/happier-lighthouse/search-results-for-error-message.png)
 
-Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it is time to discover what I am doing wrong.
+Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it's time to discover what I am doing wrong.
 
 ### How does this website render markdown
 
-I tend to rely on markdown for rendering any kind of content, and using [react-markdown](https://github.com/remarkjs/react-markdown) to render raw content to HTML. It has a very nice API that allows you to render specific elements by using custom renderers.
+I tend to rely on markdown for rendering any kind of content, and using [react-markdown](https://github.com/remarkjs/react-markdown) to render raw content to HTML. It has a nice API that allows you to render specific elements by using custom renderers.
 
-I literally copy/pasted [the snippet in docs](https://github.com/remarkjs/react-markdown#use-custom-renderers-syntax-highlight) to render code blocks with `react-syntax-highlighter.`
+I copy/pasted [the snippet in docs](https://github.com/remarkjs/react-markdown#use-custom-renderers-syntax-highlight) to render code blocks with `react-syntax-highlighter.`
 
-It was looking like before the refactor:
+It looked like this before the refactor:
 
 ```jsx
 // Markdown.jsx
@@ -72,7 +73,7 @@ const Markdown = ({ children }) => (
 export default Markdown
 ```
 
-That might be a relatively heavy library to load if we are not going to render any code blocks since it contains all the parsing logic with themes and such.
+That might be a heavy library to load if we are not going to render any code blocks since it contains all the parsing logic with themes and such.
 
 And as you can guess, the homepage does not contain any code snippets, **which is why Lighthouse is unhappy: the eager load.**
 
@@ -80,7 +81,7 @@ And as you can guess, the homepage does not contain any code snippets, **which i
 
 Although `React` allows lazy loading with the [suspense API](https://reactjs.org/docs/react-api.html#reactsuspense), it's not available for `Next.js` since the `ReactDOMServer` support has not implemented yet.
 
-However, our thoughtful friend `Next.js` offers an alternative API for dynamic imports. It's called [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) and pretty straightforward for such a use-case like this.
+Luckily, our thoughtful friend `Next.js` offers an alternative API for dynamic imports. It's called [next/dynamic](https://nextjs.org/docs/advanced-features/dynamic-import) and pretty straightforward for such a use-case like this.
 
 First, I changed my usage of `react-syntax-higlighter` to load and register parsers only for the languages I use.
 
@@ -100,7 +101,7 @@ const MarkdownCodeBlock = ({ language, value }) => (
 export default MarkdownCodeBlock
 ```
 
-I also changed the strategy of using syntax higlighter to be on demand, so the other pages using markdown (such as [book notes](/books)) won't load `react-markdown` and friends.
+I also changed the strategy of using syntax highlighter to be on demand, so the other pages using markdown (such as [book notes](/books)) won't load `react-markdown` and friends.
 
 ```jsx
 // Markdown.jsx
@@ -130,4 +131,4 @@ In the end, performance score of [the home page](/) increased dramatically.
 
 This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I actually need to render a code editor, such as this post.
 
-Nonetheless, it divides the amount of work while browsing and progressively loads the required stuff, which is more helpful than not doing it. 🤨
+Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨

@@ -8,7 +8,8 @@ tags:
 Elite is an external status. \
 Exclusive can be applied anywhere.
 
-Exclusive instutitions are the ones who change things. They thrive as long as the members wish to belong.
+Exclusive institutions are the ones who change the culture.
+They thrive as long as the members wish to belong.
 They are [people like us](/notes/people-like-us).
 
 ### References

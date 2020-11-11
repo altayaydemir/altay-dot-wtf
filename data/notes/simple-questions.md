@@ -12,12 +12,11 @@ Simple questions have painful answers.
 > &mdash; James Altucher ([Choose Yourself](/books/choose-yourself))
 
 That's a memorable example that summarizes the whole book.
-It actually reveals his entire philosophy, which is excellent.
+It actually reveals his entire philosophy, which is great.
 It guarantees James will make you question how you make use of your time in his next book.
-He really does, in [Reinvent Yourself](/books/reinvent-yourself).
+And he certainly does in [Reinvent Yourself](/books/reinvent-yourself).
 
-Once the people in front of you understand what you are trying to tell, the rest is just a rollercoaster.
-Surround it with stories, quotes, real-life experiences.
+Once the people in front of you understand what you are trying to tell, the rest is a rollercoaster. Surround it with stories, quotes, real-life experiences.
 
 ---
 

@@ -15,7 +15,7 @@ Most of the times, that change is triggered by a desire to fit in.
 - "People like me don't cheat taxes"
 - "People like me eat organic"
 
-Even if you are trying to be an outlier, you are following another outliner.
+Even if you are trying to be an outlier, you are following another outlier.
 
 We can't change the culture, but each of us has the opportunity to change a culture — little pocket world.
 
