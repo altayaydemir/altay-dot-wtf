@@ -22,12 +22,13 @@ Once the people in front of you understand what you are trying to tell, the rest
 
 This is another gem.
 I don't recall where I heard it for the first time.
-Yet I can see the reflections in almost everything I read.[^1]
-That question is favorite hence it instills a never-ending skepticism. Suddenly you have an infinite-scrolling to-do list.
+I can see the reflections in almost everything I read.[^1]
+That question is my favorite since it instills a never-ending skepticism.
+Suddenly there is an infinite-scrolling to-do list.
 
-I keen on regularly asking those questions to myself; hence they create tension.
+I keen on regularly asking those questions to myself. They create tension. Sometimes too much.
 [The only way to relieve this tension is to trigger a forward motion.](/notes/tension-and-forward-motion)
-Otherwise, they eat you alive.
+Otherwise, they eat me alive. 👹
 
 ### References
 
