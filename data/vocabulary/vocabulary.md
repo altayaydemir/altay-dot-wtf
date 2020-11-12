@@ -307,3 +307,10 @@ a strong dislike.
 ### push the boat out
 
 _🇹🇷 kesenin agzini acmak_
+
+### divulge
+
+make sensitive information known.
+
+[But while apps may need this information to run their services effectively, they may also profit from the data users divulge.](https://themarkup.org/ask-the-markup/2020/11/12/how-private-is-my-pay-app) 
+
