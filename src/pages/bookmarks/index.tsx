@@ -20,7 +20,7 @@ const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = 
     <>
       {data.map((bookmark) => (
         <Box key={bookmark.url} my={4}>
-          <Link display="inline-block" href={bookmark.url} target="new" rel="noopener noreferrer">
+          <Link href={bookmark.url} target="new" rel="noopener noreferrer">
             <Heading as="h3" fontSize={2}>
               {bookmark.title}
             </Heading>

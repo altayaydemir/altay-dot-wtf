@@ -1,5 +1,15 @@
 [
   {
+    "title": "Dark Mode Design",
+    "description": "A showcase for good looking dark-mode websites.",
+    "url": "https://darkmodedesign.com"
+  },
+  {
+    "title": "Checklist Design",
+    "description": "A useful collection of checklists on various design topics.",
+    "url": "https://checklist.design"
+  },
+  {
     "title": "App Dissection",
     "description": "Most of the apps are redesigned but Brian's comments are still valid.",
     "url": "https://brianlovin.com/design-details"
@@ -13,8 +23,7 @@
   {
     "title": "Website Carbon Calculator",
     "description": "How is your website impacting the planet?",
-    "url": "https://websitecarbon.com",
-    "tags": []
+    "url": "https://websitecarbon.com"
   },
   {
     "title": "Andy Matuschak's working notes",
@@ -30,33 +39,35 @@
   },
   {
     "title": "My best products are joke",
-    "description": "When and how to use humor in copywriting.",
+    "description": "An article on when and how to use humor in copywriting.",
     "url": "https://vanschneider.com/best-products-joke",
     "tags": ["ux-writing"]
   },
   {
     "title": "Whereby",
     "description": "A video-conferencing app with a clean design. Works well in the web browser without any hustle and doesn't try to capture all the possible information from guests.",
-    "url": "https://whereby.com",
-    "tags": ["cool-things"]
+    "url": "https://whereby.com"
   },
   {
     "title": "Intellectual Humility",
     "description": "An interesting read that investigates why it's hard to realize our own ignorance. The first rule of the Dunning-Kruger club is you don't know that you're a member.",
-    "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication",
-    "tags": []
+    "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication"
   },
   {
     "title": "Dense Discovery",
-    "description": "My favorite weekly newsletter on technology, design and culture. Published by Kai Branch.",
+    "description": "My favorite weekly newsletter on technology, design and culture.",
     "url": "https://densediscovery.com",
     "tags": ["newsletter"]
   },
   {
+    "title": "Tutanota",
+    "description": "A conventient email service that I'm using for custom domains.",
+    "url": "https://tutanota.com"
+  },
+  {
     "title": "Chill Institute",
-    "description": "A complementary service to enhance your put.io experience.",
-    "url": "https://chill.institute",
-    "tags": ["cool-things"]
+    "description": "A complementary torrent search service to enhance your put.io experience.",
+    "url": "https://chill.institute"
   },
   {
     "title": "7 Principles of Rich Web Applications",

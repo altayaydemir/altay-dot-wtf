@@ -3,6 +3,7 @@ title: Transparent business
 date: '2020-11-08T15:37:20Z'
 tags:
   - business
+  - your-utopia
 ---
 
 If I start a company one day, I'd love it to be as transparent as possible. Not only internal, also for the audience. It's a great way of establishing trust. Leaves no room manipulation. Shows that you are a human. Boosts my sympathy for small businesses.
