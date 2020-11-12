@@ -202,7 +202,7 @@ not discovered or known.
 
 impossible to understand or interpret.
 
-_Incrutable cable-box..._
+_Inscrutable cable-box..._
 
 ### disdain
 
@@ -252,7 +252,7 @@ _Norman's books adopt an abiding tone of bemusement._
 
 showing great attention to detail.
 
-_Barbaric was always a meticilous planner._
+_Barbaric was always a meticulous planner._
 
 [User Friendly](/books/user-friendly)
 
@@ -288,9 +288,9 @@ _Some people resemble their dogs._
 
 _Trapped in the web of desires._
 
-### abhore
+### abhor
 
-regard with disgus, hatred
+regard with disgust, hatred
 
 ### ostentation
 

@@ -69,7 +69,7 @@ But programmers are pragmatic and smart people; we can fix this by initializing 
 
 _Our state is lying_, but we can live with that.
 
-### Request failed? Oh, snap.
+### Request failed? Oh, snap!
 
 Let's take one more step forward for a better UX and add a _retry_ button to the error component.
 
@@ -127,7 +127,7 @@ OK, this would work for our beloved users.
 
 But readability is not optimal because we're doing some nasty things. We need to perform a clean-up since `error` might be a leftover from the first call.
 
-Again, we may come up with an ingenious solution to make that bearable, by introducing a custom `onRetry` method.
+Again, we may come up with an ingenious solution to make that bearable by introducing a custom `onRetry` method.
 
 ```jsx
 class List extends React.Component {

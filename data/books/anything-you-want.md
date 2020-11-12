@@ -115,7 +115,8 @@ Move away and spend time on improvements.
 Too much delegation resulted in a weird situation.
 Employees get to choose the revenue sharing model.
 They end up giving all profit to themselves.
-Fixing it in a conflicting way was the beginning of the end for CD Baby.
-People's relationships got broken, and Derek stopped going to the office.
+Fixing it in a conflicting way was the beginning of the end for CD Baby. People's relationships got broken, and Derek stopped going to the office.
 
-Eventually, he sold CD Baby and donated money to music education, where it all started for him. A sentimental ending for a great story.
+Eventually, he sold CD Baby and donated money to music education, where it all started for him. 
+
+A sentimental ending for a great story.

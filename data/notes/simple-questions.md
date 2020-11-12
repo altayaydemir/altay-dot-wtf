@@ -12,9 +12,7 @@ Simple questions have painful answers.
 > &mdash; James Altucher ([Choose Yourself](/books/choose-yourself))
 
 That's a memorable example that summarizes the whole book.
-It actually reveals his entire philosophy, which is great.
-It guarantees James will make you question how you make use of your time in his next book.
-And he certainly does in [Reinvent Yourself](/books/reinvent-yourself).
+It reveals his entire philosophy, which is great. It guarantees James will make you question how you make use of your time in his next book. And he certainly does in [Reinvent Yourself](/books/reinvent-yourself).
 
 Once the people in front of you understand what you are trying to tell, the rest is a rollercoaster. Surround it with stories, quotes, real-life experiences.
 
@@ -25,8 +23,7 @@ Once the people in front of you understand what you are trying to tell, the rest
 This is another gem.
 I don't recall where I heard it for the first time.
 Yet I can see the reflections in almost everything I read.[^1]
-That's my favorite question because it instills a never-ending skepticism.
-Suddenly you have an infinite-scrolling to-do list.
+That question is favorite hence it instills a never-ending skepticism. Suddenly you have an infinite-scrolling to-do list.
 
 I keen on regularly asking those questions to myself; hence they create tension.
 [The only way to relieve this tension is to trigger a forward motion.](/notes/tension-and-forward-motion)

@@ -27,7 +27,7 @@ Some of them are not even in our hands, but we still need to be prepared and try
 
 Thanks to the JS community's abstractionist mindset, achieving a convenient alliance of hooks and the network layer is not the hardest. There are many great people out there maintaining libraries to make it easier.
 
-My favorite has been `swr` by `Vercel`, which comes with some considerate functionalities by default.
+My favorite has been `swr` from `Vercel`, which comes with considerate functionalities by default.
 
 - Response caching.
 - Revalidation and polling based on window focus.

@@ -5,9 +5,7 @@ tags:
   - business
 ---
 
-If I start a company one day, I'd love it to be as transparent as possible.
-Not only internal, also for the audience. It's a great way of establishing trust.
-Leaves no room manipulation. Shows that you are a real human. Boosts my sympathy for small businesses.
+If I start a company one day, I'd love it to be as transparent as possible. Not only internal, also for the audience. It's a great way of establishing trust. Leaves no room manipulation. Shows that you are a human. Boosts my sympathy for small businesses.
 
 Developing in the open is a way to do that:
 

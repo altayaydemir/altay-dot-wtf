@@ -6,7 +6,7 @@ tags:
   - note-taking
 ---
 
-I'm soon to become twenty-seven, and I complain almost about everything. One of my most recent realizations is having no idea how to read a book. I had many skilled teachers, leads, mentors, but none of them taught me anything about that. I suppose I didn't ask the right questions, and they were as clueless as me. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
+I'm soon to become twenty-seven, and I complain almost about everything. One of my recent realizations is having no idea how to read a book. I had many skilled teachers, leads, mentors, but none of them taught me anything about that. I suppose I didn't ask the right questions, and they were as clueless as me. I want to believe it's about _the system_ and people in charge who don't even know I am alive.
 
 Well, hello? 👋
 
@@ -35,21 +35,16 @@ During the past two years, I tried to read every day and take notes with a rough
 That made me read around [50 books](/books) and learn many things, which I attempted to integrate into my life.
 Some worked well; many I haven't figured out how to use.
 
-I'm still at the beginning and feeling like there won't be any spot for me to say "halfway there."
-No matter what, I rejoice in the process.
-It's much more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds.
-I also did that during the quarantine and lost half of them.
+I'm at the beginning and feeling like there won't be any spot for me to say "halfway there." No matter what, I rejoice in the process. It's much more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds. I've done that during the quarantine and lost half of them.
 
 I appreciate the existence of more people like me.
 A good nudge to get out of bed is to find a way to help them solve their problems.
 
-So here we go.
+Here we go.
 
 ### "This is my original storino, please no copy pasterino."
 
-The note-taking ceremony started by underlining everything that made sense to me.
-I was new to the literature, so that was a lot of highlights.
-After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or rewriting whatever the book says.
+The note-taking ceremony started by underlining everything that made sense to me. I was new to the literature, so that was a lot of highlights. After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or rewriting what the book says.
 
 In summary, that's how the process looked like:
 
@@ -65,7 +60,8 @@ _Following days_
 
 5.  Repeat 4 and 5 until I get bored in the loop at some point.
 6.  Stop taking notes in a place where things got intense.
-7.  Finish the book. Well, now I have to go through it again because the note-taking part left behind.
+7.  Finish the book. 
+8.  Now I have to go through it again because the note-taking part left behind.
 
 Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
 
@@ -80,9 +76,7 @@ That was a positive start for awareness, yet not practical.
 
 ### "Do you read me?"
 
-Like the beginning of this story, it didn't take too long to conclude that my method was inefficient.
-I could understand what I am reading by the time I am reading, but very few remnants after a couple of months.
-The timesheets were filling up, but the notes were unavailing.
+Like the beginning of this story, it didn't take long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but little remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
 
 They lacked two things: **interpretation** and **internalization**.
 
@@ -106,31 +100,27 @@ So here's what I am trying to do:
 4.  After several weeks, carry things over to text documents while skimming the book.
 5.  Publish notes in this website.
 
-To bring some joy to the process, I ditched the keyboard-driven documentation. Now I have an iPad with Apple Pencil to feel more papery.
+To bring joy to the process, I ditched the keyboard-driven documentation. Now I have an iPad with Apple Pencil to feel more papery.
 
 Here's an example from [_Make Time_](/books/make-time).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 
-This approach works well. Yet, sometimes I get side-tracked by the rabbit hole called the internet. My other strategy is going all-in on paper. Sticky notes are good for logistics.
+This approach works better. Yet, sometimes I get side-tracked by the rabbit hole called the internet. My other strategy is going all-in on paper. Sticky notes are good for logistics.
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
 ![Sticky notes from User Friendly](/images/articles/how-do-I-read/how-do-I-read-post-it.jpg)
 
-Besides that, I started tagging the highlights based on their topic. It's especially helpful while taking action, which is a learning from another book: _How to Take Smart Notes_.
+Besides that, I started tagging the highlights based on their topic. It's helpful while taking action, which is a learning from another book: _How to Take Smart Notes_.
 
 ![Tags](/images/articles/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 
-The social aspect is a bit sabotaged by the pandemic, and there's not much to do about it.
-I read online discussions and listen to podcast episodes related to the books I am reading.
-It also helps discovering new mediums to get recommendations.
+The social aspect is sabotaged by the pandemic, and there's not much to do about it. I read online discussions and listen to podcast episodes related to the books I am reading. It also helps discovering new mediums to get recommendations.
 
-Those try-outs are making an impact.
-I remember and think more about what I read and what to do with them.
-Yet, I haven't done much yet. That brings the next adversity: awareness of insufficient use.
+Those try-outs are making an impact. I remember and think more about what I read and what to do with them. Yet, I haven't done much yet. That brings the next adversity: awareness of insufficient use.
 
 ### Taking action
 
@@ -142,7 +132,7 @@ Now we arrived at a decent spot to sneak in this famous quote.
 
 Do you remember what those _heroic_ people I bowed at the beginning had in common?
 
-Good, now it's your turn. The real internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
+Good, now it's your turn. The most effective internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
 
 A great book would make us want to do something, and there are many out there.
 

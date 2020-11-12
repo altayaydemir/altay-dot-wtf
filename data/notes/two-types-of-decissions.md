@@ -1,13 +1,13 @@
 ---
-title: Two types of decissions
+title: Two types of decisions
 date: '2020-11-10T20:02:22Z'
 ---
 
-### Fear based decissions
+### Fear based decisions
 
 We make those out of insecurity. Out of a feeling of scarcity.
 
-This is basically how the FOMO works.
+This is how the FOMO works.
 
 - _"4 people are viewing this booking offer right now."_
 - _"There are ONLY 3 items left in stock."_
@@ -16,7 +16,7 @@ You better push the boat out.
 
 This makes people behave frantically and give the control away.
 
-### Growth based decissions
+### Growth based decisions
 
 We feel the confidence in our body while making those decisions.
 They are a result of compound interest.

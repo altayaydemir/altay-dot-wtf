@@ -14,13 +14,13 @@ In addition to eliminating the friction, Vercel also provides [analytics](https:
 
 And that's precisely what I did right after deploying a bearable version. But the results were not satisfying at all.
 
-![Lighthouse score before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before.png)
+![Lighthouse score before the optimization](/images/articles/happier-lighthouse/lighthouse-score-before.png)
 
 My minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
 The report is clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
 
-![Lighthouse score details, before the optimisation](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
+![Lighthouse score details, before the optimization](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
 
 > I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif) 👹👹👹
 
@@ -29,7 +29,7 @@ The report is clear, it tells that I am basically making your computer load and 
 The report shows which chunk is not utilized.
 Unfortunately, the code is minified.
 
-So I basically have two choices:
+I have two choices:
 
 - Be a responsible, clean coder and inspect the source maps by using [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) to find out what's wrong.
 
@@ -127,8 +127,8 @@ export default Markdown
 
 In the end, the performance score of [the home page](/) increased dramatically.
 
-![Lighthouse score, after the optimisation](/images/articles/happier-lighthouse/lighthouse-score-after.png)
+![Lighthouse score, after the optimization](/images/articles/happier-lighthouse/lighthouse-score-after.png)
 
-This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I actually need to render a code editor, such as this post.
+This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I need to render a code editor, such as this post.
 
-Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨
+Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨s

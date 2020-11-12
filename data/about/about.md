@@ -24,7 +24,7 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 
 ### who I admire
 
-people who contributed enormously to my life during the past several years.
+the people who contributed enormously to my life during the past several years.
 
 **the big three**\
 naval ravikant, derek sivers, seth godin
