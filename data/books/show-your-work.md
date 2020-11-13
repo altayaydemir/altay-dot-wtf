@@ -163,7 +163,7 @@ They were too harsh while reviewing each other's work to see if any of them are 
 
 Put out a lot of work, get punched a lot.
 
-[The more criticism you take, the more you realise it is harmless.](/tags/criticism)
+[The more criticism you take, the more you realize it is harmless.](/tags/criticism)
 
 Nobody died from a bad review. Take a deep breath and accept whatever comes.
 
