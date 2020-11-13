@@ -23,4 +23,4 @@ We can't change the culture, but each of us has the opportunity to change a cult
 
 ### References
 
-- [This is Marketing](/books/this-is-marketing)
+- [This is Marketing](../books/this-is-marketing)

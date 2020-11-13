@@ -4,9 +4,7 @@ date: '2020-11-04'
 
 ### what I do
 
-living in prenzlauerberg, berlin.
-
-working at [klarna](https://klarna.com) as software engineer in the day-time.
+working for [klarna](https://klarna.com) as a software engineer in the day-time.
 
 reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time.
 
@@ -24,7 +22,7 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 
 ### who I admire
 
-the people who contributed enormously to my life during the past several years.
+people who contributed enormously to my life during the past several years.
 
 **the big three**\
 naval ravikant, derek sivers, seth godin
@@ -44,8 +42,9 @@ phoebe waller-bridge, ricky gervais, louis ck
 **in-ear three**\
 christian löffler, hælos, jakuzi
 
-**close-circle-mentor three**\
-[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), matthias carigiet
+**close-circle three**\
+[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), [berk capar](https://berk.studio)
+
 
 ### what I did
 

@@ -37,11 +37,46 @@ export const getMarkdownFileNames = (contentType: ContentType) => {
   }
 }
 
+const transformRelativeMarkdownLinks = (contentType: ContentType, markdown: string) => {
+  const regexMdLinks = /\[([^[]+)\](\(.*\))/gm
+  const regexMDLinkURL = /(\(.*\))/gm
+  const mdLinks = markdown.match(regexMdLinks)
+
+  if (mdLinks?.length) {
+    const relativeMdLinks = mdLinks.filter((mdLink) => {
+      const url = mdLink.match(regexMDLinkURL)
+      return url?.length && url[0].startsWith('(.')
+    })
+
+    relativeMdLinks.forEach((mdLink) => {
+      const [matchedURL] = mdLink.match(regexMDLinkURL) as [string]
+      let url = matchedURL.split('(')[1].split(')')[0]
+
+      if (url.startsWith('..')) {
+        url = url
+          .split('..')
+          .filter((i) => i !== '..')
+          .join('')
+      } else if (url.startsWith('.')) {
+        url = url.replace('.', `/${getContentDirectoryForType(contentType)}`)
+      }
+
+      url = url.replace('.md', '')
+      const newMdLink = mdLink.replace(matchedURL, `(${url})`)
+      markdown = markdown.replace(mdLink, newMdLink)
+    })
+  }
+
+  return markdown
+}
+
 export const readMarkdownFile = (contentType: ContentType, fileName: string) => {
   const directory = getContentDirectoryPath(contentType)
+  const filePath = `${directory}/${fileName}.md`
 
   try {
-    return fs.readFileSync(`${directory}/${fileName}.md`, 'utf-8')
+    const content = fs.readFileSync(filePath, 'utf-8')
+    return transformRelativeMarkdownLinks(contentType, content)
   } catch (e) {
     return ''
   }

@@ -10,8 +10,8 @@ Exclusive can be applied anywhere.
 
 Exclusive institutions are the ones who change the culture.
 They thrive as long as the members wish to belong.
-They are [people like us](/notes/people-like-us).
+They are [people like us](./people-like-us).
 
 ### References
 
-- [This is Marketing](/books/this-is-marketing)
+- [This is Marketing](../books/this-is-marketing)
