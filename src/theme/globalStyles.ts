@@ -57,17 +57,12 @@ export const createGlobalStyles = (theme: Theme) => `
     margin: 4px 0;
   }
 
-  .image-lazy {
-    background-color: ${theme.colors.background};
-  }
-
-  .image-book-cover {
-    border-radius: 4px;
+  .border-radius {
+    border-radius: 8px;
   }
 
   .image-markdown {
-    border-radius: 8px;
-    border: 1px solid ${theme.colors.borderPrimary}!important;
     object-fit: contain;
+    background-color: ${theme.colors.background};
   }
 `

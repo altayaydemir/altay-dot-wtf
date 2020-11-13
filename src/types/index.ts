@@ -54,7 +54,7 @@ export type Article = BaseMDContent & {
   meta: BaseMDMeta & {
     title: string
     oneliner: string
-    metaImage: MetaImage | null
+    metaImage: MetaImage & { blurhash: string }
     readingTime: string
   }
 }
@@ -68,6 +68,7 @@ export type Book = BaseMDContent & {
     coverImage: {
       url: string
       aspectRatio: number
+      blurhash: string
     }
     metaImage: MetaImage
     isbn: string

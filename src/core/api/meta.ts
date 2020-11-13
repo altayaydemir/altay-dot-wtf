@@ -1,6 +1,6 @@
 import readingTime from 'reading-time'
 import type { Article, Book, Content, ContentType } from 'types'
-import { fetchBookData } from './http'
+import { fetchBookData, fetchBookImage } from './http'
 import { getImageData, generateMetaImage } from './image'
 
 const getArticleMeta = async (
@@ -8,15 +8,9 @@ const getArticleMeta = async (
   meta: Article['meta'],
   content: Article['markdown'],
 ) => {
-  let metaImage: Article['meta']['metaImage'] = null
-
-  try {
-    const url = `/images/articles/${slug}/${slug}.png`
-    const { width, height } = await getImageData(url)
-    metaImage = { width, height, url }
-  } catch (e) {
-    /* no image, all good */
-  }
+  const url = `/images/articles/${slug}/${slug}.png`
+  const { width, height, blurhash } = await getImageData(url)
+  const metaImage = { width, height, url, blurhash }
 
   const readingTimeStats = readingTime(content)
 
@@ -24,9 +18,9 @@ const getArticleMeta = async (
 }
 
 const getBookMeta = async (slug: string, meta: Book['meta']) => {
-  const { coverImageURL, title, authors } = await fetchBookData(meta.isbn)
+  const { coverImageURL: remoteCoverImageURL, title, authors } = await fetchBookData(meta.isbn)
+  const coverImageURL = await fetchBookImage(slug, remoteCoverImageURL)
   const coverImageData = await getImageData(coverImageURL)
-
   const metaImage = await generateMetaImage({
     directory: 'books',
     fileName: slug,
@@ -39,6 +33,7 @@ const getBookMeta = async (slug: string, meta: Book['meta']) => {
     title: `${title} by ${authors.join(', ')}`,
     authors,
     coverImage: {
+      blurhash: coverImageData.blurhash,
       url: coverImageURL,
       aspectRatio: coverImageData.ratio,
     },

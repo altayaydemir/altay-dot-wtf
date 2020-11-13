@@ -1,6 +1,7 @@
+import type { Book } from 'types'
 import Image from 'next/image'
 import { Box } from 'rebass'
-import { Book } from 'types'
+import Blurhash from 'components/Blurhash'
 
 type Props = {
   bookMeta: Book['meta']
@@ -10,9 +11,17 @@ type Props = {
 const MAX_WIDTH = 144
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
-  <Box display="inline-block" width={width} height={width / bookMeta.coverImage.aspectRatio}>
+  <Box
+    sx={{ position: 'relative', overflow: 'hidden' }}
+    className="border-radius"
+    display="inline-block"
+    width={width}
+    height={width / bookMeta.coverImage.aspectRatio}
+  >
+    <Blurhash value={bookMeta.coverImage.blurhash} />
+
     <Image
-      className="image-lazy image-book-cover"
+      className="border-radius"
       alt={bookMeta.title}
       src={bookMeta.coverImage.url}
       width={width}

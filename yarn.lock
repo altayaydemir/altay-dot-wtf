@@ -2193,6 +2193,11 @@ bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
+blurhash@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/blurhash/-/blurhash-1.1.3.tgz#dc325af7da836d07a0861d830bdd63694382483e"
+  integrity sha512-yUhPJvXexbqbyijCIE/T2NCXcj9iNPhWmOKbPTuR/cm7Q5snXYIfnVnz6m7MWOXxODMz/Cr3UcVkRdHiuDVRDw==
+
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.4.0:
   version "4.11.9"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
@@ -5471,6 +5476,21 @@ neo-async@^2.5.0, neo-async@^2.6.1, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+next-blurhash@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/next-blurhash/-/next-blurhash-0.2.0.tgz#ee503fef6336ae53af2fefb1af97e1055f5736a4"
+  integrity sha512-jeIumculghar64y/TTMsFl1jmmUkpGkcLbumlrBL1XofK9HuNKBkujccTjA1zmTxHOirhIRJaX52k0EVt5pR9g==
+  dependencies:
+    blurhash "1.1.3"
+    next-placeholder "^0.2.0"
+
+next-placeholder@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/next-placeholder/-/next-placeholder-0.2.0.tgz#20ab985a4bcd2b77d3359b2ccf1ff020a5a60d6c"
+  integrity sha512-+35r1nYrbSc5e4JywLR8vZ3c6aRKSNOd/A6IJm0QEUT171Pdv6I3j9nNG8S3TuVEaDFaFte9ukpyy9jsPgViYg==
+  dependencies:
+    blurhash "1.1.3"
+
 next-plausible@^1.0.4:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-1.1.1.tgz#eb269d3d80e1d187e91c9dcad28e2d6686bbfa60"
@@ -6333,6 +6353,11 @@ rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-blurhash@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/react-blurhash/-/react-blurhash-0.1.3.tgz#735f28f8f07fb358d7efe7e7e6dc65a7272bf89e"
+  integrity sha512-Q9lqbXg92NU6/2DoIl/cBM8YWL+Z4X66OiG4aT9ozOgjBwx104LHFCH5stf6aF+s0Q9Wf310Ul+dG+VXJltmPg==
 
 react-dom@17.0.1:
   version "17.0.1"

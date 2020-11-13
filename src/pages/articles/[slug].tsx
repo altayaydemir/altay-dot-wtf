@@ -1,7 +1,6 @@
 import { SITE_URL } from 'config'
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
-import Image from 'next/image'
 import { Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
@@ -12,6 +11,7 @@ import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
+import ArticleImage from 'components/Article/ArticleImage'
 
 export const getStaticPaths = getStaticPathsForContent('article')
 export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
@@ -38,19 +38,9 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         }}
       />
 
-      {data.meta.metaImage ? (
-        <Box mb={4}>
-          <Image
-            className="image-markdown image-lazy"
-            alt={data.meta.title}
-            src={data.meta.metaImage.url}
-            width={data.meta.metaImage.width}
-            height={data.meta.metaImage.height}
-            layout="responsive"
-            priority
-          />
-        </Box>
-      ) : null}
+      <ArticleImage alt={title} image={data.meta.metaImage} />
+
+      <Box mb={4} />
 
       <ContentTitle fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
 

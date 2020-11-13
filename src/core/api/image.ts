@@ -1,10 +1,10 @@
+import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
+import type { MetaImage } from 'types'
 import { join } from 'path'
 import fs from 'fs'
-import fetch from 'node-fetch'
 import imageSize from 'image-size'
 import { createCanvas, loadImage } from 'canvas'
-import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
-import { MetaImage } from 'types'
+import { getBlurhash } from 'next-blurhash'
 
 const PUBLIC_FOLDER = join(process.cwd(), 'public')
 
@@ -18,21 +18,17 @@ const getImageDataFromBuffer = (buffer: Buffer) => {
   return { buffer, ratio: width / height, width, height }
 }
 
-type ImageData = ReturnType<typeof getImageDataFromBuffer>
+type ImageData = ReturnType<typeof getImageDataFromBuffer> & { blurhash: string }
 
-const getLocalImageData = async (url: string): Promise<ImageData> => {
+export const getImageData = async (url: string): Promise<ImageData> => {
   const buffer = fs.readFileSync(PUBLIC_FOLDER + url)
-  return getImageDataFromBuffer(buffer)
-}
+  const blurhash = await getBlurhash(url)
 
-const getRemoteImageData = async (url: string): Promise<ImageData> => {
-  const response = await fetch(url)
-  const buffer = await response.buffer()
-  return getImageDataFromBuffer(buffer)
+  return {
+    blurhash,
+    ...getImageDataFromBuffer(buffer),
+  }
 }
-
-export const getImageData = (url: string) =>
-  url.startsWith('/') ? getLocalImageData(url) : getRemoteImageData(url)
 
 const META_IMAGE_BG_FILL_COLOR = '#111111'
 
