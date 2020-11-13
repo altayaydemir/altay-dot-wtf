@@ -27,7 +27,7 @@ const HeaderDesktop: React.FC<{ currentPathname: string }> = ({ currentPathname 
               paddingY: '6px',
               marginLeft: 1,
               lineHeight: 1,
-              borderRadius: 3,
+              borderRadius: 8,
             }}
           />
         </Box>

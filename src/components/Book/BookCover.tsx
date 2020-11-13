@@ -10,13 +10,14 @@ type Props = {
 const MAX_WIDTH = 144
 
 const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
-  <Box display="inline-block">
+  <Box display="inline-block" width={width} height={width / bookMeta.coverImage.aspectRatio}>
     <Image
       className="image-lazy image-book-cover"
       alt={bookMeta.title}
       src={bookMeta.coverImage.url}
       width={width}
       height={width / bookMeta.coverImage.aspectRatio}
+      layout="responsive"
     />
   </Box>
 )

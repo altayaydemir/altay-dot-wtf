@@ -20,7 +20,7 @@
     "emotion-theming": "^10.0.27",
     "gray-matter": "^4.0.2",
     "image-size": "^0.9.3",
-    "next": "10.0.0",
+    "next": "10.0.1",
     "next-plausible": "^1.0.4",
     "next-seo": "^4.15.0",
     "node-fetch": "^2.6.1",

@@ -15,7 +15,7 @@ const NavLink: React.FC<Props> = ({ href, label, active, style }) => (
         sx={{
           ...style,
           fontWeight: 'bold',
-          borderRadius: 3,
+          borderRadius: 8,
           color: active ? 'linkPrimary' : 'inherit',
           backgroundColor: active ? 'linkBackground' : 'headerBackground',
         }}

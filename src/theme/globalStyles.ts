@@ -58,7 +58,7 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   .image-lazy {
-    background-color: ${theme.colors.backgroundSecondary};
+    background-color: ${theme.colors.background};
   }
 
   .image-book-cover {
@@ -66,8 +66,8 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   .image-markdown {
-    max-width: 100%;
-    height: auto;
     border-radius: 8px;
+    border: 1px solid ${theme.colors.borderPrimary}!important;
+    object-fit: contain;
   }
 `
