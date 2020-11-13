@@ -1,6 +1,6 @@
 import { Box, Text, Link } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
-import { VscLinkExternal } from 'react-icons/vsc'
+import { CgArrowTopRight } from 'react-icons/cg'
 import { Book } from 'types'
 
 type Props = {
@@ -30,8 +30,8 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
         >
           <code>{bookMeta.isbn}</code>
 
-          <Text display="inline" ml={1} fontSize={0}>
-            <VscLinkExternal />
+          <Text display="inline" fontSize={0}>
+            <CgArrowTopRight />
           </Text>
         </Link>
       ),

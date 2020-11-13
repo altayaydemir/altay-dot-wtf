@@ -2,7 +2,7 @@ import { TaggedItem, TaggedContent, isTaggedContent } from 'types'
 import { Box, Text, Link, SxStyleProp } from 'rebass'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
-import { VscLinkExternal } from 'react-icons/vsc'
+import { CgArrowTopRight } from 'react-icons/cg'
 
 type TaggedItemProps = {
   tag: string
@@ -57,12 +57,15 @@ const TaggedItemHeading: React.FC<TaggedItemProps> = ({ tag, data }) => {
   if (data.type === 'bookmark') {
     return (
       <Box>
-        <Link href={data.url} target="_blank" rel="noopener noreferrer" sx={linkStyle}>
-          {getTitle(data)}
-
-          <Text display="inline" mx={1} fontSize={0}>
-            <VscLinkExternal />
-          </Text>
+        <Link
+          display="inline-flex"
+          href={data.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ ...linkStyle, alignItems: 'center' }}
+        >
+          <Text>{getTitle(data)}</Text>
+          <CgArrowTopRight />
         </Link>
       </Box>
     )

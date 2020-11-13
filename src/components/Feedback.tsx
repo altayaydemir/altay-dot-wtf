@@ -48,7 +48,7 @@ const feedbackMessageStyle: SxStyleProp = {
   paddingX: 4,
   borderRadius: 4,
   fontWeight: 'bold',
-  color: 'white',
+  color: 'textWhite',
   textAlign: 'center',
 }
 

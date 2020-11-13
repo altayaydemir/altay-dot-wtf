@@ -3,7 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { homeCopy, articlesCopy } from 'config/copy'
 import NextLink from 'next/link'
 import { Box, Heading, Text, Link } from 'rebass'
-import { VscArrowRight } from 'react-icons/vsc'
+import { CgArrowRight } from 'react-icons/cg'
 import { getContentList } from 'core/api/content'
 import ArticleList from 'components/Article/ArticleList'
 
@@ -43,7 +43,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
             <Link>
               <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
                 <Text mr={1}>{link.label}</Text>
-                <VscArrowRight />
+                <CgArrowRight />
               </Box>
             </Link>
           </NextLink>
