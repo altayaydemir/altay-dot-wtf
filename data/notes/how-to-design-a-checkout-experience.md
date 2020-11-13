@@ -10,8 +10,7 @@ Just do whatever Shopify does.
 I'm astonished by the swiftness of their checkout experience.\
 It's so effortless that makes me worry about something went wrong.
 
-Everything with one hand.\
-Didn't need to type anything. One click, a fingerprint scan, done.
+One click, a fingerprint scan, done. Didn't need to type anything. Everything with one hand.
 
 ![Shopify two taps](/images/notes/shopify-checkout-gg.gif)
 
