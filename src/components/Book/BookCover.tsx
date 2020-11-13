@@ -16,7 +16,7 @@ const BookCover: React.FC<Props> = ({ bookMeta, width = MAX_WIDTH }) => (
     className="border-radius"
     display="inline-block"
     width={width}
-    height={width / bookMeta.coverImage.aspectRatio}
+    height="auto"
   >
     <Blurhash value={bookMeta.coverImage.blurhash} />
 

@@ -21,17 +21,17 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
   return (
     <>
-      <Flex>
-        <NextSeo
-          title={data.meta.title}
-          description={data.meta.oneliner}
-          openGraph={{
-            title: data.meta.title,
-            description: data.meta.oneliner,
-            images: [{ alt: data.meta.title, ...data.meta.metaImage }],
-          }}
-        />
+      <NextSeo
+        title={data.meta.title}
+        description={data.meta.oneliner}
+        openGraph={{
+          title: data.meta.title,
+          description: data.meta.oneliner,
+          images: [{ alt: data.meta.title, ...data.meta.metaImage }],
+        }}
+      />
 
+      <Flex>
         <BookCover bookMeta={data.meta} />
 
         <Box m={2} />
