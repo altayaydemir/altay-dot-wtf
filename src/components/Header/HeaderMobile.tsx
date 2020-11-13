@@ -3,7 +3,7 @@ import { useToggle } from 'react-use'
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { Flex, Box, Heading } from 'rebass'
-import { VscMenu, VscClose } from 'react-icons/vsc'
+import { CgMenu, CgClose } from 'react-icons/cg'
 import NavLink from './NavLink'
 import { headerStyle } from './style'
 
@@ -21,7 +21,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
       <Flex alignItems="center">
         <button type="button" name="menu-button" onClick={toggleShowMenu} style={menuButtonStyle}>
           <Box color="text" padding={0} margin={0} fontSize={3} sx={{ lineHeight: 0 }}>
-            {showMenu ? <VscClose /> : <VscMenu />}
+            {showMenu ? <CgClose /> : <CgMenu />}
           </Box>
         </button>
 

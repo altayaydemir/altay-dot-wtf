@@ -36,11 +36,11 @@ export const HEADER = {
           },
           {
             label: 'j',
-            href: '/private/journal',
+            href: '/private-journal',
           },
           {
             label: 'p',
-            href: '/private/notes',
+            href: '/private-notes',
           },
           {
             label: 'v',

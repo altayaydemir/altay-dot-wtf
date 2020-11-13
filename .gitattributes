@@ -1,1 +1,3 @@
 data/private/** filter=git-crypt diff=git-crypt
+data/private-notes/** filter=git-crypt diff=git-crypt
+data/private-journal/** filter=git-crypt diff=git-crypt

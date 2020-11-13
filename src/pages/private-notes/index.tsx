@@ -8,7 +8,7 @@ import type { PrivateNote } from 'types'
 
 export const getStaticProps = getStaticPropsForContentList<PrivateNote>('private-note')
 
-const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
+const PrivateNotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader title={`private notes`} description={`🔒 🤔`} />
 
@@ -17,7 +17,7 @@ const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <>
       {data.map((d) => (
         <Box key={d.slug} my={3}>
-          <NextLink href={`/private/notes/${d.slug}`} passHref>
+          <NextLink href={`/private-notes/${d.slug}`} passHref>
             <Link display="inline-block">
               <Text>{d.meta.title}</Text>
             </Link>
@@ -32,4 +32,4 @@ const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   </>
 )
 
-export default JournalPage
+export default PrivateNotesPage

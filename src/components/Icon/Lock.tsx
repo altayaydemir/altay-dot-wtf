@@ -1,5 +1,5 @@
-import { VscLock } from 'react-icons/vsc'
+import { CgLock } from 'react-icons/cg'
 
-const LockIcon: React.FC = () => <VscLock />
+const LockIcon: React.FC = () => <CgLock />
 
 export default LockIcon

@@ -2,7 +2,7 @@ import { InferGetStaticPropsType } from 'next'
 import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
-import { VscChevronRight } from 'react-icons/vsc'
+import { CgArrowRight } from 'react-icons/cg'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
 import type { Now } from 'types'
@@ -25,7 +25,7 @@ const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ 
                   {format(new Date(d.slug), 'MMMM yyyy')}
                 </Text>
 
-                <VscChevronRight />
+                <CgArrowRight />
               </Box>
             </Link>
           </NextLink>

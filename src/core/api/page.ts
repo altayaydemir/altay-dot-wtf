@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Content, ContentType, isTaggedContent, TAGGED_CONTENT_TYPES } from 'types'
+import { Content, ContentType, isTaggedContent } from 'types'
 import { getMarkdownFileNames } from './fs'
 import { getContentDetails, getContentList } from './content'
 import { getLinksToContent } from './tags'

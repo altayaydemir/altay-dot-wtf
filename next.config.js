@@ -7,11 +7,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const getRedirects = () => {
   let redirects = [
     {
-      source: '/cv',
-      destination: '/documents/cv.pdf',
-      permanent: false,
-    },
-    {
       source: '/chat',
       destination: 'https://whereby.com/aydemir',
       permanent: false,
@@ -21,7 +16,12 @@ const getRedirects = () => {
   if (process.env.NODE_ENV === 'production') {
     redirects = redirects.concat([
       {
-        source: '/private/:path*',
+        source: '/private-notes/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/private-journal/:path*',
         destination: '/',
         permanent: true,
       },
