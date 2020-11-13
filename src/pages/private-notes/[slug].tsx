@@ -18,8 +18,6 @@ const PrivateNotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> 
         description={`updated ${format(new Date(data.meta.date), 'PPP')}`}
       />
 
-      <hr />
-
       <Markdown>{data.markdown}</Markdown>
     </>
   )
