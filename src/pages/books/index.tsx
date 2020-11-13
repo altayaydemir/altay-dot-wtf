@@ -34,21 +34,15 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
                 </Link>
               </NextLink>
 
-              <Box m={1} />
+              <Box my={1}>
+                <BookInfo short bookMeta={book.meta} fontSize={[0, 1]} spacing={0} />
+              </Box>
 
-              <BookInfo short bookMeta={book.meta} fontSize={[0, 1]} spacing={0} />
+              <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />
 
-              <Box m={1} />
-
-              {book.meta.oneliner ? (
-                <>
-                  <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />
-
-                  <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
-                    {book.meta.oneliner}
-                  </Text>
-                </>
-              ) : null}
+              <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
+                {book.meta.oneliner}
+              </Text>
             </Box>
           </Flex>
         </Box>

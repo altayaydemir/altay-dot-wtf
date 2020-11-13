@@ -47,6 +47,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             width={data.meta.metaImage.width}
             height={data.meta.metaImage.height}
             layout="responsive"
+            priority
           />
         </Box>
       ) : null}
