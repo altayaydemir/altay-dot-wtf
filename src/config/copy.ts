@@ -1,9 +1,6 @@
 export const homeCopy = {
   title: 'hi, my name is altay.',
-  description: [
-    'thanks for visiting my website.',
-    'I am a software engineer currently living in berlin.',
-  ],
+  description: 'thanks for visiting my website.',
   links: [
     {
       label: 'more about me',

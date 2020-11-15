@@ -6,6 +6,7 @@ import { Box, Heading, Text, Link } from 'rebass'
 import { CgArrowRight } from 'react-icons/cg'
 import { getContentList } from 'core/api/content'
 import ArticleList from 'components/Article/ArticleList'
+import PageHeader from 'components/PageHeader'
 
 type HomeSection = {
   title: string
@@ -26,15 +27,7 @@ export const getStaticProps: GetStaticProps<{ sections: HomeSection[] }> = async
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sections }) => (
   <>
-    <Heading fontSize={3}>{homeCopy.title}</Heading>
-
-    <Box m={3} />
-
-    {homeCopy.description.map((i) => (
-      <Text key={i} color="textSecondary">
-        {i}
-      </Text>
-    ))}
+    <PageHeader title={homeCopy.title} description={homeCopy.description} />
 
     <Box my={3}>
       {homeCopy.links.map((link) => (

@@ -2,15 +2,13 @@
 date: '2020-11-04'
 ---
 
-### what I do
+I'm living in Berlin and working at [Klarna](https://klarna.com) as a software engineer.
 
-working for [klarna](https://klarna.com) as a software engineer in the day-time.
+I also work on some other things on the side; the most prominent is [put.io](https://put.io).
 
-reading, listening, walking, or building interfaces for [put.io](https://put.io) in the leisure-time.
+I read, listen, or walk around Volkspark Friedrichshain in my free time.
 
 ### what I enjoy
-
-**using things** that are solving my problems.
 
 **building things** that are solving problems I empathize with.
 
@@ -21,8 +19,6 @@ reading, listening, walking, or building interfaces for [put.io](https://put.io)
 **connecting the people I know** and blissfully watching them help out each other.
 
 ### who I admire
-
-people who contributed enormously to my life during the past several years.
 
 **the big three**\
 naval ravikant, derek sivers, seth godin
@@ -43,14 +39,16 @@ phoebe waller-bridge, ricky gervais, louis ck
 christian löffler, hælos, jakuzi
 
 **close-circle three**\
-[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), [berk capar](https://berk.studio)
+[hasan yalcinkaya](https://twitter.com/hafifuyku),
+[kemal akkoyun](https://kakkoyun.me),
+[berk capar](https://berk.studio)
 
 
 ### what I did
 
 - **2020, oct:** built this website.
 - **2020, jan:** switched to the _app client core_ team, which is responsible for architecture, performance and many other things related to [klarna consumer app.](https://klarna.com/us/klarna-app/)
-- **2019, may:** got a promising offer from the swedish fintech unicorn [**klarna**](https://klarna.com/) and joined to _consumer growth and loyalty_ domain. worked on 3rd-party integrations to provide marketeers meticulous ways to communicate with the users.
+- **2019, may:** got a promising offer from the swedish fintech decacorn [**klarna**](https://klarna.com/) and joined to _consumer growth and loyalty_ domain. worked on 3rd-party integrations to provide marketeers meticulous ways to communicate with the users.
 - **2018, oct:** relocated to berlin and joined [**lisk**](https://lisk.io), a cryptocurrency startup. worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile), built some cool stuff such as the [react-native imessage bridge](/articles/react-native-imessage) which we had a chance a [talk about in the react berlin meetup](https://www.youtube.com/watch?v=MEM6OBOBIhY).
 - **2018, june:** had a month-long london trip with colleagues from put.io, was my first time abroad. turkey had another non-promising national election that gave a hint of what will keep happening in the country for the next decade.
 - **2017:** joined [**put.io**](https://put.io/), a cloud-storage service that downloads publicly available files at high speeds and saves you both time and money. took over the web app and built clients for iOS, tvOS, roku, tizen tv, and android tv.
