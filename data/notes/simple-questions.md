@@ -20,7 +20,9 @@ Once the people in front of you understand what you are trying to tell, the rest
 
 > Do you know why you are doing what you are doing?
 
-This is another gem. I don't recall where I heard it for the first time. I can see the reflections in almost everything I read.[^1] That question is my favorite since it instills a never-ending skepticism. Suddenly there is an infinite-scrolling to-do list.
+This is another gem. I don't recall where I heard it for the first time. I can see the reflections in almost everything I read.[^1]
+
+This is my favorite since it instills a never-ending skepticism. Suddenly there is an infinite-scrolling to-do list.
 
 I keen on regularly asking those questions to myself. They create tension. Sometimes too much. [The only way to relieve this tension is to trigger a forward motion.](/notes/tension-and-forward-motion) Otherwise, they eat me alive. 👹
 
