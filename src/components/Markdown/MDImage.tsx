@@ -16,7 +16,13 @@ const MDImage: React.FC<Props> = ({ src, alt }) => {
   return (
     <Box my={3}>
       <Zoom zoomMargin={96} overlayBgColorEnd={theme.colors.imageZoomBackground}>
-        <Box sx={{ position: 'relative', width: 640, height: 400 }}>
+        <Box
+          sx={{
+            position: 'relative',
+            width: [320, 480, 640],
+            height: [200, 300, 400],
+          }}
+        >
           <Image alt={alt} src={src} layout="fill" className="image-markdown" />
         </Box>
       </Zoom>
