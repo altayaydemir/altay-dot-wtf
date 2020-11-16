@@ -10,6 +10,8 @@ I read, listen, or walk around Volkspark Friedrichshain in my free time.
 
 ### what I enjoy
 
+**using things** that are solving my problems.
+
 **building things** that are solving problems I empathize with.
 
 **creating systems** based on iteration and supported by literature.

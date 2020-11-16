@@ -1,5 +1,5 @@
 ---
-title: Building things with quality
+title: Building things that are solving problems
 date: '2020-11-16T19:21:16Z'
 ---
 
