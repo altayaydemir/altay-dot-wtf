@@ -2,7 +2,7 @@
 title: Manipulation
 date: '2020-11-15T19:56:29Z'
 tags:
-  - seth-godin
+  - marketing
 ---
 
 The definition of manipulation, according to Seth Godin. (which I totally agree with.)

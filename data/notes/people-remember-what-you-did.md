@@ -2,7 +2,7 @@
 title: They remember what you did when they forgot what you said
 date: '2020-11-15T20:11:42Z'
 tags:
-  - seth-godin
+  - marketing
 ---
 
 In the vacuum of today's mistrustful environment, there are three paths we can go while marketing _something_.

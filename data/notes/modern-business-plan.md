@@ -2,7 +2,6 @@
 title: Seth Godin's modern business plan
 date: '2020-11-09T06:57:16Z'
 tags:
-  - seth-godin
   - marketing
   - business
 ---

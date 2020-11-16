@@ -2,7 +2,6 @@
 title: People like us doing things like this
 date: '2020-11-08T14:43:10Z'
 tags:
-  - seth-godin
   - marketing
   - culture
 ---

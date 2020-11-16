@@ -2,7 +2,7 @@
 title: Elite vs. Exclusive
 date: '2020-11-08T14:43:10Z'
 tags:
-  - seth-godin
+  - marketing
 ---
 
 Elite is an external status. \
