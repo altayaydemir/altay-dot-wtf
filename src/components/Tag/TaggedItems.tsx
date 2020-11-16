@@ -89,7 +89,7 @@ const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
     <TaggedItemHeading tag={tag} data={data} />
 
     <Text color="textSecondary" display="inline" fontSize={1}>
-      {data.type}
+      {data.type.split('-').join(' ')}
     </Text>
 
     <Text color="textSecondary" display="inline-block" mx={1}>

@@ -57,7 +57,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
         </Text>
 
         <Text color="textSecondary" display="inline" fontSize={0}>
-          {data.type}
+          {data.type.split('-').join(' ')}
         </Text>
 
         <Text color="textSecondary" display="inline-block" mx={1}>

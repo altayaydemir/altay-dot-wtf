@@ -1,5 +1,5 @@
 ---
-title: Building things, with quality
+title: Building things with quality
 date: '2020-11-16T19:21:16Z'
 ---
 
