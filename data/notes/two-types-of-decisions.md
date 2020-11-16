@@ -3,7 +3,7 @@ title: Two types of decisions
 date: '2020-11-10T20:02:22Z'
 ---
 
-### Fear based decisions
+**Fear based decisions**
 
 We make those out of insecurity. Out of a feeling of scarcity.
 
@@ -16,7 +16,9 @@ You better push the boat out.
 
 This makes people behave frantically and give the control away.
 
-### Growth based decisions
+&nbsp;
+
+**Growth based decisions**
 
 We feel the confidence in our body while making those decisions.
 They are a result of compound interest.

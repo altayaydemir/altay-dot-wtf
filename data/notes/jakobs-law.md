@@ -1,26 +1,15 @@
 ---
-title: Tutanota's non-intuitive email link
+title: Jakob's Law
 date: '2020-11-05T19:50:22Z'
 tags:
-  - jakobs-law
+  - design
 ---
 
-![](/images/notes/tutanota-email-link.mp4)
+Users spend most of their time on other sites, and they prefer your site to work the same way as all the other sites they already know.
 
-I wanted to copy this mail address to sign-up for another newsletter.
+- Users will transfer expectations they have built around one familiar product to another that appears similar.
+- Leveraging existing mental models would help us to create superior experiences that would flatten the learning curve of our service.
+- When introducing re-designs, prefer gradual transitions between the versions. Allow people to keep using the old version so they can try and adapt without completely leaving the product.
 
-I assumed they're rendering emails with
-
-```html
-<a href="mailto:a+vanschneider@aydemir.io">a+vanschneider@aydemir.io</a>
-```
-
-A direct click to that link would open `Mail.app`, which was not my aim.
-
-- I tried to select the text, didn't work.
-- I tried to right click the `a` so I could select `copy link` from the context menu, didn't work.
-- As the last hope, I left clicked to understand what's going on...
-
-It turns out that's a `button`, not an `anchor` tag!
-
-Their consideration is thoughtful, but that's not how the links work. 😐
+### References
+- [Laws of UX](../books/laws-of-ux.md)

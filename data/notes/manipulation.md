@@ -5,7 +5,7 @@ tags:
   - seth-godin
 ---
 
-The definition of manipulation, according to Seth Godin, which I totally agree with.
+The definition of manipulation, according to Seth Godin. (which I totally agree with.)
 
 If people know what you already know &mdash;about your product, your service, and your methods&mdash; would they still be eager to buy from you? (or vote for you 🙂)
 
