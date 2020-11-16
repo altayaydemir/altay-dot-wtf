@@ -60,7 +60,7 @@ _Following days_
 
 5.  Repeat 4 and 5 until I get bored in the loop at some point.
 6.  Stop taking notes in a place where things got intense.
-7.  Finish the book. 
+7.  Finish the book.
 8.  Now I have to go through it again because the note-taking part left behind.
 
 Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
@@ -110,11 +110,11 @@ This approach works better. Yet, sometimes I get side-tracked by the rabbit hole
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
-![Sticky notes from User Friendly](/images/articles/how-do-I-read/how-do-I-read-post-it.jpg)
+![Sticky notes from User Friendly](/images/blog/how-do-I-read/how-do-I-read-post-it.jpg)
 
 Besides that, I started tagging the highlights based on their topic. It's helpful while taking action, which is a learning from another book: _How to Take Smart Notes_.
 
-![Tags](/images/articles/how-do-I-read/how-do-I-read-tags.jpg)
+![Tags](/images/blog/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 

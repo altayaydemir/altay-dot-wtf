@@ -1,11 +1,11 @@
-import type { Article, Content } from 'types'
+import type { BlogPost, Content } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { homeCopy, articlesCopy } from 'config/copy'
+import { homeCopy } from 'config/copy'
 import NextLink from 'next/link'
 import { Box, Heading, Text, Link } from 'rebass'
 import { CgArrowRight } from 'react-icons/cg'
 import { getContentList } from 'core/api/content'
-import ArticleList from 'components/Article/ArticleList'
+import BlogPostList from 'components/BlogPost/BlogPostList'
 import PageHeader from 'components/PageHeader'
 
 type HomeSection = {
@@ -14,11 +14,11 @@ type HomeSection = {
 }
 
 export const getStaticProps: GetStaticProps<{ sections: HomeSection[] }> = async () => {
-  const articles = await getContentList<Article>('article')
+  const blogPosts = await getContentList<BlogPost>('blog-post')
   const sections = [
     {
-      title: articlesCopy.title,
-      data: articles,
+      title: homeCopy.blogPostsTitle,
+      data: blogPosts,
     },
   ]
 
@@ -52,7 +52,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
 
         <Box my={2} />
 
-        <ArticleList data={section.data as Article[]} />
+        <BlogPostList data={section.data as BlogPost[]} />
       </Box>
     ))}
   </>

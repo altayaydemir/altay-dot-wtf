@@ -4,19 +4,22 @@ import { NextSeo } from 'next-seo'
 import { Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import type { Article } from 'types'
+import type { BlogPost } from 'types'
 import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import Feedback from 'components/Feedback'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
-import ArticleImage from 'components/Article/ArticleImage'
+import BlogPostImage from 'components/BlogPost/BlogPostImage'
 
-export const getStaticPaths = getStaticPathsForContent('article')
-export const getStaticProps = getStaticPropsForContentDetails<Article>('article')
+export const getStaticPaths = getStaticPathsForContent('blog-post')
+export const getStaticProps = getStaticPropsForContentDetails<BlogPost>('blog-post')
 
-const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data, links }) => {
+const BlogPostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  data,
+  links,
+}) => {
   useScrollToSource()
 
   if (!data || !links) return null
@@ -38,7 +41,7 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
         }}
       />
 
-      <ArticleImage alt={title} image={data.meta.metaImage} />
+      <BlogPostImage alt={title} image={data.meta.metaImage} />
 
       <Box mb={4} />
 
@@ -71,4 +74,4 @@ const ArticlePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   )
 }
 
-export default ArticlePage
+export default BlogPostPage

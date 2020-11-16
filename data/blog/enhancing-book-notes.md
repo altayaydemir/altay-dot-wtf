@@ -1,7 +1,7 @@
 ---
 title: Enhancing book notes with metadata
 oneliner: You can read, you can code. So why not?
-date: '2020-11-07T15:29:40Z'
+date: '2020-11-09T15:29:40Z'
 tags:
   - software
   - note-taking
@@ -11,7 +11,7 @@ If you like to take notes from the books you read and know a little bit of JavaS
 
 I've been using Apple Notes, Notion, sticky notes, and paper to keep my notes. They were unorganized and hard to index when needed. I moved all to Markdown, and started publishing on this website.
 
-[Taking notes is the hard part](/articles/how-do-I-read).
+[Taking notes is the hard part](/blog/how-do-I-read).
 Once you have them in place, making them look pretty is a joyful task to deal with. That's what I did while building the book pages, without spending too much effort on details. It took me half-a-day to make it legit enough to share as learning in this article.
 
 ### Adding front-matter to Markdown
@@ -53,7 +53,7 @@ const readMarkdownFile = (filePath: string) => {
 
 It's easy to retrieve a lot of information and generate specific meta images by using the ISBN. That is the only identifier we need for the rest. You can check Amazon or Google Books to find it. Amazon usually uses ISBN-10 as a path parameter for the product pages.
 
-![Amazon Product Page](/images/articles/enhancing-book-notes/amazon-isbn.png)
+![Amazon Product Page](/images/blog/enhancing-book-notes/amazon-isbn.png)
 
 ### Using Google Books API for metadata
 
@@ -104,7 +104,7 @@ const fetchBookMetadata = async (isbn: string): Promise<BookData> => {
 
 Now that we have the least relevant information to render a book page, we can take some time to prettify the meta tags. Here's how related services render the meta images related to book pages.
 
-![Amazon and Google Book's meta image](/images/articles/enhancing-book-notes/meta-amazon-google.png)
+![Amazon and Google Book's meta image](/images/blog/enhancing-book-notes/meta-amazon-google.png)
 
 Alright, that is doable with what we have.
 
@@ -181,4 +181,4 @@ And now we have our image. Since it's a Next.js app, I prefer to save it to the 
 
 After injecting the meta images to the book pages, [metatags.io](https://metatags.io) is a great tool to verify how they look.
 
-![Our generated image](/images/articles/enhancing-book-notes/meta-screenshot.png)
+![Our generated image](/images/blog/enhancing-book-notes/meta-screenshot.png)

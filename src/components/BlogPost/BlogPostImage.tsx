@@ -1,14 +1,14 @@
-import type { Article } from 'types'
+import type { BlogPost } from 'types'
 import Image from 'next/image'
 import { Box } from 'rebass'
 import Blurhash from 'components/Blurhash'
 
 type Props = {
   alt: string
-  image: Article['meta']['metaImage']
+  image: BlogPost['meta']['metaImage']
 }
 
-const ArticleImage: React.FC<Props> = ({ alt, image }) => (
+const BlogPostImage: React.FC<Props> = ({ alt, image }) => (
   <Box className="border-radius" sx={{ position: 'relative', overflow: 'hidden' }}>
     <Blurhash value={image.blurhash} />
 
@@ -23,4 +23,4 @@ const ArticleImage: React.FC<Props> = ({ alt, image }) => (
   </Box>
 )
 
-export default ArticleImage
+export default BlogPostImage

@@ -13,8 +13,8 @@ export const HEADER = {
       href: '/now',
     },
     {
-      label: 'articles',
-      href: '/articles',
+      label: 'blog',
+      href: '/blog',
     },
     {
       label: 'notes',

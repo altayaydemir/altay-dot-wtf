@@ -7,7 +7,7 @@ tags:
   - react-native
 ---
 
-This post was redacted by the lovely marketing people of Lisk, and originally published in [medium](https://medium.com/lisk-blog/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-495beb8e6047), [dev.to](https://dev.to/altay/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-2387) and [dzone](https://dzone.com/articles/imessenger).
+This post was redacted by the lovely marketing people of Lisk, and originally published in [medium](https://medium.com/lisk-blog/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-495beb8e6047), [dev.to](https://dev.to/altay/we-built-an-imessage-extension-for-our-react-native-based-mobile-app-now-you-can-too-2387) and [dzone](https://dzone.com/blog/imessenger).
 
 There is [a Github repository](https://github.com/altayaydemir/react-native-imessage-extension) for the code screenshots you will see below.
 

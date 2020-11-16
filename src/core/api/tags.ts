@@ -68,8 +68,8 @@ export const getTaggedItemsByTag = async (tag: string) => {
 
 const getTargetContentLinkRegex = (content: TaggedContent) => {
   switch (content.type) {
-    case 'article':
-      return `/articles/${content.slug}`
+    case 'blog-post':
+      return `/blog/${content.slug}`
     case 'book':
       return `/books/${content.slug}`
     case 'note':
