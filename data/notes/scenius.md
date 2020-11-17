@@ -17,5 +17,4 @@ A scenius is nurtured by several factors[^1]
 - Local tolerance for the novelties
 
 ### References
-
 [^1]: https://kk.org/thetechnium/scenius-or-comm/

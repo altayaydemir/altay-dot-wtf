@@ -19,5 +19,4 @@ Even if you are trying to be an outlier, you are following another outlier.
 **There is no universal culture**. You must pick the audience and ignore everyone else. Focus on building a living story that resonates with their culture.
 
 ### References
-
 - [This is Marketing](../books/this-is-marketing)

@@ -16,5 +16,4 @@ In the vacuum of today's mistrustful environment, there are three paths we can g
 They remember what you did long after they forgot what you said.
 
 ### References
-
 - [This is Marketing](../books/this-is-marketing)

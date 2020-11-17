@@ -10,3 +10,4 @@ Highly influenced by Seth Godin, there are a few things to always keep in mind w
 - [People remember what you did, long after they forgot what you said](./people-remember-what-you-did.md)
 - [People like us doing things like this](./people-like-us.md)
 - [Elite vs Exclusive](./elite-vs-exclusive.md)
+- [Designing for evangelism](./designing-for-evangelism.md)

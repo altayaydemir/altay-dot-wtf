@@ -9,4 +9,5 @@ Each link below could be a good entry-point.
 - [Why we are doing what we are doing](./why-we-are-doing-what-we-are-doing.md)
 - [Using things that are solving my problems](./using-things.md)
 - [Building things that are solving problems I empathize with](./building-things.md)
+- [Culture](./culture)
 - [All notes](/notes/all)
