@@ -1,5 +1,20 @@
 [
   {
+    "title": "The Ad-Based Internet Is About to Collapse. What Comes Next?",
+    "description": "How can we build a better digital public sphere to honor the origins of the internet.",
+    "url": "https://onezero.medium.com/the-ad-based-internet-is-about-to-collapse-what-comes-next-48e31d648a35"
+  },
+  {
+    "title": "Don’t Blame Social Media. Blame Capitalism.",
+    "description": "It's bigger than tech.",
+    "url": "https://jacobinmag.com/2020/09/social-media-platform-capitalism-the-social-dilemma/"
+  },
+  {
+    "title": "The Social Dilemma",
+    "description": "A documentary that investigates how the best minds of our generation are spending their precious willpower: making people click more ads.",
+    "url": "https://thesocialdilemma.com"
+  },
+  {
     "title": "Dark Mode Design",
     "description": "A showcase for good looking dark-mode websites.",
     "url": "https://darkmodedesign.com"
@@ -16,7 +31,7 @@
   },
   {
     "title": "Humane by Design",
-    "description": "A great resource on how to design more ethically humane systems.",
+    "description": "A go-to resource on how to design more ethically humane systems.",
     "url": "https://humanebydesign.com",
     "tags": ["humane-design", "jon-yablonski"]
   },
@@ -27,7 +42,7 @@
   },
   {
     "title": "Andy Matuschak's working notes",
-    "description": "I am amazed by the structure and the user experience. Pushing pages to the right stack looks genuine.",
+    "description": "I'm amazed by the structure and the user experience. Pushing pages to the right stack looks genuine.",
     "url": "https://notes.andymatuschak.org/About_these_notes",
     "tags": ["note-taking"]
   },
@@ -39,7 +54,7 @@
   },
   {
     "title": "My best products are joke",
-    "description": "An article on when and how to use humor in copywriting.",
+    "description": "When and how to use humor in copywriting.",
     "url": "https://vanschneider.com/best-products-joke",
     "tags": ["ux-writing"]
   },
@@ -61,7 +76,7 @@
   },
   {
     "title": "Tutanota",
-    "description": "A conventient email service that I'm using for custom domains.",
+    "description": "A security-first email service I'm using for custom domains.",
     "url": "https://tutanota.com"
   },
   {
