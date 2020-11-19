@@ -38,7 +38,7 @@ export const getMarkdownFileNames = (contentType: ContentType) => {
 }
 
 const transformRelativeMarkdownLinks = (contentType: ContentType, markdown: string) => {
-  const regexMdLinks = /\[([^[]+)\](\(.*\))/gm
+  const regexMdLinks = /\[([^[]+)\](\(.[^)]*\))/gm
   const regexMDLinkURL = /(\(.*\))/gm
   const mdLinks = markdown.match(regexMdLinks)
 
