@@ -1,12 +1,17 @@
 [
   {
+    "title": "The Subtle Art of Not Giving a Fuck",
+    "description": "An excerpt from the most no-bullshit self-help book ever written.",
+    "url": "https://markmanson.net/not-giving-a-fuck"
+  },
+  {
     "title": "The Ad-Based Internet Is About to Collapse. What Comes Next?",
     "description": "How can we build a better digital public sphere to honor the origins of the internet.",
     "url": "https://onezero.medium.com/the-ad-based-internet-is-about-to-collapse-what-comes-next-48e31d648a35"
   },
   {
     "title": "Don’t Blame Social Media. Blame Capitalism.",
-    "description": "It's bigger than tech.",
+    "description": "Surpriseee! It's bigger than tech.",
     "url": "https://jacobinmag.com/2020/09/social-media-platform-capitalism-the-social-dilemma/"
   },
   {
@@ -42,7 +47,7 @@
   },
   {
     "title": "Andy Matuschak's working notes",
-    "description": "I'm amazed by the structure and the user experience. Pushing pages to the right stack looks genuine.",
+    "description": "I'm amazed by the content and structure. Pushing pages to the right stack looks genuine.",
     "url": "https://notes.andymatuschak.org/About_these_notes",
     "tags": ["note-taking"]
   },
@@ -60,12 +65,12 @@
   },
   {
     "title": "Whereby",
-    "description": "A video-conferencing app with a clean design. Works well in the web browser without any hustle and doesn't try to capture all the possible information from guests.",
+    "description": "A video-conferencing app with a clean design. Works well in the web browser with no hustle and doesn't try to capture all the possible information from guests.",
     "url": "https://whereby.com"
   },
   {
     "title": "Intellectual Humility",
-    "description": "An interesting read that investigates why it's hard to realize our own ignorance. The first rule of the Dunning-Kruger club is you don't know that you're a member.",
+    "description": "The first rule of the Dunning-Kruger club is you don't know that you're a member.",
     "url": "https://vox.com/science-and-health/2019/1/4/17989224/intellectual-humility-explained-psychology-replication"
   },
   {
@@ -86,7 +91,7 @@
   },
   {
     "title": "7 Principles of Rich Web Applications",
-    "description": "An article from Vercel's CEO Guillermo Rauch, dates back to 2014. It's fascinating to see where Next.js is now, after reading the ideological origins.",
+    "description": "After reading the ideological origins, it's fascinating to see where Next.js is now.",
     "url": "https://rauchg.com/2014/7-principles-of-rich-web-applications",
     "tags": ["next-js"]
   }

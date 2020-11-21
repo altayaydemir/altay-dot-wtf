@@ -2,16 +2,8 @@ import { Flex, Box, Link } from 'rebass'
 
 const links = [
   {
-    label: 'email',
+    label: 'altay@aydemir.io',
     href: 'mailto:altay@aydemir.io',
-  },
-  {
-    label: 'twitter',
-    href: 'https://twitter.com/altayaydemir',
-  },
-  {
-    label: 'github',
-    href: 'https://github.com/altayaydemir',
   },
 ]
 
