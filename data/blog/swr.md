@@ -12,10 +12,10 @@ It's been several years since the hooks bestowed to the React community. They mi
 
 - We write less code.
 - Hooks use `function`s, therefore, generate less code compared to `class`es.
-- Hooks are completely isolatable from components.
+- Hooks can be completely isolated from components.
 - Hooks help us to make better design decisions by reducing chained conditional operations.
 
-Data fetching is inevitable; most apps don't even work properly if they cannot talk to a server. Asynchronously relying on third parties over side-effects usually comes with challenges:
+Data fetching is inevitable. Most apps don't even work properly if they cannot talk to a server. Relying on side-effects usually comes with challenges:
 
 - Network stability.
 - The never ending tale of unknown payload.

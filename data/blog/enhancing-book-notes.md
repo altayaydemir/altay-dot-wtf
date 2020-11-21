@@ -9,16 +9,16 @@ tags:
 
 If you like to take notes from the books you read and know a little bit of JavaScript, this may help you.
 
-I've been using Apple Notes, Notion, sticky notes, and paper to keep my notes. They were unorganized and hard to index when needed. I moved all to Markdown, and started publishing on this website.
+I've been using Apple Notes, Notion, sticky notes, and paper for my notes. They were unorganized and hard to index when needed. I moved all to Markdown, and started publishing on this website.
 
 [Taking notes is the hard part](/blog/how-do-I-read).
-Once you have them in place, making them look pretty is a joyful task to deal with. That's what I did while building the book pages, without spending too much effort on details. It took me half-a-day to make it legit enough to share as learning in this article.
+Once they are in place, making them look pretty is a joyful task to deal with. That's what I did while building the book pages, without spending too much effort on details. It took me half-a-day to make it legit enough to share in this post.
 
 ### Adding front-matter to Markdown
 
-Before we get to the acrobatics, we need some manual labor to do.
+We need some manual labor to do before we get to the acrobatics.
 
-You can use YAML syntax at the beginning of a Markdown file to define your metadata. There's a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
+We can use YAML syntax at the beginning of a Markdown file to define the metadata. There's a library called `gray-matter` to parse it to JSON so we can use it in the next steps.
 
 ```
 ---
@@ -51,16 +51,16 @@ const readMarkdownFile = (filePath: string) => {
 }
 ```
 
-It's easy to retrieve a lot of information and generate specific meta images by using the ISBN. That is the only identifier we need for the rest. You can check Amazon or Google Books to find it. Amazon usually uses ISBN-10 as a path parameter for the product pages.
+It's easy to retrieve a lot of information and generate specific meta images by using the ISBN. That is the only identifier we need for the rest. Amazon usually uses ISBN-10 as a path parameter for the product pages.
 
 ![Amazon Product Page](/images/blog/enhancing-book-notes/amazon-isbn.png)
 
 ### Using Google Books API for metadata
 
-If you only need essential information like title, authors, and cover image, you can proceed with the [Google Books API](https://developers.google.com/books/).
-I'm not sure if it's a bug or feature, but some endpoints don't need authentication. Obtaining an API key is not that hard as well. You just need to create a Google account and register a new app to use the Books API.
+If we only need essential information like title, authors, and cover image, we can proceed with the [Google Books API](https://developers.google.com/books/).
+Not sure if it's a bug or feature, but some endpoints don't need authentication. Obtaining an API key is not that hard as well. We just need to create a Google account and register a new app to use the Books API.
 
-They have a pretty simple query endpoint that we can pass the ISBN and API keys as parameters. Unfortunately, thumbnail images are low-resolution. So, I double the size during the transformation. It looks a bit ugly, but we can ask for forgiveness from our pixel-perfect friends.
+Google Books has a pretty simple query endpoint that we can pass the ISBN and API keys as parameters. Unfortunately, thumbnail images are low-resolution. It looks a bit ugly, but doubling the dimensions during the transformation can be a solution.
 
 ```ts
 type BookData = {
@@ -108,16 +108,17 @@ Now that we have the least relevant information to render a book page, we can ta
 
 Alright, that is doable with what we have.
 
-In my experience, the easiest way to generate a custom image in the NodeJS context is to use a canvas library. The easiest to use I found is, hold your breath, called `canvas`. I am also using `image-size` to gather the `width` and `height` properties.
+In my experience, the easiest way to generate a custom image in the NodeJS context is to use a canvas library. The easiest to use I found is, hold your breath, called `canvas`. I also use `image-size` to gather the `width` and `height` properties.
 
-Here's how the flow looks like:
+Here's the flow:
 
 - Fetch the metadata from Google Books API.
-- Fetch the thumbnail image.
-- Retrieve the width and height properties.
+- Fetch the thumbnail image as blob.
+- Extract the width and height properties.
 - Create a canvas with the size of the OpenGraph image.
-- Place the thumbnail image in the middle, double the size to make it look bigger.
-- Save the generated image to somewhere, and return the URL.
+- Place the thumbnail in the middle, double the size to make it look bigger.
+- Save the generated image to somewhere.
+- Return the URL.
 
 ```ts
 import { createCanvas, loadImage } from 'canvas'
@@ -177,7 +178,7 @@ const generateMetaImageForBook = (book: BookData) => {
 }
 ```
 
-And now we have our image. Since it's a Next.js app, I prefer to save it to the filesystem. An alternative approach could be uploading it to a CDN.
+Since it's a Next.js app, I prefer to save it to the filesystem. An alternative approach could be uploading to a CDN.
 
 After injecting the meta images to the book pages, [metatags.io](https://metatags.io) is a great tool to verify how they look.
 

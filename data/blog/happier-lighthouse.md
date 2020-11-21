@@ -8,9 +8,9 @@ tags:
   - next-js
 ---
 
-I am building this website with [Next.js](https://nextjs.org) and charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
+I'm building this website with [Next.js](https://nextjs.org) and charmed by the delightful developer experience we get when it's combined with [Vercel](https://vercel.com/).
 
-In addition to eliminating the friction, Vercel also provides [analytics](https://nextjs.org/analytics) and [Lighthouse integration](https://vercel.com/integrations/lighthouse) to monitor how your website is performing when it comes to vital metrics for the user experience.
+In addition to eliminating the friction, Vercel also provides [analytics](https://nextjs.org/analytics) and [Lighthouse integration](https://vercel.com/integrations/lighthouse) to monitor how my website is performing when it comes to vital metrics for the user experience.
 
 And that's precisely what I did right after deploying a bearable version. But the results were not satisfying at all.
 
@@ -18,7 +18,7 @@ And that's precisely what I did right after deploying a bearable version. But th
 
 My minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
-The report is clear, it tells that I am basically making your computer load and parse a bunch of irrelevant JavaScript.
+The report is clear, it tells that I'm basically making your computer load and parse a bunch of irrelevant JavaScript.
 
 ![Lighthouse score details, before the optimization](/images/blog/happier-lighthouse/lighthouse-score-before-detail.png)
 
@@ -43,7 +43,7 @@ And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be de
 
 ![Search results for the error message.](/images/blog/happier-lighthouse/search-results-for-error-message.png)
 
-Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it's time to discover what I am doing wrong.
+Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it's time to discover what I'm doing wrong.
 
 ### How does this website render markdown
 
@@ -73,7 +73,7 @@ const Markdown = ({ children }) => (
 export default Markdown
 ```
 
-That might be a heavy library to load if we are not going to render any code blocks since it contains all the parsing logic with themes and such.
+That might be a heavy library to load if I'm not planning to render any code blocks since it contains all the parsing logic with themes and such.
 
 And as you can guess, the homepage does not contain any code snippets, **which is why Lighthouse is unhappy: the eager load.**
 
@@ -131,4 +131,4 @@ In the end, the performance score of [the home page](/) increased dramatically.
 
 This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I need to render a code editor, such as this post.
 
-Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨s
+Nonetheless, it divides the amount of work while browsing and progressively loads the required code, which is more helpful than not doing it. 🤨

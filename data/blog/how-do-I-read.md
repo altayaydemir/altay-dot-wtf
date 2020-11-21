@@ -12,7 +12,7 @@ Well, hello? 👋
 
 ### The Effortless Aphorisms
 
-I try to solve my problems by attempting radical changes to trigger a chain of reactions. Everyone has a limit on the changes they can make at a time. But you never learn unless you push for it. Starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
+I try to solve my problems by attempting radical changes to trigger a chain of reactions. Everyone has a limit on the changes they can make at a time. But we never learn unless we push for it. Starting to do something from nothing wouldn't count as a revolution. It's a reformation of how we live.
 
 I tried to start a new way of doing things when I moved to a new country two years ago. I began to walk around the neighborhood while listening to podcasts like _The Knowledge Project_ and _Tim Ferriss Show_. I still recognize the cobblestones I was stepping while getting astonished by the wisdom of people like _Naval Ravikant_, _Seth Godin_, and _Derek Sivers_. Every sentence that came out from their mouth was like effortless aphorisms.
 
@@ -31,20 +31,17 @@ As a start, I took several topics to get better and use reconnaissance along the
 - **Product/service design**: to understand both people and issues.
 - **Software engineering**: a great form of leverage and absorbs all the points above.
 
-During the past two years, I tried to read every day and take notes with a roughly 60% success rate.
-That made me read around [50 books](/books) and learn many things, which I attempted to integrate into my life.
-Some worked well; many I haven't figured out how to use.
+During the past two years, I tried to read every day and take notes with a roughly 60% success rate. That made me read around [50 books](/books) and learn many things, which I attempted to integrate into my life. Some worked well; many I haven't figured out how to use.
 
-I'm at the beginning and feeling like there won't be any spot for me to say "halfway there." No matter what, I rejoice in the process. It's much more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds. I've done that during the quarantine and lost half of them.
+I'm at the beginning and feeling like there won't be any spot for me to say "halfway there." No matter what, I rejoice in the process. It's more pleasant than playing 300 games of League of Legends with a bunch of 12-year-olds. I also did that during the quarantine and lost half of them.
 
-I appreciate the existence of more people like me.
-A good nudge to get out of bed is to find a way to help them solve their problems.
+I appreciate the existence of more people like me. A good nudge to get out of bed is to find a way to help them solve their problems.
 
 Here we go.
 
 ### "This is my original storino, please no copy pasterino."
 
-The note-taking ceremony started by underlining everything that made sense to me. I was new to the literature, so that was a lot of highlights. After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or rewriting what the book says.
+The note-taking ceremony started by underlining everything that made sense to me. I was new to the literature, that means a lot of highlights. After finishing a chapter, I was either copy-pasting highlights from the Kindle to a document or rewriting what the book says.
 
 In summary, that's how the process looked like:
 
@@ -63,7 +60,7 @@ _Following days_
 7.  Finish the book.
 8.  Now I have to go through it again because the note-taking part left behind.
 
-Learning through repetition might be a good idea, but that was a bit dull and easy to give up.
+Learning through repetition is a good idea. But that was a bit dull and easy to give up.
 
 The best-case outcome of this approach:
 
@@ -76,11 +73,11 @@ That was a positive start for awareness, yet not practical.
 
 ### "Do you read me?"
 
-Like the beginning of this story, it didn't take long to conclude that my method was inefficient. I could understand what I am reading by the time I am reading, but little remnants after a couple of months. The timesheets were filling up, but the notes were unavailing.
+Like the beginning of this story, it didn't take long to conclude that my method was inefficient. I could understand what I'm reading by the time I'm reading. Yet, little remnants after a couple of months. The time-sheets were filling up, but my notes were unavailing.
 
 They lacked two things: **interpretation** and **internalization**.
 
-Then I decided to try out more concrete approaches.
+Then I decided to try more concrete approaches.
 
 #### Shorter notes, with my own words
 
@@ -89,10 +86,10 @@ Then I decided to try out more concrete approaches.
 > &mdash; **Scott Young** (Ultralearning)
 
 We memorize our actions better compared to what we perceive.
-Connecting the dots is much easier if you are the one who places them.
+Connecting the dots is much easier if we are the one who place them.
 So the intention is to build a simple mental modal of what each chapter says.
 
-So here's what I am trying to do:
+So here's what I'm trying to do:
 
 1.  Take byte-sized notes while reading.
 2.  Chunk by topic.
@@ -106,7 +103,7 @@ Here's an example from [_Make Time_](/books/make-time).
 
 ![Random page from Make Time](/images/books/make-time/make-time-08.jpg)
 
-This approach works better. Yet, sometimes I get side-tracked by the rabbit hole called the internet. My other strategy is going all-in on paper. Sticky notes are good for logistics.
+This approach works better. Still, sometimes I get side-tracked by the rabbit hole called the internet. The other strategy is going all-in on paper. Sticky notes are great for logistics.
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
@@ -118,7 +115,7 @@ Besides that, I started tagging the highlights based on their topic. It's helpfu
 
 #### Listen to what other readers say
 
-The social aspect is sabotaged by the pandemic, and there's not much to do about it. I read online discussions and listen to podcast episodes related to the books I am reading. It also helps discovering new mediums to get recommendations.
+The social aspect is sabotaged by the pandemic, and there's not much to do about it. I read online discussions and listen to podcast episodes related to the books I'm reading. It also helps to discover new mediums to get recommendations.
 
 Those try-outs are making an impact. I remember and think more about what I read and what to do with them. Yet, I haven't done much yet. That brings the next adversity: awareness of insufficient use.
 
@@ -132,7 +129,7 @@ Now we arrived at a decent spot to sneak in this famous quote.
 
 Do you remember what those _heroic_ people I bowed at the beginning had in common?
 
-Good, now it's your turn. The most effective internalization happens when we craft tangible things with what we learn. Make use of them. There's no other way than taking action.
+Good, now it's our turn. The most effective internalization happens when we craft tangible things with what we learn. We have to make use of them. There's no other way than taking action.
 
 A great book would make us want to do something, and there are many out there.
 
