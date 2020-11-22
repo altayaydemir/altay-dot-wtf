@@ -48,3 +48,45 @@ Put brackets to components that are not doing useful work.
 Re-read without the components in brackets. Keep, eliminate, or rewrite.
 
 > Are you hanging on to something useless just because you think it's beautiful?
+
+## Principles: Style
+
+> Nobody becomes Thom Wolfe overnight, not even Thom Wolfe.
+
+Readers want the person talking to them to sound genuine. They will notice if you are putting on airs.
+
+They are the two most unrealistic demands from a writer but, relax and be confident.
+
+Be yourself. Writing in the first person is the most natural form. Don't be afraid to say "I".
+
+They will care about your opinions if you tell them something interesting. Never write anything you wouldn't comfortably say in a conversation.
+
+If you are not allowed to use "I," write the first draft with it, then take it out. Yet, avoiding the "I" form is a reflection of the organizational or political tones.
+
+Good writers are visible behind the words. Writing is an act of ego, and you might as well admit it. Use its energy to keep yourself going.
+
+## Principles: Audience
+
+You are writing for yourself. Don't try to visualize the great mass audience. Don't hesitate to use humor by worrying if the readers will get it.
+
+#### Craft: The Mechanical Act
+
+It's for the reader. Know your tools; keep it simple, so they don't give up. There's no excuse for losing readers due to sloppy craft.
+
+#### Attitude: The Creative Act
+
+It's who you are, what you say, and how you say it. It's OK to lose readers due to who you are. You'll either get along or not.
+
+## Principles: Words
+
+Words are the only tools you got. Choose them considerately. If you find yourself writing that someone enjoyed an illness or a business enjoyed going bankrupt, ask your self how much they really did.
+
+Readers read with their eyes, but they hear what you write in their inner ears. Learning synonyms and acronyms would help you to establish a rhythm and alliteration.
+
+An occasional short sentence can carry a tremendous punch. It stays in the readers' ear.
+
+## Principles: Usage
+
+Choose plain words –if they already exist– to express yourself clearly to anyone.
+
+> I don't want to give somebody my input and get their feedback, though I would be glad to offer my ideas and hear what they think of them.
