@@ -14,7 +14,7 @@ const BlogPostList: React.FC<Props> = ({ data }) => (
       <Box key={b.slug} mb={4}>
         <NextLink href={`/blog/${b.slug}`} passHref>
           <Link>
-            <ContentTitle fontSize={2} meta={b.meta} />
+            <ContentTitle tag="h3" fontSize={2} meta={b.meta} />
           </Link>
         </NextLink>
 

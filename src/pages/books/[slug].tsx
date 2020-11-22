@@ -39,7 +39,7 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box m={2} />
 
         <Box>
-          <ContentTitle fontSize={[1, 2, 3]} fontWeight="800" meta={data.meta} />
+          <ContentTitle tag="h1" fontSize={[1, 2, 3]} fontWeight="800" meta={data.meta} />
           <Box my={2} />
           <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={[0, 1]} />
           <Tags tags={data.meta.tags} />

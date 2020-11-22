@@ -35,9 +35,12 @@ const BlogPostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
         openGraph={{
           title,
           description,
-          images: data.meta.metaImage
-            ? [{ ...data.meta.metaImage, alt: title, url: SITE_URL + data.meta.metaImage.url }]
-            : [],
+          images: [{ ...data.meta.metaImage, alt: title, url: SITE_URL + data.meta.metaImage.url }],
+          type: 'article',
+          article: {
+            authors: ['Altay Aydemir'],
+            modifiedTime: data.meta.date,
+          },
         }}
       />
 
@@ -45,7 +48,7 @@ const BlogPostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = (
 
       <Box mb={4} />
 
-      <ContentTitle fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
+      <ContentTitle tag="h1" fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
 
       <Box my={2} />
 

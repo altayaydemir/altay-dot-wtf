@@ -21,7 +21,7 @@ const PageHeader: React.FC<Props> = ({ title, metaTitle, description, metaDescri
         openGraph={{ title: seoTitle, description: seoDescription }}
       />
 
-      <Heading as="h2" fontSize={3}>
+      <Heading as="h1" fontSize={3}>
         {title}
       </Heading>
 

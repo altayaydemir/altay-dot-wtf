@@ -7,7 +7,7 @@ import NavLink from './NavLink'
 const HeaderDesktop: React.FC<{ currentPathname: string }> = ({ currentPathname }) => (
   <Flex margin="auto" alignItems="center" justifyContent="space-between" width={MOBILE_BREAKPOINT}>
     <Link href="/" passHref>
-      <Heading fontSize={2} color="text" sx={{ cursor: 'pointer' }}>
+      <Heading as="span" fontSize={2} color="text" sx={{ cursor: 'pointer' }}>
         {HEADER.title}
       </Heading>
     </Link>

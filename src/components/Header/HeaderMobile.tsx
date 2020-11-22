@@ -28,7 +28,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
         <Box mx={2} />
 
         <Link href="/" passHref>
-          <Heading fontSize={1} color="text" sx={{ cursor: 'pointer' }}>
+          <Heading as="span" fontSize={1} color="text" sx={{ cursor: 'pointer' }}>
             {HEADER.title}
           </Heading>
         </Link>
