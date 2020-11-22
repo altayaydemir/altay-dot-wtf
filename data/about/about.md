@@ -4,9 +4,9 @@ date: '2020-11-04'
 
 I live in Berlin and work at [Klarna](https://klarna.com) as a software engineer.
 
-I also work on other things on the side; the most prominent is [put.io](https://put.io).
+I also work on other projects on the side; the most prominent is [putio](https://put.io).
 
-I read, listen, or walk around Volkspark Friedrichshain in my free time.
+I read, listen, or have a conversation with [this turtle statue in Volkspark Friedrichshain](https://www.google.com/maps/place/Volkspark+Friedrichshain/@52.5280353,13.4363934,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3%3Dw203-h308-k-no!7i2164!8i3291!4m5!3m4!1s0x47a84e126b6e2efd:0xc281c457bba00f76!8m2!3d52.5280353!4d13.4363934) in my free time.
 
 ### what I enjoy
 
@@ -16,7 +16,7 @@ I read, listen, or walk around Volkspark Friedrichshain in my free time.
 
 **creating systems** based on iteration and supported by literature.
 
-**consistently changing** jobs, teams, projects, whatever. getting better at knowing when to quit and find somewhere else where I can be *more* useful.
+**consistent change.** getting better at knowing when to quit and find somewhere else where I can add _more_ value.
 
 ### who I admire
 
@@ -32,11 +32,11 @@ austin kleon, brian lovin, andy j. pizza
 **hacker three**\
 guillermo rauch, scott wlatschin, dan abramov
 
-**on-screen three**\
-phoebe waller-bridge, ricky gervais, louis ck
-
 **in-ear three**\
 christian löffler, hælos, jakuzi
+
+**on-screen three**\
+phoebe waller-bridge, ricky gervais, louis ck
 
 ### what I did
 

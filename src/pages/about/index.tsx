@@ -26,7 +26,7 @@ const sx: SxStyleProp = {
 
 const AboutPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
-    <PageHeader title="about me" />
+    <PageHeader title="what I do" />
 
     <Box sx={sx}>
       <Markdown>{markdown}</Markdown>
