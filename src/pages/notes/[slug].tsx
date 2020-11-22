@@ -1,11 +1,10 @@
 import { InferGetStaticPropsType } from 'next'
 import type { Note } from 'types'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import { Box, Heading, Text } from 'rebass'
+import { Box, Heading } from 'rebass'
 import { NextSeo } from 'next-seo'
 import Markdown from 'components/Markdown'
 import Tags from 'components/Tag/Tags'
-import { format, formatDistanceToNow } from 'date-fns'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
 
@@ -25,13 +24,9 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         {data.meta.title}
       </Heading>
 
-      <Box my={1} />
-
-      <Text fontSize={1} color="textTertiary" title={format(new Date(data.meta.date), 'PPP')}>
-        {'updated '} {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })}
-      </Text>
-
       {data.meta.tags ? <Tags tags={data.meta.tags} /> : null}
+
+      <Box m={2} />
 
       <Markdown>{data.markdown}</Markdown>
 

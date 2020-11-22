@@ -19,11 +19,13 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
       {data.map((book) => (
         <Box key={book.slug} my={4}>
           <Flex>
-            <NextLink href={`/books/${book.slug}`} passHref>
-              <a title={book.meta.title}>
-                <BookCover bookMeta={book.meta} width={120} />
-              </a>
-            </NextLink>
+            <Box minWidth={[100, 120]}>
+              <NextLink href={`/books/${book.slug}`} passHref>
+                <a title={book.meta.title}>
+                  <BookCover bookMeta={book.meta} />
+                </a>
+              </NextLink>
+            </Box>
 
             <Box m={2} />
 

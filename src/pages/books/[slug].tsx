@@ -32,7 +32,9 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       />
 
       <Flex>
-        <BookCover bookMeta={data.meta} />
+        <Box minWidth={[120, 140]}>
+          <BookCover bookMeta={data.meta} />
+        </Box>
 
         <Box m={2} />
 

@@ -10,6 +10,7 @@ const Layout: React.FC = ({ children }) => (
     {children}
     <Box m={6} />
     <Footer />
+    <Box m={3} />
   </Box>
 )
 

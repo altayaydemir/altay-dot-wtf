@@ -62,7 +62,6 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   .image-markdown {
-    object-fit: contain;
     background-color: ${theme.colors.background};
   }
 `

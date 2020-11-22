@@ -23,7 +23,7 @@ const MDImage: React.FC<Props> = ({ src, alt }) => {
             height: [200, 300, 400],
           }}
         >
-          <Image alt={alt} src={src} layout="fill" className="image-markdown" />
+          <Image className="image-markdown" alt={alt} src={src} layout="fill" objectFit="contain" />
         </Box>
       </Zoom>
     </Box>

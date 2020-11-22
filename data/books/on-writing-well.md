@@ -7,7 +7,7 @@ tags:
   - writing
 ---
 
-I got the recommendation from [this blog post of DHH](https://signalvnoise.com/posts/3375-the-five-programming-books-that-meant-most-to-me). As a non-native English speaker trying to express himself, I think it's a helpful reference. I'm not familiar with American literature. Yet, it's evident that Zinsser is one of the best authors of non-fiction writing. He's also a wise teacher and an admirable New Yorker.
+I got the recommendation from [this list of DHH](https://signalvnoise.com/posts/3375-the-five-programming-books-that-meant-most-to-me). As a non-native English speaker trying to express himself, I think it's a helpful reference. I'm not familiar with American literature. Yet, it's evident that Zinsser is one of the best authors of non-fiction writing. He's also a wise teacher and an admirable New Yorker.
 
 _On Writing Well_ has four main sections: _Principles, Methods, Forms,_ and _Attitudes_. The first two focuses more on the fundamentals of non-fiction writing. They help to build checklists and taking action. The latter two are about shaping identity as a non-fiction writer. They contain many examples, analyses, and advice around the mindset. **"I'm more interested in the intangibles that produce good writing—confidence, enjoyment, intention, integrity,"** with his words.
 
