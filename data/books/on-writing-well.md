@@ -11,7 +11,7 @@ I got the recommendation from [this blog post of DHH](https://signalvnoise.com/p
 
 _On Writing Well_ has four main sections: _Principles, Methods, Forms,_ and _Attitudes_. The first two focuses more on the fundamentals of non-fiction writing. They help to build checklists and taking action. The latter two are about shaping identity as a non-fiction writer. They contain many examples, analyses, and advice around the mindset. **"I'm more interested in the intangibles that produce good writing—confidence, enjoyment, intention, integrity,"** with his words.
 
-## Principles: The Transaction
+## Principle: The Transaction
 
 Writing is not an art; it's a craft. You must show up and write every day.
 
@@ -19,7 +19,7 @@ Any writer's product has to sell is not the subject written about, but who they 
 
 Rewriting is the essence of writing.
 
-## Principles: Simplicity
+## Principle: Simplicity
 
 Declutter every element that isn't contributing to the cause.
 
@@ -29,7 +29,7 @@ An average reader has an attention span of 30 seconds, and there's a galaxy of d
 
 If readers can't keep up, they blame themselves. Then they try to demystify the sentences and make a guess to move on. They, however, won't do that for too long.
 
-## Principles: Clutter
+## Principle: Clutter
 
 > Every profession has its growing arsenal of jargon to throw dust in the eyes of the populace.
 
@@ -49,7 +49,7 @@ Re-read without the components in brackets. Keep, eliminate, or rewrite.
 
 > Are you hanging on to something useless just because you think it's beautiful?
 
-## Principles: Style
+## Principle: Style
 
 > Nobody becomes Thom Wolfe overnight, not even Thom Wolfe.
 
@@ -65,7 +65,7 @@ If you are not allowed to use "I," write the first draft with it, then take it o
 
 Good writers are visible behind the words. Writing is an act of ego, and you might as well admit it. Use its energy to keep yourself going.
 
-## Principles: Audience
+## Principle: Audience
 
 You are writing for yourself. Don't try to visualize the great mass audience. Don't hesitate to use humor by worrying if the readers will get it.
 
@@ -77,7 +77,7 @@ It's for the reader. Know your tools; keep it simple, so they don't give up. The
 
 It's who you are, what you say, and how you say it. It's OK to lose readers due to who you are. You'll either get along or not.
 
-## Principles: Words
+## Principle: Words
 
 Words are the only tools you got. Choose them considerately. If you find yourself writing that someone enjoyed an illness or a business enjoyed going bankrupt, ask your self how much they really did.
 
@@ -85,7 +85,7 @@ Readers read with their eyes, but they hear what you write in their inner ears. 
 
 An occasional short sentence can carry a tremendous punch. It stays in the readers' ear.
 
-## Principles: Usage
+## Principle: Usage
 
 Choose plain words –if they already exist– to express yourself clearly to anyone.
 
