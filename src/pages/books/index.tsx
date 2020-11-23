@@ -43,7 +43,7 @@ const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ d
               <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />
 
               <Text fontSize={[0, 1]} fontStyle="italic" color="textTertiary">
-                {book.meta.oneliner}
+                &quot;{book.meta.oneliner}&quot;
               </Text>
             </Box>
           </Flex>
