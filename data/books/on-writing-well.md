@@ -92,3 +92,5 @@ An occasional short sentence can carry a tremendous punch. It stays in the reade
 Choose plain words –if they already exist– to express yourself clearly to anyone.
 
 > I don't want to give somebody my input and get their feedback, though I would be glad to offer my ideas and hear what they think of them.
+
+🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸

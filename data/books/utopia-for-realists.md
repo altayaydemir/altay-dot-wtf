@@ -13,7 +13,7 @@ Average salaries are way higher, and less people die from diseases. Between 1994
 
 ### Medieval Utopia
 
-If you've asked mediaval civilizations to describe an utopia, it'll be something like "Land of Plenty" (Cocknaigne). But we are already in some sort of a land of plenty.
+If you've asked medieval civilizations to describe an utopia, it'll be something like "Land of Plenty" (Cocknaigne). But we are already in some sort of a land of plenty.
 
 - 7/24 fast food
 - Climate control
@@ -23,7 +23,7 @@ If you've asked mediaval civilizations to describe an utopia, it'll be something
 
 It's an era which biblical prophecies came true. Blind people are starting to see. Cripple people are starting to walk.
 
-**But it's a bleak paradise.** There's a cruical thing we are lacking: a reason to get out of the bed. We stopped making progress, which is the realization of utopias. We can't imagine a better world because there's no dream to replace the current state. Children born today will be worse off than their parents.
+**But it's a bleak paradise.** There's a crucial thing we are lacking: a reason to get out of the bed. We stopped making progress, which is the realization of utopias. We can't imagine a better world because there's no dream to replace the current state. Children born today will be worse off than their parents.
 
 **Two forms of an utopian thought**
 
@@ -36,11 +36,11 @@ It's an era which biblical prophecies came true. Blind people are starting to se
 
 - Food industry supplies unhealthy foods, and we go to the doctor.
 - Tech creates more jobs, and obsolete people go back to career coaches.
-- Industry encourages to spend more for happiness, and we end up crying on therapists' shouldres.
+- Industry encourages to spend more for happiness, and we end up crying on therapists' shoulders.
 
 #### The papered generation
 
-"You can become everyhing you want, you are special" mindset brought up a narcisistic diet, and we crash and burn when facing "the big world". More competition, more unemployment, and more anxiety.
+"You can become everything you want, you are special" mindset brought up a narcissistic diet, and we crash and burn when facing "the big world". More competition, more unemployment, and more anxiety.
 
 #### True progress
 
@@ -63,20 +63,22 @@ Several experiments in London and a small town in Canada shown the "basic income
 
 For the first time in the history, we are actually rich.
 
-Eradicating powerty in US would cost 175 billion $, which is less than 1% of GDP and 1/4 of US military spending. Only the Afghanistan and Iraq wars costed $4-\$6 trillion.
+Eradicating poverty in US would cost 175 billion $, which is less than 1% of GDP and 1/4 of US military spending. Only the Afghanistan and Iraq wars costed $4-\$6 trillion.
 
 Approximate comparison applies most of the developed countries.
 
 ### Is it dangerous?
 
 - Artists and writers won't have to work in day jobs.
-- People wouuld be unhappy if they don't work.
-- It would help unvoluntary employments to vanish.
+- People would be unhappy if they don't work.
+- It would help involuntary employments to vanish.
 
 ### Some history
 
-Raegan was going to pass the law but it came back from the snate, even though the congress approved.
+Raegan was going to pass the law but it came back from the senate, even though the congress approved.
 
-Nixon's free market enthusiast advisor gives him a 6-page document and it changes his mind. There was a bullshit shory from England (Speedhamland) in this document, which tells UBI didn't work out.
+Nixon's free market enthusiast advisor gives him a 6-page document and it changes his mind. There was a bullshit story from England (Speedhamland) in this document, which tells UBI didn't work out.
 
-To make sure they solve the "joblessness" situation, he attached the obligatory registartion to job center point to his 1600\$/m basic income bill. But it didn't pass.
+To make sure they solve the "joblessness" situation, he attached the obligatory registration to job center point to his 1600\$/m basic income bill. But it didn't pass.
+
+🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
