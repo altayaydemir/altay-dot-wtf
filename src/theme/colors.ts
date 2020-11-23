@@ -1,3 +1,5 @@
+import { lighten, darken } from 'polished'
+
 export const COLORS_LIGHT = {
   background: '#fcfcfc',
   backgroundSecondary: '#f6f6f9',
@@ -8,6 +10,7 @@ export const COLORS_LIGHT = {
   textInlineCode: '#2f3037',
   textWhite: '#FBFBFB',
   linkPrimary: '#007AFF',
+  linkHover: darken(0.1, '#007AFF'),
   linkBackground: '#F1F5FC',
   borderHR: '#F1F5FC',
   borderMenu: '#F1F5FC',
@@ -30,6 +33,7 @@ export const COLORS_DARK: Colors = {
   textInlineCode: '#DEDFE5',
   textWhite: '#FBFBFB',
   linkPrimary: '#F7C744',
+  linkHover: lighten(0.15, '#F7C744'),
   linkBackground: '#222222',
   borderHR: '#565656',
   borderMenu: 'rgba(130, 130, 130, 0.01)',

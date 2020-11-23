@@ -26,7 +26,7 @@ const BlogPostList: React.FC<Props> = ({ data }) => (
 
         <Box m={1} />
 
-        <Text fontSize={1} color="textTertiary">
+        <Text fontSize={0} color="textTertiary">
           {'updated '}
           {formatDistanceToNow(new Date(b.meta.date), { addSuffix: true })}
           <Box display="inline" mx={1}>
