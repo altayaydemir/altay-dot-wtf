@@ -15,7 +15,4 @@ export const headerStyle: SxStyleProp = {
   '& > *': {
     lineHeight: 1,
   },
-  '& > * > a:hover': {
-    textDecoration: 'none',
-  },
 }

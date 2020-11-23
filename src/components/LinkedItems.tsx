@@ -50,7 +50,7 @@ const itemStyle: SxStyleProp = {
 
 const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
   <NextLink href={getURLForContent(data, slug)} passHref>
-    <Link href={getURLForContent(data, slug)} sx={{ '&:hover': { textDecoration: 'none' } }}>
+    <Link href={getURLForContent(data, slug)}>
       <Box sx={itemStyle} p={2}>
         <Text color="linkPrimary" fontSize={1} fontWeight="bold">
           {getTitle(data)}
