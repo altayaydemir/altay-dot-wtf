@@ -315,3 +315,57 @@ make sensitive information known.
 _But while apps may need this information to run their services effectively, they may also profit from the data users divulge._
 
 [The Markup: How Private is My Pay App](https://themarkup.org/ask-the-markup/2020/11/12/how-private-is-my-pay-app)
+
+### impromptu
+
+without being planned, organized, or rehearsed.
+
+_Email is an impromptu medium, not conductive to slowing down or looking back._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### intangibles that produce <x>
+
+_I am more interested in the intangibles that produce good writing_
+
+[On Writing Well](../books/on-writing-well.md)
+
+### growing arsenal of <x>
+
+_Every profession has its growing arsenal of jargon._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### throwing dust in the eyes of someone
+
+_Every profession has its growing arsenal of jargon to throw dust in the eyes of the populace._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### <x> can carry <y>
+
+_A short sentence can carry a tremendous punch._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### <x> is the anchor of <y>
+
+_Unity is the anchor of good writing._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### being thick with <x>
+
+_Our daily landscape is thick with absurd messages._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### cajole
+
+to persuade.
+
+_It must cajole them with freshness._
+
+[On Writing Well](../books/on-writing-well.md)
+
+### distortion of reality

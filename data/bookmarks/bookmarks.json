@@ -1,5 +1,10 @@
 [
   {
+    "title": "*privacy not included",
+    "description": "Privacy inspection for the digital products that connect to our digital identities.",
+    "url": "https://foundation.mozilla.org/en/privacynotincluded/"
+  },
+  {
     "title": "switching.software",
     "description": "Ethical alternatives to well-known software products.",
     "url": "https://switching.software"

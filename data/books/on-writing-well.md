@@ -93,4 +93,56 @@ Choose plain words –if they already exist– to express yourself clearly to an
 
 > I don't want to give somebody my input and get their feedback, though I would be glad to offer my ideas and hear what they think of them.
 
-🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
+## Methods: Unity
+
+Unity is the anchor of good writing.
+
+#### Unity of pronoun
+
+You can speak as a first-person, participant, third person, or an observer.
+
+#### Unity of tense
+
+Don't switch back and forth too much. Pick the principal tense and make it prominent. If that's clear, then small switches would be alright.
+
+#### Unity of mood
+
+Any tone is acceptable. Just don't mix two or three.
+
+#### Questions to ask
+
+**In what capacity am I going to address the reader?**
+Reporter? Provider of information? Average person?
+
+**What pronoun and tense am I going to use?**
+
+**What style?**
+Impersonal reportorial? Personal but formal? Personal and casual?
+
+**What attitude am I going to take toward the material?**
+Involved? Detached? Judgmental? Ironic? Amused?
+
+**How much do I want to cover?**
+Don't feel an obligation to save the world. Think small. Decide what corner of the subject you are going to cover. Just make your point and look for the nearest exit.
+
+**What point do I want to make?**
+Every successful piece of nonfiction should leave the readers with one provocative thought that they don't have before. Not two thoughts, or five - just one. So decide what single point you want to leave in the reader's mind.
+
+## Methods: The Lead and the Ending
+
+The most important sentence in any article is the first one. Readers want to know –very soon– what's in for them. Therefore the lead must capture the readers immediately and force them to keep reading. It must cajole them with freshness, or novelty, or paradox, or humor, or surprise, or with an unusual idea, or an interesting fact, or a question. Anything will do, as long as it nudges their curiosity.
+
+> I've often wondered what goes into a hot dog. Now I know, and I wish I didn't.
+
+For the ending, if you have presented what you got and made your point, then stop. Surprise is the most refreshing element in non-fiction writing. The perfect ending would take readers slightly by surprise and yet seem exactly right.
+
+Tips for ending
+
+- Bring the story to full circle. Strike at the end an echo of a note that sounded at the beginning.
+- Use quotation with a sense of finality, humor, or that adds an unexpected closing detail.
+
+#### Some general tips
+
+Always collect more material than you will use.
+
+Look for material everywhere, not just by reading obvious resources. Our daily landscape is thick with absurd messages; notice them.
