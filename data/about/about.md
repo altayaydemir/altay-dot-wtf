@@ -4,7 +4,7 @@ date: '2020-12-01'
 
 I live in Berlin and work at [Klarna](https://klarna.com) as a software engineer.
 
-I also work on other projects on the side; the most prominent is [putio](https://put.io).
+I sometimes work on other things on the side; the most prominent is [putio](https://put.io).
 
 I read, listen, or have a silent conversation with [this turtle statue in Volkspark Friedrichshain](https://www.google.com/maps/place/Volkspark+Friedrichshain/@52.5280353,13.4363934,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3%3Dw203-h308-k-no!7i2164!8i3291!4m5!3m4!1s0x47a84e126b6e2efd:0xc281c457bba00f76!8m2!3d52.5280353!4d13.4363934) in my free time.
 
@@ -40,6 +40,9 @@ christian löffler, hælos, jakuzi
 
 **on-screen three**\
 phoebe waller-bridge, ricky gervais, louis ck
+
+**close-circle three**\
+[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), [berk capar](https://berk.studio)
 
 ### what I did
 
