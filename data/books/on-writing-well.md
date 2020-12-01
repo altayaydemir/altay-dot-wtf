@@ -146,3 +146,39 @@ Tips for ending
 Always collect more material than you will use.
 
 Look for material everywhere, not just by reading obvious resources. Our daily landscape is thick with absurd messages; notice them.
+
+## Methods: Bits & Pieces
+
+Use active verbs unless there is no comfortable way to get around using a passive verb. "Joe saw him" is strong. "He was seen by Joe" is weak. The first is short and precise; it leaves no doubt about who did what.
+
+Most adverbs are unnecessary. You will clutter your sentence and annoy the reader if you choose a verb with a specific meaning and then add an adverb that carries the same purpose. "Effortlessly easy."
+
+Most adjectives are also unnecessary. Adjectives like "yellow daffodils" and "brownish dirt" add no value to the meaning. If you're in a part of the country where the dirt is red, feel free to mention red dirt. The adjective that exists solely as a decoration is self-indulgence for the writer and a burden for the reader.
+
+Prune out the small words that qualify how you feel and how you think and what you saw ("a bit," "a little," "sort of," "kind of," etc.) Don't say you were a bit confused and sort of tired and a little depressed and somewhat annoyed. There is no need to call someone very methodical. Either he is methodical, or he isn't.
+
+### Punctuation
+
+The Period. If you want to write long sentences, make sure that the sentence is under control from beginning to end, in syntax and punctuation, so that the reader knows where he is at every step of the winding trail. Just like this one! He does this lead by example things a lot.
+
+The Exclamation Point. Don't use it unless you must to achieve a certain effect. Resist using an exclamation point to notify the reader that you are making a joke or being ironic. They are annoyed by your reminder that this was a comical moment. They are also robbed of the pleasure of finding it funny on their own. Humor is best when achieved by understatement, and there's nothing subtle about an exclamation point.
+
+The Dash is used in two ways. One is to amplify or justify the second part of the sentence a thought you stated in the first part. "We decided to keep going–it was only 100 miles more and we could get there in time for dinner." The other use involves two dashes, which set apart a parenthetical though within a longer sentence.
+
+### Mood changers
+
+Learn to alert the reader as soon as possible to any change in mood from the previous sentence. At least a dozen words will do this job for you: "but," "yet," "however," "nevertheless," "still," "instead," "thus," "therefore," "meanwhile," "later," "today," "subsequently," and more.
+
+Many of us were taught that no sentence should begin with "but." If that's what you learned, unlearn it–there's no stronger word at the start. It announces total contrast with what has gone before, and the reader is thereby primed for the change.
+
+If you have too many sentences starting with "but," switch to "however." It is, however, a weaker word and needs careful placement. Don't start or end with "however."
+
+"Yet" does almost the same job as "but," though its meaning is closer to "nevertheless." At the beginning of a sentence, either of those words can replace a whole long phrase that summarizes what the reader has just been told. "Despite the fact that all these dangers had been pointed out to him, he decided to go." -> "Yet he decided to go."
+
+### Contractions
+
+Your style will be warmer and truer to your personality if you use contractions like "I'll" and "won't" and "can't." Only avoid form "I'd"; hence it can mean both "I had" and "I would."
+
+### That and Which
+
+Always use "that" unless it makes your meaning ambiguous. If your sentence needs a comma to achieve its precise meaning, it probably needs "which."
