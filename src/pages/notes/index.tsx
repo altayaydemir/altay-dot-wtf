@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType } from 'next'
+import type { Note } from 'types'
 import { getContentDetails } from 'core/api/content'
 import PageHeader from 'components/PageHeader'
-import type { Note } from 'types'
 
 export const getStaticProps = async () => ({
   props: await getContentDetails<Note>('note', 'notes'),

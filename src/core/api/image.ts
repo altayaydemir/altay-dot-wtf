@@ -1,5 +1,5 @@
-import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
 import type { MetaImage } from 'types'
+import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
 import { join } from 'path'
 import fs from 'fs'
 import imageSize from 'image-size'

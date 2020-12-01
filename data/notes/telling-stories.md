@@ -11,3 +11,4 @@ Highly influenced by Seth Godin, there are a few things to always keep in mind w
 - [People like us doing things like this](./people-like-us.md)
 - [Elite vs Exclusive](./elite-vs-exclusive.md)
 - [Designing for evangelism](./designing-for-evangelism.md)
+- [Finding "the" tone](./finding-the-tone.md)

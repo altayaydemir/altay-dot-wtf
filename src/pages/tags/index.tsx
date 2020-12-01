@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import { getAllTags } from 'core/api/tags'
 import Tags from 'components/Tag/Tags'
 import PageHeader from 'components/PageHeader'

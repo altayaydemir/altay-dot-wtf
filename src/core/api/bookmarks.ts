@@ -1,6 +1,6 @@
+import type { BookmarkJSON, Bookmark } from 'types'
 import { SITE_URL } from 'config'
 import { readJSONFile } from 'core/api/fs'
-import type { BookmarkJSON, Bookmark } from 'types'
 
 const formatBookmark = (bookmark: BookmarkJSON): Bookmark => {
   const url = new URL(bookmark.url)

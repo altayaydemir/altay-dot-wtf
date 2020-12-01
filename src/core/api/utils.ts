@@ -1,4 +1,4 @@
-import { Content } from 'types'
+import type { Content } from 'types'
 
 export const sortContent = <Collection extends Content[]>(collection: Collection) => {
   return collection

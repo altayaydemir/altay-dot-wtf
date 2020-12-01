@@ -1,6 +1,6 @@
+import type { ContentType } from 'types'
 import { join } from 'path'
 import fs from 'fs'
-import { ContentType } from 'types'
 
 const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {

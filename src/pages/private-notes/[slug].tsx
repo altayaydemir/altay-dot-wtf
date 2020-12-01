@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import type { PrivateNote } from 'types'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import { format } from 'date-fns'

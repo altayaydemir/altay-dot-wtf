@@ -1,10 +1,10 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import type { Note } from 'types'
 import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
-import type { Note } from 'types'
 
 export const getStaticProps = getStaticPropsForContentList<Note>('note')
 

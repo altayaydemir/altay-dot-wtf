@@ -1,8 +1,8 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import type { Journal } from 'types'
 import { Box, SxStyleProp } from 'rebass'
 import { format } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import type { Journal } from 'types'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
 

@@ -1,11 +1,11 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import type { Now } from 'types'
 import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { CgArrowRight } from 'react-icons/cg'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
-import type { Now } from 'types'
 
 export const getStaticProps = getStaticPropsForContentList<Now>('now')
 

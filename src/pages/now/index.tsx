@@ -1,12 +1,13 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import type { Now } from 'types'
 import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
 import { getMarkdownFileNames } from 'core/api/fs'
 import { getContentDetails } from 'core/api/content'
-import type { Now } from 'types'
 import PageHeader from 'components/PageHeader'
 import Markdown from 'components/Markdown'
+import { CgArrowRight } from 'react-icons/cg'
 
 export const getStaticProps = async () => {
   const [latest] = getMarkdownFileNames('now').reverse()
@@ -25,7 +26,9 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
     <>
       <PageHeader
         title="what am I doing now"
-        description={`this is a [now page](https://nownownow.com), and it's inspired by [Derek Sivers.](https://sive.rs)`}
+        description={
+          "this is a [now page](https://nownownow.com) updated monthly, and it's inspired by [Derek Sivers.](https://sive.rs)"
+        }
         metaDescription={`what am I doing as of ${formattedDate}`}
       />
 
@@ -37,13 +40,21 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
 
       <Text fontSize={0} color="textTertiary">
         last updated at {formattedDate}
-        <Box display="inline"> · </Box>
-        <NextLink href={'/now/history'} passHref>
-          <Link href={'/now/history'} color="textTertiary" fontSize={0}>
-            history
-          </Link>
-        </NextLink>
       </Text>
+
+      <NextLink href={'/now/history'} passHref>
+        <Link
+          href={'/now/history'}
+          color="textTertiary"
+          fontSize={0}
+          display="inline-flex"
+          sx={{ alignItems: 'center' }}
+        >
+          <Text>history</Text>
+          <Box width="2px" />
+          <CgArrowRight />
+        </Link>
+      </NextLink>
     </>
   )
 }

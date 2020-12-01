@@ -1,5 +1,5 @@
-import readingTime from 'reading-time'
 import type { BlogPost, Book, Content, ContentType } from 'types'
+import readingTime from 'reading-time'
 import { fetchBookData, fetchBookImage } from './http'
 import { getImageData, generateMetaImage } from './image'
 

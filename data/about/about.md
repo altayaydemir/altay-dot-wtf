@@ -1,5 +1,5 @@
 ---
-date: '2020-11-22'
+date: '2020-12-01'
 ---
 
 I live in Berlin and work at [Klarna](https://klarna.com) as a software engineer.
@@ -16,21 +16,24 @@ I read, listen, or have a silent conversation with [this turtle statue in Volksp
 
 **creating systems** based on iteration and supported by literature.
 
-**consistent change.** getting better at knowing when to quit and find somewhere else where I can add _more_ value.
+**consistent change** and getting better at quitting.
 
 ### who I admire
 
 **the big three**\
-naval ravikant, derek sivers, seth godin
+naval ravikant, derek sivers, mark manson
+
+**creative three**\
+seth godin, austin kleon, chris do
 
 **productive three**\
 cal newport, james clear, make time duo
 
 **designer three**\
-austin kleon, brian lovin, andy j. pizza
+brian lovin, marshall bock, andy j. pizza
 
 **hacker three**\
-guillermo rauch, scott wlatschin, dan abramov
+guillermo rauch, dan abramov, scott wlatschin
 
 **in-ear three**\
 christian löffler, hælos, jakuzi

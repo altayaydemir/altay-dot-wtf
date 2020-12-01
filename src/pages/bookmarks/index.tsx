@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import { Box, Text, Link, Heading, SxStyleProp } from 'rebass'
 import { getBookmarks } from 'core/api/bookmarks'
 import PageHeader from 'components/PageHeader'
