@@ -10,4 +10,3 @@ Each item below could be a valuable entry-point, or here's a link to [all notes.
 - [Why we are doing what we are doing](./why-we-are-doing-what-we-are-doing.md)
 - [Using things that are solving my problems](./using-things.md)
 - [Building things that are solving our problems](./building-things.md)
-- [Culture](./culture)
