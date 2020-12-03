@@ -8,7 +8,7 @@ tags:
   - typography
 ---
 
-Most of arcade the fonts were designed for 8x8, 16x16 or 24x24 due to limitations of resources. This book is mostly restricted to 8x8 variations since they were the pioneers.
+Many of the arcade fonts were designed for 8x8, 16x16 or 24x24 due to limitations of resources. This book is restricted to 8x8 variations since they were the pioneers.
 
 ### Difference between Typeface and Font
 
