@@ -1,7 +1,16 @@
+import { createElement } from 'react'
 import { Box, SxStyleProp } from 'rebass'
-import { renderers } from 'react-markdown'
 
-type Props = { level: number }
+type Props = {
+  level: number
+  node: {
+    type: 'heading'
+    depth: number
+    data: {
+      id: string
+    }
+  }
+}
 
 const MDHeadingStyle: SxStyleProp = {
   '& > h1, h2, h3, h4, h5, h6': {
@@ -19,8 +28,7 @@ const MDHeadingStyle: SxStyleProp = {
 }
 
 const MDHeading: React.FC<Props> = (props) => {
-  const heading = renderers.heading as any
-  const content = heading(props)
+  const content = createElement('h' + props.level, { id: props.node.data.id }, props.children)
   return <Box sx={MDHeadingStyle}>{content}</Box>
 }
 

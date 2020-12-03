@@ -1,8 +1,10 @@
+import dynamic from 'next/dynamic'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 import footnotes from 'remark-footnotes'
-import dynamic from 'next/dynamic'
-
+// eslint-disable-next-line
+// @ts-ignore
+import slug from 'remark-slug'
 import MDHeading from './MDHeading'
 import MDParagraph from './MDParagraph'
 import MDLink from './MDLink'
@@ -14,13 +16,11 @@ const MDCodeBlock = dynamic(() => import('./MDCodeBlock'))
 const MDFootnoteDefinition = dynamic(() => import('./MDFootnoteDefinition'))
 const MDFootnoteReference = dynamic(() => import('./MDFootnoteReference'))
 
-export type Props = {
-  children: string
-}
+type Props = { children: string }
 
 const Markdown: React.FC<Props> = ({ children }) => (
   <ReactMarkdown
-    plugins={[gfm, footnotes]}
+    plugins={[slug, gfm, footnotes]}
     escapeHtml={true}
     renderers={{
       paragraph: MDParagraph,
