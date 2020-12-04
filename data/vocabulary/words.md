@@ -183,10 +183,6 @@ _Behemoth if-else expression._
 
 [Programming Elm](/books/programming-elm)
 
-### step one's toes
-
-to insult, or upset one.
-
 ### obscure
 
 not discovered or known.
