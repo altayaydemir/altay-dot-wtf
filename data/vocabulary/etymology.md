@@ -1,5 +1,5 @@
 ---
-slug: etymology
+title: etymology
 date: '2020-12-03T19:12:12Z'
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: phrases
+title: phrases
 date: '2020-12-03T19:12:12Z'
 ---
 
