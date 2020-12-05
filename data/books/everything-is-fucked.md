@@ -51,7 +51,7 @@ _I deserve an ice-cream_ because _I worked hard today_.
 
 #### Establishing the illusion
 
-An healthy communication between two brains can only be achieved through a sensible bargain. Although the Thinking Brain doesn't drive the car, it's the one who draws the map. It's in charge of interpreting the _meaning_ of our impulses and feelings. It can analyze and challenge them to prepare a better route.At the end of the day, the Feeling Brain needs to believe it's getting a good deal. It needs to believe it's worthy of doing logical actions, it deserves to live good experiences instead of a chain of self-destruction.
+An healthy communication between two brains can only be achieved through a sensible bargain. Although the Thinking Brain doesn't drive the car, it's the one who draws the map. It's in charge of interpreting the _meaning_ of our impulses and feelings. It can analyze and challenge them to prepare a better route. At the end of the day, the Feeling Brain needs to believe it's getting a good deal. It needs to believe it's worthy of doing logical actions, it deserves to live good experiences instead of a chain of self-destruction.
 
 ### Newton's Law of Emotions
 
@@ -102,6 +102,54 @@ Every religion has a god value at the top of its value hierarchy. It is the lens
 
 As the religion grows, it goes through a shift on its god value. Instead of solving problems and support the process, it focusses on maintaining the status quo. The god value becomes maintaining the power. This is the moment we lift our heads up and wave the fancy dressed gentlemen entering through the door: Mr. Corruption.
 
----
+### Hope is fucked
 
-🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
+This chapter builds up based on Nietzsche's master/slave moralities, "amor fati", and Superman.
+
+**Master morality is based upon strength**: I deserve to be rich and powerful because I worked my ass of. It's the intrinsic desire to create moral gaps between me and the world around me. And I'm on top. (Right wing)
+
+**Slave morality is based upon weakness:** I deserve to be threated the best because I suffer. Intrinsic desire to create equal conditions to alleviate suffering. (Left wing)
+
+Both are fundamental parts of our Feeling Brain.
+
+Religions are build on top of those moralities, and they've created conflicts throughout the history. However, not having evident proofs to show they are actually working makes them "distrustful."
+
+#### God is dead
+
+Then something happened around the 17th century. Humanity discovered the best religion of all time. It's evidence based, open to everybody, and can improve upon itself. It's called science, and its god value is evidence.
+
+Nietzsche foresaw the technological improvements will stop blindly worshipping a supernatural power –the old friend, god. Eventually, each of us become a god on our own hence we have power to create. This, however, leads to nothing but repetitive confrontations of the uncomfortable truth. This makes us unhappy, crave for more power, and be a warmonger.
+
+That's what Zearhaust meant by _"God is dead. God remains dead. And we have killed him. How shall we comfort ourselves, the murderers of all murderers? What was holiest and mightiest of all that the world has yet owned has bled to death under our knives: who will wipe this blood off us? What water is there for us to clean ourselves? What festivals of atonement, what sacred games shall we have to invent? Is not the greatness of this deed too great for us? Must we ourselves not become gods simply to appear worthy of it?"_
+
+No matter what they're based on, religious beliefs will conflict unless they destroy each other. Each destruction will lead to creation of new religions. But new religions are not created by _the god_, nor they are for _the god_. They are between gods, and gods are us.
+
+#### Yes, hope is fucked. Long live "amor fati."
+
+**Hope is fucked**, because it's exactly what destroys the world. Hope is not only the driver for good ideologies. Nazis also have hope, communists as well. Presence of hope would create nothing but conflicts among the communities. Therefore, hope is destructive.
+
+Nietzsche believed we must look beyond hope, beyond or values, beyond good and evil. And start with "amor fati", the unconditional acceptance of all life and experience. Experience of high and low, experience of meaningful and dull.
+
+- Hope for nothing.
+- Hope for the suffering that comes with freedom.
+- Hope for the pain comes from happiness.
+- Hope for the wisdom comes from ignorance.
+- Hope for the power comes from surrender.
+
+Then act despite it.
+
+This is our challenge, our calling: to act without hope. To not hope for better. To be better. In this moment, and the next.
+
+**Everything is fucked. And hope is both the cause and the effect of that fuckedness.**
+
+The uncomfortable truth can both prison, or set you free. It's up to you how you interpret and act accordingly.
+
+- We and everyone we know will die.
+- Nothing we do will matter on a cosmic scale.
+
+There's no reason not to be kind, respectful, and work to make progress.
+
+> A man is a bridge between a beast and a superman. \
+> I love those who do not know how to live. For the ones who cross over.
+>
+> – Nietzsche

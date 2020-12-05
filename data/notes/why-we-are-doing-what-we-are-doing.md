@@ -10,3 +10,5 @@ I keen on repeatedly asking those [simple questions](./simple-questions.md) to m
 Speaking of being eaten alive, [the vampire test](./the-vampire-test.md) is a great way for eliminating things that we can't have a meaningful explanation.
 
 Taking a step back and thinking about [how do we decide what to do](./two-types-of-decisions.md) and [what are our values](./values.md) are accurate places to trigger questioning.
+
+Sometimes we find ourselves in messy situations that feels like we lost the control. How is that even possible? What we don't know is that [self-control is an illusion.](./self-control.md)

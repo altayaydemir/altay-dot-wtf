@@ -304,3 +304,61 @@ to persuade.
 _It must cajole them with freshness._
 
 [On Writing Well](../books/on-writing-well.md)
+
+### bleak
+
+not hopeful or encouraging.
+
+_I struggled to find meaning in their bleak existence._
+
+[Bird by Bird](../books/bird-by-bird.md)
+
+### ectoplasm
+
+viscous, clear outer layer of the cytoplasm in amoeboid cells.
+
+_What holds the ectoplasm together –what are your routines and beliefs?_
+
+[Bird by Bird](../books/bird-by-bird.md)
+
+### excruciating
+
+intensely painful (physical pain).
+
+mentally agonizing, embarrassing, awkward or tedious (abstract).
+
+### poignant
+
+evoking a keen sense of sadness or regret.
+
+_A poignant reminder of the passing of time._
+
+### voyeur(ism)
+
+a person who enjoys seeing the pain or distress of the others.
+
+_And we have all the voyeurism because the characters (whom we're making talk in our fictions) don't know we're listening._
+
+[Bird by Bird](../books/bird-by-bird.md)
+
+### proliferation
+
+rapid increase in the amount of something.
+
+_Given the proliferation of quatrefoil, he may been onto something._
+
+[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+
+### ubiquitous
+
+present, appearing, or found everywhere.
+
+[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+
+### coveted
+
+greatly desired or envied.
+
+_Whatever the reasons, the simplified quatrefoil has indeed become ubiquitous and coveted, a persisted symbol of luxury and high style._
+
+[The 99% Invisible City](../books/the-99-percent-invisible-city.md)

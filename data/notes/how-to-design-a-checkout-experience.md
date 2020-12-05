@@ -14,4 +14,4 @@ One click, a fingerprint scan, done. Didn't need to type anything. Everything wi
 
 ![Shopify two taps](/images/notes/shopify-checkout-gg.gif)
 
-It's as good as the _I don't need to take my wallet off_ solution for coffee shops mentioned in [The Best Interface Is No Interface](/books/the-best-interface-is-no-interface).
+It's as good as the _I don't need to take my wallet off_ solution for coffee shops mentioned in [The Best Interface Is No Interface](../books/the-best-interface-is-no-interface).

@@ -35,5 +35,5 @@ How much money you need to start, be sustainable.
 
 ### References
 
-- [This is Marketing](/books/this-is-marketing)
+- [This is Marketing](../books/this-is-marketing)
 - [The Modern Business Plan](https://seths.blog/2010/05/the-modern-business-plan/)

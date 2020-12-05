@@ -13,6 +13,6 @@ tags:
 
 People should be able to tell what your product does, and how it benefits them through their mental model.
 
-_Story of Renuka, from [User Friendly](/books/user-friendly)_
+_Story of Renuka, from [User Friendly](../books/user-friendly)_
 
 Renuka is living in a small town in India. She didn't grow up with the internet. She just got a new smart phone. She can't use internet because she can't picture how it works and would help her.

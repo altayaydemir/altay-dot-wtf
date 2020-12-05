@@ -24,9 +24,9 @@ We feel the confidence in our body while making those decisions.
 They are a result of compound interest.
 
 - Something you put time your precious time on.
-- Something would help you to answer [simple questions.](/notes/simple-questions)
+- Something would help you to answer [simple questions.](./simple-questions)
 - Something will change your life.
 
 > A growth-based decision becomes the story of your life later. A fear-based decision turns into regret.
 >
-> &mdash; James Altucher ([Reinvent Yourself](/books/reinvent-yourself))
+> &mdash; James Altucher ([Reinvent Yourself](../books/reinvent-yourself))

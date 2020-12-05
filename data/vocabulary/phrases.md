@@ -72,3 +72,17 @@ _Our daily landscape is thick with absurd messages._
 [On Writing Well](../books/on-writing-well.md)
 
 ### distortion of reality
+
+### what holds the ectoplasm together?
+
+_What holds the ectoplasm together –what are your routines and beliefs?_
+
+[Bird by Bird](../books/bird-by-bird.md)
+
+### x is one of the occupational hazards of y
+
+hazard: danger or risk.
+
+_Jealousy is one of the occupational hazards of being a writer._
+
+[Bird by Bird](../books/bird-by-bird.md)

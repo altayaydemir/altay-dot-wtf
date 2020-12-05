@@ -5,6 +5,7 @@ date: '2020-11-16T19:21:16Z'
 
 This is a path I'm trying to explore how to make something out of my existential crisis.
 
+- [Learning](./learning.md)
 - [Culture](./culture.md)
 - [Telling stories](./telling-stories.md)
 
