@@ -15,6 +15,8 @@ When we get trapped in the web of stresses in daily life, we escape to find ours
 
 **Controllable** (what/how we create) – **Uncontrollable** (how much we earn)
 
+_[The Formula of Humanity](./formula-of-humanity.md)_ is a good lead to choose our primitive values.
+
 ### References
 
 - https://markmanson.net/personal-values

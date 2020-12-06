@@ -7,7 +7,7 @@ tags:
   - mark-manson
 ---
 
-It's one of the books you would read in a couple of days but needs a lifetime to absorb. I've read the first book –The Subtle Art of Not Giving a Fuck– of the series last year, but it didn't make the same impact as this one. I presume it's because of my lack of internalization. This one has been on my to-read list since it came out, but the actual trigger was a random retweet. First, it led me to Mark's blog. I think it was the first time I've spent two hours on a website that contains no-bullshit material. Then I skimmed my highlights on the first book, and they made much more sense. There's also [a great post](https://markmanson.net/not-giving-a-fuck) that summarizes the point of it. This book, however, is a next-level guidence to tame your existential crisis. It brings up many uncomfortable truths that we try to avoid in our daily lives and offers guidance on dealing with them. As Mark says, "Pain is the universal constant of life." We can either choose to suffer from it or grow by experiencing and eliminating it.
+It's one of the books you would read in a couple of days but needs a lifetime to absorb. I've read the first book –The Subtle Art of Not Giving a Fuck– of the series last year, but it didn't make the same impact as this one. I presume it's because of my lack of internalization. This one has been on my to-read list since it came out, but the actual trigger was a random retweet. First, it led me to Mark's blog. I think it was the first time I've spent two hours on a website that contains no-bullshit material. Then I skimmed my highlights on the first book, and they made much more sense. There's also [a great post](https://markmanson.net/not-giving-a-fuck) that summarizes the point of it. This book, however, is a next-level guidance to tame your existential crisis. It brings up many uncomfortable truths that we try to avoid in our daily lives and offers guidance on dealing with them. As Mark says, "Pain is the universal constant of life." We can either choose to suffer from it or grow by experiencing and eliminating it.
 
 ## Part 1: Hope
 
@@ -120,7 +120,7 @@ Then something happened around the 17th century. Humanity discovered the best re
 
 Nietzsche foresaw the technological improvements will stop blindly worshipping a supernatural power –the old friend, god. Eventually, each of us become a god on our own hence we have power to create. This, however, leads to nothing but repetitive confrontations of the uncomfortable truth. This makes us unhappy, crave for more power, and be a warmonger.
 
-That's what Zearhaust meant by _"God is dead. God remains dead. And we have killed him. How shall we comfort ourselves, the murderers of all murderers? What was holiest and mightiest of all that the world has yet owned has bled to death under our knives: who will wipe this blood off us? What water is there for us to clean ourselves? What festivals of atonement, what sacred games shall we have to invent? Is not the greatness of this deed too great for us? Must we ourselves not become gods simply to appear worthy of it?"_
+That's what Zarathustra meant by _"God is dead. God remains dead. And we have killed him. How shall we comfort ourselves, the murderers of all murderers? What was holiest and mightiest of all that the world has yet owned has bled to death under our knives: who will wipe this blood off us? What water is there for us to clean ourselves? What festivals of atonement, what sacred games shall we have to invent? Is not the greatness of this deed too great for us? Must we ourselves not become gods simply to appear worthy of it?"_
 
 No matter what they're based on, religious beliefs will conflict unless they destroy each other. Each destruction will lead to creation of new religions. But new religions are not created by _the god_, nor they are for _the god_. They are between gods, and gods are us.
 
@@ -153,3 +153,84 @@ There's no reason not to be kind, respectful, and work to make progress.
 > I love those who do not know how to live. For the ones who cross over.
 >
 > – Nietzsche
+
+## Part 2: Everything is Fucked
+
+Immanuel Kant was living the productivity hacker's wet dream. He had a punctual schedule:
+
+- 5 -> 8 wake up and write
+- 8 -> 12 teach at uni
+- 13 lunch
+- 13 -> 15 walk through the same way to get back to home
+
+He was an intellectual powerhouse. He didn't give a fuck about hope. His work is a product of pure logic and reason. He reinvented moral philosophy from top the bottom, and influenced a lot of changes in history.
+
+To understand Kant, we need to understand maturity.
+
+- Children act on pure pleasure
+- Adolescents follow a set of principles to reach to a pleasure
+- Adults follow principles no matter the outcome is
+
+Maturity is acting by values without expecting anything in return. You are honest because you value honesty, not because you're afraid of punishment. What matters are a person's intentions.
+
+### Parenting 101
+
+> Parenting is basically following kids around for several decades to make sure they don't accidentally kill themselves.
+>
+> – A friend of Mark
+
+Teach your children life is more complicated than their impulses and desires. Learning this in adulthood is much more painful and hard to cope with. Acceptation of not getting everything you want and not being at the center of the universe.
+
+Bargaining (if-this-then-that) is the adolescent mindset. They shape up their values based on getting good at bargaining so they'll get what they want.
+
+Adults adopt unconditional values. Best way to teach someone is to lead by example. Trust, respect, and love unconditionally. They'll understand the value when they're ready.
+
+Parents and teachers fail to make this happen as they too, are in the bargaining mindset. Especially when they are in relationships raise upon mutual benefit and selfishness.
+
+![A matrix of childhood, adolescence, and adulthood](/images/books/everything-is-fucked/who-cares-what.jpeg)
+
+### Kant's Formula of Humanity
+
+Consciousness is what distinguishes humans from other living creatures.
+
+Our conscious helps us to understand the nature, overcome complexities, and create even more complex systems.
+
+The most fundamental moral duty for every _mature_ human being should be the preservation and growth of the collective conscious.
+
+> Act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, by no other means.
+
+Don't manipulate, treat, enslave people just because you'll gain something at the end.
+
+Unlike any other moral systems or codes, the formula of humanity does not rely on hope.
+
+- The only logical way to improve the world is through improving ourselves by growing up and being more virtuous.
+- Your ability to be honest, respectful, caring against yourself will also improve how you interact with others and influence them to do the same.
+- Dignity and respect over all religions.
+
+### Pain is the universal constant
+
+Our emotional reactions to problems are not determined by the size of them. Rather, our minds minimize or amplify our problems to the scale of stress we expect to experience.
+
+Protecting people from adversity doesn't make them happier. It just makes them more insecure.
+
+#### The Blue Dot Effect
+
+Blue-purple dots experiment. Participants are asked to choose blue dots in a screen which shows dots within a blue-purple spectrum. As experiment started to show less blue dots, people tend to interpret purple-ish colors as blue. Because they were looking for blue dots.
+
+The more we look for threats, the more we'll see them regardless of how safe or comfortable our environment actually is.
+
+#### Anti-fragile
+
+Mark suggests to adapt an anti-fragile system discussed by Nasim Taleb. There are fragile and robust systems, which show breaking or resilient behavior against the troubles that they experience. However, an anti-fragile gains from stressors and external pressures: what doesn't kill us makes us stronger.
+
+Pain avoidance makes us more fragile, learning from pains adapting ourselves to live in a world with more of them makes us more anti-fragile.
+
+#### Actual buddhist meditation
+
+Story of Thich Quang Duc, who set himself on fire and not even raised an eyebrow. Who didn't have access for fancy apps to install and go after the pursuit of happiness.
+
+There's no end, or getting good at meditation. It's training your mind for anti-fragility. Sit, observe and sustain the never ending flow of pain, and don't let "self" to get sucked away.
+
+Since pain is the universal constant of life, the opportunity to grow from pain is also a constant in life.
+
+Pain is the source of all value. It's always there. We can choose to suffer from it, by avoiding and pursuing happiness. Or we can choose to grow by using it, by facing, experiencing and getting anti-fragile.

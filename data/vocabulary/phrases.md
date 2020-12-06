@@ -86,3 +86,9 @@ hazard: danger or risk.
 _Jealousy is one of the occupational hazards of being a writer._
 
 [Bird by Bird](../books/bird-by-bird.md)
+
+### <doing x> from top to bottom
+
+_Kant reinvented moral philosophy from top the bottom._
+
+[Everything is Fucked: A Book About Hope](../books/everything-is-fucked.md)
