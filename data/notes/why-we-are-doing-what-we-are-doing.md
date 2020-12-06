@@ -1,6 +1,8 @@
 ---
 title: Why we are doing what we are doing
 date: '2020-11-05T14:24:56Z'
+tags:
+  - why-are-you-doing
 ---
 
 [Simple questions](./simple-questions.md) have painful answers, and this one above is a gem. I don't recall where I heard it for the first time. I can see the reflections in almost everything I read. It instills a never-ending skepticism. Suddenly there is an infinite-scrolling to-do list.

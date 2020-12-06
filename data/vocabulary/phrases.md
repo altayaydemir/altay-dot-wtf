@@ -92,3 +92,9 @@ _Jealousy is one of the occupational hazards of being a writer._
 _Kant reinvented moral philosophy from top the bottom._
 
 [Everything is Fucked: A Book About Hope](../books/everything-is-fucked.md)
+
+### you don't always chop with the sword of <x>
+
+_You don't always chop with the sword of truth._
+
+[Bird by Bird](../books/bird-by-bird.md)
