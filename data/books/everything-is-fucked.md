@@ -234,3 +234,7 @@ There's no end, or getting good at meditation. It's training your mind for anti-
 Since pain is the universal constant of life, the opportunity to grow from pain is also a constant in life.
 
 Pain is the source of all value. It's always there. We can choose to suffer from it, by avoiding and pursuing happiness. Or we can choose to grow by using it, by facing, experiencing and getting anti-fragile.
+
+---
+
+🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
