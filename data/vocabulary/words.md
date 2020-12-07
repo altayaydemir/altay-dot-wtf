@@ -362,3 +362,19 @@ greatly desired or envied.
 _Whatever the reasons, the simplified quatrefoil has indeed become ubiquitous and coveted, a persisted symbol of luxury and high style._
 
 [The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+
+### eschew
+
+deliberately avoid using.
+
+_Over the last two decades, all major companies have publicly eschewed narrow self-interest and embraced social purpose._
+
+[The New Corporation](../books/the-new-corporation.md)
+
+### promulgated
+
+promote or make widely known (an idea or a cause)
+
+_The importance of protecting workers and promulgated legions of rules – like no coffee cups without lids._
+
+[The New Corporation](../books/the-new-corporation.md)

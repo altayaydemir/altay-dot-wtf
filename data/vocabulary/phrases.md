@@ -98,3 +98,25 @@ _Kant reinvented moral philosophy from top the bottom._
 _You don't always chop with the sword of truth._
 
 [Bird by Bird](../books/bird-by-bird.md)
+
+### futility of resistance
+
+futile: incapable of producing useful result.
+
+_Finally realizing the futility of resistance, officials caved and left the traffic lights upside down._
+
+[The 99% Invisible City](../books/the-99-percent-invisible-city.md)
+
+### paragon of <x>
+
+paragon: a person or a thing regarded as a perfect example
+
+_At the time the video of the defeat device released, Volkswagen was thought as a paragon of corporate virtue._
+
+[The New Corporation](../books/the-new-corporation.md)
+
+### guided by own lights
+
+_Working on a corporation putting self-interest over all values, Lord Browne was not guided by his own lights._
+
+[The New Corporation](../books/the-new-corporation.md)
