@@ -63,7 +63,7 @@ Intellectual and ethical freedom requires the absence of the skin of others in o
 
 ### The Intellectual Yet Idiot
 
-- The IYI pathologizes others for doing things he doesn’t understand without ever realizing it is his understanding that may be limited.
+- The IYI pathologies others for doing things he doesn’t understand without ever realizing it is his understanding that may be limited.
 - The IYI subscribes to The New Yorker, a journal designed so philistines can learn to fake a conversation about evolution, neurosomething, cognitive biases, and quantum mechanics.
 
 ### Inequality
