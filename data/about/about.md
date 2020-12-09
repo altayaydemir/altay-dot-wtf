@@ -18,30 +18,27 @@ I read, listen, or have a silent conversation with [this turtle statue in Volksp
 
 **consistent change** and getting better at quitting.
 
-### who I admire
+### who I appreciate
 
-**the big three**\
-naval ravikant, derek sivers, mark manson
+**the big four**\
+naval ravikant, derek sivers, seth godin, mark manson
 
-**creative three**\
-seth godin, austin kleon, chris do
-
-**productive three**\
+**productives**\
 cal newport, james clear, make time duo
 
-**designer three**\
-brian lovin, marshall bock, andy j. pizza
+**creatives**\
+austin kleon, brian lovin, andy j. pizza
 
-**hacker three**\
+**hackers**\
 guillermo rauch, dan abramov, scott wlatschin
 
-**in-ear three**\
+**in-ear**\
 christian löffler, hælos, jakuzi
 
-**on-screen three**\
+**on-screen**\
 phoebe waller-bridge, ricky gervais, louis ck
 
-**close-circle three**\
+**close-circle**\
 [hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), [berk capar](https://berk.studio)
 
 ### what I did
