@@ -1,12 +1,12 @@
 ---
-title: Set your mentors free
+title: Release your mentors
 oneliner: Don't be a daydreaming fucktard.
-date: '2020-12-09T18:45:39Z'
+date: '2020-12-11T18:42:27Z'
 ---
 
 I have spent a considerable amount of my life searching for mentors. It has always been hard to find a good match, especially during adolescence. As I grew older and narrowed my interests down, I got closer to people I look up to. Yet, I only experienced the harmonic craftsman–apprentice relationships in stories. My numerous quests to find a mentor as a novice often ended up with huge disappointments. Still, I hoped for the days that would bring me the long-awaited resonance. I searched for someone to help me direct my enthusiasm to something meaningful, someone to help me understand why I am doing what I am doing, someone to give me the courage to create. It took me quite a long time with trial and error to realize how impossible that is. It's the most stupid expectation I ever had. Eventually, I have opened my eyes. There is less hope involved since then. If you can live without hope, nothing will disappoint you.
 
-### Your mentors don't scale
+### Mentors don't scale
 
 In his interview with _The Futur_, Seth Godin presents a remarkably persuasive idea that bursts the bubble of mentorship: **heroes over mentors.**
 
@@ -14,7 +14,7 @@ He says that we usually get this two-hundred IQ advice from the hustle people, t
 
 The alternative is to find heroes that don't even need to be aware of our existence. We can study their ideas and ask ourselves what would they do in such situations. Heroes are easy to find, and they scale exponentially. It's the most beneficial leverage of the digital age. We have no excuse to say we are stuck because we don't have a mentor. The world is full of heroes, and we don't need anyone's permission.
 
-### Your mentors may manipulate
+### Mentors may manipulate
 
 In the real world, everyone minds their own business. Today, we build most of the mentor-mentee relationships to serve a business. We are living in an era in which nobody gives unconditionally. There is always a bargain unless you are not playing zero-sum games.
 
