@@ -30,7 +30,7 @@ Nonetheless, it would be an arrogant inference to label all mentors as selfish m
 
 ### Wherever you go, there you are
 
-"Be prepared for two scenarios" is one of the numerous pieces of advice from another hero, Derek Sivers. The first scenario depends on nobody but you. There are no lucky breaks. Develop your skills, be resourceful, small, and sustainable. Assume nobody is going to help you. No mentors, no investors, no heritage, no lottery, no lucky breaks. It's all up to you. You can't wait because there is nobody to wait for.
+"Be prepared for two scenarios" is one of the numerous pieces of advice from another hero, Derek Sivers. The first scenario depends on nobody but you. There are no lucky breaks. Develop your skills, be resourceful, small, and sustainable. Assume nobody is going to help you. No mentors, no investors, no heritage, no lottery. It's all up to you. You can't wait because there is nobody to wait for.
 
 No matter what you do, where you do, and who you do with, your presence is the universal constant of every equation. Once you realize that this is the real deal, many synthetic issues will disappear.
 
