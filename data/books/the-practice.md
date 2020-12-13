@@ -5,6 +5,7 @@ rating: '4/5'
 oneliner: The practice requires you to seek out experience of uncertainty to place yourself in a room where you will create discomfort.
 tags:
   - seth-godin
+  - writing
 ---
 
 Post-industrialist teachings of Seth are here to awaken us one more time.
