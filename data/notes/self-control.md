@@ -12,3 +12,4 @@ Everything happens in [our consciousness car](./consciousness-car.md).
 ### References
 
 - [Everything is Fucked](../books/everything-is-fucked.md)
+- [Humans 2.0 | Mind Upgrade](https://www.spreaker.com/user/markmetry/self-control-is-an-illusion-w-mark-manso)
