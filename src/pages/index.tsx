@@ -1,12 +1,11 @@
 import type { BlogPost, Content } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { homeCopy } from 'config/copy'
-import NextLink from 'next/link'
-import { Box, Heading, Text, Link } from 'rebass'
-import { CgArrowRight } from 'react-icons/cg'
+import { Box, Heading } from 'rebass'
 import { getContentList } from 'core/api/content'
-import BlogPostList from 'components/BlogPost/BlogPostList'
 import PageHeader from 'components/PageHeader'
+import HomeLink from 'components/Home/HomeLink'
+import BlogPostList from 'components/BlogPost/BlogPostList'
 
 type HomeSection = {
   title: string
@@ -14,7 +13,10 @@ type HomeSection = {
 }
 
 export const getStaticProps: GetStaticProps<{ sections: HomeSection[] }> = async () => {
-  const blogPosts = await getContentList<BlogPost>('blog-post')
+  const blogPosts = (await getContentList<BlogPost>('blog-post'))
+    .filter((post) => !post.meta.draft)
+    .slice(0, 5)
+
   const sections = [
     {
       title: homeCopy.blogPostsTitle,
@@ -31,16 +33,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
 
     <Box my={3}>
       {homeCopy.links.map((link) => (
-        <Box key={link.href}>
-          <NextLink href={link.href} passHref>
-            <Link>
-              <Box display="inline-flex" sx={{ alignItems: 'center', mb: 1 }}>
-                <Text mr={1}>{link.label}</Text>
-                <CgArrowRight />
-              </Box>
-            </Link>
-          </NextLink>
-        </Box>
+        <HomeLink key={link.href} {...link} />
       ))}
     </Box>
 
@@ -53,6 +46,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
         <Box my={2} />
 
         <BlogPostList data={section.data as BlogPost[]} />
+        <HomeLink label="see all posts" href="/blog" />
       </Box>
     ))}
   </>
