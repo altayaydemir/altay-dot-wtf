@@ -6,7 +6,6 @@ oneliner: Unless you are a real ninja, rockstar, or guru, stay away from those w
 tags:
   - austin-kleon
   - creativity
-  - building-systems
 ---
 
 ## 1. You Don't Have to Be a Genius
