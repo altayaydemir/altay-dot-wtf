@@ -12,6 +12,7 @@ export const homeCopy = {
     },
   ],
   blogPostsTitle: 'recent posts',
+  booksTitle: 'recent books',
 } as const
 
 export const blogCopy = {

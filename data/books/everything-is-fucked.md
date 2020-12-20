@@ -1,6 +1,6 @@
 ---
 isbn: '9780062888433'
-date: '2020-11-29'
+date: '2020-11-30'
 rating: '5/5'
 oneliner: "Living well does not mean avoiding suffering; it means suffering for the right reasons. Because if we're going to be forced to suffer by simply existing, we might as well learn how to suffer well."
 tags:

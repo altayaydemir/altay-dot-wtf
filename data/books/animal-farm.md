@@ -1,6 +1,6 @@
 ---
 isbn: '0241483050'
-date: '2020-11-30'
+date: '2020-11-29'
 rating: '4/5'
 oneliner: Beasts of England beasts of Ireland, Beasts of every land and clime, Hearken to my joyful tidings, Of the golden future time.
 ---
