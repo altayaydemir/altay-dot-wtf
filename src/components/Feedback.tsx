@@ -31,7 +31,7 @@ const config = {
     {
       name: 'twitter',
       type: 'text',
-      label: 'Your twitter handle',
+      label: 'Your Twitter handle',
       required: false,
     },
   ],

@@ -1,7 +1,7 @@
 ---
 draft: true
 title: How to read a book, but not destroy the world
-oneliner: Meanwhile, BP spilling petroleum into the Atlantic.
+oneliner: Meanwhile, BP destroys the entire habitat of Mexican Gulf.
 date: '2020-11-30T11:40:50Z'
 ---
 
