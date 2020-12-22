@@ -11,6 +11,7 @@ This is a path I'm trying to explore how to make something out of my existential
 
 ---
 
+- [Process](./process)
 - [Running things](./running-things.md)
 - [Execution factor](./execution-factor.md)
 

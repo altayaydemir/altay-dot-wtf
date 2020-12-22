@@ -6,6 +6,7 @@ oneliner: The practice requires you to seek out experience of uncertainty to pla
 tags:
   - seth-godin
   - writing
+  - creativity
 ---
 
 Post-industrialist teachings of Seth are here to awaken us one more time.
@@ -79,6 +80,27 @@ Engaging and trusting in the practice is the best we can do for ourselves.
 Sounding like everyone is a common way to avoid criticism. But you're allowed to sound like you. And you should sound like you. Everyone else is taken.
 
 A scarce mindset creates more scarcity. Isolating ourselves from the circle of people who would appreciate our work harms the self-trust and creativity. Creativity is contagious. Go for the abundance.
+
+If you are using outcomes that are out of your control as fuel of your work, it's inevitable that you will burn out. It's not a fuel you can replenish, nor burns without residue.
+
+### Who is it for?
+
+Your work has two audiences.
+
+- Only you. It's not professional work, there's no one to serve.
+- Shipping for someone. Requires to develop empathy through [generosity](../notes/generosity).
+
+Pursuing either is fine, both is a recipe for unhappiness because you're insisting other people to see what you see.
+
+### Three definitions of quality
+
+1. Meets the spec, has strict tolerances.
+2. Luxury. The cost of material used, the sum of ingredients that brings us status.
+3. Creative magic!? Hard to explain without experiencing it.
+
+### How often do you recommend a competitor?
+
+Authors, for example, know abundance in their field would fuel their creative work. They also embrace the idea that their work is not for everyone, and there are alternatives. The ability to suggest an alternative is a sign of generosity.
 
 ---
 

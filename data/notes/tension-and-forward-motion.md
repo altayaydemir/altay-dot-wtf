@@ -15,4 +15,5 @@ Our -product, service, idea- can be effective if it relieves tension by creating
 Slack does it by encouraging the "fear-of-missing-out". We will miss things about work if we are not there. Most of the social media apps have the same behavior, but this time it's a social tension, which is more important then career for most people.
 
 ### References
+
 - [This is Marketing](../books/this-is-marketing)

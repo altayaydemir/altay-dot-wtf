@@ -10,3 +10,5 @@ If you can't draw a straight line, draw dots and till they merge into a line.
 After all, a line is a finite element in the infinite universe.
 
 It consists of a series of dots on the same horizon.
+
+[Learning is different than education.](./learning-vs-education.md)

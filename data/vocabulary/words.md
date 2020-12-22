@@ -378,3 +378,11 @@ promote or make widely known (an idea or a cause)
 _The importance of protecting workers and promulgated legions of rules – like no coffee cups without lids._
 
 [The New Corporation](../books/the-new-corporation.md)
+
+### reassurance
+
+the action of removing someones doubts and fears
+
+_Reassurance is futile._
+
+[The Practice](../books/the-practice)
