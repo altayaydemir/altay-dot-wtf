@@ -102,6 +102,30 @@ Pursuing either is fine, both is a recipe for unhappiness because you're insisti
 
 Authors, for example, know abundance in their field would fuel their creative work. They also embrace the idea that their work is not for everyone, and there are alternatives. The ability to suggest an alternative is a sign of generosity.
 
+## Part 3: The Professional
+
+The time we spend worrying is actually time we're spending trying to control something that is not in our control.
+
+Time invested in something that is within our control is called work. That's where our most productive focus lies.
+
+There's no mule, ghost or genie. The practice is choice + skill + attitude. We can learn it and do it again.
+
+We don't ship the work because we're creative. We're creative because we ship the work.
+
+You manage to find an hour every day to watch Netflix, eat, and bathe. Show us your hour spent on the practice. You already know what to do to be creative. You've already done it before, at least once. The practice asks you to commit to a process to repeat what you've done.
+
+### Generous doesn't mean free
+
+Money supports our commitment to the practice, and it's how our society signifies enrollment.
+
+The person who paid for your scarce time and output is more likely to value, share, and take it seriously.
+
+### Better clients demand better work
+
+Better clients demand better work. Better clients want you to push the envelope, win awards, and challenge their expectations. Better clients pay on time. Better clients talk about you and your work. But finding better clients isn’t easy, partly because we don’t trust ourselves enough to imagine that we deserve them.
+
+You earn better clients by becoming the sort of professional that better clients want. It’s lonely and difficult work. It’s juggling—throw and throw, and one day, the catching will take care of itself.
+
 ---
 
 🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
