@@ -107,11 +107,11 @@ This approach works better. Still, sometimes I get side-tracked by the rabbit ho
 
 Here's an example from _User Friendly_, which I'm currently reading.
 
-![Sticky notes from User Friendly](/images/blog/how-do-I-read/how-do-I-read-post-it.jpg)
+![Sticky notes from User Friendly](/images/articles/how-do-I-read/how-do-I-read-post-it.jpg)
 
 Besides that, I started tagging the highlights based on their topic. It's helpful while taking action, which is a learning from another book: _How to Take Smart Notes_.
 
-![Tags](/images/blog/how-do-I-read/how-do-I-read-tags.jpg)
+![Tags](/images/articles/how-do-I-read/how-do-I-read-tags.jpg)
 
 #### Listen to what other readers say
 

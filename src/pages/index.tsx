@@ -1,4 +1,4 @@
-import type { BlogPost, Book } from 'types'
+import type { Article, Book } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useCallback } from 'react'
 import { homeCopy } from 'config/copy'
@@ -6,14 +6,14 @@ import { Box, Heading } from 'rebass'
 import { getContentList } from 'core/api/content'
 import PageHeader from 'components/PageHeader'
 import HomeLink from 'components/Home/HomeLink'
-import BlogPostList from 'components/BlogPost/BlogPostList'
+import ArticleList from 'components/Article/ArticleList'
 import BookList from 'components/Book/BookList'
 
 type Sections = [
   {
     title: string
-    type: 'blog'
-    data: BlogPost[]
+    type: 'articles'
+    data: Article[]
   },
   {
     title: string
@@ -23,7 +23,7 @@ type Sections = [
 ]
 
 export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () => {
-  const blogPosts = (await getContentList<BlogPost>('blog-post'))
+  const Articles = (await getContentList<Article>('article'))
     .filter((post) => !post.meta.draft)
     .slice(0, 5)
 
@@ -31,9 +31,9 @@ export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () =
 
   const sections: Sections = [
     {
-      title: homeCopy.blogPostsTitle,
-      type: 'blog',
-      data: blogPosts,
+      title: homeCopy.articlesTitle,
+      type: 'articles',
+      data: Articles,
     },
     {
       title: homeCopy.booksTitle,
@@ -48,12 +48,12 @@ export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () =
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sections }) => {
   const renderSection = useCallback((section: Sections[number]) => {
     switch (section.type) {
-      case 'blog':
+      case 'articles':
         return (
           <>
             <Box my={2} />
-            <BlogPostList data={section.data} />
-            <HomeLink label="view all blog posts" href="/blog" />
+            <ArticleList data={section.data} />
+            <HomeLink label="view all articles" href="/articles" />
           </>
         )
 

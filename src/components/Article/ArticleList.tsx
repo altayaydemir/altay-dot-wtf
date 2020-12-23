@@ -1,18 +1,18 @@
-import type { BlogPost } from 'types'
+import type { Article } from 'types'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 import { Box, Text, Link } from 'rebass'
 import ContentTitle from 'components/ContentTitle'
 
 type Props = {
-  data: BlogPost[]
+  data: Article[]
 }
 
-const BlogPostList: React.FC<Props> = ({ data }) => (
+const ArticleList: React.FC<Props> = ({ data }) => (
   <Box>
     {data.map((b) => (
       <Box key={b.slug} mb={4}>
-        <NextLink href={`/blog/${b.slug}`} passHref>
+        <NextLink href={`/articles/${b.slug}`} passHref>
           <Link>
             <ContentTitle tag="h3" fontSize={2} meta={b.meta} />
           </Link>
@@ -39,4 +39,4 @@ const BlogPostList: React.FC<Props> = ({ data }) => (
   </Box>
 )
 
-export default BlogPostList
+export default ArticleList

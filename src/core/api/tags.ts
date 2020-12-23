@@ -68,8 +68,8 @@ export const getTaggedItemsByTag = async (tag: string) => {
 
 const getTargetContentLinkRegex = (content: TaggedContent) => {
   switch (content.type) {
-    case 'blog-post':
-      return `/blog/${content.slug}`
+    case 'article':
+      return `/articles/${content.slug}`
     case 'book':
       return `/books/${content.slug}`
     case 'note':
@@ -87,5 +87,21 @@ const getLinks = (source: TaggedContent, target: TaggedContent) => {
 
 export const getLinksToContent = async (content: TaggedContent) => {
   const taggedContents = await getTaggedContents()
-  return taggedContents.filter((c) => c.slug !== content.slug).filter((c) => getLinks(c, content))
+  return taggedContents
+    .filter((c) => c.slug !== content.slug)
+    .filter((c) => getLinks(c, content))
+    .sort((a, b) => {
+      if (a.type === b.type) return a.slug > b.slug ? 1 : -1
+
+      switch (b.type) {
+        case 'book':
+          return 1
+
+        case 'article':
+          return 0
+
+        case 'note':
+          return -1
+      }
+    })
 }

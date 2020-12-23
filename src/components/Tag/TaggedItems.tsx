@@ -13,7 +13,7 @@ const getTitle = (item: TaggedItem) => {
   switch (item.type) {
     case 'note':
     case 'book':
-    case 'blog-post':
+    case 'article':
       return item.meta.title
 
     case 'bookmark':
@@ -26,8 +26,8 @@ const getTitle = (item: TaggedItem) => {
 
 const getURLForContent = (content: TaggedContent, tag: string) => {
   switch (content.type) {
-    case 'blog-post':
-      return `/blog/${content.slug}?source=${tag}`
+    case 'article':
+      return `/articles/${content.slug}?source=${tag}`
 
     case 'book':
       return `/books/${content.slug}?source=${tag}`

@@ -12,13 +12,13 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
-        source: '/articles',
-        destination: '/blog',
+        source: '/blog',
+        destination: '/articles',
         permanent: true,
       },
       {
-        source: '/articles/:path*',
-        destination: '/blog/:path*',
+        source: '/blog/:path*',
+        destination: '/articles/:path*',
         permanent: true,
       },
       {

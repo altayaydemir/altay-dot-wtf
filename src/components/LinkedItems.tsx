@@ -12,7 +12,7 @@ const getTitle = (item: Content) => {
   switch (item.type) {
     case 'book':
     case 'note':
-    case 'blog-post':
+    case 'article':
       return item.meta.title
 
     default:
@@ -22,8 +22,8 @@ const getTitle = (item: Content) => {
 
 const getURLForContent = (content: Content, slug: string) => {
   switch (content.type) {
-    case 'blog-post':
-      return `/blog/${content.slug}?source=${slug}`
+    case 'article':
+      return `/articles/${content.slug}?source=${slug}`
 
     case 'book':
       return `/books/${content.slug}?source=${slug}`

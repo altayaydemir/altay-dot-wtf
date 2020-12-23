@@ -49,8 +49,8 @@ export type PrivateNote = BaseMDContent & {
   }
 }
 
-export type BlogPost = BaseMDContent & {
-  type: 'blog-post'
+export type Article = BaseMDContent & {
+  type: 'article'
   meta: BaseMDMeta & {
     title: string
     oneliner: string
@@ -89,11 +89,11 @@ export type Bookmark = BookmarkJSON & {
   tags: string[]
 }
 
-export type Content = Now | Note | BlogPost | Book | About | PrivateNote | Journal | Vocabulary
+export type Content = Now | Note | Article | Book | About | PrivateNote | Journal | Vocabulary
 export type ContentType = Content['type']
 
-export type TaggedContent = Note | BlogPost | Book
-export const TAGGED_CONTENT_TYPES: TaggedContent['type'][] = ['blog-post', 'book', 'note']
+export type TaggedContent = Note | Article | Book
+export const TAGGED_CONTENT_TYPES: TaggedContent['type'][] = ['article', 'book', 'note']
 
 export type TaggedItem = TaggedContent | Bookmark
 export type TaggedItemType = TaggedItem['type']
