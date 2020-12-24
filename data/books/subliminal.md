@@ -124,6 +124,64 @@ After all, our memory is similar to sensors in the previous chapter. A big porti
 
 The lesson is to be humble, because our memories could be misplaced, and grateful both for the memories we can retain and the ability to not retain all of them.
 
+### Chapter 4: The Importance of Being Social
+
+Social and emotional connections are beyond words, and can be understood through unconscious thought.
+
+We value and amire kind, helpful behaviors. So being nice is it's own reward. It's also attracting other emotional beings.
+
+Our tendency for social acceptance based on kindness starts to develop at early ages (~6 months). Babies that watch animations of "shapes with eyes" being rude (square brick tries to climb, triangle helps, circle pushes it down) or being neutral (circle is just a bystander) tend to reject playing with shapes that aren't helpful.
+
+Another experiment made in 1950's in University of Minnesota. They gathered 2 x 30 female students. To the first group, they say there will be electroshocks it will hurt. To the second group, they said the electroshocks will just tickle. The group that expects painful experience waited in groups (66% - 33% in comparison) even though they had enough waiting rooms for every individual. So we seek help and unification with others when we are anxious.
+
+#### Social pain is also physical
+
+Tylenol (painkiller) experiment. People who took 2-tablets per day shown less affection from social problems compared to the people that took placebos. Lack of social connection constitutes a major risk factor for health.
+
+#### Social intelligence and the "Theory of Mind"
+
+Social intelligence is a result of our evolution. IT has been crucial to our survival. Human kind's ability to band together and organize preceded all the other creatures.
+
+Social intelligence is not only corralated to IQ. It's influenced more by your desire and ability to understand what other people think and feel. It's called "Theory of Mind."
+
+Most of our understanding in ToM comes from unconscious mind. There are levels of ToM.
+
+1. What I think
+2. What I think about what you think
+3. What I think about what you think about what I think
+4. What I think about what you think about what I think about what you think
+5. ...
+
+Politicians and businessman are usually successful to think in 4th order.
+
+#### Chain letters
+
+It takes five steps to find two connected people by forwarding through connections. Same experiment done with both letters and email.
+
+#### Mammals and social intelligence
+
+Although we developed this complex brain and ToM (other mammals can do max 2nd order), there is also a big range of common behavior. Those behaviors are mostly on the unconscious side, and influenced by hormones.
+
+**Male Mammals** -> reproductive success determined by competing with other males to mate with as many females as possible.
+
+**Female Mammals** -> reproductive strategy is investing in production of relatively few offspring, and take care of them as they grow.
+
+Oxytocin: love, trust. Vasopressin: commitment. Two hormones playing a key role in social interactions.
+
+#### Social neuroscience
+
+To investigate the effects of social connections, we have a new field called social neuroscience. Invention of fMRI contributed to many studies and made it clear that here's no way to understand human mind by focusing on rational or emotional extreme.
+
+- _Cognitive psychology:_ mostly focuses on rational end.
+- _Social psychology:_ mostly focused on emotional end.
+- Two + neuroscience => social neuroscience.
+
+In the context of neuroscience, our brain consists of three main parts.
+
+1. Reptilian Brain: basic survival - fight or flight.
+2. Limbic System (Old Mammal Brain): unconscious social perception and reflective reptilian emotions.
+3. Neocortex (New Mammal Brain): homo sapiens! Evolved 200.000 years ago, effective around 50.000 years. Positioned on the frontal lobe, it's what makes us human. Conscious thought, planning and orchestrating in accordance of our goals happen here.
+
 ---
 
 🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
