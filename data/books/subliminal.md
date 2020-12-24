@@ -182,6 +182,191 @@ In the context of neuroscience, our brain consists of three main parts.
 2. Limbic System (Old Mammal Brain): unconscious social perception and reflective reptilian emotions.
 3. Neocortex (New Mammal Brain): homo sapiens! Evolved 200.000 years ago, effective around 50.000 years. Positioned on the frontal lobe, it's what makes us human. Conscious thought, planning and orchestrating in accordance of our goals happen here.
 
----
+## Part 2: The Social Unconscious
 
-🥸 _MORE IN NOTEBOOK. TRANSITION ONGOING_ 🥸
+### Chapter 5: Reading People
+
+We unconsciously signal our expectations by our body language: gestures, facial expressions, posture, tone of voice.
+
+Animals do that too, and they can also learn and understand human's intentions through the body language. Dogs evolved to understand humans the best.
+
+#### Vasco de Gama Rats
+
+Participants communicated more kindly with the "Vasco de Gama" rats (that are told to have abilities in mazes). In fact, they didn't. Yet those rats performed better than the other group (of stupid rats).
+
+Similar things applied for teacher's behaviors against a class with "talented" and "normal" students. Brilliant (to be told) ones increased their IQ even more.
+
+#### Non-linguistic communication in primates
+
+Direct stare means treat, smile means "I won't attack you", or "please don't attack me, you're the best!"
+
+Based on researches to rate human facial expressions in cross-demographies, it seems like our catalog of facial expressions are an inherent part of our being.
+
+#### Dominance
+
+- Physical dominance: voice, body, carrying a gun :D
+- Social dominance: expensive (or non-expensive) clothing, cars, watches
+
+**Visual dominance ratio.** We automatically adjust the amount of time we're looking onto another person's eyes as a function of our relative social dominance. Percentage of the time you look while you are speaking against while you are listening is the visual dominance ratio. People tend to look more while speaking and less while listening when they're dominant.
+
+### Chapter 6: Judging People by Their Covers
+
+Cowbird females get attracted to males by their voice. Even when it's coming from a stereo.
+
+Humans also behave similarly in certain situations when voice is involved. We tend to trust love and relationship advices from women more, since they are known as "keepers." We obey orders from male voices more. We are not very biased on neutral topics. (I doubt that, but cool.)
+
+Voice tone (deep-high) also effects humans when they are choosing their partners. People with physical dominance (long muscular male with hairy chest) sometimes adjust their voice tone to settle the conditions in social interactions (aww). Or the non-dominant individual does the opposite, especially if the case is competitive.
+
+#### First presidential debate on air: Nixon vs. JFK (60' Elections)
+
+Nixon had a knee problem and he was in the hospital. Yet he wanted to attend to the debate. He was looking pale and unhealthy. People in the TV insisted Nixon to wear a make up, but he said he'd only do it if Kennedy also does. Kennedy refused, so he followed.
+
+It's said to be a determining factor (even the next generations that are neutral found Kennedy more "votable" just by watching the recording) on the race. Nixon's vice-president candidate said "That motherfucker just costed us the elections."
+
+Another evidence for the importance of the look: people in Nixon's party who listened the debate through the radio didn't think it was too bad, until they re-watched the video recording.
+
+Many other researches made in the US shown that "competent" looking candidates have enormous advantage when there's no strong ideology involved.
+
+Some random findings:
+
+- Fast speakers create more trust they give a sense of competence.
+- Touching to forearm triggers some empathic feelings. Waiters got more tips and guys get more numbers on street when they did that.
+
+Leonard says we can't turn off the "judging by look" ability. It'll always be there, as the other findings in the book.
+
+### Chapter 7: Sorting People and Things
+
+Over the history, our species used categorization to increase their chance of survival.
+
+If a bear ate uncle Johnny, then another bear can eat you tomorrow.
+
+Unconscious mind transforms input by using categorization to speed up the reaction time. We are also using categorization to learn and remember things. Even our ability to read is empowered by categorization, so it's useful in many ways. However, it's also making us biased towards certain things.
+
+> When we categorize, we polarize.
+
+#### Born of the Stereotype
+
+Raise of the multi-culture societies and free will brought many different perspectives. Politicians, media, and businessman needed to address them somehow.
+
+In order to leverage the power of mass media and managing the society, we came up with the concept of stereotypes. Then we started to generalize the behaviors –mostly negative because we also have a negativity bias.
+
+**Shoplifter reporting experiment.** People reported "poor looking" shoplifters more than the "good looking" ones, and they also used more enthusiastic language when reporting the poor ones.
+
+#### How to not to be a racist
+
+We can fight with our unconscious in parallel to our conscious goals and values to tame biases. Still, as it's been said in [Everything is Fucked](./everything-is-fucked), the most effective way to change a belief is to have a contradictory experience. That's the number one reason why forming multi-cultural, diverse, and inclusive groups are important.
+
+It also seems like we're making progress (on polarizing :D), considering the disapproval rate of supremacist comments made by prolific people like Che Guevara (said "negro is lazy") and Abraham Lincoln (implied "white-black never be equal").
+
+### Chapter 8: In-groups and Out-groups
+
+#### Robbels Cave Camp Experiment
+
+11 x 2 eleven year old boys were called into a three week camp. They're almost indifferent in terms of race, socioeconomic and physical attributes.
+
+They spent a week without being aware of the other group, banded and even created a name/flag/song for their group.
+
+In the second week, teachers made them aware of the second group. They instantly wanted to compete with them in sports. Losing side burnt the flag ot he other team. The team with the burnt flag invaded and messed up the other team's room. In summary, there was a strong "US-VERSUS-THEM" feeling in the air.
+
+(Rest of the story coming at the end)
+
+As this study also shows, humans are not famous with their hospitality against groups they see different from themselves.
+
+Sometimes we even make sacrifices to belong to a group. Most common pattern is the financial sacrifice. Mac-users vs PC-users, country club members, "senior" people who are OK to get promotion rather than salary increase.
+
+#### In-group bias
+
+In-group/out-group mindset makes us think that our in-group members are a lot more sophisticated. We tend to prefer them for social and business dealings.
+
+Our self-identification also effects the performance. A study in Harvard on asian-american women students. They got a difficult math test, but divided into three groups that filled different questionnaires before the test.
+
+- Students who reminded their asian inheritance (correlates to being good at math) did the best.
+- Students who are asked to answer random cable TV questions (control group) did OK.
+- Students who reminded that they are women (seen as bad at math) did the worst.
+
+#### Us versus them, but for real...
+
+Sometimes the excluding behavior comes before the benefits of the tribe. Henri Tajfel experiment: you have limited amount of points to distribute between two people. The difference between distribution effects the total points, and you don't have to distribute all.
+
+- In-group (5 points – max) vs. In-group (5 points – max)
+- Out-group (1 points – min) vs. Out-group (1 points – min)
+- In-group (4 points – not max) vs. Out-group (1 points – min)
+
+People were OK to give less points to in-group for the sake of minimizing out-group outcome.
+
+#### What it takes to establish a kinsnip?
+
+There's no minimal requirement to establish a tribe spirit. We can band against any common enemy very quickly.
+
+The key to reduce in-group/out-group rivalry is to make them work together against ANOTHER COMMON ENEMY :D, or a natural disaster.
+
+The two groups of the Robbels Cave Camp were united against solving the water outage and broken meal truck since it was a problem for both.
+
+Mladinow says the same thing happened in 9.11, when he was living very close to the Empire States building.
+
+It's sad but true.
+
+At least there is a way.
+
+### Chapter 9: Feelings
+
+William James, the man who lived the lifelong learner's dream... He studied various fields in very interesting universities, eventually settled down to get medical degree from Harvard. Yet he worked on psychology, as a student of Wundt.
+
+His masterpiece (which he disowned at the time being and left the field for philosophy) The Principles of Psychology (took him 12 years to write) is still one of the most admired works in psychology.
+
+James proposed the idea that psychology follow physiology. For example, we feel bad because we cry, not the other way around.
+
+Emotions, in today's neo-Jamesian view, are like perceptions and memories. A big portion of the data comes from the unconscious mind, then the conscious part completes the rest with our preexisting beliefs and expectations. Adding the of interpretation of the current circumstances, we construct an emotion.
+
+#### When you know where it's coming from...
+
+Adrenaline experiments: subjects who are informed about the potential increase of their sexual desires where less interested in erotic films. (They were given injections then ran in treadmill)
+
+If we somehow "know" the sources of our impulses, we are able to make more "mindful" decisions.
+
+#### Confabulation
+
+When we have no idea what led us to certain actions, we make up a narrative to justify our reasoning. The lack of agreement between [the thinking brain and the feeling brain](../notes/consciousness-car) is the real issue.
+
+Hiring experiment: subjects are evaluating a candidate based on academic success, a coffee-spilling incident, how attractive she is, and their possibility to meet her. Outside attendants are also try to guess why a subject would decide to hire the applicant.
+
+Both the subjects and observers think that academic success was the biggest factor, but it had less effect than the other social norms.
+
+As psychological theory suggested, the subjects had shown no greater interest into their reasoning than the outsiders had.
+
+So we don't usually see ourselves no other than how the others see us.
+
+Well, that's a bit bad. Perhaps the reason of the imposter syndrome.
+
+To minimize the gap, we can broaden our perspectives and invest effort to know ourselves more deeply.
+
+Yet sometimes it's futile to make a meaning out of everything.
+
+> If your mind's natural view of the world is skewed, it's skewed for a reason.
+
+### Chapter 10: Self
+
+When we face with treats to feeling good about ourselves, our tendency to view reality through a distorting lens grows proportionally.
+
+Many people think they are above-average in their professions.
+
+Ironically, we tend to recognize that inflated self-assessment and overconfidence can be a problem–but only in others.
+
+That's right, we even overestimate our ability to resist overestimating our abilities.
+
+#### Two ways to get truth
+
+1. Scientist's Way: gather evidence, look for regularities, form theories explaining their observations, and test them.
+2. Lawyer's Way: being with a conclusion they want to convince others of and then seek evidence that supports it, while also attempting to discredit evidence that doesn't.
+
+The human mind is evolved to be the both.
+
+#### Motivated reasoning
+
+Motivated reasoning helps us to believe in our own goodness and competence, to feel in control, and to generally see ourselves in an overly positive light.
+
+Our brains show different physical behaviors when the subject is "us".
+
+> "You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.
+>
+> – Steve Jobs

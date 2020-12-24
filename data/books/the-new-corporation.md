@@ -12,7 +12,7 @@ Today, half of the Americans can't pay an unexpected 400$ bill without going int
 
 Despite medical technology advancements, deaths of despair (alcohol, drugs, suicide) are also all-time high.
 
-## CH1 - The New Corporation
+## Chapter 1: The New Corporation
 
 Joel's impressions from 2019 Davos Economic Forum. Many tech-corporation leaders believe the current system is not viable, and we need to change it.
 
@@ -40,7 +40,7 @@ The modern corporation was invented to raise money for growing industrial ventur
 
 Hockey is a violent game, where it's not discouraged for players to avoid physical intensity. They can be tough on the ice but different in real life. All hockey teams play by the same rules and rules profoundly shape their actions. Just like the hockey example, an individual might adopt different values on their personal lives from the institutions they work. Their own lights on every action do not guide them.
 
-## CH2 - Still Crazy After All These Years
+## Chapter 2: Still Crazy After All These Years
 
 It starts with an interview with Lord Browne, executive chair at L1, who was the chief architect of BP's safety culture. BP had the "Deepwater Horizon" disaster in 2010. Eleven workers dead and the oil leakage nearly destroyed the Mexican Gulf Ecosystem.
 
@@ -56,11 +56,11 @@ The involvement of hydrocarbon companies made the Paris Agreement useless since 
 
 The inevitable result is a rapidly warming planet. Destruction of animal habitats is also bringing animals and humans into closer proximity. That, in turn, increases the chances of humans contracting zootomic infections.
 
-### Nutricional Promises
+### Nutritional Promises
 
 The nutritional promises made by corporations are also showing a sign of doing well rather than going good.
 
-The beverages produced by Coca-Cola, Nestle, and Unilever are claimed to help efficiently take the required nutrients, especially for people in poverty. However, each drink's serving contains roughly the entire maximum sugar intake per day recommended by the World Health Organisation.
+The beverages produced by Coca-Cola, Nestle, and Unilever are claimed to help efficiently take the required nutrients, especially for people in poverty. However, each drink's serving contains roughly the entire maximum sugar intake per day recommended by the World Health Organization.
 
 ### Doing Well by Doing Bad
 
