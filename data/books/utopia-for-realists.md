@@ -3,6 +3,9 @@ isbn: '1408893215'
 date: '2020-10-17'
 rating: '4/5'
 oneliner: 'As long as we continue to be obsessed with work, work, and more work, the number of superfluous jobs will only continue to grow.'
+tags:
+  - politics
+  - economy
 ---
 
 ## The Return of the Utopia

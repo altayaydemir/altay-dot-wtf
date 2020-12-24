@@ -5,8 +5,7 @@ rating: '5/5'
 oneliner: "If you can get 1 percent better each day for one year, you'll end up thirty-seven times better by the time you're done."
 tags:
   - productivity
-  - habits
-  - building-systems
+  - self-help
 ---
 
 **Introduction: Story of James**

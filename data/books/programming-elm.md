@@ -5,7 +5,6 @@ rating: '3/5'
 oneliner: 'Elm functions are curried, which is the fancy way of saying they take one argument at a time.'
 tags:
   - software
-  - elm
 ---
 
 There is [a Github repository](https://github.com/altayaydemir/programming-elm) for the stuff I built while following this book.

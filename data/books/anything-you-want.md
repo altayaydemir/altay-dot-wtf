@@ -6,9 +6,6 @@ oneliner: 'If you want to be useful, you can start now. Just put one percent of 
 tags:
   - derek-sivers
   - business
-  - staying-small
-  - saying-no
-  - why-are-you-doing
 ---
 
 ## Your Company is Your Utopia
@@ -117,6 +114,6 @@ Employees get to choose the revenue sharing model.
 They end up giving all profit to themselves.
 Fixing it in a conflicting way was the beginning of the end for CD Baby. People's relationships got broken, and Derek stopped going to the office.
 
-Eventually, he sold CD Baby and donated money to music education, where it all started for him. 
+Eventually, he sold CD Baby and donated money to music education, where it all started for him.
 
 A sentimental ending for a great story.

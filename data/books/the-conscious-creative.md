@@ -3,6 +3,8 @@ isbn: '9781487008024'
 date: '2020-11-23T20:23:46Z'
 rating: '4/5'
 oneliner: I am committed to acting as ethically as I can while accepting my compulsory participation in a problematic capitalist paradigm.
+tags:
+  - creativity
 ---
 
 It's an excellent read, but I'm worried the term "creative" might push some potential readers back. I often perceive myself as a ticket machine than a creative as a software engineer working at FinTech. Yet, I found it golden since I'm going through similar mental struggles.

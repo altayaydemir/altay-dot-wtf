@@ -5,8 +5,6 @@ rating: '4/5'
 oneliner: 'All you need is to be a decent human being with a valued skill set and a willingness to share what you know with people who’ll listen.'
 tags:
   - business
-  - staying-small
-  - building-systems
 ---
 
 The book starts with Paul's moving story from Vancouver to Tofino, a small town:

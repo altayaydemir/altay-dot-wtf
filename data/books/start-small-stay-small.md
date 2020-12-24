@@ -5,7 +5,6 @@ rating: '3/5'
 oneliner: 'Market comes first, marketing second, aesthetic third, and functionality a distant fourth.'
 tags:
   - business
-  - staying-small
 ---
 
 ## The Chasm Between Developer and Entrepreneur

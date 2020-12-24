@@ -5,7 +5,6 @@ rating: '5/5'
 oneliner: A dead program normally does a lot less damage than a crippled one.
 tags:
   - software
-  - saying-no
 ---
 
 ## Chapter 1: A Pragmatic Philosophy

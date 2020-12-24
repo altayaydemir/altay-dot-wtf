@@ -5,8 +5,7 @@ rating: '4/5'
 oneliner: "'Quitters never win and winners never quit' is a bad advice. Winners quit all the time. They just quit the right stuff at the right time."
 tags:
   - seth-godin
-  - quitting
-  - cul-de-sac
+  - self-help
 ---
 
 ## Being the Best in the World is Seriously Underrated

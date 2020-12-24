@@ -4,7 +4,7 @@ date: '2018-12-23'
 rating: '4/5'
 oneliner: 'Seventy-nine percent of smartphone owners check their device within fifteen minutes of waking up every morning.'
 tags:
-  - product-design
+  - design
   - habits
 ---
 

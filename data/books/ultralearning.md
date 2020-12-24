@@ -6,7 +6,7 @@ oneliner: 'In chemical reactions, there are rate-determining steps which affects
 tags:
   - productivity
   - learning
-  - building-systems
+  - self-help
 ---
 
 ## Principle 1: Metalearning
