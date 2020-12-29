@@ -1,14 +1,10 @@
-import type { Article, Book, Content, ContentType } from 'types'
+import type { Post, Book, Content, ContentType } from 'types'
 import readingTime from 'reading-time'
 import { fetchBookData, fetchBookImage } from './http'
 import { getImageData, generateMetaImage } from './image'
 
-const getArticleMeta = async (
-  slug: string,
-  meta: Article['meta'],
-  content: Article['markdown'],
-) => {
-  const url = `/images/articles/${slug}/${slug}.png`
+const getPostMeta = async (slug: string, meta: Post['meta'], content: Post['markdown']) => {
+  const url = `/images/blog/${slug}/${slug}.png`
   const { width, height, blurhash } = await getImageData(url)
   const metaImage = { width, height, url, blurhash }
   const readingTimeStats = readingTime(content)
@@ -49,8 +45,8 @@ export const getMeta = async <T extends Content>(
     case 'book':
       return getBookMeta(slug, rawMeta as Book['meta'])
 
-    case 'article':
-      return getArticleMeta(slug, rawMeta as Article['meta'], rawContent)
+    case 'post':
+      return getPostMeta(slug, rawMeta as Post['meta'], rawContent)
 
     default:
       return rawMeta as T['meta']

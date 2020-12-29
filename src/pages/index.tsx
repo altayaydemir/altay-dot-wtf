@@ -1,4 +1,4 @@
-import type { Article, Book } from 'types'
+import type { Post, Book } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useCallback } from 'react'
 import { homeCopy } from 'config/copy'
@@ -6,14 +6,14 @@ import { Box, Heading } from 'rebass'
 import { getContentList } from 'core/api/content'
 import PageHeader from 'components/PageHeader'
 import HomeLink from 'components/Home/HomeLink'
-import ArticleList from 'components/Article/ArticleList'
+import PostList from 'components/Post/PostList'
 import BookList from 'components/Book/BookList'
 
 type Sections = [
   {
     title: string
-    type: 'articles'
-    data: Article[]
+    type: 'posts'
+    data: Post[]
   },
   {
     title: string
@@ -23,22 +23,16 @@ type Sections = [
 ]
 
 export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () => {
-  const Articles = (await getContentList<Article>('article'))
-    .filter((post) => !post.meta.draft)
-    .slice(0, 5)
-
-  const books = (await getContentList<Book>('book')).slice(0, 5)
-
   const sections: Sections = [
     {
-      title: homeCopy.articlesTitle,
-      type: 'articles',
-      data: Articles,
+      title: homeCopy.postsTitle,
+      type: 'posts',
+      data: (await getContentList<Post>('post')).filter((post) => !post.meta.draft).slice(0, 5),
     },
     {
       title: homeCopy.booksTitle,
       type: 'books',
-      data: books,
+      data: (await getContentList<Book>('book')).slice(0, 5),
     },
   ]
 
@@ -48,12 +42,12 @@ export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () =
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sections }) => {
   const renderSection = useCallback((section: Sections[number]) => {
     switch (section.type) {
-      case 'articles':
+      case 'posts':
         return (
           <>
             <Box my={2} />
-            <ArticleList data={section.data} />
-            <HomeLink label="view all articles" href="/articles" />
+            <PostList data={section.data} />
+            <HomeLink label="view all blog posts" href="/blog" />
           </>
         )
 

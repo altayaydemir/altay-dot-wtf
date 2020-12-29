@@ -12,7 +12,7 @@ const getTitle = (item: Content) => {
   switch (item.type) {
     case 'book':
     case 'note':
-    case 'article':
+    case 'post':
       return item.meta.title
 
     default:
@@ -20,10 +20,12 @@ const getTitle = (item: Content) => {
   }
 }
 
+const getType = (item: Content) => item.type.split('-').join(' ')
+
 const getURLForContent = (content: Content, slug: string) => {
   switch (content.type) {
-    case 'article':
-      return `/articles/${content.slug}?source=${slug}`
+    case 'post':
+      return `/blog/${content.slug}?source=${slug}`
 
     case 'book':
       return `/books/${content.slug}?source=${slug}`
@@ -57,7 +59,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
         </Text>
 
         <Text color="textSecondary" display="inline" fontSize={0}>
-          {data.type.split('-').join(' ')}
+          {getType(data)}
         </Text>
 
         <Text color="textSecondary" display="inline-block" mx={1}>

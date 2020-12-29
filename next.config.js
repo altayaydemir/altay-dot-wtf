@@ -12,19 +12,19 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
-        source: '/blog',
-        destination: '/articles',
+        source: '/articles',
+        destination: '/blog',
         permanent: true,
       },
       {
-        source: '/blog/:path*',
-        destination: '/articles/:path*',
+        source: '/articles/:path*',
+        destination: '/blog/:path*',
         permanent: true,
       },
       {
-        source: '/chat',
-        destination: 'https://whereby.com/aydemir',
-        permanent: false,
+        source: '/posts/:path*',
+        destination: '/blog/:path*',
+        permanent: true,
       },
     ]
   },

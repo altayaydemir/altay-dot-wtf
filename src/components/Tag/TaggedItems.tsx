@@ -13,7 +13,7 @@ const getTitle = (item: TaggedItem) => {
   switch (item.type) {
     case 'note':
     case 'book':
-    case 'article':
+    case 'post':
       return item.meta.title
 
     case 'bookmark':
@@ -24,10 +24,12 @@ const getTitle = (item: TaggedItem) => {
   }
 }
 
+const getType = (item: TaggedItem) => item.type.split('-').join(' ')
+
 const getURLForContent = (content: TaggedContent, tag: string) => {
   switch (content.type) {
-    case 'article':
-      return `/articles/${content.slug}?source=${tag}`
+    case 'post':
+      return `/blog/${content.slug}?source=${tag}`
 
     case 'book':
       return `/books/${content.slug}?source=${tag}`
@@ -89,7 +91,7 @@ const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
     <TaggedItemHeading tag={tag} data={data} />
 
     <Text color="textSecondary" display="inline" fontSize={1}>
-      {data.type.split('-').join(' ')}
+      {getType(data)}
     </Text>
 
     <Text color="textSecondary" display="inline-block" mx={1}>

@@ -4,14 +4,12 @@ import fs from 'fs'
 
 const getContentDirectoryForType = (type: ContentType) => {
   switch (type) {
-    case 'article':
-      return 'articles'
+    case 'post':
+      return 'blog'
     case 'book':
       return 'books'
     case 'note':
       return 'notes'
-    case 'private-note':
-      return 'private-notes'
     case 'journal':
       return 'private-journal'
     default:

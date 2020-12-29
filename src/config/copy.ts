@@ -11,12 +11,12 @@ export const homeCopy = {
       href: '/now',
     },
   ],
-  articlesTitle: 'recent articles',
-  booksTitle: 'recent books',
+  postsTitle: 'recent blog posts',
+  booksTitle: 'recent book notes',
 } as const
 
-export const articlesCopy = {
-  title: 'articles',
+export const blogCopy = {
+  title: 'blog',
   description: 'learnings worth sharing.',
 } as const
 

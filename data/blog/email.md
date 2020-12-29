@@ -18,7 +18,7 @@ Now I use my custom domain with a service provider, and you are reading a post w
 
 ### Problems of Gmail
 
-It belongs to Google, one of the biggest ad networks in the world. Gmail is free, and Google is a revenue-driven company, like most businesses. When those businesses want to increase their revenue, they hire smart people. Those smart people discover smart ways to make use of what they know about us. Then every few months, we get a new documentary, book, or podcast to tell how the best minds of our generation are spending their willpower. Here we repeat the famous **_"if you are not paying for the product, you are the product"_** quote. There's no need to go over the details, just _Google_ "Gmail and Privacy." I'm surprised [this ProtonMail article](https://protonmail.com/articles/google-privacy-problem/) shows up on the first page.
+It belongs to Google, one of the biggest ad networks in the world. Gmail is free, and Google is a revenue-driven company, like most businesses. When those businesses want to increase their revenue, they hire smart people. Those smart people discover smart ways to make use of what they know about us. Then every few months, we get a new documentary, book, or podcast to tell how the best minds of our generation are spending their willpower. Here we repeat the famous **_"if you are not paying for the product, you are the product"_** quote. There's no need to go over the details, just _Google_ "Gmail and Privacy." I'm surprised [this ProtonMail article](https://protonmail.com/blog/google-privacy-problem/) shows up on the first page.
 
 ### Benefits of using your domain
 
@@ -44,7 +44,7 @@ When searching for Gmail alternatives, I found a few useful resources, such as [
 
 Tutanota and Protonmail seem to be the best options. Protonmail is more comprehensive, feature-rich, but naturally more expensive (5 EUR/month). However, I was familiar with Tutanota from the past, and it's cheaper (1 EUR/month). So decided to try that first.
 
-![Tutanota Logo](/images/articles/email/tutanota.jpg)
+![Tutanota Logo](/images/blog/email/tutanota.jpg)
 
 ### Tutanota
 
@@ -62,7 +62,7 @@ Tutanota doesn't have SMTP support on the desktop, but they offer apps for every
 
 By the time I'm about to complete my first month in Tutanota, I was already looking for Black Friday offers from ProtonMail.
 
-![Protonmail Logo](/images/articles/email/protonmail.jpg)
+![Protonmail Logo](/images/blog/email/protonmail.jpg)
 
 ### ProtonMail
 
@@ -74,12 +74,12 @@ They don't have `catch-all` feature in the plus plan (available in business), bu
 
 ProtonMail has extensive options to filter emails, with an option to skip sending push notifications. This feature single-handedly makes the service worth paying three times more.
 
-![Noise Setup](/images/articles/email/setup-1.png)
-![Noise Setup](/images/articles/email/setup-2.png)
-![Noise Setup](/images/articles/email/setup-3.png)
+![Noise Setup](/images/blog/email/setup-1.png)
+![Noise Setup](/images/blog/email/setup-2.png)
+![Noise Setup](/images/blog/email/setup-3.png)
 
 They also have an `SMTP Bridge` application for desktop, and the instructions are pretty clear. I'm able to do whatever I could do with Gmail; nothing is crippled. The `skip sending push notification` feature also convinced me to install the mobile app instead of obsessively checking the web app. Noise reduction is achieved!
 
 Eventually, my several days of fascination lead to committing ProtonMail with a 2-year plan. If you read till this point and consider a similar setup, here's a flowchart for you. Please don't hesitate to reach out if I can help somehow.
 
-![Decision diagram](/images/articles/email/decision-diagram.jpg)
+![Decision diagram](/images/blog/email/decision-diagram.jpg)

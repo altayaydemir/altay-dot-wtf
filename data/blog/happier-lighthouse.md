@@ -14,15 +14,15 @@ In addition to eliminating the friction, Vercel also provides [analytics](https:
 
 And that's precisely what I did right after deploying a bearable version. But the results were not satisfying at all.
 
-![Lighthouse score before the optimization](/images/articles/happier-lighthouse/lighthouse-score-before.png)
+![Lighthouse score before the optimization](/images/blog/happier-lighthouse/lighthouse-score-before.png)
 
 My minimal home page with three lines of text and a handful of links made Lighthouse complain sorely about the performance.
 
 The report is clear, it tells that I'm basically making your computer load and parse a bunch of irrelevant JavaScript.
 
-![Lighthouse score details, before the optimization](/images/articles/happier-lighthouse/lighthouse-score-before-detail.png)
+![Lighthouse score details, before the optimization](/images/blog/happier-lighthouse/lighthouse-score-before-detail.png)
 
-> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/articles/happier-lighthouse/medium-110-requests.gif) 👹👹👹
+> I thought that's an ethos to have if you are building a publishing thingy nowadays, or am I in the wrong [Medium?](/images/blog/happier-lighthouse/medium-110-requests.gif) 👹👹👹
 
 ### Finding out what I am excessively loading
 
@@ -37,11 +37,11 @@ I have two choices:
 
 Proceeding with the latter, I know one thing which doesn't get minified: **error messages!**
 
-![Digging up the excessively loaded code](/images/articles/happier-lighthouse/excessively-loaded-code.png)
+![Digging up the excessively loaded code](/images/blog/happier-lighthouse/excessively-loaded-code.png)
 
 And searching for `only one of 'allowedTypes' and 'disallowedTypes' should be defined` in the `node_modules` is a good next step for approaching to the crux.
 
-![Search results for the error message.](/images/articles/happier-lighthouse/search-results-for-error-message.png)
+![Search results for the error message.](/images/blog/happier-lighthouse/search-results-for-error-message.png)
 
 Then I realize it's seemingly related to markdown. Now that the scope is narrowed down, it's time to discover what I'm doing wrong.
 
@@ -127,7 +127,7 @@ export default Markdown
 
 In the end, the performance score of [the home page](/) increased dramatically.
 
-![Lighthouse score, after the optimization](/images/articles/happier-lighthouse/lighthouse-score-after.png)
+![Lighthouse score, after the optimization](/images/blog/happier-lighthouse/lighthouse-score-after.png)
 
 This approach doesn't eradicate the CPU tax of loading and executing the JS on the pages that I need to render a code editor, such as this post.
 
