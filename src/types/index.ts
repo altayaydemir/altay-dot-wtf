@@ -32,6 +32,9 @@ export type Journal = BaseMDContent & {
 
 export type Vocabulary = BaseMDContent & {
   type: 'vocabulary'
+  meta: BaseMDMeta & {
+    title: string
+  }
 }
 
 export type Note = BaseMDContent & {

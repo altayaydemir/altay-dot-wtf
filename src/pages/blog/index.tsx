@@ -10,7 +10,7 @@ export const getStaticProps = getStaticPropsForContentList<Post>('post')
 
 const PostsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader icon="🤔" title={blogCopy.title} description={blogCopy.description} />
+    <PageHeader {...blogCopy} />
     <Box m={4} />
     <PostList data={data} />
   </>

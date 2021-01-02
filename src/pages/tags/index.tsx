@@ -1,4 +1,5 @@
 import type { InferGetStaticPropsType } from 'next'
+import { tagsCopy } from 'config/copy'
 import { getAllTags } from 'core/api/tags'
 import Tags from 'components/Tag/Tags'
 import PageHeader from 'components/PageHeader'
@@ -10,7 +11,7 @@ export const getStaticProps = async () => ({
 
 const TagsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ tags }) => (
   <>
-    <PageHeader title="tags" />
+    <PageHeader {...tagsCopy} />
     <Box m={3} />
     <Tags tags={tags} fontSize={1} spacing={2} />
   </>

@@ -3,6 +3,7 @@ import type { Note } from 'types'
 import NextLink from 'next/link'
 import { Box, Text, Link } from 'rebass'
 import { format } from 'date-fns'
+import { notesCopy } from 'config/copy'
 import { getStaticPropsForContentList } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
 
@@ -10,10 +11,8 @@ export const getStaticProps = getStaticPropsForContentList<Note>('note')
 
 const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader icon="📝" title={`Notes`} description={`Random thoughts and references.`} />
-
+    <PageHeader {...notesCopy} />
     <Box m={3} />
-
     <>
       {data.map((d) => (
         <Box key={d.slug} my={3}>

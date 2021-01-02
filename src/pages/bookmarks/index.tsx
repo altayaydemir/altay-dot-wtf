@@ -1,6 +1,7 @@
 import type { InferGetStaticPropsType } from 'next'
 import { Box, Text, Link, Heading, SxStyleProp } from 'rebass'
 import { getBookmarks } from 'core/api/bookmarks'
+import { bookmarksCopy } from 'config/copy'
 import PageHeader from 'components/PageHeader'
 
 export const getStaticProps = async () => ({ props: { data: getBookmarks() } })
@@ -15,7 +16,7 @@ const descriptionStyle: SxStyleProp = {
 
 const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader icon="📑" title="Bookmarks" description="Cool things all over the interweb." />
+    <PageHeader {...bookmarksCopy} />
 
     <>
       {data.map((bookmark) => (

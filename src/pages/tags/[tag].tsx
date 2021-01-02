@@ -1,6 +1,7 @@
 import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next'
 import type { TaggedItem } from 'types'
 import { Box } from 'rebass'
+import { tagsCopy } from 'config/copy'
 import { getAllTags, getTaggedItemsByTag } from 'core/api/tags'
 import TaggedItems from 'components/Tag/TaggedItems'
 import PageHeader from 'components/PageHeader'
@@ -42,7 +43,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
 
   return (
     <>
-      <PageHeader title={`#${tag}`} description={getDescription(data.length)} />
+      <PageHeader {...tagsCopy} title={`#${tag}`} description={getDescription(data.length)} />
       <Box my={3} />
       <TaggedItems tag={tag} data={data} />
     </>

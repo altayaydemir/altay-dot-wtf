@@ -1,6 +1,5 @@
 import type { Post, Book } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
-import Image from 'next/image'
 import { useCallback } from 'react'
 import { homeCopy } from 'config/copy'
 import { Box, Heading } from 'rebass'
@@ -46,18 +45,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
       case 'posts':
         return (
           <>
-            <Box my={2} />
             <PostList data={section.data} />
-            <HomeLink label="View all blog posts" href="/blog" />
+            <HomeLink label={homeCopy.postsViewAll} href="/blog" />
           </>
         )
 
       case 'books':
         return (
           <>
-            <Box my={3} />
             <BookList data={section.data} />
-            <HomeLink label="View all book notes" href="/books" />
+            <HomeLink label={homeCopy.booksViewAll} href="/books" />
           </>
         )
     }
@@ -79,7 +76,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
             {section.title}
           </Heading>
 
-          {renderSection(section)}
+          <Box my={3}>{renderSection(section)}</Box>
         </Box>
       ))}
     </>

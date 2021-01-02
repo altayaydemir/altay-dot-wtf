@@ -2,6 +2,7 @@ import type { InferGetStaticPropsType } from 'next'
 import type { Now } from 'types'
 import { Box } from 'rebass'
 import { format } from 'date-fns'
+import { nowHistoryCopy } from 'config/copy'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import PageHeader from 'components/PageHeader'
 import Markdown from 'components/Markdown'
@@ -15,13 +16,10 @@ const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> =
   return (
     <>
       <PageHeader
-        icon="🗓"
-        title="History"
+        {...nowHistoryCopy}
         description={`What I was doing around ${format(new Date(data.meta.date), 'MMMM yyyy')}`}
       />
-
       <Box m={4} />
-
       <Markdown>{data.markdown}</Markdown>
     </>
   )

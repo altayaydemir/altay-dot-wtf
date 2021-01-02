@@ -2,6 +2,7 @@ import type { InferGetStaticPropsType } from 'next'
 import type { Now } from 'types'
 import { Box, Text } from 'rebass'
 import { format } from 'date-fns'
+import { nowCopy } from 'config/copy'
 import { getMarkdownFileNames } from 'core/api/fs'
 import { getContentDetails } from 'core/api/content'
 import PageHeader from 'components/PageHeader'
@@ -22,21 +23,10 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
 
   return (
     <>
-      <PageHeader
-        icon="🕒"
-        title="What I'm doing now"
-        description={
-          "This is a [monthly](/now/history) updated [now page](https://nownownow.com), and it's inspired by [Derek Sivers.](https://sive.rs)"
-        }
-        metaDescription={`What am I doing as of ${formattedDate}`}
-      />
-
+      <PageHeader {...nowCopy} metaDescription={`What am I doing as of ${formattedDate}`} />
       <Box m={4} />
-
       <Markdown>{data.markdown}</Markdown>
-
       <Box m={4} />
-
       <Text fontSize={0} color="textTertiary">
         Last updated at {formattedDate}
       </Text>

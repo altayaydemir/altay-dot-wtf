@@ -1,5 +1,6 @@
 import type { InferGetStaticPropsType } from 'next'
 import type { Vocabulary } from 'types'
+import { vocabCopy } from 'config/copy'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import Markdown from 'components/Markdown'
 import PageHeader from 'components/PageHeader'
@@ -12,7 +13,7 @@ const VocabularyPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> =
 
   return (
     <>
-      <PageHeader title={data.slug} />
+      <PageHeader {...vocabCopy} title={data.meta.title} />
       <Markdown>{data.markdown}</Markdown>
     </>
   )
