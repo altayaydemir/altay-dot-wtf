@@ -8,8 +8,8 @@ const links = [
   },
   {
     title: 'Twitter',
-    label: '@altayaydemir',
-    href: 'https://twitter.com/altayaydemir',
+    label: '@altaywtf',
+    href: 'https://twitter.com/altaywtf',
   },
 ]
 

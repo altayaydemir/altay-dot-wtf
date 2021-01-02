@@ -12,7 +12,7 @@ export const SEO: NextSeoProps = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   twitter: {
-    handle: '@altayaydemir',
+    handle: '@altaywtf',
     cardType: 'summary_large_image',
   },
   openGraph: {
