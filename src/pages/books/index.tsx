@@ -10,7 +10,7 @@ export const getStaticProps = getStaticPropsForContentList<Book>('book')
 
 const BooksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={booksCopy.title} description={booksCopy.description} />
+    <PageHeader icon="📚" title={booksCopy.title} description={booksCopy.description} />
     <Box m={4} />
     <BookList data={data} />
   </>

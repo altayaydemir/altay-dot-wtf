@@ -65,20 +65,6 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
 
   return (
     <>
-      <Box
-        sx={{
-          position: 'relative',
-          overflow: 'hidden',
-          width: 64,
-          height: 64,
-          borderRadius: '50%',
-        }}
-      >
-        <Image src="/images/avatar.png" width={64} height={64} layout="responsive" />
-      </Box>
-
-      <Box my={4} />
-
       <PageHeader title={homeCopy.title} description={homeCopy.description} />
 
       <Box my={2}>

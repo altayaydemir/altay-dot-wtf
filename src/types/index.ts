@@ -41,14 +41,6 @@ export type Note = BaseMDContent & {
   }
 }
 
-export type PrivateNote = BaseMDContent & {
-  type: 'private-note'
-  meta: BaseMDMeta & {
-    pinned: boolean
-    title: string
-  }
-}
-
 export type Post = BaseMDContent & {
   type: 'post'
   meta: BaseMDMeta & {
@@ -89,7 +81,7 @@ export type Bookmark = BookmarkJSON & {
   tags: string[]
 }
 
-export type Content = Now | Note | Post | Book | About | PrivateNote | Journal | Vocabulary
+export type Content = Now | Note | Post | Book | About | Journal | Vocabulary
 export type ContentType = Content['type']
 
 export type TaggedContent = Note | Post | Book

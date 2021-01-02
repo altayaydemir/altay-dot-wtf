@@ -10,12 +10,6 @@ export const getStaticProps = async () => ({
 })
 
 const sx: SxStyleProp = {
-  '& > *:first-of-type > h3': {
-    marginTop: '0!important',
-  },
-  '& > * > h3': {
-    fontSize: 3,
-  },
   '& > ul': {
     marginY: 3,
   },
@@ -26,7 +20,7 @@ const sx: SxStyleProp = {
 
 const AboutPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
   <>
-    <PageHeader title="About" />
+    <PageHeader icon="👋" title="About" />
 
     <Box sx={sx}>
       <Markdown>{markdown}</Markdown>

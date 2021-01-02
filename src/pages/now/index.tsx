@@ -23,6 +23,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
   return (
     <>
       <PageHeader
+        icon="🕒"
         title="What I'm doing now"
         description={
           "This is a [monthly](/now/history) updated [now page](https://nownownow.com), and it's inspired by [Derek Sivers.](https://sive.rs)"
