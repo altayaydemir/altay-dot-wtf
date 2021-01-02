@@ -11,7 +11,7 @@ const getContentDirectoryForType = (type: ContentType) => {
     case 'note':
       return 'notes'
     case 'journal':
-      return 'private-journal'
+      return 'journal'
     default:
       return type
   }
