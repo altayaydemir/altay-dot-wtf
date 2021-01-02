@@ -1,40 +1,32 @@
-import { SITE_TITLE } from './meta'
-import { __DEV__ } from './env'
-
 export const HEADER = {
-  title: SITE_TITLE,
   links: [
     {
-      label: 'about',
+      label: 'Home',
+      href: '/',
+    },
+    {
+      label: 'About',
       href: '/about',
     },
     {
-      label: 'now',
+      label: 'Now',
       href: '/now',
     },
     {
-      label: 'blog',
+      label: 'Blog',
       href: '/blog',
     },
     {
-      label: 'notes',
+      label: 'Notes',
       href: '/notes',
     },
     {
-      label: 'books',
+      label: 'Books',
       href: '/books',
     },
     {
-      label: 'bookmarks',
+      label: 'Bookmarks',
       href: '/bookmarks',
     },
-    ...(__DEV__
-      ? [
-          {
-            label: 'v',
-            href: '/vocabulary',
-          },
-        ]
-      : []),
   ],
 } as const

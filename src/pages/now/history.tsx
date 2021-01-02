@@ -11,7 +11,7 @@ export const getStaticProps = getStaticPropsForContentList<Now>('now')
 
 const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={`history`} description={`what I've been doing`} />
+    <PageHeader title={`History`} description={`What I've been doing`} />
 
     <Box m={2} />
 

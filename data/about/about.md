@@ -4,44 +4,27 @@ date: '2020-12-01'
 
 I live in Berlin and work at [Klarna](https://klarna.com) as a software engineer.
 
-I sometimes work on other things on the side; the most prominent is [putio](https://put.io).
+I also work on other things on the side; the most prominent is [putio](https://put.io).
 
-I read, listen, or have a silent conversation with [this turtle statue in Volkspark Friedrichshain](https://www.google.com/maps/place/Volkspark+Friedrichshain/@52.5280353,13.4363934,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3%3Dw203-h308-k-no!7i2164!8i3291!4m5!3m4!1s0x47a84e126b6e2efd:0xc281c457bba00f76!8m2!3d52.5280353!4d13.4363934) in my free time.
+I read, listen, or have a conversation with [this turtle statue in Volkspark Friedrichshain](https://www.google.com/maps/place/Volkspark+Friedrichshain/@52.5280353,13.4363934,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3%3Dw203-h308-k-no!7i2164!8i3291!4m5!3m4!1s0x47a84e126b6e2efd:0xc281c457bba00f76!8m2!3d52.5280353!4d13.4363934) in my free time.
 
-### what I enjoy
+#### People who enormously contributed to my life in the past several years
 
-**using things** that are solving my problems.
+**The Big Four**: Naval Ravikant, Derek Sivers, Seth Godin, Mark Manson
 
-**building things** that are solving problems I empathize with.
+**Productives**: Cal Newport, James Clear, Make Time Duo
 
-**creating systems** based on iteration and supported by literature.
+**Creatives**: Austin Kleon, Brian Lovin, Andy J. Pizza
 
-**consistent change** and getting better at quitting.
+**Hackers**: Guillermo Rauch, Dan Abramov, Scott Wlatschin
 
-### who I appreciate
+**In-ear**: Christian Löffler, Hælos, Jakuzi
 
-**the big four**\
-naval ravikant, derek sivers, seth godin, mark manson
+**On-screen**: Phoebe Waller-Bridge, Ricky Gervais, Louis CK
 
-**productives**\
-cal newport, james clear, make time duo
+**Close-circle**: [Hasan Yalcinkaya](https://twitter.com/hafifuyku), [Kemal Akkoyun](https://kakkoyun.me), [Berk Capar](https://berk.studio)
 
-**creatives**\
-austin kleon, brian lovin, andy j. pizza
-
-**hackers**\
-guillermo rauch, dan abramov, scott wlatschin
-
-**in-ear**\
-christian löffler, hælos, jakuzi
-
-**on-screen**\
-phoebe waller-bridge, ricky gervais, louis ck
-
-**close-circle**\
-[hasan yalcinkaya](https://twitter.com/hafifuyku), [kemal akkoyun](https://kakkoyun.me), [berk capar](https://berk.studio)
-
-### what I did
+### Timeline
 
 - **2020, oct:** built this website.
 - **2020, jan:** switched to the _app client core_ team, which is responsible for architecture, performance and many other things related to [klarna consumer app.](https://klarna.com/us/klarna-app/)

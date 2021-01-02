@@ -23,11 +23,11 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
   return (
     <>
       <PageHeader
-        title="what am I doing now"
+        title="What I'm doing now"
         description={
-          "this is a [now page](https://nownownow.com) updated [monthly](/now/history), and it's inspired by [Derek Sivers.](https://sive.rs)"
+          "This is a [monthly](/now/history) updated [now page](https://nownownow.com), and it's inspired by [Derek Sivers.](https://sive.rs)"
         }
-        metaDescription={`what am I doing as of ${formattedDate}`}
+        metaDescription={`What am I doing as of ${formattedDate}`}
       />
 
       <Box m={4} />
@@ -37,7 +37,7 @@ const NowPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
       <Box m={4} />
 
       <Text fontSize={0} color="textTertiary">
-        last updated at {formattedDate}
+        Last updated at {formattedDate}
       </Text>
     </>
   )

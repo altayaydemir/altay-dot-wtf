@@ -1,7 +1,6 @@
 import { HEADER } from 'config'
 import { useToggle } from 'react-use'
 import { useEffect } from 'react'
-import Link from 'next/link'
 import { Flex, Box, Heading } from 'rebass'
 import { CgMenu, CgClose } from 'react-icons/cg'
 import NavLink from './NavLink'
@@ -9,8 +8,12 @@ import { headerStyle } from './style'
 
 const menuButtonStyle = { background: 'transparent', border: 'none', padding: 0 }
 
+const isActive = (currentPathname: string, href: string) =>
+  href === '/' ? currentPathname === href : currentPathname.startsWith(href)
+
 const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }) => {
   const [showMenu, toggleShowMenu] = useToggle(false)
+  const activeLink = HEADER.links.find((link) => isActive(currentPathname, link.href))
 
   useEffect(() => {
     toggleShowMenu(false)
@@ -27,11 +30,9 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
 
         <Box mx={2} />
 
-        <Link href="/" passHref>
-          <Heading as="span" fontSize={1} color="text" sx={{ cursor: 'pointer' }}>
-            {HEADER.title}
-          </Heading>
-        </Link>
+        <Heading as="span" fontSize={1} color="text" sx={{ cursor: 'pointer' }}>
+          {activeLink?.label}
+        </Heading>
       </Flex>
 
       <Box
@@ -49,7 +50,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
         {HEADER.links.map(({ label, href }) => (
           <Box key={href}>
             <NavLink
-              active={currentPathname.startsWith(href)}
+              active={isActive(currentPathname, href)}
               href={href}
               label={label}
               style={{

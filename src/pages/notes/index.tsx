@@ -8,7 +8,7 @@ export const getStaticProps = async () => ({
 })
 
 const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ markdown }) => (
-  <PageHeader title={`notes`} description={markdown} />
+  <PageHeader title={`Notes`} description={markdown} />
 )
 
 export default NotesPage

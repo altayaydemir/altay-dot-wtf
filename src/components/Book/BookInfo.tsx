@@ -1,7 +1,8 @@
+import type { Book } from 'types'
 import { Box, Text, Link } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { CgArrowTopRight } from 'react-icons/cg'
-import { Book } from 'types'
+import StarRatingComponent from 'react-star-rating-component'
 
 type Props = {
   bookMeta: Book['meta']
@@ -13,22 +14,43 @@ type Props = {
 const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
   const info = [
     {
-      key: 'read',
-      title: format(new Date(bookMeta.date), 'PPP'),
-      value: formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true }),
+      key: 'date',
+      component: (
+        <Text
+          title={format(new Date(bookMeta.date), 'PPP')}
+          color="textTertiary"
+          fontSize={fontSize}
+        >
+          Finished {formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true })},
+        </Text>
+      ),
     },
-    { key: 'my rating: ', value: <b>{bookMeta.rating}</b> },
     {
-      key: 'ISBN: ',
-      value: (
+      key: 'rating',
+      component: (
+        <Box marginBottom={typeof spacing === 'number' ? -spacing : spacing?.map((s) => -s)}>
+          <StarRatingComponent
+            name="rating"
+            value={parseInt(bookMeta.rating.split('/')[0], 10)}
+            starCount={5}
+            editing={false}
+            starColor="#F7C744"
+          />
+        </Box>
+      ),
+    },
+    {
+      key: 'isbn',
+      component: (
         <Link
           title="Open Open Library Page"
           href={`https://openlibrary.org/isbn/${bookMeta.isbn}`}
           target="_blank"
           rel="noopener"
           color="textTertiary"
+          fontSize={fontSize}
         >
-          <code>{bookMeta.isbn}</code>
+          <code>ISBN:{bookMeta.isbn}</code>
 
           <Text display="inline" fontSize={0}>
             <CgArrowTopRight />
@@ -41,12 +63,10 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
   return (
     <Box>
       {info
-        .filter((i) => (short ? !i.key.includes('ISBN') : true))
+        .filter((i) => (short ? i.key !== 'isbn' : true))
         .map((i) => (
           <Box key={i.key} sx={{ marginY: spacing }}>
-            <Text title={i.title} color="textTertiary" fontSize={fontSize}>
-              {i.key} {i.value}
-            </Text>
+            {i.component}
           </Box>
         ))}
     </Box>

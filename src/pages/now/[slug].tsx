@@ -15,8 +15,8 @@ const NowArchivePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> =
   return (
     <>
       <PageHeader
-        title={`history`}
-        description={`what I was doing around ${format(new Date(data.meta.date), 'MMMM yyyy')}`}
+        title={`History`}
+        description={`What I was doing around ${format(new Date(data.meta.date), 'MMMM yyyy')}`}
       />
 
       <Box m={4} />

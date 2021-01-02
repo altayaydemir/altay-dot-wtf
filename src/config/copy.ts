@@ -1,27 +1,27 @@
 export const homeCopy = {
-  title: 'hi, my name is altay.',
-  description: 'thanks for visiting my website.',
+  title: "Hi, I'm Altay",
+  description: 'Thanks for visiting my website.',
   links: [
     {
-      label: 'more about me',
+      label: 'More about me',
       href: '/about',
     },
     {
-      label: 'what am I doing now',
+      label: 'What am I doing now',
       href: '/now',
     },
   ],
-  postsTitle: 'recent blog posts',
-  booksTitle: 'recent book notes',
+  postsTitle: 'Recent blog posts',
+  booksTitle: 'Recent book notes',
 } as const
 
 export const blogCopy = {
-  title: 'blog',
-  description: 'learnings worth sharing.',
+  title: 'Blog',
+  description: 'Learnings worth sharing.',
 } as const
 
 export const booksCopy = {
-  title: 'books',
+  title: 'Books',
   description:
-    'notes from the [books I read.](https://www.notion.so/altayaydemir/cd6811e25c5443c9a4a61d223b6d1f89?v=81827357d6064186860d2b10c90390fb)',
+    'Notes from the [books I read.](https://www.notion.so/altayaydemir/cd6811e25c5443c9a4a61d223b6d1f89?v=81827357d6064186860d2b10c90390fb)',
 }

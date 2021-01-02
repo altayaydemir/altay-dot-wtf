@@ -27,7 +27,7 @@ const PostList: React.FC<Props> = ({ data }) => (
         <Box m={1} />
 
         <Text fontSize={0} color="textTertiary">
-          {'updated '}
+          {'Updated '}
           {formatDistanceToNow(new Date(b.meta.date), { addSuffix: true })}
           <Box display="inline" mx={1}>
             ·

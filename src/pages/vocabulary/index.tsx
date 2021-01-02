@@ -11,8 +11,8 @@ export const getStaticProps = getStaticPropsForContentList<Vocabulary>('vocabula
 const VocabularyPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader
-      title={`vocabulary`}
-      description={`some interesting elements I came across while reading.`}
+      title={`Vocabulary`}
+      description={`Some interesting elements I came across while reading.`}
     />
 
     <Box m={3} />

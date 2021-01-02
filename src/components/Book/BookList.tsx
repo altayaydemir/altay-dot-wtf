@@ -32,7 +32,7 @@ const BookList: React.FC<Props> = ({ data }) => (
             </NextLink>
 
             <Box my={1}>
-              <BookInfo short bookMeta={book.meta} fontSize={[0, 1]} spacing={0} />
+              <BookInfo short bookMeta={book.meta} fontSize={[0, 1]} spacing={1} />
             </Box>
 
             <Box my="12px" width="12%" height={1} backgroundColor="borderPrimary" />

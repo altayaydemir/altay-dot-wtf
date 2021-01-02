@@ -10,7 +10,7 @@ export const getStaticProps = getStaticPropsForContentList<Note>('note')
 
 const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
-    <PageHeader title={`notes`} description={`random thoughts and references.`} />
+    <PageHeader title={`Notes`} description={`Random thoughts and references.`} />
 
     <Box m={3} />
 
