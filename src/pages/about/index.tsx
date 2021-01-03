@@ -14,7 +14,7 @@ const sx: SxStyleProp = {
   '& > ul': {
     marginY: 3,
   },
-  '& > * > li': {
+  '& > ul:nth-of-type(2) > li': {
     marginY: 3,
   },
 }
