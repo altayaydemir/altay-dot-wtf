@@ -1,5 +1,5 @@
 import type { GetStaticProps, GetStaticPaths } from 'next'
-import { Content, ContentType, isTaggedContent } from 'types'
+import { Content, ContentType, isTaggedItem } from 'types'
 import { getMarkdownFileNames } from './fs'
 import { getContentDetails, getContentList } from './content'
 import { getLinksToContent } from './tags'
@@ -23,7 +23,7 @@ export const getStaticPropsForContentDetails = <T extends Content>(
   if (!slug) return { props: { data: undefined, links: undefined } }
 
   const data = await getContentDetails<T>(contentType, slug)
-  const links = isTaggedContent(data) ? await getLinksToContent(data) : []
+  const links = isTaggedItem(data) ? await getLinksToContent(data) : []
 
   return {
     props: {

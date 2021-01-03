@@ -1,12 +1,12 @@
 import { BaseProps, Box, Heading, Text } from 'rebass'
 import dynamic from 'next/dynamic'
-import type { TaggedContent } from 'types'
+import type { TaggedItem } from 'types'
 
 const Icon = dynamic(() => import('components/Icon/Lock'))
 
 type Props = {
   tag: BaseProps['as']
-  meta: TaggedContent['meta']
+  meta: TaggedItem['meta']
   fontSize: number | number[]
   fontWeight?: string
 }

@@ -1,19 +1,42 @@
-import type { BookmarkJSON, Bookmark } from 'types'
+import type { Bookmark } from 'types'
 import { SITE_URL } from 'config'
-import { readJSONFile } from 'core/api/fs'
+import fetch from 'node-fetch'
 
-const formatBookmark = (bookmark: BookmarkJSON): Bookmark => {
-  const url = new URL(bookmark.url)
-  const formattedURL = 'https://' + url.hostname + url.pathname + `?ref=${SITE_URL}`
-
-  return {
-    ...bookmark,
-    type: 'bookmark',
-    host: url.hostname,
-    url: formattedURL,
-    tags: bookmark.tags || [],
-  }
+type RaindropBookmark = {
+  title: string
+  excerpt: string
+  link: string
+  domain: string
 }
 
-export const getBookmarks = () =>
-  (readJSONFile('bookmarks/bookmarks.json') as BookmarkJSON[]).map(formatBookmark)
+type RaindropResponse = {
+  items: RaindropBookmark[]
+}
+
+const formatBookmark = (bookmark: RaindropBookmark): Bookmark => ({
+  type: 'bookmark',
+  title: bookmark.title,
+  description: bookmark.excerpt,
+  host: bookmark.domain,
+  url: `${bookmark.link}?ref=${SITE_URL}`,
+})
+
+export const fetchBookmarks = async () => {
+  try {
+    const response = await fetch(
+      'https://api.raindrop.io/rest/v1/raindrops/0?search=[{"key": "tag", "val": "altay-dot-wtf"}]',
+      {
+        method: 'GET',
+        headers: {
+          authorization: `Bearer ${process.env.RAINDROP_API_KEY}`,
+        },
+      },
+    )
+
+    const json = (await response.json()) as RaindropResponse
+
+    return json.items.map(formatBookmark)
+  } catch (error) {
+    return []
+  }
+}

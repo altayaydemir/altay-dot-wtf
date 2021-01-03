@@ -1,10 +1,10 @@
 import type { InferGetStaticPropsType } from 'next'
-import { Box, Text, Link, Heading, SxStyleProp } from 'rebass'
-import { getBookmarks } from 'core/api/bookmarks'
 import { bookmarksCopy } from 'config/copy'
+import { fetchBookmarks } from 'core/api/bookmarks'
 import PageHeader from 'components/PageHeader'
+import { Box, Text, Link, Heading, SxStyleProp } from 'rebass'
 
-export const getStaticProps = async () => ({ props: { data: getBookmarks() } })
+export const getStaticProps = async () => ({ props: { data: await fetchBookmarks() } })
 
 const descriptionStyle: SxStyleProp = {
   paddingLeft: 2,

@@ -1,31 +1,14 @@
-import { TaggedItem, TaggedContent, isTaggedContent, Bookmark, TAGGED_CONTENT_TYPES } from 'types'
-import { getBookmarks } from './bookmarks'
+import { TaggedItem, TAGGED_ITEM_TYPES } from 'types'
 import { getContentList } from './content'
 import { sortContent } from './utils'
 
-const getTaggedContents = async () => {
-  const fetcher = TAGGED_CONTENT_TYPES.map((type) => getContentList(type, { withDetails: true }))
-  const markdownContents = (await Promise.all(fetcher)).flat() as TaggedContent[]
+const getTaggedItems = async () => {
+  const fetcher = TAGGED_ITEM_TYPES.map((type) => getContentList(type, { withDetails: true }))
+  const markdownContents = (await Promise.all(fetcher)).flat() as TaggedItem[]
   return sortContent(markdownContents)
 }
 
-const getTaggedBookmarks = (): Bookmark[] => {
-  return getBookmarks().filter((b) => b.tags.length > 0)
-}
-
-const getTaggedItems = async (): Promise<TaggedItem[]> => {
-  const taggedBookmarks = getTaggedBookmarks()
-  const taggedContents = await getTaggedContents()
-  return [...taggedContents, ...taggedBookmarks]
-}
-
-const getTagsFromMeta = (item: TaggedItem) => {
-  if (isTaggedContent(item)) {
-    return item.meta.tags || []
-  }
-
-  return []
-}
+const getTagsFromMeta = (item: TaggedItem) => item.meta.tags || []
 
 const transformMarkdownTagLink = (tagLink: string) => {
   const extractedLink = tagLink.split('(/tags/')[1].split(')')[0]
@@ -33,19 +16,15 @@ const transformMarkdownTagLink = (tagLink: string) => {
   return extractedLink.includes('?') ? extractedLink.split('?')[0] : extractedLink
 }
 
-const getTagsFromMarkdown = (content: TaggedContent) => {
+const getTagsFromMarkdown = (content: TaggedItem) => {
   const tagLinks = content.markdown.match(/\(\/tags\/[^)]*\)/g)
   return tagLinks ? tagLinks.map(transformMarkdownTagLink) : []
 }
 
 const getTaggedItemTags = (item: TaggedItem) => {
-  if (isTaggedContent(item)) {
-    const tagsFromMeta = getTagsFromMeta(item)
-    const tagsFromMarkdown = getTagsFromMarkdown(item)
-    return tagsFromMeta.concat(tagsFromMarkdown)
-  }
-
-  return item.tags
+  const tagsFromMeta = getTagsFromMeta(item)
+  const tagsFromMarkdown = getTagsFromMarkdown(item)
+  return tagsFromMeta.concat(tagsFromMarkdown)
 }
 
 export const getAllTags = async () => {
@@ -66,7 +45,7 @@ export const getTaggedItemsByTag = async (tag: string) => {
   return taggedItems.filter((taggedItem) => getTaggedItemTags(taggedItem).includes(tag))
 }
 
-const getTargetContentLinkRegex = (content: TaggedContent) => {
+const getTargetContentLinkRegex = (content: TaggedItem) => {
   switch (content.type) {
     case 'post':
       return `/blog/${content.slug}`
@@ -79,15 +58,15 @@ const getTargetContentLinkRegex = (content: TaggedContent) => {
   }
 }
 
-const getLinks = (source: TaggedContent, target: TaggedContent) => {
+const getLinks = (source: TaggedItem, target: TaggedItem) => {
   const regex = getTargetContentLinkRegex(target)
   const linked = source.markdown.includes(regex)
   return linked
 }
 
-export const getLinksToContent = async (content: TaggedContent) => {
-  const taggedContents = await getTaggedContents()
-  return taggedContents
+export const getLinksToContent = async (content: TaggedItem) => {
+  const items = await getTaggedItems()
+  return items
     .filter((c) => c.slug !== content.slug)
     .filter((c) => getLinks(c, content))
     .sort((a, b) => {

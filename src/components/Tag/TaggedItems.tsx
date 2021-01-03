@@ -1,8 +1,7 @@
-import { TaggedItem, TaggedContent, isTaggedContent } from 'types'
+import { TaggedItem } from 'types'
 import { Box, Text, Link, SxStyleProp } from 'rebass'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
-import { CgArrowTopRight } from 'react-icons/cg'
 
 type TaggedItemProps = {
   tag: string
@@ -16,9 +15,6 @@ const getTitle = (item: TaggedItem) => {
     case 'post':
       return item.meta.title
 
-    case 'bookmark':
-      return item.title
-
     default:
       return '__NEVER__'
   }
@@ -26,7 +22,7 @@ const getTitle = (item: TaggedItem) => {
 
 const getType = (item: TaggedItem) => item.type.split('-').join(' ')
 
-const getURLForContent = (content: TaggedContent, tag: string) => {
+const getURLForContent = (content: TaggedItem, tag: string) => {
   switch (content.type) {
     case 'post':
       return `/blog/${content.slug}?source=${tag}`
@@ -46,45 +42,17 @@ const TaggedItemHeading: React.FC<TaggedItemProps> = ({ tag, data }) => {
     fontWeight: 'bold',
   }
 
-  if (isTaggedContent(data)) {
-    return (
-      <Box>
-        <NextLink href={getURLForContent(data, tag)} passHref scroll={false}>
-          <Link sx={linkStyle}>{getTitle(data)}</Link>
-        </NextLink>
-      </Box>
-    )
-  }
-
-  if (data.type === 'bookmark') {
-    return (
-      <Box>
-        <Link
-          display="inline-flex"
-          href={data.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{ ...linkStyle, alignItems: 'center' }}
-        >
-          <Text>{getTitle(data)}</Text>
-          <CgArrowTopRight />
-        </Link>
-      </Box>
-    )
-  }
-
-  return <code>__NEVER__</code>
+  return (
+    <Box>
+      <NextLink href={getURLForContent(data, tag)} passHref scroll={false}>
+        <Link sx={linkStyle}>{getTitle(data)}</Link>
+      </NextLink>
+    </Box>
+  )
 }
 
-const getSubtitle = (item: TaggedItem) => {
-  if (isTaggedContent(item)) {
-    return `updated ${formatDistanceToNow(new Date(item.meta.date), { addSuffix: true })}`
-  }
-
-  if (item.type === 'bookmark') {
-    return item.host
-  }
-}
+const getSubtitle = (item: TaggedItem) =>
+  `updated ${formatDistanceToNow(new Date(item.meta.date), { addSuffix: true })}`
 
 const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
   <Box my={3}>

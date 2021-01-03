@@ -71,28 +71,21 @@ export type Book = BaseMDContent & {
   }
 }
 
-export type BookmarkJSON = {
+export type Bookmark = {
+  type: 'bookmark'
   url: string
+  host: string
   title: string
   description?: string
-  tags?: string[]
-}
-
-export type Bookmark = BookmarkJSON & {
-  type: 'bookmark'
-  host: string
-  tags: string[]
 }
 
 export type Content = Now | Note | Post | Book | About | Journal | Vocabulary
 export type ContentType = Content['type']
 
-export type TaggedContent = Note | Post | Book
-export const TAGGED_CONTENT_TYPES: TaggedContent['type'][] = ['post', 'book', 'note']
-
-export type TaggedItem = TaggedContent | Bookmark
+export type TaggedItem = Note | Post | Book
 export type TaggedItemType = TaggedItem['type']
+export const TAGGED_ITEM_TYPES: TaggedItem['type'][] = ['post', 'book', 'note']
 
-export const isTaggedContent = (taggedItem: TaggedItem | Content): taggedItem is TaggedContent => {
-  return (TAGGED_CONTENT_TYPES as string[]).includes(taggedItem.type)
+export const isTaggedItem = (taggedItem: Content): taggedItem is TaggedItem => {
+  return (TAGGED_ITEM_TYPES as string[]).includes(taggedItem.type)
 }
