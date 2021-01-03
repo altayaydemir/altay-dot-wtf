@@ -12,7 +12,7 @@ const MDInternalLink: React.FC<Props> = ({ href, children }) => (
           backgroundColor: 'linkPrimary',
           color: 'background',
           padding: 1,
-          borderRadius: 6,
+          borderRadius: 4,
         },
         '&.scrolled-source-link:hover': {
           color: 'background',

@@ -46,7 +46,7 @@ type FeedbackState =
 const feedbackMessageStyle: SxStyleProp = {
   paddingY: 2,
   paddingX: 4,
-  borderRadius: 6,
+  borderRadius: 4,
   fontWeight: 'bold',
   color: 'textWhite',
   textAlign: 'center',
@@ -110,7 +110,7 @@ const Feedback: React.FC = () => {
   }, [])
 
   return (
-    <Box backgroundColor="backgroundSecondary" p={4} sx={{ borderRadius: 6 }}>
+    <Box backgroundColor="backgroundSecondary" p={4} sx={{ borderRadius: 4 }}>
       <Box display="inline-flex" sx={{ alignItems: 'flex-end' }}>
         <Text fontSize={[2, 3]}>{config.copy.headingIcon}</Text>
         <Box mx={1} />

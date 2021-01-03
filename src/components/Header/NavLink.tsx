@@ -10,14 +10,24 @@ type Props = {
 
 const NavLink: React.FC<Props> = ({ href, label, active, style }) => (
   <NextLink href={href} passHref>
-    <Link color="text">
+    <Link
+      color="text"
+      sx={{
+        '&:hover': {
+          cursor: active ? 'default' : 'pointer',
+        },
+      }}
+    >
       <Text
         sx={{
           ...style,
           fontWeight: 'bold',
-          borderRadius: 6,
-          color: active ? 'linkPrimary' : 'inherit',
-          backgroundColor: active ? 'linkBackground' : 'headerBackground',
+          borderRadius: 4,
+          color: active ? 'linkPrimary' : 'text',
+          backgroundColor: active ? 'linkBackground' : 'transparent',
+          '&:hover': {
+            backgroundColor: active ? 'linkBackground' : 'linkHoverBackground',
+          },
         }}
       >
         {label}

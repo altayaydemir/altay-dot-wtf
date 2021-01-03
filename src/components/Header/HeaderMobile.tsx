@@ -21,7 +21,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
 
   return (
     <>
-      <Flex alignItems="center">
+      <Flex alignItems="center" paddingX={2}>
         <button type="button" name="menu-button" onClick={toggleShowMenu} style={menuButtonStyle}>
           <Box color="text" padding={0} margin={0} fontSize={3} sx={{ lineHeight: 0 }}>
             {showMenu ? <CgClose /> : <CgMenu />}

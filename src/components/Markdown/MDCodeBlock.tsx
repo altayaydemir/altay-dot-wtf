@@ -11,7 +11,7 @@ type Props = { language: string; value: string }
 
 const MDCodeBlock: React.FC<Props> = ({ language, value }) => (
   <Box my={3}>
-    <PrismLight style={dark} language={language} customStyle={{ borderRadius: 6 }}>
+    <PrismLight style={dark} language={language} customStyle={{ borderRadius: 4 }}>
       {value}
     </PrismLight>
   </Box>

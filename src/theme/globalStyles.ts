@@ -58,7 +58,7 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   .border-radius {
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
   .image-markdown {

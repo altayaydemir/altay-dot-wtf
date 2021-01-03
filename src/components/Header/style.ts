@@ -6,7 +6,7 @@ export const headerStyle: SxStyleProp = {
   width: '100%',
   left: 0,
   top: 0,
-  paddingX: 3,
+  paddingX: 0,
   paddingY: 2,
   borderBottom: '1px solid',
   borderColor: 'borderMenu',

@@ -43,7 +43,7 @@ const getSubtitle = (item: Content) => {
 }
 
 const itemStyle: SxStyleProp = {
-  borderRadius: 6,
+  borderRadius: 4,
   cursor: 'pointer',
   '&:hover': {
     backgroundColor: 'backgroundHeader',
@@ -78,7 +78,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
 
 const LinkedItems: React.FC<{ slug: string; data: Content[] }> = ({ slug, data }) =>
   data.length ? (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 6 }}>
+    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 4 }}>
       <Heading fontSize={2}>mentioned in </Heading>
 
       <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">
