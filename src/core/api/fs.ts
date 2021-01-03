@@ -17,9 +17,8 @@ const getContentDirectoryForType = (type: ContentType) => {
   }
 }
 
-export const getContentDirectoryPath = (contentType: ContentType) => {
-  return join(process.cwd(), 'data', getContentDirectoryForType(contentType))
-}
+export const getContentDirectoryPath = (contentType: ContentType) =>
+  join(process.cwd(), 'data', getContentDirectoryForType(contentType))
 
 export const getMarkdownFileNames = (contentType: ContentType) => {
   const directory = getContentDirectoryPath(contentType)

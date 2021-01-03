@@ -15,6 +15,5 @@ const formatBookmark = (bookmark: BookmarkJSON): Bookmark => {
   }
 }
 
-export const getBookmarks = () => {
-  return (readJSONFile('bookmarks/bookmarks.json') as BookmarkJSON[]).map(formatBookmark)
-}
+export const getBookmarks = () =>
+  (readJSONFile('bookmarks/bookmarks.json') as BookmarkJSON[]).map(formatBookmark)

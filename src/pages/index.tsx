@@ -2,8 +2,8 @@ import type { Post, Book } from 'types'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useCallback } from 'react'
 import { homeCopy } from 'config/copy'
-import { Box, Heading } from 'rebass'
 import { getContentList } from 'core/api/content'
+import { Box, Heading } from 'rebass'
 import PageHeader from 'components/PageHeader'
 import HomeLink from 'components/Home/HomeLink'
 import PostList from 'components/Post/PostList'
@@ -25,12 +25,12 @@ type Sections = [
 export const getStaticProps: GetStaticProps<{ sections: Sections }> = async () => {
   const sections: Sections = [
     {
-      title: homeCopy.postsTitle,
+      title: homeCopy.posts.title,
       type: 'posts',
       data: (await getContentList<Post>('post')).filter((post) => !post.meta.draft).slice(0, 5),
     },
     {
-      title: homeCopy.booksTitle,
+      title: homeCopy.books.title,
       type: 'books',
       data: (await getContentList<Book>('book')).slice(0, 5),
     },
@@ -46,7 +46,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
         return (
           <>
             <PostList data={section.data} />
-            <HomeLink label={homeCopy.postsViewAll} href="/blog" />
+            <HomeLink label={homeCopy.posts.viewAll} href={homeCopy.posts.href} />
           </>
         )
 
@@ -54,7 +54,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ sectio
         return (
           <>
             <BookList data={section.data} />
-            <HomeLink label={homeCopy.booksViewAll} href="/books" />
+            <HomeLink label={homeCopy.books.viewAll} href={homeCopy.books.href} />
           </>
         )
     }

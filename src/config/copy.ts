@@ -11,10 +11,16 @@ export const homeCopy = {
       href: '/now',
     },
   ],
-  postsTitle: 'Recent blog posts',
-  postsViewAll: 'View all blog posts',
-  booksTitle: 'Recent book notes',
-  booksViewAll: 'View all book notes',
+  posts: {
+    href: '/blog',
+    title: 'Recent blog posts',
+    viewAll: 'View all blog posts',
+  },
+  books: {
+    href: '/book',
+    title: 'Recent book notes',
+    viewAll: 'View all book notes',
+  },
 } as const
 
 export const aboutCopy = {

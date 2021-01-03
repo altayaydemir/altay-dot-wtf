@@ -31,12 +31,12 @@ export const HEADER = [
 
 export const FOOTER = [
   {
-    title: 'Email',
+    title: 'email',
     label: 'altay@aydemir.io',
     href: 'mailto:altay@aydemir.io',
   },
   {
-    title: 'Twitter',
+    title: 'twitter',
     label: '@altaywtf',
     href: 'https://twitter.com/altaywtf',
   },

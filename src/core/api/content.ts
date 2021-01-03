@@ -20,16 +20,10 @@ const getMarkdownContentDetails = async <T extends Content>(
   } as T
 }
 
-export const getContentDetails = <T extends Content>(
-  contentType: ContentType,
-  fileName: string,
-) => {
-  return getMarkdownContentDetails<T>(contentType, fileName)
-}
+export const getContentDetails = <T extends Content>(contentType: ContentType, fileName: string) =>
+  getMarkdownContentDetails<T>(contentType, fileName)
 
-const minifyContentListItem = <T extends Content>(data: T) => {
-  return { ...data, markdown: '' } as T
-}
+const minifyContentListItem = <T extends Content>(data: T) => ({ ...data, markdown: '' } as T)
 
 export const getContentList = async <T extends Content>(
   contentType: ContentType,
