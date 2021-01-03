@@ -23,7 +23,7 @@ export const aboutCopy = {
 }
 
 export const blogCopy = {
-  icon: '🤔',
+  icon: '🥸',
   title: 'Blog',
   description: 'Learnings worth sharing.',
 } as const

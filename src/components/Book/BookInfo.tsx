@@ -21,7 +21,7 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
           color="textTertiary"
           fontSize={fontSize}
         >
-          Finished {formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true })},
+          Read {formatDistanceToNow(new Date(bookMeta.date), { addSuffix: true })}
         </Text>
       ),
     },

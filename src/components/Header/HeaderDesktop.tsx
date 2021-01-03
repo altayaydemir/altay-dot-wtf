@@ -5,7 +5,7 @@ import NavLink from './NavLink'
 
 const HeaderDesktop: React.FC<{ currentPathname: string }> = ({ currentPathname }) => (
   <Flex margin="auto" alignItems="center" justifyContent="space-between" width={MOBILE_BREAKPOINT}>
-    {HEADER.links.map(({ label, href }) => (
+    {HEADER.map(({ label, href }) => (
       <Box key={href} display="inline">
         <NavLink
           href={href}

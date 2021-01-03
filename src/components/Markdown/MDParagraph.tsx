@@ -1,9 +1,9 @@
 import { Text } from 'rebass'
-import styled from 'theme/styled'
 
-const Paragraph = styled(Text)`
-  margin: 16px 0;
-  color: ${({ theme }) => theme.colors.textSecondary};
-`
+const Paragraph: React.FC = ({ children }) => (
+  <Text marginY={3} marginX={0} color="textSecondary">
+    {children}
+  </Text>
+)
 
 export default Paragraph

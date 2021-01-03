@@ -14,8 +14,8 @@ export const createGlobalStyles = (theme: Theme) => `
   body {
     background: ${theme.colors.background};
     color: ${theme.colors.text};
+    font-size: ${(theme.fontSizes as string[])[2]}px;
     line-height: 1.4;
-    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: none;
@@ -58,10 +58,16 @@ export const createGlobalStyles = (theme: Theme) => `
   }
 
   .border-radius {
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   .image-markdown {
     background-color: ${theme.colors.background};
+  }
+
+  @media (max-width: ${(theme.breakpoints as string[])[1]}) {
+    body {
+      font-size: ${(theme.fontSizes as string[])[1]}px;
+    }
   }
 `

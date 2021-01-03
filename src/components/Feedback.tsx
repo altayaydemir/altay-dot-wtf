@@ -5,36 +5,36 @@ import { Label, Input, Textarea } from '@rebass/forms'
 
 const config = {
   copy: {
-    headingIcon: '🙇‍♂️',
-    heading: 'A huge favor',
+    headingIcon: '🙋‍♂️',
+    heading: 'Thanks for reading!',
     description: `
-      Please let me know if anything you read here was confusing, incorrect, or outdated.
-      Just write a few words, and I will be grateful to you for the rest of my life.
+      Please let me know if anything you read was confusing or incorrect.
+      Just write a few words, and I'll be grateful to you for the rest of my life.
     `,
     optional: '(Optional)',
     submit: 'Send',
     submitBusy: 'Sending...',
   },
-  fields: [
-    {
+  fields: {
+    message: {
       name: 'message',
       type: 'textarea',
       label: 'What should I know?',
       required: true,
     },
-    {
+    email: {
       name: 'email',
       type: 'email',
       label: 'Your email address',
       required: false,
     },
-    {
+    twitter: {
       name: 'twitter',
       type: 'text',
       label: 'Your Twitter handle',
       required: false,
     },
-  ],
+  },
 }
 
 type FeedbackState =
@@ -46,7 +46,7 @@ type FeedbackState =
 const feedbackMessageStyle: SxStyleProp = {
   paddingY: 2,
   paddingX: 4,
-  borderRadius: 8,
+  borderRadius: 6,
   fontWeight: 'bold',
   color: 'textWhite',
   textAlign: 'center',
@@ -73,7 +73,25 @@ const FeedBackMessage: React.FC<{ feedbackState: FeedbackState }> = ({ feedbackS
   }
 }
 
-const Feedback = () => {
+const Field: React.FC<{
+  field: { name: string; required: boolean; label: string; type: string }
+}> = ({ field }) => (
+  <Box>
+    <Label htmlFor={field.name} fontSize={1}>
+      {field.label} {field.required ? null : config.copy.optional}
+    </Label>
+
+    <Box m={1} />
+
+    {field.type === 'textarea' ? (
+      <Textarea {...field} placeholder={field.label} />
+    ) : (
+      <Input {...field} placeholder={field.label} />
+    )}
+  </Box>
+)
+
+const Feedback: React.FC = () => {
   const [state, setState] = useState<FeedbackState>({ type: 'pristine' })
 
   const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
@@ -92,35 +110,35 @@ const Feedback = () => {
   }, [])
 
   return (
-    <Box backgroundColor="backgroundSecondary" p={4} sx={{ borderRadius: 8 }}>
-      <Box display="inline-flex" sx={{ alignItems: 'center' }}>
-        <Text fontSize={3}>{config.copy.headingIcon}</Text>
+    <Box backgroundColor="backgroundSecondary" p={4} sx={{ borderRadius: 6 }}>
+      <Box display="inline-flex" sx={{ alignItems: 'flex-end' }}>
+        <Text fontSize={[2, 3]}>{config.copy.headingIcon}</Text>
         <Box mx={1} />
-        <Heading fontSize={3}>{config.copy.heading}</Heading>
+        <Heading fontSize={[2, 3]}>{config.copy.heading}</Heading>
       </Box>
 
-      <Box my={2} />
-
-      <Text color="textSecondary">{config.copy.description}</Text>
-
-      <Box my={3} />
+      <Text my={3} color="textSecondary">
+        {config.copy.description}
+      </Text>
 
       <form onSubmit={handleSubmit}>
-        {config.fields.map(({ label, ...field }) => (
-          <Box key={field.name} mb={3}>
-            <Label htmlFor={field.name} fontSize={1}>
-              {label} {field.required ? null : config.copy.optional}
-            </Label>
+        <Field field={config.fields.message} />
 
-            <Box m={2} />
+        <Box m={3} />
 
-            {field.type === 'textarea' ? (
-              <Textarea {...field} placeholder={label} />
-            ) : (
-              <Input {...field} placeholder={label} />
-            )}
+        <Flex flexDirection={['column', 'row']}>
+          <Box width={[1, 1 / 2]}>
+            <Field field={config.fields.email} />
           </Box>
-        ))}
+
+          <Box m={[2, 1]} />
+
+          <Box width={[1, 1 / 2]}>
+            <Field field={config.fields.twitter} />
+          </Box>
+        </Flex>
+
+        <Box m={3} />
 
         <Flex flexDirection="column" alignItems="flex-end">
           <Button disabled={state.type === 'sending'} minWidth={100}>

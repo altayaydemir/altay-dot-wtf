@@ -1,17 +1,5 @@
 import { Flex, Box, Link, Text } from 'rebass'
-
-const links = [
-  {
-    title: 'Email',
-    label: 'altay@aydemir.io',
-    href: 'mailto:altay@aydemir.io',
-  },
-  {
-    title: 'Twitter',
-    label: '@altaywtf',
-    href: 'https://twitter.com/altaywtf',
-  },
-]
+import { FOOTER } from 'config/menus'
 
 const Footer = () => (
   <Flex
@@ -23,7 +11,7 @@ const Footer = () => (
     }}
   >
     <Box>
-      {links.map((link, index) => (
+      {FOOTER.map((link, index) => (
         <Box key={link.href} display="inline-block">
           <Link
             title={link.title}
@@ -38,7 +26,7 @@ const Footer = () => (
             {link.label}
           </Link>
 
-          {index === links.length - 1 ? null : (
+          {index === FOOTER.length - 1 ? null : (
             <Text display="inline-block" color="textTertiary">
               ·
             </Text>

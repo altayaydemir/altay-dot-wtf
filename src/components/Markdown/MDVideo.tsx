@@ -6,7 +6,7 @@ type Props = {
 
 const MDVideo: React.FC<Props> = ({ src }) => (
   <Box my={3}>
-    <video src={src} width="100%" controls style={{ borderRadius: 8 }} />
+    <video src={src} width="100%" controls style={{ borderRadius: 6 }} />
   </Box>
 )
 

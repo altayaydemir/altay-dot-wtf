@@ -43,7 +43,7 @@ const getSubtitle = (item: Content) => {
 }
 
 const itemStyle: SxStyleProp = {
-  borderRadius: 8,
+  borderRadius: 6,
   cursor: 'pointer',
   '&:hover': {
     backgroundColor: 'backgroundHeader',
@@ -58,17 +58,19 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
           {getTitle(data)}
         </Text>
 
-        <Text color="textSecondary" display="inline" fontSize={0}>
-          {getType(data)}
-        </Text>
+        <Box mt={-1}>
+          <Text color="textSecondary" display="inline" fontSize={0}>
+            {getType(data)}
+          </Text>
 
-        <Text color="textSecondary" display="inline-block" mx={1}>
-          ·
-        </Text>
+          <Text color="textSecondary" display="inline-block" fontSize={0} mx={1}>
+            ·
+          </Text>
 
-        <Text color="textTertiary" display="inline" fontSize={0}>
-          {getSubtitle(data)}
-        </Text>
+          <Text color="textTertiary" display="inline" fontSize={0}>
+            {getSubtitle(data)}
+          </Text>
+        </Box>
       </Box>
     </Link>
   </NextLink>
@@ -76,7 +78,7 @@ const Item: React.FC<LinkedItemProps> = ({ data, slug }) => (
 
 const LinkedItems: React.FC<{ slug: string; data: Content[] }> = ({ slug, data }) =>
   data.length ? (
-    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 8 }}>
+    <Box backgroundColor="backgroundSecondary" p={3} sx={{ borderRadius: 6 }}>
       <Heading fontSize={2}>mentioned in </Heading>
 
       <Flex mx={-3} alignItems="flex-start" flexWrap="wrap">

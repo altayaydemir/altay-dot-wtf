@@ -13,7 +13,7 @@ const isActive = (currentPathname: string, href: string) =>
 
 const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }) => {
   const [showMenu, toggleShowMenu] = useToggle(false)
-  const activeLink = HEADER.links.find((link) => isActive(currentPathname, link.href))
+  const activeLink = HEADER.find((link) => isActive(currentPathname, link.href))
 
   useEffect(() => {
     toggleShowMenu(false)
@@ -30,7 +30,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
 
         <Box mx={2} />
 
-        <Heading as="span" fontSize={1} color="text" sx={{ cursor: 'pointer' }}>
+        <Heading as="span" fontSize={1} color="text">
           {activeLink?.label}
         </Heading>
       </Flex>
@@ -47,7 +47,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
           visibility: showMenu ? 'visible' : 'hidden',
         }}
       >
-        {HEADER.links.map(({ label, href }) => (
+        {HEADER.map(({ label, href }) => (
           <Box key={href}>
             <NavLink
               active={isActive(currentPathname, href)}
