@@ -12,7 +12,7 @@ export const getStaticProps = async () => ({
 const TagsPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ tags }) => (
   <>
     <PageHeader {...tagsCopy} />
-    <Box m={3} />
+    <Box m={4} />
     <Tags tags={tags} fontSize={1} spacing={2} />
   </>
 )

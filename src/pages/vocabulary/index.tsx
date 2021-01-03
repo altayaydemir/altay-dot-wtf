@@ -12,7 +12,7 @@ export const getStaticProps = getStaticPropsForContentList<Vocabulary>('vocabula
 const VocabularyPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader {...vocabCopy} />
-    <Box m={3} />
+    <Box m={4} />
     <>
       {data.map((d) => (
         <Box key={d.slug} my={1}>

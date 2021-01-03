@@ -13,7 +13,7 @@ export const getStaticProps = getStaticPropsForContentList<Now>('now')
 const NowHistory: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader {...nowHistoryCopy} />
-    <Box m={2} />
+    <Box m={4} />
     <>
       {data.map((d) => (
         <Box key={d.slug}>

@@ -44,7 +44,7 @@ const TagPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ dat
   return (
     <>
       <PageHeader {...tagsCopy} title={`#${tag}`} description={getDescription(data.length)} />
-      <Box my={3} />
+      <Box my={4} />
       <TaggedItems tag={tag} data={data} />
     </>
   )

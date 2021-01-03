@@ -12,7 +12,7 @@ export const getStaticProps = getStaticPropsForContentList<Note>('note')
 const NotesPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader {...notesCopy} />
-    <Box m={3} />
+    <Box m={4} />
     <>
       {data.map((d) => (
         <Box key={d.slug} my={3}>

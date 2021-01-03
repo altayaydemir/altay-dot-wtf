@@ -13,7 +13,7 @@ export const getStaticProps = getStaticPropsForContentList<Journal>('journal')
 const JournalPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
     <PageHeader {...journalCopy} />
-    <Box m={2} />
+    <Box m={4} />
     <>
       {data.map((d) => (
         <Box key={d.slug}>
