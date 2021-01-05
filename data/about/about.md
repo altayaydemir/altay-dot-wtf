@@ -10,7 +10,7 @@ I read, listen, or have a conversation with [this turtle statue](https://www.goo
 
 #### People who tremendously contributed to my life in the past several years:
 
-- **The big three**: Naval Ravikant, Derek Sivers, Mark Manson
+- **Big three**: Naval Ravikant, Derek Sivers, Mark Manson
 - **Creative three**: Seth Godin, Austin Kleon, Brian Lovin
 - **Hacker three**: Guillermo Rauch, Dan Abramov, Scott Wlatschin
 - **Productive three**: Cal Newport, James Clear, Make Time Duo
@@ -18,11 +18,12 @@ I read, listen, or have a conversation with [this turtle statue](https://www.goo
 
 ### What I did
 
-- **2020, oct:** built this website.
-- **2020, jan:** switched to the _App Client Core_ team, which is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
-- **2019, may:** got a promising offer from the Swedish fintech decacorn [**Klarna**](https://klarna.com/) and joined to _Consumer Growth and Loyalty_ domain. Worked on 3rd party integrations for analytics and CRM purposes.
-- **2018, oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io), a cryptocurrency startup. Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as the [react-native iMessage bridge](../blog/react-native-imessage), which we had a chance to [present in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
-- **2018, june:** had a month-long London trip with colleagues. Turkey went through another non-promising election that gave a hint of what will keep happening in the country.
+- **2021, Jan:** wanted to work on product after [an engineering-heavy year](/blog/2020), therefore switched to _Consumer Deals_ team. We own a feature that I wrote the MVP for Black Friday in 2019, it grew over time to have a dedicated team.
+- **2020, Oct:** built this website.
+- **2020, Jan:** joined to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
+- **2019, May:** got a promising offer from the Swedish fintech decacorn [**Klarna**](https://klarna.com/) and joined to _Marketing Touchpoint Infrastructure_ team. Worked on analytics and CRM integrations.
+- **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io), a blockchain startup. Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](../blog/react-native-imessage), which we had a chance to [present in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
+- **2018, June:** had a month-long London trip with colleagues. Turkey had another non-promising general election that gave a hint of what will keep happening in the country.
 - **2017:** joined [**putio**](https://put.io/), a cloud-storage service that downloads publicly available files at high speeds. Took over the web app and built clients for iOS, tvOS, Roku, and Smart TVs.
 
 ---

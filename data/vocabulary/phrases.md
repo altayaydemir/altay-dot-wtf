@@ -7,7 +7,7 @@ date: '2020-12-03T19:12:12Z'
 
 _Their developer's lack of everyday exposure to language and its alphabet is also evident in the typeface designs._
 
-[Arcade Game Typography](/books/arcade-game-typography)
+[Arcade Game Typography](../books/arcade-game-typography)
 
 ### there is a lot that’s been set on motion that we cannot undo
 

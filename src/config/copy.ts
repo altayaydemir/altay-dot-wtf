@@ -17,7 +17,7 @@ export const homeCopy = {
     viewAll: 'View all blog posts',
   },
   books: {
-    href: '/book',
+    href: '/books',
     title: 'Recent book notes',
     viewAll: 'View all book notes',
   },
@@ -60,7 +60,7 @@ export const notesCopy = {
 }
 
 export const nowCopy = {
-  icon: '🕒',
+  icon: '⏱',
   title: "What I'm doing now",
   description:
     "This is a [monthly](/now/history) updated [now page](https://nownownow.com), and it's inspired by [Derek Sivers.](https://sive.rs)",

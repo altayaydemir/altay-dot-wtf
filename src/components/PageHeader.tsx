@@ -35,6 +35,7 @@ const PageHeader: React.FC<Props> = ({ icon, title, metaTitle, description, meta
             width: 64,
             height: 64,
             borderRadius: '50%',
+            backgroundColor: 'black',
           }}
         >
           <Image src="/images/avatar.png" width={64} height={64} layout="responsive" />
