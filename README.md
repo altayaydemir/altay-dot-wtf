@@ -1,3 +1,3 @@
 # `altay-dot-wtf`
 
-this is a [next.js](https://nextjs.org/) project, also my personal webpage.
+hi. this is a [next.js](https://nextjs.org/) project, also my [personal website](https://altay.wtf).
