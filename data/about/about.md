@@ -2,7 +2,7 @@
 date: '2020-12-01'
 ---
 
-I'm a software engineer mostly focused on the user-facing side of digital products. I like working on things that are solving problems I empathize with.
+I'm a software engineer mostly focused on the user-facing part of digital products. I like working on things that are solving problems I empathize with.
 
 I'm currently living in Berlin, working at [Klarna](https://klarna.com), and doing some other things on the side:
 
