@@ -33,18 +33,15 @@ export const getImageData = async (url: string): Promise<ImageData> => {
 const META_IMAGE_BG_FILL_COLOR = '#111111'
 
 export const generateMetaImage = async ({
-  directory,
-  fileName,
+  publicPath,
   data,
   scale = 1,
 }: {
-  directory: string
-  fileName: string
+  publicPath: string
   data: ImageData
   scale?: number
 }): Promise<MetaImage> => {
-  const relativePath = `/images/meta/${directory}/${fileName}.png`
-  const absolutePath = `${PUBLIC_FOLDER}/${relativePath}`
+  const absolutePath = `${PUBLIC_FOLDER}/${publicPath}`
 
   if (!fs.existsSync(absolutePath)) {
     const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)
@@ -65,5 +62,5 @@ export const generateMetaImage = async ({
     fs.writeFileSync(absolutePath, canvas.toBuffer('image/png'))
   }
 
-  return { url: SITE_URL + relativePath, width: META_IMAGE_WIDTH, height: META_IMAGE_HEIGHT }
+  return { url: SITE_URL + publicPath, width: META_IMAGE_WIDTH, height: META_IMAGE_HEIGHT }
 }

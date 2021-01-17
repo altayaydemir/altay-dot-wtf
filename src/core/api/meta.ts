@@ -16,8 +16,7 @@ const getBookMeta = async (slug: string, meta: Book['meta']) => {
   const coverImageURL = await fetchBookImage(slug, remoteCoverImageURL)
   const coverImageData = await getImageData(coverImageURL)
   const metaImage = await generateMetaImage({
-    directory: 'books',
-    fileName: slug,
+    publicPath: `/images/books/${slug}/cover-meta.png`,
     data: coverImageData,
     scale: 2,
   })
