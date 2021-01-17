@@ -33,17 +33,17 @@ Those people tremendously contributed to my life during the past several years.
 
 - **2016**: graduated and joined [**Vispera**](https://vispera.co), a computer-vision and image recognition startup. Visualized data and built forms with a bunch of fields.
 - **2015 to 2016:** front-end developer internships at _[Taze](https://tazebt.com)_ and _[Peergust](https://angel.co/peergust)_
-- **2015**: did an incompetent yet motivating coding bootcamp. Quit all the off-school stuff to focus on graduating on time. Took classes from visual communication design and computer science departments. Learned a lot by building tangible things[\*](https://github.com/altayaydemir/bilgi-shuttle-ios)[\*](https://github.com/altayaydemir/vcd-ibeacon), and met with many smart people.
+- **2015**: did an incompetent yet motivating coding bootcamp. Quit all the off-school stuff to focus on graduating on time. Took classes from visual communication design and computer science departments. Learned a lot by building tangible things[\*](https://github.com/altaywtf/bilgi-shuttle-ios)[\*](https://github.com/altaywtf/vcd-ibeacon), and met with many smart people.
 - **2013 to 2015**: worked as staff writer at [**bant mag**](https://bantmag.com), an independent arts magazine. It was my dream job back then. Mostly worked on the news website, also wrote album/live-show reviews and did interviews for [the monthly issue.](http://dergi.bantmag.com)
 - **2012**: moved to Istanbul and started studying mechanical engineering at [Istanbul Bilgi University.](https://www.bilgi.edu.tr/en/)
 
 ---
 
 - **2010 to 2013**: ran a music blog and internet radio called **[bagimsiz alternatif](https://8tracks.com/bagimsizalternatif)** with tasteful friends. Our peak was around 30 listeners per show, so it radically shaped the culture.
-- **2010 to 2012**: played around with Ableton and [built some random stuff](https://soundcloud.com/altayaydemir).
+- **2010 to 2012**: played around with Ableton and [built some random stuff](https://soundcloud.com/altaywtf).
 - **2008 to 2009:** published a fanzine called **Uzak**, with friends who were also poetically suffering from puberty.
 - **2007 to 2012**: played drums in punk and alternative rock bands till the end of high school. [Recorded a demo](https://soundcloud.com/manevraonline/sets/palyaco) with the most memorable one, [**manevra**.](https://vimeo.com/26003192)
-- **2007**: built a non-official website for my middle school. Took it down after one week because teachers read the comments written by students in the forum and wanted to sue me.
+- **2007**: built a unofficial website for my middle school. Took it down after one week because teachers read the comments written by students in the forum and threatened to sue me.
 - **1994 to 2006**: wanted to become a footballer and/or do computer stuff. I'm still fairly good at FIFA.
 - **2000**: moved to Antalya, Turkey
 - **1994**: born in Kayseri, Turkey

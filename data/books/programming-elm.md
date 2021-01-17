@@ -7,7 +7,7 @@ tags:
   - software
 ---
 
-There is [a Github repository](https://github.com/altayaydemir/programming-elm) for the stuff I built while following this book.
+There is [a Github repository](https://github.com/altaywtf/programming-elm) for the stuff I built while following this book.
 
 ## Chapter 1: Get Started with Elm
 
