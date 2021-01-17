@@ -17,7 +17,7 @@ When we set out to build an iMessage extension for [Lisk Mobile](https://lisk.io
 
 The iMessage extension was included in Lisk Mobile 0.10.0, which was released in February 2019. Our users can now request and send LSK tokens straight from the iOS-based messenger without opening our app. However, the journey to implement this feature wasn’t straightforward — **Lisk Mobile is written in JavaScript using React Native**, while iMessage requires development in native iOS. During our research, we have found there is just a handful of resources available to help with using React Native to build iOS extensions available out there. There was no clear way to proceed. After thorough deliberation, we have decided to try a different approach by building our own bridge implementation. We found it a very educational and motivational journey for our team to develop the feature in this way. We will show you how by breaking the solution down into native and React Native parts and describing how to bind these separated parts together.
 
-![](https://cdn-images-1.medium.com/max/1600/1*5_Z4ytBGfx16tChcsEhptA.gif)
+![](/images/blog/react-native-imessage/0.gif)
 
 ### The problem: there was no up-to-date documentation to create an iMessage extension using React Native.
 
@@ -51,48 +51,48 @@ $ react-native init AwesomeProject
 
 The next step is to add a target for our Xcode project that covers the iMessage extension.
 
-![](https://cdn-images-1.medium.com/max/1600/1*GRAePQGHcC4Ryxwvr4w2dA.png)
+![](/images/blog/react-native-imessage/1.png)
 _Open the iOS project with Xcode_
 
-![](https://cdn-images-1.medium.com/max/1600/1*tXmPShkdzqfD9lRuckdXdw.png)
+![](/images/blog/react-native-imessage/2.png)
 _Add new target to the project by navigating through \*\*\_File -> New -> Target _\*\*menu\_
 
-![](https://cdn-images-1.medium.com/max/1600/1*R9nxobNLAuCgBsFcMtV6Ww.png)
+![](/images/blog/react-native-imessage/3.png)
 _Choose iMessage Extension_
 
-![](https://cdn-images-1.medium.com/max/1600/1*UwgRGzsbRag2O9sbc2huvQ.png)
+![](/images/blog/react-native-imessage/4.png)
 _Give it a creative name_
 
 ## Create an iMessage Root on the React Native Side
 
 Now that we have our Xcode target for the iMessage extension, it’s time to create a blueprint for our root component on the React Native side.
 
-![](https://cdn-images-1.medium.com/max/1600/1*cWqUWue5JSbwOMphst8pyg.png)
+![](/images/blog/react-native-imessage/5.png)
 _The entry point of the iMessage Extension on the React Native Side_
 
 We also need to register that component in order to access it easily in the following steps. Let’s create another file in the project root [similar to the one React Native creates for the main application](https://github.com/aydieneue/react-native-imessage-extension/blob/master/index.js).
 
-![](https://cdn-images-1.medium.com/max/1600/1*jtQARaQ6kkjptWgetLSTbg.png)
+![](/images/blog/react-native-imessage/6.png)
 _App Registry Part of the iMessage Extension on the React Native Side_
 
 ## Connecting iMessage Component with the Native Side
 
 At this step, we will update our iMessage target to have the capability of rendering a React Native application within a native one. In order to achieve this, we have some manual work to do. In a regular React Native application, this step is actually handled automatically by the boilerplate that we have from _react-native-cli_, this is the case for Lisk. If you feel something is missing, you can compare the configuration and structure of your iMessage extension target with the main application.
 
-![](https://cdn-images-1.medium.com/max/1600/1*1iVQGSLam_eiLbw27-_3Pw.png)
+![](/images/blog/react-native-imessage/7.png)
 _Build Phase configuration of Main Application_
 
-![](https://cdn-images-1.medium.com/max/1600/1*NzQ3YW5YmVEqGP31LlcI8A.png)
+![](/images/blog/react-native-imessage/8.png)
 _Build Phase configuration of iMessage Extension Target_
 
 ### Linking Libraries
 
 We will start the configuration by linking the React related libraries. Since it’s meant to be a simple application, libraries we add are just the core ones we need at the moment. **[If you are using some third party modules on your main application](https://facebook.github.io/react-native/docs/linking-libraries-ios#manual-linking) and also need them in your iMessage Extension, don’t forget to link them here as well!**
 
-![](https://cdn-images-1.medium.com/max/1600/1*SvV9Fg0_Q5cdPVswqwfL1Q.png)
+![](/images/blog/react-native-imessage/9.png)
 _Build Phase / Link Binary With Libraries configuration of iMessage Extension Target_
 
-![](https://cdn-images-1.medium.com/max/1600/1*Y1EJQ5jVyW38KCRPCMAdkQ.png)
+![](/images/blog/react-native-imessage/10.png)
 _Build Phase / Link Binary With Libraries configuration of iMessage Extension Target_
 
 ### Creating a Bridge Header file for Swift
@@ -101,40 +101,40 @@ Now that we have made those libraries available for our native part, it’s time
 
 We start with creating a new header file called **Bridging-Header.h** inside **AwesomeProjectMessageExtension** folder.
 
-![](https://cdn-images-1.medium.com/max/1600/1*qzT37tPopzFvPmwrmrCreg.png)
+![](/images/blog/react-native-imessage/11.png)
 _Xcode -> File -> New_
 
-![](https://cdn-images-1.medium.com/max/1600/1*aobUklYPwj1w-WJVcaY2jw.png)
+![](/images/blog/react-native-imessage/12.png)
 _Freshly Configured Bridging Header_
 
 Next, by navigating to **Build Settings / Swift Compiler — General** section of the Xcode configuration, choose that file as the Objective-C bridging header.
 
-![](https://cdn-images-1.medium.com/max/1600/1*4yv06dMdyX9SHgUfNmZ3Eg.png)
+![](/images/blog/react-native-imessage/13.png)
 _Build Settings / Swift Compiler — General section of the Xcode configuration_
 
 ### Updating Project and Build Configuration
 
 The first one is updating **Info.plist**, a configuration file placed in every iOS project. In order to make our React Native bundle accessible in development mode, we need to enable loading content from localhost.
 
-![](https://cdn-images-1.medium.com/max/1600/1*hvKgT4--I0_dtbfHL_A-gg.png)
+![](/images/blog/react-native-imessage/14.png)
 Updating Info.plist to make sure we are able to load bundle from localhost
 
 The next step is to add a **Build Phase** for iMessage extensions target in order to make sure we trigger the build script of React Native when we are running the extension.
 
-![](https://cdn-images-1.medium.com/max/1600/1*K0_wisRwL4YgVwvi7AVPGw.png)
+![](/images/blog/react-native-imessage/15.png)
 Add a new (Run Script) step to the Build Phases of iMessage Extension Target
 
 The last step for this section is to update the schemes of the project. Each target in the application has a scheme that defines the configuration for actions available within the context of Xcode like _Build, Run and Analyze._
 
 We update the schemes of both the main application and iMessage extension to make sure we have all the required content while preparing the app for the release.
 
-![](https://cdn-images-1.medium.com/max/1600/1*w49Z6VRPC04HlyKO4fWOJw.png)
+![](/images/blog/react-native-imessage/16.png)
 _Navigate to the Edit Scheme menu of Xcode_
 
-![](https://cdn-images-1.medium.com/max/1600/1*tUpxoGSgVmqi2CUhX29tSA.png)
+![](/images/blog/react-native-imessage/17.png)
 _Add message extension to the build targets of the main app_
 
-![](https://cdn-images-1.medium.com/max/1600/1*4TOt-mCE-hQ2VUoTGn-gPQ.png)
+![](/images/blog/react-native-imessage/18.png)
 _Add React to the build targets of the iMessage Extension_
 
 ### RCTBridge and the Initial Render
@@ -145,20 +145,20 @@ First, let’s take a quick look at the structure of the iMessage extension. Eve
 
 What we focus on at this point is to find a suitable way to create our _RCTRootView_ (an UIView subclass exposed by React Native that can be embedded in any part of a native application) and load our iMessage related code on the React Native side as the bundle.
 
-![](https://cdn-images-1.medium.com/max/1600/1*yfyyF-ZWHKI7JhlkjBxEIg.png)
+![](/images/blog/react-native-imessage/19.png)
 _Initial structure of MessagesViewController.swift_
 
 First, we start with modifying our _MessagesViewController.swift_ to create an _RCTBridge_, _RCTRootView_ and render our registered _AwesomeProjectMessageExtension_ module within that view.
 
-![](https://cdn-images-1.medium.com/max/1600/1*d5e53enUGX8tMnqwSWqfIQ.png)
+![](/images/blog/react-native-imessage/20.png)
 _The initial state of the presentReactNativeView method_
 
 Since we want to clear out everything in the screen before and after opening the iMessage extension, we also create a little helper module that does the trick for us!
 
-![](https://cdn-images-1.medium.com/max/1600/1*S2IGFTdDmO5Q_NoC3DeXUg.png)
+![](/images/blog/react-native-imessage/21.png)
 _We have added removeAllChildViewControllers utility to clear view hierarchy when needed: Before presenting React Native view and cleaning out the application_
 
-![](https://cdn-images-1.medium.com/max/1600/1*_qjylOPNVO_V2B8A12_xCA.png)
+![](/images/blog/react-native-imessage/22.png)
 _Initial run!_
 
 ## Creating Bridge Modules
@@ -169,7 +169,7 @@ In this section, we are going to create our helpers and modules on the Swift sid
 
 Since we are going to send data from Swift to the React Native, it would be nice to create a mapper utility for formatting that data properly.
 
-![](https://cdn-images-1.medium.com/max/1600/1*P1Gy6-HM5KAz7WUVDQZIGg.png)
+![](/images/blog/react-native-imessage/23.png)
 _Mapper utility_
 
 ### Creating a Manager for MessagesViewController
@@ -178,12 +178,12 @@ Now we are going to create a module named _MessagesManager_ that has a connectio
 
 Based on the guidance from the [official documentation](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller) we will need access to [activeConversion](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649188-activeconversation) object and [presentation](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649182-presentationstyle) style as well as the methods will allow us to modify them.
 
-![](https://cdn-images-1.medium.com/max/1600/1*JzX_fBKAn3rHFLku-z242g.png)
+![](/images/blog/react-native-imessage/24.png)
 _Initial structure of MessagesManager.swift_
 
 Since we are creating that custom class with Swift, we also need to provide the interface file to make sure it’s recognized as a native module by React Native.
 
-![](https://cdn-images-1.medium.com/max/1600/1*IGHzxpJ_kQeHP1glyaNFkg.png)
+![](/images/blog/react-native-imessage/25.png)
 _MessagesManager.m file that contains interface declaration for React Native_
 
 ### Creating an EventEmitter for MessagesViewController
@@ -194,13 +194,13 @@ _MessagesEventEmitter_ will help us to keep the JavaScript side informed when th
 
 First of all, we update our _MessagesViewController_ to define a [protocol](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html) that can be easily implemented by _MessagesEventEmitter_ to reduce the effort we need to make (and encourage separation of concerns) in order to follow an event-based design pattern.
 
-![](https://cdn-images-1.medium.com/max/1600/1*3L2EmlErWDz1UosQB4RILg.png)
+![](/images/blog/react-native-imessage/26.png)
 _Updates we have made on MessagesViewController file in order to use protocol pattern_
 
-![](https://cdn-images-1.medium.com/max/1600/1*A0OWsYXHft4mtXJU8Xwcbg.png)
+![](/images/blog/react-native-imessage/27.png)
 _Initial structure of MessagesEventEmitter_
 
-![](https://cdn-images-1.medium.com/max/1600/1*0Ee1XMZeCTLZ7LQil667yQ.png)
+![](/images/blog/react-native-imessage/28.png)
 _MessagesEventEmitter.m file that contains interface declaration for React Native_
 
 ### Custom Module Initializer
@@ -209,12 +209,12 @@ If you create a native module with React Native by following the [basic flow](ht
 
 Considering that our Native Module needs to be stateful to communicate with the _MessagesAppViewController_ instance, we ended up creating a custom module initializer[ by following an approach](https://stackoverflow.com/a/47468905/4965161) derived from the[ the dependency injection guide on React Native documentation](https://facebook.github.io/react-native/docs/native-modules-ios#dependency-injection).
 
-![](https://cdn-images-1.medium.com/max/1600/1*wyMbDSRUE87IUjfJk6jrmw.png)
+![](/images/blog/react-native-imessage/29.png)
 _Custom ModuleInitializer that allows us to use dependency injection pattern at the initialization step of MessagesManager and MessagesEventEmitter modules_
 
 Then we will update the _presentReactNative_ method of _MessagesViewController_ to use that custom module initializer.
 
-![](https://cdn-images-1.medium.com/max/1600/1*IfZq3P1xX0OyjowGWu8ZmA.png)
+![](/images/blog/react-native-imessage/30.png)
 _Updating related parts of MessagesViewController to use custom module initializer_
 
 ## Consuming Native Modules on React Native
@@ -223,22 +223,22 @@ Now that we have covered pretty much all the things we need from our native modu
 
 ### Updating Presentation Style
 
-![](https://cdn-images-1.medium.com/max/1600/1*OlBZlaWXtqFF5j-IRO__Ww.png)
+![](/images/blog/react-native-imessage/31.png)
 _Making use of getPresentationStyle and updatePresentationStyle methods on the React Native side_
 
-![](https://cdn-images-1.medium.com/max/1600/1*SenpP04GY_Li0Mlbg5Va9g.gif)
+![](/images/blog/react-native-imessage/32.gif)
 _onTogglePresentationStyle Method in Action_
 
 So far so good huh? But we forgot something. Let’s look at the recording below and try to catch what’s missing.
 
-![](https://cdn-images-1.medium.com/max/1600/1*4rlKkndBhAVV7yGR1naFiQ.gif)
+![](/images/blog/react-native-imessage/33.gif)
 🤔 🤔 🤔
 
 Since we are not listening to the events related to the presentation style changes triggered by the native UI, we end up in a loop with the sheet continually opening, we don’t have the correct value of _presentationStyle_ right after it’s been updated. In order to resolve this, we are going to use the _MessagesEventEmitter_ module.
 
 This will allow the sheet to receive updates on the state from both the native Swift environment (for when users manually close the sheet) and from within our React Native app.
 
-![](https://cdn-images-1.medium.com/max/1600/1*K5BlKBiSQbh0GToc06NmqA.png)
+![](/images/blog/react-native-imessage/34.png)
 _Using MessagesEventEmitter for listening changes on presentationStyle_
 
 Now the app responds to both triggers from the codebase, and users manually close or open the sheet.
@@ -249,13 +249,13 @@ Now we are so close to our main goal, composing an iMessage from the React Nativ
 
 Let’s start with initializing our blueprint to create the data of a message object that we can through our MessagesManager module.
 
-![](https://cdn-images-1.medium.com/max/1600/1*10j4tTw1CKkO269poZ76SQ.png)
+![](/images/blog/react-native-imessage/35.png)
 _Using composeMessage method of MessagesManager to create a test message_
 
-![](https://cdn-images-1.medium.com/max/1600/1*qoFu5weDUNbuh2Y_BsfFDw.png)
+![](/images/blog/react-native-imessage/36.png)
 _Assets section of the Xcode, where we add images in order to use in the Message templates_
 
-![](https://cdn-images-1.medium.com/max/1600/1*eVsJHw5bODQ6WmUEBrFW6A.gif)
+![](/images/blog/react-native-imessage/37.gif)
 _Outcome of the test message_
 
 ### Using the URL field to share data
@@ -264,21 +264,18 @@ Now that we are able to compose and send a message, we create a very simple exam
 
 What we are going to do is to put a timestamp and the identifier of the sender to the URL field and present it on the screen. We will also make use of the _getActiveConversation_ method exposed by _MessagesManager_ as well as the _didReceiveMessage_ and _didSelectMessage_ events from the _MessagesEvents_ module.
 
-![](https://cdn-images-1.medium.com/max/1600/1*dtt55JfSwdahyrs5OpG-1w.png)
+![](/images/blog/react-native-imessage/38.png)
 _Updating App.iMessage.js to make use of URL field_
 
 Now if we send a message as Kate to John (or vica-versa) we can observe the change in the timestamps and the sender IDs.
 
-![](https://cdn-images-1.medium.com/max/1600/1*l5JpfNeIAPGC-21YL_RHlA.gif)
+![](/images/blog/react-native-imessage/39.gif)
 _Sending a message as Kate to John. Kate’s sender ID is CD8FBE2C-D25F-4683–85f5–669C6E42DDF8_
 
-![](https://cdn-images-1.medium.com/max/1600/1*5_Z4ytBGfx16tChcsEhptA.gif)
+![](/images/blog/react-native-imessage/40.gif)
 _Opening and replying Kate’s message as John. John’s sender ID is 721FA6A5-CC6F-42FD-A840–4B846E634E62_
 
 If you want to share more data and handle complex logic, our recommendation is to use a third-party library for simplifying the URL construction and parsing logic. For a better example, you can check out [the iMessage part of our open source Lisk Mobile application](https://github.com/LiskHQ/lisk-mobile/tree/development/src/components/imessage).
-
-![](https://cdn-images-1.medium.com/max/1600/0*HT19uwe3N2acuTr2)
-_Summary of this section_
 
 ## Extras
 
@@ -288,7 +285,7 @@ _Summary of this section_
 
 When the application is run from the Xcode, there’s a crash that happens right after we go back from the message detail screen to the list screen. We haven’t found the crux of this problem but we were able to reproduce it also with the example project from Apple’s official documentation.
 
-![](https://cdn-images-1.medium.com/max/1600/1*qxCjWmW7Doj5nKqYZmHWIQ.gif)
+![](/images/blog/react-native-imessage/42.gif)
 _Mysterious Simulator Crash_ 🤔
 
 Our workaround for the crash is to stop the Xcode right after we get everything running. It will make more sense if you take a look at the **Remote Debugger and Reload Menu for Development** section below.
@@ -313,12 +310,12 @@ Considering the **mysterious simulator crash** we have mentioned in the section 
 
 And import it to our _App.iMessage.js_ component as following:
 
-![](https://cdn-images-1.medium.com/max/1600/1*a9W6yoZQFhKwG5SVyiCNOA.png)
+![](/images/blog/react-native-imessage/43.png)
 _Usage of DevMenu component within the root iMessage component_
 
 Unfortunately, _DevSettings_ module does not export a method to get the value of **liveReload** and **remoteDebugging** flags so we need to double click the buttons within our **DevMenu** component to make sure we sync their state correctly.
 
-![](https://cdn-images-1.medium.com/max/1600/1*e6iUnjsr7CLtJE-Z9HJfDA.gif)
+![](/images/blog/react-native-imessage/44.gif)
 _DevMenu in action!_
 
 ### Deep Link Opener
@@ -327,39 +324,39 @@ In our Lisk Mobile application, we also needed a utility for opening the main ap
 
 After setting up the main application to handle deep links by following [the guide from official React Native documentation](https://facebook.github.io/react-native/docs/linking), next step is to update the _MessagesManager_ to provide a utility for opening deep links.
 
-![](https://cdn-images-1.medium.com/max/1600/1*aIv2r9tyBtZFvoYX5ub_TQ.png)
+![](/images/blog/react-native-imessage/45.png)
 _We have added openURL method to MessagesManager_
 
-![](https://cdn-images-1.medium.com/max/1600/1*knyT9Ac2ZAJgE53HU-6qAg.png)
+![](/images/blog/react-native-imessage/46.png)
 _Also updated interface file of the MessagesManager to contain openURL method_
 
-![](https://cdn-images-1.medium.com/max/1600/1*wPEaORewmmHZvDN2F7n7UQ.png)
+![](/images/blog/react-native-imessage/47.png)
 _Usage of openURL method on React Native side_
 
-![](https://cdn-images-1.medium.com/max/1600/1*ii9-Bu6BriKHIFWalEVoTA.gif)
+![](/images/blog/react-native-imessage/48.gif)
 _openURL method in action!_
 
 ### Display a Loading View during the Initial Load
 
 The natural behavior of iMessage extensions is to show the application logo uploaded in the assets section during the initial load as shown below.
 
-![](https://cdn-images-1.medium.com/max/1600/1*FgXPJL3PpfyW-6xWwryINg.png)
+![](/images/blog/react-native-imessage/49.png)
 _Default behavior of launch screen_
 
 In our case, we are also waiting for React Native bundle to be loaded until we see something to interact on the screen. Luckily, _RCTRootView_ has a property named _loadingView_ that allows us to provide a temporary view to be shown while the bundle is loading.
 
 In order to enhance this experience, let’s create a view with the activity indicator and assign it to the _loadingView_ property of _RCTRootView_.
 
-![](https://cdn-images-1.medium.com/max/1600/1*zmGWPrh-SSTbr9fJudPogg.png)
+![](/images/blog/react-native-imessage/50.png)
 _Xcode -> File -> New -> View_
 
-![](https://cdn-images-1.medium.com/max/1600/1*BHwJiQdhxDNIKjh63I17qw.gif)
+![](/images/blog/react-native-imessage/51.gif)
 _Using storyboard to set the layout of the LoadingView_
 
-![](https://cdn-images-1.medium.com/max/1600/1*qrUwFrysMpT4MmkLtGR-UA.png)
+![](/images/blog/react-native-imessage/52.png)
 _Updating the presentReactNative method of the MessagesViewController to make sure our RCTRootView instance uses LoadingView_
 
-![](https://cdn-images-1.medium.com/max/1600/1*UCOA-UcT6uhwoMwJAlXlOw.gif)
+![](/images/blog/react-native-imessage/53.gif)
 _End result of this section: LoadingView is presented until the React Native bundle is loaded._
 
 ### Controlling the Loading View from the React Native Side
@@ -370,18 +367,18 @@ This would be very handy if there’s a case you need to delay the initial rende
 
 First, the _presentReactNativeView_ method of _MessagesViewController_ needs to be refactored a little bit as following:
 
-![](https://cdn-images-1.medium.com/max/1600/1*625Wvi4DMDiV9ixqHgefTg.png)
+![](/images/blog/react-native-imessage/54.png)
 _presentReactNative method initializes and presents a LoadingView on top of the RCTRootView, instead of using the RCTRootView.loadingView property._
 
-![](https://cdn-images-1.medium.com/max/1600/1*QQpFH33Gw1BTHEpiJu6d_g.png)
+![](/images/blog/react-native-imessage/55.png)
 _In order to control the presence of that loadingView, we have added two methods to the MessagesManager_
 
-![](https://cdn-images-1.medium.com/max/1600/1*5_kXhFVD6L9an3smrbKwUw.png)
+![](/images/blog/react-native-imessage/56.png)
 _Updated interface file of the MessagesManager to contain methods for controlling the loadingView._
 
 Now it’s time to make use of those freshly added methods in the React Native side. What we are going to do is to fake an asynchronous task in _componentDidMount_ and delay the initial rendering of the content until that task is completed. We will also add an additional button to the sample set to toggle the loading screen again.
 
-![](https://cdn-images-1.medium.com/max/1600/1*UIMkx6LCo4b6nOKmvp7KEw.png)
+![](/images/blog/react-native-imessage/57.png)
 _Making use of loadingView related methods on the React Native side_
 
 ## Final Thoughts
