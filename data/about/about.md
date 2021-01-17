@@ -2,13 +2,16 @@
 date: '2020-12-01'
 ---
 
-I live in Berlin and work at [Klarna](https://klarna.com) as a software engineer.
+I'm a software engineer mostly focused on the user-facing side of digital products. I like working on things that are solving problems I empathize with.
 
-I also work on other things on the side; the most prominent is [putio](https://put.io).
+I'm currently living in Berlin, working at [Klarna](https://klarna.com), and doing some other things on the side:
 
-I read, listen, or have a conversation with [this turtle statue](https://www.google.com/maps/place/Volkspark+Friedrichshain/@52.5280353,13.4363934,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN57t7pSwex77bUIHLb_0JCWtC_j_HMito5rcI3%3Dw203-h308-k-no!7i2164!8i3291!4m5!3m4!1s0x47a84e126b6e2efd:0xc281c457bba00f76!8m2!3d52.5280353!4d13.4363934) in my free time.
+- [putio](https://put.io)'s client apps.
+- [Accept Nano](https://accept-nano.com) payment gateway.
 
-#### People who tremendously contributed to my life in the past several years:
+### Who I admire
+
+Those people tremendously contributed to my life during the past several years.
 
 - **Big three**: Naval Ravikant, Derek Sivers, Mark Manson
 - **Creative three**: Seth Godin, Austin Kleon, Brian Lovin
