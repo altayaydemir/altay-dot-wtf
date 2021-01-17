@@ -1,33 +1,29 @@
 import type { MetaImage } from 'types'
 import { META_IMAGE_WIDTH, META_IMAGE_HEIGHT, SITE_URL } from 'config'
-import { join } from 'path'
 import fs from 'fs'
-import imageSize from 'image-size'
+import sharp from 'sharp'
 import { createCanvas, loadImage } from 'canvas'
 import { getBlurhash } from 'next-blurhash'
+import { PUBLIC_FOLDER_PATH } from './constants'
 
-const PUBLIC_FOLDER = join(process.cwd(), 'public')
+type ImageData = {
+  buffer: Buffer
+  ratio: number
+  width: number
+  height: number
+  blurhash: string
+}
 
-const getImageDataFromBuffer = (buffer: Buffer) => {
-  const { width, height } = imageSize(buffer)
+export const getImageData = async (url: string): Promise<ImageData> => {
+  const buffer = fs.readFileSync(PUBLIC_FOLDER_PATH + url)
+  const { width, height } = await sharp(buffer).metadata()
 
   if (!width || !height) {
     throw new Error('Could not get image data')
   }
 
-  return { buffer, ratio: width / height, width, height }
-}
-
-type ImageData = ReturnType<typeof getImageDataFromBuffer> & { blurhash: string }
-
-export const getImageData = async (url: string): Promise<ImageData> => {
-  const buffer = fs.readFileSync(PUBLIC_FOLDER + url)
   const blurhash = await getBlurhash(url)
-
-  return {
-    blurhash,
-    ...getImageDataFromBuffer(buffer),
-  }
+  return { buffer, ratio: width / height, width, height, blurhash }
 }
 
 const META_IMAGE_BG_FILL_COLOR = '#111111'
@@ -41,7 +37,7 @@ export const generateMetaImage = async ({
   data: ImageData
   scale?: number
 }): Promise<MetaImage> => {
-  const absolutePath = `${PUBLIC_FOLDER}/${publicPath}`
+  const absolutePath = `${PUBLIC_FOLDER_PATH}/${publicPath}`
 
   if (!fs.existsSync(absolutePath)) {
     const canvas = createCanvas(META_IMAGE_WIDTH, META_IMAGE_HEIGHT)

@@ -1,6 +1,8 @@
 import fs from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
+import { PUBLIC_FOLDER_PATH } from './constants'
+import sharp from 'sharp'
 
 const BOOK_JSON_FOLDER = join(process.cwd(), 'data', 'books', 'json')
 
@@ -54,24 +56,23 @@ export const fetchBookData = async (isbn: string) => {
   return bookData
 }
 
-const PUBLIC_PATH = join(process.cwd(), 'public')
-
 export const fetchBookImage = async (slug: string, url: string) => {
   const bookFolderPath = `/images/books/${slug}`
   const coverImagePath = bookFolderPath + `/cover.png`
 
-  if (fs.existsSync(`${PUBLIC_PATH}/${coverImagePath}`)) {
+  if (fs.existsSync(`${PUBLIC_FOLDER_PATH}/${coverImagePath}`)) {
     return coverImagePath
   }
 
   const response = await fetch(url)
   const buffer = await response.buffer()
+  const resizedImage = await sharp(buffer).resize({ width: 180 }).toBuffer()
 
-  if (!fs.existsSync(`${PUBLIC_PATH}/${bookFolderPath}`)) {
-    fs.mkdirSync(`${PUBLIC_PATH}/${bookFolderPath}`)
+  if (!fs.existsSync(`${PUBLIC_FOLDER_PATH}/${bookFolderPath}`)) {
+    fs.mkdirSync(`${PUBLIC_FOLDER_PATH}/${bookFolderPath}`)
   }
 
-  fs.writeFileSync(`${PUBLIC_PATH}/${coverImagePath}`, buffer)
+  fs.writeFileSync(`${PUBLIC_FOLDER_PATH}/${coverImagePath}`, resizedImage)
 
   return coverImagePath
 }

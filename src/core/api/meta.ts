@@ -1,6 +1,6 @@
 import type { Post, Book, Content, ContentType } from 'types'
 import readingTime from 'reading-time'
-import { fetchBookData, fetchBookImage } from './http'
+import { fetchBookData, fetchBookImage } from './books'
 import { getImageData, generateMetaImage } from './image'
 
 const getPostMeta = async (slug: string, meta: Post['meta'], content: Post['markdown']) => {
@@ -18,7 +18,7 @@ const getBookMeta = async (slug: string, meta: Book['meta']) => {
   const metaImage = await generateMetaImage({
     publicPath: `/images/books/${slug}/cover-meta.png`,
     data: coverImageData,
-    scale: 2,
+    scale: 1.5,
   })
 
   return {
