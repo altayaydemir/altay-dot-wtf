@@ -3,7 +3,7 @@ title: Law of emotions
 date: '2020-12-05T10:05:51Z'
 ---
 
-The third chapter of [Everything is Fucked](../books/everything-is-fucked.md) paints Isaac Newton –who had a lonely and loveless childhood– as the explorer of our inner world. He comes up with three laws of emotion based on his experiences.
+The third chapter of [Everything is Fucked](../books/everything-is-fucked) paints Isaac Newton –who had a lonely and loveless childhood– as the explorer of our inner world. He comes up with three laws of emotion based on his experiences.
 
 #### For every action, there is an equal and opposite emotional reaction.
 
@@ -21,6 +21,6 @@ The opposite applies, and both are narcissistic because it's based on the expect
 
 When our Feeling Brain feels something, our Thinking Brain constructs are narrative to explain it. Those narratives stick with us and define us, unless we have experiences that shows the opposite.
 
-The only way to change our [values](./values.md) is to have experiences _contrary_ to our values.
+The only way to change our [values](./values) is to have experiences _contrary_ to our values.
 
 This is why there's no such thing as change without pain, no growth without discomfort.

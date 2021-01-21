@@ -14,4 +14,5 @@ Using facebook or alternatives are not good enough for permission marketing, sin
 Once you earn the permission, you can educate. Take your time and [tell your story.](./telling-stories.md)
 
 ### References
+
 - [This is Marketing](../books/this-is-marketing)
