@@ -22,7 +22,7 @@ Those people tremendously contributed to my life during the past several years.
 ### What I did
 
 - **2021, Jan:** wanted to work on product after [an engineering-heavy year](/blog/2020), therefore switched to _Consumer Deals_ team. We own a feature that I wrote the MVP for Black Friday in 2019, it grew over time to have a dedicated team.
-- **2020, Oct:** built this website.
+- **2020, Oct:** built this website, which is inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), [julie.design](https://julie.design), and [andymatuschak.org](https://notes.andymatuschak.org)
 - **2020, Jan:** joined to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
 - **2019, May:** got a promising offer from the Swedish fintech decacorn [**Klarna**](https://klarna.com/) and joined to _Marketing Touchpoint Infrastructure_ team. Worked on analytics and CRM integrations.
 - **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io), a blockchain startup. Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](../blog/react-native-imessage), which we had a chance to [present in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
