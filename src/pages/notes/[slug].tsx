@@ -20,9 +20,7 @@ const NotePage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
     <>
       <NextSeo title={data.meta.title} />
 
-      <Heading fontSize={3} fontWeight="800">
-        {data.meta.title}
-      </Heading>
+      <Heading fontSize={3}>{data.meta.title}</Heading>
 
       {data.meta.tags ? <Tags tags={data.meta.tags} /> : null}
 

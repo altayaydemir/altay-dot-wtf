@@ -1,6 +1,10 @@
 import type { Theme } from '.'
+import { loadFont } from './fonts'
 
 export const createGlobalStyles = (theme: Theme) => `
+  ${loadFont('GT America Standard', 'GT-America-Standard-Regular-Trial', 400)}
+  ${loadFont('GT America Standard', 'GT-America-Standard-Bold-Trial', 600)}
+
   * {
     box-sizing: border-box;
   }
@@ -19,7 +23,7 @@ export const createGlobalStyles = (theme: Theme) => `
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: 'GT America Standard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
 
   h1, h2, h3, h4, h5, h6 {

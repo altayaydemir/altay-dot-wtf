@@ -44,7 +44,7 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box mb={4} />
 
-      <ContentTitle tag="h1" fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
+      <ContentTitle tag="h1" fontSize={[3, 4]} meta={data.meta} />
 
       <Box my={2} />
 
