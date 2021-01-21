@@ -9,6 +9,8 @@ I'm currently living in Berlin, working at [Klarna](https://klarna.com), and doi
 - [putio](https://put.io)'s client apps.
 - [Accept Nano](https://accept-nano.com) payment gateway.
 
+&nbsp;
+
 ### Who I admire
 
 Those people tremendously contributed to my life during the past several years.
@@ -18,6 +20,8 @@ Those people tremendously contributed to my life during the past several years.
 - **Hacker three**: Guillermo Rauch, Dan Abramov, Scott Wlatschin
 - **Productive three**: Cal Newport, James Clear, Make Time Duo
 - **Close-circle three**: [Hasan Yalçınkaya](https://twitter.com/hafifuyku), [Kemal Akkoyun](https://kakkoyun.me), [Berk Çapar](https://berk.studio)
+
+&nbsp;
 
 ### What I did
 

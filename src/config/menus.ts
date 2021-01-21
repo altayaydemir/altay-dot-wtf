@@ -8,10 +8,6 @@ export const HEADER = [
     href: '/about',
   },
   {
-    label: 'Now',
-    href: '/now',
-  },
-  {
     label: 'Blog',
     href: '/blog',
   },
