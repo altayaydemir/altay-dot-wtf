@@ -24,12 +24,12 @@ export const homeCopy = {
 } as const
 
 export const aboutCopy = {
-  icon: '👋',
+  icon: '🥸',
   title: "Hi, I'm Altay",
 }
 
 export const blogCopy = {
-  icon: '🥸',
+  icon: '🤔',
   title: 'Blog',
   description: 'Learnings worth sharing.',
 } as const
