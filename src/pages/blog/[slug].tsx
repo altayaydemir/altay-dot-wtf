@@ -8,7 +8,6 @@ import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/
 import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
-import Feedback from 'components/Feedback'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
 import LinkedItems from 'components/LinkedItems'
 import PostImage from 'components/Post/PostImage'
@@ -62,10 +61,6 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
       <Box m={3} />
 
       <Markdown>{data.markdown}</Markdown>
-
-      <Box m={4} />
-
-      <Feedback />
 
       <Box m={4} />
 
