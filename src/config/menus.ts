@@ -37,7 +37,12 @@ export const FOOTER = [
   },
   {
     title: 'twitter',
-    label: '@altaywtf',
+    label: 'Twitter',
     href: 'https://twitter.com/altaywtf',
+  },
+  {
+    title: 'github',
+    label: 'Github',
+    href: 'https://github.com/altaywtf',
   },
 ] as const
