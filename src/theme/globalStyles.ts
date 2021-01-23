@@ -1,9 +1,8 @@
 import type { Theme } from '.'
-import { loadFont } from './fonts'
+import { createTypographyCSS } from './typography'
 
 export const createGlobalStyles = (theme: Theme) => `
-  ${loadFont('GT America Standard', 'GT-America-Standard-Regular-Trial', 400)}
-  ${loadFont('GT America Standard', 'GT-America-Standard-Bold-Trial', 600)}
+  ${createTypographyCSS(theme)}
 
   * {
     box-sizing: border-box;
@@ -18,12 +17,6 @@ export const createGlobalStyles = (theme: Theme) => `
   body {
     background: ${theme.colors.background};
     color: ${theme.colors.text};
-    font-size: ${(theme.fontSizes as string[])[2]}px;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: none;
-    font-family: 'GT America Standard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -67,11 +60,5 @@ export const createGlobalStyles = (theme: Theme) => `
 
   .image-markdown {
     background-color: ${theme.colors.background};
-  }
-
-  @media (max-width: ${(theme.breakpoints as string[])[1]}) {
-    body {
-      font-size: ${(theme.fontSizes as string[])[1]}px;
-    }
   }
 `
