@@ -10,7 +10,7 @@ const HeaderDesktop: React.FC<{ currentPathname: string }> = ({ currentPathname 
     margin="auto"
     alignItems="center"
     justifyContent="space-between"
-    width={MOBILE_BREAKPOINT + MAGIC_NUMBER}
+    width={MOBILE_BREAKPOINT + MAGIC_NUMBER * 2}
   >
     {HEADER.map(({ label, href }) => (
       <Box key={href} flex={1} marginX={`${MAGIC_NUMBER / 4}px`}>

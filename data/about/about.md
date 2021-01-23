@@ -2,9 +2,11 @@
 date: '2020-12-01'
 ---
 
-I'm a software engineer mostly focused on the user-facing part of digital products. I like working on things that are solving problems I empathize with.
+I'm a software engineer focusing on the human-facing part of digital products.
 
-I'm currently living in Berlin, working at [Klarna](https://klarna.com), and doing some other things on the side:
+I'm currently living in Berlin and working at [Klarna](https://klarna.com).
+
+I also work on some passion projects and little experiments on the side:
 
 - [putio](https://put.io)'s client apps.
 - [Accept Nano](https://accept-nano.com) payment gateway.

@@ -2,10 +2,9 @@ import type { InferGetStaticPropsType } from 'next'
 import type { Post } from 'types'
 import { SITE_URL } from 'config'
 import { NextSeo } from 'next-seo'
-import { Text, Box } from 'rebass'
+import { Heading, Text, Box } from 'rebass'
 import { format, formatDistanceToNow } from 'date-fns'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
-import ContentTitle from 'components/ContentTitle'
 import Tags from 'components/Tag/Tags'
 import Markdown from 'components/Markdown'
 import { useScrollToSource } from 'core/hooks/useScrollToSource'
@@ -44,13 +43,13 @@ const PostPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
 
       <Box mb={4} />
 
-      <ContentTitle tag="h1" fontSize={[3, 4]} fontWeight="800" meta={data.meta} />
+      <Heading>{data.meta.title}</Heading>
 
       <Box my={2} />
 
       <Tags tags={data.meta.tags} />
 
-      <Text fontSize={1} color="textTertiary" title={format(new Date(data.meta.date), 'PPP')}>
+      <Text fontSize={0} color="textTertiary" title={format(new Date(data.meta.date), 'PPP')}>
         {'updated '} {formatDistanceToNow(new Date(data.meta.date), { addSuffix: true })}
         <Box display="inline" mx={1}>
           ·

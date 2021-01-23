@@ -20,7 +20,7 @@ const Footer = () => (
             rel="noopener noreferrer"
             paddingRight={2}
             paddingLeft={index === 0 ? 0 : 2}
-            fontSize={1}
+            fontSize={0}
             sx={{ color: 'textTertiary', '&:hover': { color: 'linkPrimary' } }}
           >
             {link.label}

@@ -58,7 +58,7 @@ const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
   <Box my={3}>
     <TaggedItemHeading tag={tag} data={data} />
 
-    <Text color="textSecondary" display="inline" fontSize={1}>
+    <Text color="textSecondary" display="inline" fontSize={0}>
       {getType(data)}
     </Text>
 
@@ -66,7 +66,7 @@ const Item: React.FC<TaggedItemProps> = ({ data, tag }) => (
       ·
     </Text>
 
-    <Text color="textTertiary" display="inline" fontSize={1}>
+    <Text color="textTertiary" display="inline" fontSize={0}>
       {getSubtitle(data)}
     </Text>
   </Box>
