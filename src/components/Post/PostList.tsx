@@ -1,8 +1,7 @@
 import type { Post } from 'types'
 import NextLink from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
-import { Box, Text, Link } from 'rebass'
-import ContentTitle from 'components/ContentTitle'
+import { Box, Text, Link, Heading } from 'rebass'
 
 type Props = {
   data: Post[]
@@ -14,13 +13,15 @@ const PostList: React.FC<Props> = ({ data }) => (
       <Box key={b.slug} mb={4}>
         <NextLink href={`/blog/${b.slug}`} passHref>
           <Link>
-            <ContentTitle tag="h3" fontSize={2} meta={b.meta} />
+            <Heading as="h3" fontSize={[1, 2]}>
+              {b.meta.title}
+            </Heading>
           </Link>
         </NextLink>
 
         <Box m={1} />
 
-        <Text fontSize={1} color="textSecondary">
+        <Text fontSize={0} color="textSecondary">
           {b.meta.oneliner}
         </Text>
 

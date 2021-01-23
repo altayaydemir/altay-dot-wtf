@@ -1,9 +1,8 @@
 import { InferGetStaticPropsType } from 'next'
 import { NextSeo } from 'next-seo'
-import { Flex, Box } from 'rebass'
+import { Flex, Box, Heading } from 'rebass'
 import { getStaticPathsForContent, getStaticPropsForContentDetails } from 'core/api/page'
 import type { Book } from 'types'
-import ContentTitle from 'components/ContentTitle'
 import BookCover from 'components/Book/BookCover'
 import BookInfo from 'components/Book/BookInfo'
 import Markdown from 'components/Markdown'
@@ -39,9 +38,11 @@ const BookPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ da
         <Box m={2} />
 
         <Box>
-          <ContentTitle tag="h1" fontSize={[1, 2, 3]} meta={data.meta} />
+          <Heading as="h1" fontSize={3}>
+            {data.meta.title}
+          </Heading>
           <Box my={2} />
-          <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={[0, 1]} />
+          <BookInfo bookMeta={data.meta} spacing={[0, 1, 1]} fontSize={0} />
           <Tags tags={data.meta.tags} />
         </Box>
       </Flex>

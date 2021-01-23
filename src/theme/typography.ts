@@ -34,14 +34,8 @@ export const createTypographyCSS = (theme: Theme) => `
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: none;
 
-    font-size: ${(theme.fontSizes as string[])[2]}px;
+    font-size: ${(theme.fontSizes as string[])[1]}px;
     letter-spacing: 0.015em;
     word-spacing: 0.001em;
-  }
-
-  @media (max-width: ${(theme.breakpoints as string[])[1]}) {
-    body {
-      font-size: ${(theme.fontSizes as string[])[1]}px;
-    }
   }
 `

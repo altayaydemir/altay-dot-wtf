@@ -30,7 +30,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
 
         <Box mx={2} />
 
-        <Heading as="span" fontSize={1} color="text">
+        <Heading as="span" fontSize={0} color="text">
           {activeLink?.label}
         </Heading>
       </Flex>
@@ -54,7 +54,7 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
               href={href}
               label={label}
               style={{
-                fontSize: 1,
+                fontSize: 0,
                 paddingX: 2,
                 paddingY: 2,
                 marginY: 2,
