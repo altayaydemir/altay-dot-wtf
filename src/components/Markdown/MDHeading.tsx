@@ -13,17 +13,15 @@ type Props = {
 }
 
 const MDHeadingStyle: SxStyleProp = {
-  '& > h1, h2, h3, h4, h5, h6': {
-    marginTop: 4,
-  },
-  '& > h3': {
-    marginTop: 5,
-  },
   '& > h2': {
+    marginTop: 5,
     paddingBottom: 2,
     borderBottomWidth: 1,
     borderBottomStyle: 'solid',
     borderColor: 'borderPrimary',
+  },
+  '& > h3, h4, h5, h6': {
+    marginTop: 4,
   },
 }
 
