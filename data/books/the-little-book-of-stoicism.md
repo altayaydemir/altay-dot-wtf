@@ -45,8 +45,6 @@ You're confident on what you do is right, and don't need to listen what the othe
 
 Zeno, a phoenician merchant who lost his wealth in a shipwreck living in Cyprus. He moves to Athens, studies Socrates's teachings (and in several academies), then starts to teach in public.
 
-### The Gang of Four
-
 #### Seneca (4 BCE - 65 CE)
 
 - Lived an extraordinary life.
