@@ -7,6 +7,10 @@ module.exports = withBundleAnalyzer({
   async redirects() {
     return [
       {
+        source: '/cv',
+        destination: '/cv.pdf',
+      },
+      {
         source: '/articles',
         destination: '/blog',
         permanent: true,
