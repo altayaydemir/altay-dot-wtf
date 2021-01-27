@@ -31,7 +31,7 @@ Those people tremendously contributed to my life during the past several years.
 - **2020, Jan:** joined to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
 - **2019, May:** got a promising offer from the Swedish fintech decacorn [**Klarna**](https://klarna.com/) and joined to _Marketing Touchpoint Infrastructure_ team. Worked on analytics and CRM integrations.
 - **2018, Oct:** relocated to Berlin and joined [**Lisk**](https://lisk.io), a blockchain startup. Worked on the [mobile wallet](https://github.com/LiskHQ/lisk-mobile) and built some cool stuff such as [react-native iMessage bridge](../blog/react-native-imessage). We had a chance to [present it in the React Berlin meetup.](https://www.youtube.com/watch?v=MEM6OBOBIhY)
-- **2018, June:** had a month-long London trip with colleagues. Turkey had another non-promising general election that gave a hint of what will keep happening in the country.
+- **2018, June:** had a month-long London trip with colleagues, my first time abroad. Turkey had another non-promising general election that gave a hint of what will keep happening in the country.
 - **2017:** joined [**putio**](https://put.io/), a cloud-storage service that downloads publicly available files at high speeds. Took over the web app and built clients for iOS, tvOS, Roku, and Smart TVs.
 
 ---
@@ -49,6 +49,6 @@ Those people tremendously contributed to my life during the past several years.
 - **2008 to 2009:** published a fanzine called **Uzak**, with friends who were also poetically suffering from puberty.
 - **2007 to 2012**: played drums in punk and alternative rock bands till the end of high school. [Recorded a demo](https://soundcloud.com/manevraonline/sets/palyaco) with the most memorable one, [**manevra**.](https://vimeo.com/26003192)
 - **2007**: built an unofficial website for my middle school. Took it down after one week because teachers read the comments written by students in the forum and threatened to sue me.
-- **1994 to 2006**: wanted to become a footballer and/or do computer stuff. I'm still fairly good at FIFA.
+- **1994 to today**: wanted to become a footballer or do computer stuff. I'm still fairly good at FIFA.
 - **2000**: moved to Antalya, Turkey
 - **1994**: born in Kayseri, Turkey
