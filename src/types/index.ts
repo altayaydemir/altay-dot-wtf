@@ -76,7 +76,7 @@ export type Bookmark = {
   url: string
   host: string
   title: string
-  description?: string
+  description: string
 }
 
 export type Content = Now | Note | Post | Book | About | Journal | Vocabulary
