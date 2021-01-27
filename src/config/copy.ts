@@ -24,7 +24,7 @@ export const homeCopy = {
 } as const
 
 export const aboutCopy = {
-  icon: '🥸',
+  icon: '🏴',
   title: "Hi, I'm Altay",
 }
 
