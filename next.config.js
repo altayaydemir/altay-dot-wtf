@@ -9,6 +9,7 @@ module.exports = withBundleAnalyzer({
       {
         source: '/cv',
         destination: '/cv.pdf',
+        permanent: true,
       },
       {
         source: '/articles',
