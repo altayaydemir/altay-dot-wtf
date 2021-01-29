@@ -17,6 +17,7 @@ export const COLORS_LIGHT = {
   borderMenu: '#F1F5FC',
   borderPrimary: 'rgba(241, 245, 252)',
   imageZoomBackground: 'rgba(255, 255, 255, 0.75)',
+  yellow: '#F7C744',
   red: '#ff3b30',
   green: '#78B756',
 }
@@ -40,6 +41,7 @@ export const COLORS_DARK: Colors = {
   borderMenu: 'rgba(130, 130, 130, 0.01)',
   borderPrimary: 'rgba(130, 130, 130, 0.1)',
   imageZoomBackground: 'rgba(0, 0, 0, 0.75)',
+  yellow: '#F7C744',
   red: '#ff3b30',
   green: '#78B756',
 }

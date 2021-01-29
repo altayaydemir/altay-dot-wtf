@@ -81,3 +81,9 @@ export const vocabCopy = {
   title: 'Vocabulary',
   description: 'Some interesting elements I came across while reading.',
 }
+
+export const playlistsCopy = {
+  icon: '🎧',
+  title: 'Playlists',
+  description: 'My Spotify playlists.',
+}
