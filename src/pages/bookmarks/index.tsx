@@ -1,10 +1,16 @@
-import type { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+import type { Bookmark } from 'types'
 import { bookmarksCopy } from 'config/copy'
 import { fetchBookmarks } from 'core/api/bookmarks'
 import PageHeader from 'components/PageHeader'
 import { Box, Text, Link, Heading } from 'rebass'
 
-export const getStaticProps = async () => ({ props: { data: await fetchBookmarks() } })
+export const getStaticProps: GetStaticProps<{ data: Bookmark[] }> = async () => ({
+  props: {
+    data: await fetchBookmarks(),
+  },
+  revalidate: 60 * 60,
+})
 
 const BookmarksPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ data }) => (
   <>
