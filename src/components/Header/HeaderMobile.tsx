@@ -21,19 +21,19 @@ const HeaderMobile: React.FC<{ currentPathname: string }> = ({ currentPathname }
 
   return (
     <>
-      <Flex alignItems="center" paddingX={2}>
-        <button type="button" name="menu-button" onClick={toggleShowMenu} style={menuButtonStyle}>
+      <button type="button" name="menu-button" onClick={toggleShowMenu} style={menuButtonStyle}>
+        <Flex alignItems="center" paddingX={2}>
           <Box color="text" padding={0} margin={0} fontSize={3} sx={{ lineHeight: 0 }}>
             {showMenu ? <CgClose /> : <CgMenu />}
           </Box>
-        </button>
 
-        <Box mx={2} />
+          <Box mx={2} />
 
-        <Heading as="span" fontSize={0} color="text">
-          {activeLink?.label}
-        </Heading>
-      </Flex>
+          <Heading as="span" fontSize={0} color="text">
+            {activeLink?.label}
+          </Heading>
+        </Flex>
+      </button>
 
       <Box
         sx={{
