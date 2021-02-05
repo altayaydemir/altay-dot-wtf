@@ -41,4 +41,9 @@ export const FOOTER = [
     label: 'Github',
     href: 'https://github.com/altaywtf',
   },
+  {
+    title: 'Ask Me Anything',
+    label: 'AMA',
+    href: 'https://rep.ly/altaywtf',
+  },
 ] as const
