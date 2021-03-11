@@ -1,13 +1,13 @@
 ---
-date: '2021-26-01'
+date: '2021-03-11'
 ---
 
 I'm a software engineer mostly working on the human-facing side of digital products. I'm currently living in Berlin and working at [Klarna.](https://klarna.com)
 
 I also work on some passion projects and little experiments on the side:
 
-- [putio](https://put.io)'s client apps.
-- [Accept Nano](https://accept-nano.com) payment gateway.
+- My eternal love [putio](https://put.io)'s client apps.
+- A payment gateway for [Accept Nano](https://accept-nano.com) cryptocurrency.
 - [Detailed notes](/books) from the books I've read.
 
 &nbsp;
