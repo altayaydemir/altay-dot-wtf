@@ -1,20 +1,21 @@
 ---
-date: '2021-03-11'
+date: '2021-05-11'
 ---
 
-I'm a software engineer mostly working on the human-facing side of digital products. I'm currently living in Berlin and working at [Klarna.](https://klarna.com)
+I like coffee, computers, typefaces, and working on things that are solving problems I empathize with.
 
-I also work on some passion projects and little experiments on the side:
+I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects and little experiments on the side:
 
-- My eternal love [putio](https://put.io)'s client apps.
+- My eternal love [putio](https://put.io)'s user-facing apps.
 - A payment gateway for [Accept Nano](https://accept-nano.com) cryptocurrency.
 - [Detailed notes](/books) from the books I've read.
+- Playing video games, mostly on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
 
 &nbsp;
 
 ### Who I admire
 
-Those people tremendously contributed to my life during the past several years.
+Those people contributed tremendously to my life in the past several years.
 
 - **Big three**: Naval Ravikant, Derek Sivers, Mark Manson
 - **Creative three**: Seth Godin, Austin Kleon, Brian Lovin
