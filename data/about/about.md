@@ -2,7 +2,7 @@
 date: '2021-05-11'
 ---
 
-I like coffee, computers, typefaces, and working on things that are solving problems I empathize with.
+I like computers, coffee, typefaces, and working on things that are solving problems I empathize with.
 
 I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects and little experiments on the side:
 
