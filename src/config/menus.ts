@@ -8,20 +8,16 @@ export const HEADER = [
     href: '/about',
   },
   {
+    label: 'Now',
+    href: '/now',
+  },
+  {
     label: 'Blog',
     href: '/blog',
   },
   {
-    label: 'Notes',
-    href: '/notes',
-  },
-  {
     label: 'Books',
     href: '/books',
-  },
-  {
-    label: 'Bookmarks',
-    href: '/bookmarks',
   },
 ] as const
 
@@ -40,5 +36,10 @@ export const FOOTER = [
     title: 'github',
     label: 'Github',
     href: 'https://github.com/altaywtf',
+  },
+  {
+    title: 'bookmarks',
+    label: 'Bookmarks',
+    href: '/bookmarks',
   },
 ] as const
