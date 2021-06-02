@@ -15,18 +15,19 @@ I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a sof
 
 ### Who I admire
 
-Those people contributed tremendously to my life in the past several years.
+Those people contributed tremendously to my life.
 
 - **Big three**: Naval Ravikant, Derek Sivers, Mark Manson
-- **Creative three**: Seth Godin, Austin Kleon, Brian Lovin
+- **Creative three**: Austin Kleon, Brian Lovin, Matt D. Smith
 - **Hacker three**: Guillermo Rauch, Dan Abramov, Scott Wlatschin
-- **Productive three**: Cal Newport, James Clear, Make Time Duo
+- **Productive three**: Seth Godin, Cal Newport, James Clear
 - **Close-circle three**: [Hasan Yalçınkaya](https://twitter.com/hafifuyku), [Kemal Akkoyun](https://kakkoyun.me), [Berk Çapar](https://berk.studio)
 
 &nbsp;
 
 ### What I did
 
+- **2021, Apr:** moved into a [more-permanent flat](https://twitter.com/altaywtf/status/1387446623303778307) after living in a furnished agency apartment for 2.5 years.
 - **2021, Jan:** wanted to work closer to the product after [an engineering-heavy year.](/blog/2020) Switched to _Consumer Deals_ team in Klarna.
 - **2020, Oct:** built this website. Inspired from numerous resources such as [brianlovin.com](https://brianlovin.com), [sivers.org](https://sivers.org), [julie.design](https://julie.design), and [andymatuschak.org](https://notes.andymatuschak.org)
 - **2020, Jan:** joined to _App Client Core_ team that is responsible for architecture, performance and many other things related to [Klarna app.](https://klarna.com/us/klarna-app/)
