@@ -1,3 +1,5 @@
+import { bookmarksCopy, contactCopy } from './copy'
+
 export const HEADER = [
   {
     label: 'Home',
@@ -23,23 +25,18 @@ export const HEADER = [
 
 export const FOOTER = [
   {
-    title: 'email',
-    label: 'altay@aydemir.io',
-    href: 'mailto:altay@aydemir.io',
+    title: contactCopy.description,
+    label: contactCopy.title,
+    href: '/contact',
   },
   {
-    title: 'twitter',
-    label: 'Twitter',
-    href: 'https://twitter.com/altaywtf',
-  },
-  {
-    title: 'github',
-    label: 'Github',
-    href: 'https://github.com/altaywtf',
-  },
-  {
-    title: 'bookmarks',
-    label: 'Bookmarks',
+    title: bookmarksCopy.description,
+    label: bookmarksCopy.title,
     href: '/bookmarks',
+  },
+  {
+    title: 'Source code of this website',
+    label: 'Source',
+    href: 'https://github.com/altaywtf/altay-dot-wtf',
   },
 ] as const

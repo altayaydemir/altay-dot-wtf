@@ -46,6 +46,11 @@ export const booksCopy = {
   description: `Notes from the [books I've read.](https://www.notion.so/altaywtf/cd6811e25c5443c9a4a61d223b6d1f89?v=81827357d6064186860d2b10c90390fb)`,
 }
 
+export const contactCopy = {
+  title: 'Contact',
+  description: 'Me on the internets.',
+}
+
 export const notesCopy = {
   icon: '📝',
   title: `Notes`,
