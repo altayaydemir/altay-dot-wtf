@@ -1,15 +1,14 @@
 ---
-date: '2021-05-11'
+date: '2021-07-12'
 ---
 
 I like computers, coffee, typefaces, and working on things that are solving problems I empathize with.
 
 I'm currently living in Berlin, working at [Klarna](https://klarna.com) as a software engineer, and spending time on some passion projects and little experiments on the side:
 
-- My eternal love [putio](https://put.io)'s user-facing apps.
-- A payment gateway for [Accept Nano](https://accept-nano.com) cryptocurrency.
-- [Detailed notes](/books) from the books I've read.
-- Playing video games, mostly on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
+- Building my eternal love [putio](https://put.io)'s user-facing apps.
+- Taking notes from the [books](/books) I read.
+- Playing games, mostly on [PC](https://www.notion.so/altaywtf/Gaming-PC-f35dfdcc2418416baebf505c0d6c23f2).
 
 &nbsp;
 
