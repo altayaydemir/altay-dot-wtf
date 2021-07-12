@@ -9,7 +9,7 @@ exploration, discovery.
 
 _Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired._
 
-[The Pragmatic Programmer](/books/the-pragmatic/programmer)
+[The Pragmatic Programmer](/books/the-pragmatic-programmer)
 
 ### chagrin
 
@@ -17,7 +17,7 @@ feel dismissed or humiliated
 
 _The book is in plain text, much to the chagrin of the publisher who wanted us to use a word processor._
 
-[The Pragmatic Programmer](/books/the-pragmatic/programmer)
+[The Pragmatic Programmer](/books/the-pragmatic-programmer)
 
 ### semaphore
 
@@ -25,7 +25,7 @@ A semaphore is simply a thing that only one person can own at a time.
 
 _Shared resource locking example for opening the pie case by holding an object._
 
-[The Pragmatic Programmer](/books/the-pragmatic/programmer)
+[The Pragmatic Programmer](/books/the-pragmatic-programmer)
 
 ### ephemeral
 
@@ -33,7 +33,7 @@ lasting for a very short time - temporary.
 
 _Version control allows builds machines to be ephemeral._
 
-[The Pragmatic Programmer](/books/the-pragmatic/programmer)
+[The Pragmatic Programmer](/books/the-pragmatic-programmer)
 
 ### shirk
 
