@@ -1,7 +1,7 @@
 ---
 isbn: '9780060891541'
 date: '2020-11-22'
-rating: '4/5'
+rating: '5/5'
 oneliner: 'An occasional short sentence can carry a tremendous punch.'
 tags:
   - writing

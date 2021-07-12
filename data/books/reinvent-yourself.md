@@ -1,7 +1,7 @@
 ---
 isbn: '9781541137134'
 date: '2019-07-23'
-rating: '4/5'
+rating: '3/5'
 oneliner: 'Supposedly it takes 10,000 hours to master something. Unfortunately, most people spend 10,000 hours trying to be jerks to others.'
 tags:
   - james-altucher

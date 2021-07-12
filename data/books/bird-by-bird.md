@@ -1,7 +1,7 @@
 ---
 isbn: '0385480016'
 date: '2020-12-06'
-rating: '4/5'
+rating: '5/5'
 oneliner: Perfectionism is the voice of the oppressor, the enemy of people. It will keep you cramped and insane your whole life.
 tags:
   - writing

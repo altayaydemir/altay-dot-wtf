@@ -1,7 +1,7 @@
 ---
 isbn: '1523506644'
 date: '2020-12-13'
-rating: '4/5'
+rating: '5/5'
 oneliner: Walking is a way to find possibility in your life when there doesn't seem to be any left.
 tags:
   - austin-kleon
