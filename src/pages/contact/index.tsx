@@ -4,9 +4,10 @@ import PageHeader from 'components/PageHeader'
 import { contactCopy } from 'config/copy'
 
 const content = `
-- Email: [altay@aydemir.io](mailto:altay@aydemir.io)
-- Twitter: [@altaywtf](https://twitter.com/altaywtf)
-- Github: [@altaywtf](https://github.com/altaywtf)
+- [altay@aydemir.io](mailto:altay@aydemir.io)
+- [twitter.com/altaywtf](https://twitter.com/altaywtf)
+- [linkedin.com/in/altaywtf](https://linkedin.com/in/altaywtf)
+- [github.com/altaywtf](https://github.com/altaywtf)
 `
 
 const ContactPage: React.FC = () => (

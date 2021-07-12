@@ -49,12 +49,10 @@ const BookInfo: React.FC<Props> = ({ bookMeta, spacing, fontSize, short }) => {
           rel="noopener"
           color="textTertiary"
           fontSize={fontSize}
+          sx={{ display: 'inline-flex', alignItems: 'center' }}
         >
           <code>ISBN:{bookMeta.isbn}</code>
-
-          <Text display="inline" fontSize={0}>
-            <CgArrowTopRight />
-          </Text>
+          <CgArrowTopRight />
         </Link>
       ),
     },

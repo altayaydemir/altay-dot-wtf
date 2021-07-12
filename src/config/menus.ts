@@ -1,4 +1,4 @@
-import { bookmarksCopy, contactCopy } from './copy'
+import { bookmarksCopy, notesCopy, contactCopy, vocabCopy } from './copy'
 
 export const HEADER = [
   {
@@ -25,18 +25,28 @@ export const HEADER = [
 
 export const FOOTER = [
   {
-    title: contactCopy.description,
-    label: contactCopy.title,
-    href: '/contact',
-  },
-  {
     title: bookmarksCopy.description,
     label: bookmarksCopy.title,
     href: '/bookmarks',
   },
   {
+    title: notesCopy.description,
+    label: notesCopy.title,
+    href: '/notes',
+  },
+  {
+    title: vocabCopy.description,
+    label: vocabCopy.title,
+    href: '/vocabulary',
+  },
+  {
+    title: contactCopy.description,
+    label: contactCopy.title,
+    href: '/contact',
+  },
+  {
     title: 'Source code of this website',
-    label: 'Source',
+    label: 'Source Code',
     href: 'https://github.com/altaywtf/altay-dot-wtf',
   },
 ] as const

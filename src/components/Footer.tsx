@@ -1,6 +1,7 @@
+import { FOOTER } from 'config/menus'
 import NextLink from 'next/link'
 import { Flex, Box, Link, Text } from 'rebass'
-import { FOOTER } from 'config/menus'
+import { CgArrowTopRight } from 'react-icons/cg'
 
 const Footer = () => (
   <Flex
@@ -20,9 +21,21 @@ const Footer = () => (
               paddingRight={2}
               paddingLeft={index === 0 ? 0 : 2}
               fontSize={0}
-              sx={{ color: 'textTertiary', '&:hover': { color: 'linkPrimary' } }}
+              sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                color: 'textTertiary',
+                '&:hover': { color: 'linkPrimary' },
+              }}
             >
               {link.label}
+
+              {link.href.startsWith('/') ? null : (
+                <>
+                  <Box width="2px" />
+                  <CgArrowTopRight />
+                </>
+              )}
             </Link>
           </NextLink>
 
